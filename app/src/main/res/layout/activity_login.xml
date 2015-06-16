@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exgerm.register.LoginActivity">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textColor="@color/whiteColor"
+        android:background="@color/blueColor"
+        android:layout_below="@+id/hospitalTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="invisible"
+        android:layout_above="@+id/latitudeTextView"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/herramientasTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Herramientas"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Altas"
+        android:id="@+id/button"
+        android:textColor="@color/whiteColor"
+        android:background="@color/blueColor"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/herramientasTV"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginGroupSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/groupTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grupo:"
+        android:id="@+id/groupTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/longitudeTextView"
+        android:layout_alignEnd="@+id/longitudeTextView"
+        android:layout_alignBottom="@+id/loginGroupSpinner"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital:"
+        android:id="@+id/hospitalTV"
+        android:layout_below="@+id/loginGroupSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/loginHospitalSpinner"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/loginHospitalSpinner"
+        android:layout_toStartOf="@+id/loginHospitalSpinner" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginHospitalSpinner"
+        android:layout_below="@+id/loginGroupSpinner"
+        android:layout_toRightOf="@+id/groupTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

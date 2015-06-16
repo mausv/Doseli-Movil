@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Doseli</string>
+    <string name="resumen">Resumen</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">Inicio</string>
+    <string name="update_status_title">Reportar</string>
+    <string name="update_status_stolen">Aparato Robado</string>
+    <string name="update_location">Posicionar Aparato</string>
+    <string name="logout_title">Cerrar Sesión</string>
+    <string name="title_activity_update_status">Reporte de Aparatos</string>
+    <string name="title_activity_status_detail_view">Aparato</string>
+    <string name="url">URL</string>
+    <string name="aid">ID</string>
+    <string name="textaid">Aparato #</string>
+    <string name="token">TOKEN</string>
+    <string name="comment">COMENTARIO</string>
+    <string name="send">Enviar Reporte</string>
+    <string name="error1">Daño Físico</string>
+    <string name="error2">Batería Baja</string>
+    <string name="error3">Falta Liquido</string>
+    <string name="solucion1">Reparación</string>
+    <string name="solucion2">Cambio de Baterías</string>
+    <string name="solucion3">Cambio de Líquido</string>
+    <string name="title_activity_capture_layout">CaptureLayout</string>
+    <string name="title_activity_report_stolen">Reportar Robo</string>
+    <string name="title_activity_handset_register">Altas</string>
+    <string name="title_activity_handset_location">Posicionar Aparato</string>
+
+</resources>
