@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/Register/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-pl/values.xml -->
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-pl/values.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Przejdź do strony głównej"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -17,7 +17,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Wyszukiwanie głosowe"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Udostępnij dla"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Udostępnij dla %s"</string>
-    <!-- From: file:/E:/Register/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/values-pl/values.xml -->
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/values-pl/values.xml -->
     <eat-comment/>
     <string name="zxing_app_name">Barcode Scanner</string>
     <string name="zxing_button_cancel">Anuluj</string>

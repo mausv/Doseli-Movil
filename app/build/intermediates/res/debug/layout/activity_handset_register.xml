@@ -98,4 +98,4 @@
         android:layout_toRightOf="@+id/state"
         android:layout_toEndOf="@+id/state" />
 </RelativeLayout>
-<!-- From: file:/E:/Register/app/src/main/res/layout/activity_handset_register.xml -->
+<!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/layout/activity_handset_register.xml -->

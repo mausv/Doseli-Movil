@@ -49,7 +49,6 @@ public class HandsetLocation extends Activity {
     protected Spinner locationSpinner;
     protected Spinner roomSpinner;
     protected EditText floor;
-    protected EditText room;
     protected Button scan;
     protected TextView qrId;
     protected TextView qrResult;
@@ -99,6 +98,10 @@ public class HandsetLocation extends Activity {
     private String roomSelectedId = "";
     private String roomSelectedIdentifier = "";
     private String roomSelected = "";
+
+    private Boolean area;
+    private Boolean location;
+    private Boolean room;
 
     JSONParser jsonParser = new JSONParser();
 
@@ -182,7 +185,8 @@ public class HandsetLocation extends Activity {
                         Log.d("Case ", "nothing");
                         break;
                     default:
-                        //new GetAreas().execute();
+                        area = false;
+                        new GetAreas().execute();
                 }
             }
 
@@ -196,16 +200,17 @@ public class HandsetLocation extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 locationSelected = locationSpinner.getSelectedItem().toString();
-                int locationId = (int) locationSpinner.getSelectedItemId();
-                Category cat = new Category(locationsList.get(locationId));
-                locationSelectedId = String.valueOf(cat.getId());
-                Log.d("Seleccionado: ", locationSelectedId);
 
                 switch (locationSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
                         break;
                     default:
+                        int locationId = (int) locationSpinner.getSelectedItemId();
+                        Category cat = new Category(locationsList.get(locationId));
+                        locationSelectedId = String.valueOf(cat.getId());
+                        Log.d("Seleccionado: ", locationSelectedId);
+                        location = true;
                         new GetRooms().execute();
                 }
             }
@@ -220,16 +225,17 @@ public class HandsetLocation extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 areaSelected = areaSpinner.getSelectedItem().toString();
-                int areaId = (int) areaSpinner.getSelectedItemId();
-                Category cat = new Category(areasList.get(areaId));
-                areaSelectedId = String.valueOf(cat.getId());
-                Log.d("Seleccionado: ", areaSelectedId);
 
                 switch (areaSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
                         break;
                     default:
+                        int areaId = (int) areaSpinner.getSelectedItemId();
+                        Category cat = new Category(areasList.get(areaId));
+                        areaSelectedId = String.valueOf(cat.getId());
+                        Log.d("Seleccionado: ", areaSelectedId);
+                        area = true;
                         new GetLocations().execute();
                 }
             }
@@ -244,16 +250,17 @@ public class HandsetLocation extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 roomSelected = roomSpinner.getSelectedItem().toString();
-                int roomId = (int) roomSpinner.getSelectedItemId();
-                Category cat = new Category(roomsList.get(roomId));
-                roomSelectedId = String.valueOf(cat.getId());
-                Log.d("Seleccionado: ", roomSelectedId);
 
                 switch (roomSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
                         break;
                     default:
+                        int roomId = (int) roomSpinner.getSelectedItemId();
+                        Category cat = new Category(roomsList.get(roomId));
+                        roomSelectedId = String.valueOf(cat.getId());
+                        Log.d("Seleccionado: ", roomSelectedId);
+                        room = true;
                         Log.d("Room id: ", roomSelectedId);
                         Log.d("Room: ", roomSelected);
                 }
@@ -281,9 +288,30 @@ public class HandsetLocation extends Activity {
                 light = true;
                 String gVal = groupSpinner.getSelectedItem().toString();
                 String hVal = hospitalSpinner.getSelectedItem().toString();
-                /*String aVal = areaSpinner.getSelectedItem().toString();
-                String lVal = locationSpinner.getSelectedItem().toString();
-                String rVal = roomSpinner.getSelectedItem().toString();*/
+                if(areaSpinner.getSelectedItem() == null){
+                    areaVaul = "";
+                    area = false;
+                } else {
+                    String aVal = areaSpinner.getSelectedItem().toString();
+                    area = true;
+                }
+
+                if(locationSpinner.getSelectedItem() == null){
+                    areaVaul = "";
+                    location = false;
+                } else {
+                    String lVal = locationSpinner.getSelectedItem().toString();
+                    location = true;
+
+                }
+
+                if(roomSpinner.getSelectedItem() == null){
+                    roomVaul = "";
+                    room = false;
+                } else {
+                    String rVal = roomSpinner.getSelectedItem().toString();
+                    room = true;
+                }
                 if((!(groupSpinner.getSelectedItem() == null)) && (!(gVal.equals("Escoge")))){
                     System.out.println("Group correct");
                     groupVaul = groupSpinner.getSelectedItem().toString();
@@ -298,27 +326,6 @@ public class HandsetLocation extends Activity {
                     System.out.println("Red light");
                     light = false;
                 }
-                /*if((!(areaSpinner.getSelectedItem() == null)) && (!(aVal.equals("Escoge")))){
-                    System.out.println("Area correct");
-                    areaVaul = areaSpinner.getSelectedItem().toString();
-                } else {
-                    System.out.println("Red light");
-                    light = false;
-                }
-                if((!(locationSpinner.getSelectedItem() == null)) && (!(lVal.equals("Escoge")))){
-                    System.out.println("Location correct");
-                    locationVaul = locationSpinner.getSelectedItem().toString();
-                } else {
-                    System.out.println("Red light");
-                    light = false;
-                }
-                if((!(roomSpinner.getSelectedItem() == null)) && (!(rVal.equals("Escoge")))){
-                    System.out.println("Location correct");
-                    roomVaul = roomSpinner.getSelectedItem().toString();
-                } else {
-                    System.out.println("Red light");
-                    light = false;
-                }*/
                 if (light && sLight == true) {
 
                     new SetLocation().execute();
@@ -699,12 +706,23 @@ public class HandsetLocation extends Activity {
             params.add(new BasicNameValuePair("group_id", groupSelectedId));
             params.add(new BasicNameValuePair("hospital", hospitalSelected));
             params.add(new BasicNameValuePair("hospital_id", hospitalSelectedId));
-            /*params.add(new BasicNameValuePair("area", areaSelected));
-            params.add(new BasicNameValuePair("area_id", areaSelectedId));
-            params.add(new BasicNameValuePair("location", locationSelected));
-            params.add(new BasicNameValuePair("location_id", locationSelectedId));
-            params.add(new BasicNameValuePair("room", roomSelected));
-            params.add(new BasicNameValuePair("room_id", roomSelectedId));*/
+            if(!areaSelectedId.equals("")) {
+                Log.i("Added", "a");
+                params.add(new BasicNameValuePair("area", areaSelected));
+                params.add(new BasicNameValuePair("area_id", areaSelectedId));
+            }
+
+            if(!locationSelectedId.equals("")) {
+                Log.i("Added", "l");
+                params.add(new BasicNameValuePair("location", locationSelected));
+                params.add(new BasicNameValuePair("location_id", locationSelectedId));
+            }
+
+            if(!roomSelectedId.equals("")) {
+                Log.i("Added", "r");
+                params.add(new BasicNameValuePair("room", roomSelected));
+                params.add(new BasicNameValuePair("room_id", roomSelectedId));
+            }
 
             // getting JSON Object
             // Note that create product url accepts POST method
