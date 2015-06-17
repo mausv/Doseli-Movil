@@ -159,6 +159,7 @@ public class HandsetLocation extends Activity {
                     case "Escoge":
                         Log.d("Case ", "nothing");
                         hospitalsList = new ArrayList<>();
+                        hospitalsList.clear();
                         break;
                     default:
                         new GetHospitals().execute();
