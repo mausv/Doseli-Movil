@@ -103,6 +103,11 @@ public class HandsetLocation extends Activity {
     private Boolean location;
     private Boolean room;
 
+    List<String> lablesE = new ArrayList<String>();
+
+    // Creating adapter for spinner
+    ArrayAdapter<String> spinnerAdapterE;
+
     JSONParser jsonParser = new JSONParser();
 
     private ProgressDialog pDialog;
@@ -131,6 +136,12 @@ public class HandsetLocation extends Activity {
 
         groupsList = new ArrayList<>();
 
+        // Drop down layout style - list view with radio button
+        spinnerAdapterE = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, lablesE);
+        spinnerAdapterE
+                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         Intent intent = getIntent();
         groupSpinner = (Spinner) findViewById(R.id.group);
         hospitalSpinner = (Spinner) findViewById(R.id.hospital);
@@ -158,12 +169,12 @@ public class HandsetLocation extends Activity {
                 switch (groupSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
-                        hospitalSpinner.setAdapter(null);
-                        areaSpinner.setAdapter(null);
+                        hospitalSpinner.setAdapter(spinnerAdapterE);
+                        areaSpinner.setAdapter(spinnerAdapterE);
                         areaSelectedId = "";
-                        locationSpinner.setAdapter(null);
+                        locationSpinner.setAdapter(spinnerAdapterE);
                         locationSelectedId = "";
-                        roomSpinner.setAdapter(null);
+                        roomSpinner.setAdapter(spinnerAdapterE);
                         roomSelectedId = "";
                         break;
                     default:
@@ -189,11 +200,11 @@ public class HandsetLocation extends Activity {
                 switch (hospitalSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
-                        areaSpinner.setAdapter(null);
+                        areaSpinner.setAdapter(spinnerAdapterE);
                         areaSelectedId = "";
-                        locationSpinner.setAdapter(null);
+                        locationSpinner.setAdapter(spinnerAdapterE);
                         locationSelectedId = "";
-                        roomSpinner.setAdapter(null);
+                        roomSpinner.setAdapter(spinnerAdapterE);
                         roomSelectedId = "";
                         break;
                     default:
@@ -216,9 +227,9 @@ public class HandsetLocation extends Activity {
                 switch (areaSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
-                        locationSpinner.setAdapter(null);
+                        locationSpinner.setAdapter(spinnerAdapterE);
                         locationSelectedId = "";
-                        roomSpinner.setAdapter(null);
+                        roomSpinner.setAdapter(spinnerAdapterE);
                         roomSelectedId = "";
                         break;
                     default:
@@ -245,7 +256,7 @@ public class HandsetLocation extends Activity {
                 switch (locationSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
-                        roomSpinner.setAdapter(null);
+                        roomSpinner.setAdapter(spinnerAdapterE);
                         roomSelectedId = "";
                         break;
                     default:

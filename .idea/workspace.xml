@@ -10,6 +10,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="Added HandsetLocation auto removal of new selection and fixed spinners">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$7$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$7$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$7$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$7$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$CheckQR$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$CheckQR$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$CheckQR.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$CheckQR.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetAreas.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetAreas.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetGroups.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetLocations.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetLocations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetRooms.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$GetRooms.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$SetLocation$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$SetLocation$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$SetLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation$SetLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -45,26 +80,9 @@
               <file leaf-file-name="HandsetLocation.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.7083333">
-                      <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-                      <folding>
-                        <element signature="e#11263#11655#0" expanded="true" />
-                        <element signature="e#11654#11655#0" expanded="true" />
-                        <element signature="e#11693#15267#0" expanded="true" />
-                        <element signature="e#14020#14333#0" expanded="true" />
-                        <element signature="e#14332#14333#0" expanded="true" />
-                        <element signature="e#14815#15128#0" expanded="true" />
-                        <element signature="e#15127#15128#0" expanded="true" />
-                        <element signature="e#15266#15267#0" expanded="true" />
-                        <element signature="e#22275#22283#0" expanded="true" />
-                        <element signature="e#23389#23397#0" expanded="true" />
-                        <element signature="e#25054#25069#0" expanded="true" />
-                        <element signature="e#27292#27538#0" expanded="true" />
-                        <element signature="e#27537#27538#0" expanded="true" />
-                        <element signature="e#28335#28350#0" expanded="true" />
-                        <element signature="e#30923#31185#0" expanded="true" />
-                        <element signature="e#31184#31185#0" expanded="true" />
-                      </folding>
+                    <state vertical-scroll-proportion="0.7916667">
+                      <caret line="142" column="88" selection-start-line="142" selection-start-column="88" selection-end-line="142" selection-end-column="88" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -73,7 +91,7 @@
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0">
-                      <caret line="86" column="66" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
+                      <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
                       <folding />
                     </state>
                   </provider>
@@ -84,9 +102,7 @@
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0">
                       <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-                      <folding>
-                        <marker date="1434598048731" expanded="true" signature="768:1507" placeholder="{...}" />
-                      </folding>
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -98,26 +114,21 @@
               <file leaf-file-name="HandsetLocation.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-12.117506">
-                      <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
+                    <state vertical-scroll-proportion="-0.1558753">
+                      <caret line="258" column="62" selection-start-line="258" selection-start-column="62" selection-end-line="258" selection-end-column="62" />
                       <folding>
-                        <element signature="e#11263#11655#0" expanded="true" />
-                        <element signature="e#11654#11655#0" expanded="true" />
-                        <element signature="e#11693#15267#0" expanded="true" />
-                        <element signature="e#14020#14333#0" expanded="true" />
-                        <element signature="e#14332#14333#0" expanded="true" />
-                        <element signature="e#14815#15128#0" expanded="true" />
-                        <element signature="e#15127#15128#0" expanded="true" />
-                        <element signature="e#15266#15267#0" expanded="true" />
-                        <element signature="e#22275#22283#0" expanded="true" />
-                        <element signature="e#23389#23397#0" expanded="true" />
-                        <element signature="e#25054#25069#0" expanded="true" />
-                        <element signature="e#27292#27538#0" expanded="true" />
-                        <element signature="e#27537#27538#0" expanded="true" />
-                        <element signature="e#28335#28350#0" expanded="true" />
-                        <element signature="e#30923#31185#0" expanded="true" />
-                        <element signature="e#31184#31185#0" expanded="true" />
+                        <element signature="e#3242#3250#0" expanded="true" />
                       </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/build.gradle">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0">
+                      <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -131,37 +142,10 @@
           <file leaf-file-name="HandsetLocation.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.41876048">
-                  <caret line="365" column="24" selection-start-line="365" selection-start-column="24" selection-end-line="365" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.9966499">
+                  <caret line="561" column="14" selection-start-line="561" selection-start-column="14" selection-end-line="561" selection-end-column="14" />
                   <folding>
-                    <element signature="e#11263#11655#0" expanded="true" />
-                    <element signature="e#11654#11655#0" expanded="true" />
-                    <element signature="e#11693#15267#0" expanded="true" />
-                    <element signature="e#14020#14333#0" expanded="true" />
-                    <element signature="e#14332#14333#0" expanded="true" />
-                    <element signature="e#14815#15128#0" expanded="true" />
-                    <element signature="e#15127#15128#0" expanded="true" />
-                    <element signature="e#15266#15267#0" expanded="true" />
-                    <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="method#runQuery#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="method#onCreateOptionsMenu#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="e#22275#22283#0" expanded="true" />
-                    <element signature="e#23389#23397#0" expanded="true" />
-                    <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="e#25054#25069#0" expanded="true" />
-                    <element signature="e#27292#27538#0" expanded="true" />
-                    <element signature="e#27537#27538#0" expanded="true" />
-                    <element signature="class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="e#28335#28350#0" expanded="true" />
-                    <element signature="e#30923#31185#0" expanded="true" />
-                    <element signature="e#31184#31185#0" expanded="true" />
-                    <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
-                    <element signature="class#GetRooms#0;class#HandsetLocation#0" expanded="false" />
+                    <element signature="e#3242#3250#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -172,16 +156,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="368" column="28" selection-start-line="368" selection-start-column="28" selection-end-line="368" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#15732#15733#0" expanded="false" />
-                    <element signature="e#15804#15805#0" expanded="false" />
-                    <element signature="e#16629#16630#0" expanded="false" />
-                    <element signature="e#16701#16702#0" expanded="false" />
-                    <element signature="e#17249#17250#0" expanded="false" />
-                    <element signature="e#17305#17306#0" expanded="false" />
-                    <element signature="e#17814#17815#0" expanded="false" />
-                    <element signature="e#17870#17871#0" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1337,7 +1312,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$" value="4303598046004" />
-        <entry key="C:\Users\Mauricio\Documents\Doseli-Movil" value="4303602028194" />
+        <entry key="C:\Users\Mauricio\Documents\Doseli-Movil" value="4303808203516" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1650,8 +1625,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
       </list>
     </option>
@@ -1660,8 +1635,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1358" />
+    <option name="y" value="-171" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -1688,6 +1663,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
@@ -1709,9 +1685,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1727,7 +1702,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ZX1D926748" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="6206000600000001015F19A80B01400?" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1967,8 +1942,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="1358" y="-171" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2025,10 +2000,16 @@
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <marker date="1434598048731" expanded="true" signature="768:1507" placeholder="{...}" />
-          </folding>
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2037,34 +2018,59 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11263#11655#0" expanded="true" />
-            <element signature="e#11654#11655#0" expanded="true" />
-            <element signature="e#11693#15267#0" expanded="true" />
-            <element signature="e#14020#14333#0" expanded="true" />
-            <element signature="e#14332#14333#0" expanded="true" />
-            <element signature="e#14815#15128#0" expanded="true" />
-            <element signature="e#15127#15128#0" expanded="true" />
-            <element signature="e#15266#15267#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#runQuery#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#22275#22283#0" expanded="true" />
-            <element signature="e#23389#23397#0" expanded="true" />
-            <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#25054#25069#0" expanded="true" />
-            <element signature="e#27292#27538#0" expanded="true" />
-            <element signature="e#27537#27538#0" expanded="true" />
-            <element signature="class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#28335#28350#0" expanded="true" />
-            <element signature="e#30923#31185#0" expanded="true" />
-            <element signature="e#31184#31185#0" expanded="true" />
-            <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetRooms#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#3242#3250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3242#3250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="66" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3242#3250#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2073,16 +2079,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="e#15732#15733#0" expanded="false" />
-            <element signature="e#15804#15805#0" expanded="false" />
-            <element signature="e#16629#16630#0" expanded="false" />
-            <element signature="e#16701#16702#0" expanded="false" />
-            <element signature="e#17249#17250#0" expanded="false" />
-            <element signature="e#17305#17306#0" expanded="false" />
-            <element signature="e#17814#17815#0" expanded="false" />
-            <element signature="e#17870#17871#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2090,9 +2087,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <marker date="1434598048731" expanded="true" signature="768:1507" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2101,34 +2096,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11263#11655#0" expanded="true" />
-            <element signature="e#11654#11655#0" expanded="true" />
-            <element signature="e#11693#15267#0" expanded="true" />
-            <element signature="e#14020#14333#0" expanded="true" />
-            <element signature="e#14332#14333#0" expanded="true" />
-            <element signature="e#14815#15128#0" expanded="true" />
-            <element signature="e#15127#15128#0" expanded="true" />
-            <element signature="e#15266#15267#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#runQuery#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#22275#22283#0" expanded="true" />
-            <element signature="e#23389#23397#0" expanded="true" />
-            <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#25054#25069#0" expanded="true" />
-            <element signature="e#27292#27538#0" expanded="true" />
-            <element signature="e#27537#27538#0" expanded="true" />
-            <element signature="class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#28335#28350#0" expanded="true" />
-            <element signature="e#30923#31185#0" expanded="true" />
-            <element signature="e#31184#31185#0" expanded="true" />
-            <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetRooms#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#3242#3250#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2137,16 +2105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="e#15732#15733#0" expanded="false" />
-            <element signature="e#15804#15805#0" expanded="false" />
-            <element signature="e#16629#16630#0" expanded="false" />
-            <element signature="e#16701#16702#0" expanded="false" />
-            <element signature="e#17249#17250#0" expanded="false" />
-            <element signature="e#17305#17306#0" expanded="false" />
-            <element signature="e#17814#17815#0" expanded="false" />
-            <element signature="e#17870#17871#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2154,16 +2113,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="71" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
-          <folding>
-            <element signature="e#15732#15733#0" expanded="false" />
-            <element signature="e#15804#15805#0" expanded="false" />
-            <element signature="e#16629#16630#0" expanded="false" />
-            <element signature="e#16701#16702#0" expanded="false" />
-            <element signature="e#17249#17250#0" expanded="false" />
-            <element signature="e#17305#17306#0" expanded="false" />
-            <element signature="e#17814#17815#0" expanded="false" />
-            <element signature="e#17870#17871#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2171,9 +2121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <marker date="1434598048731" expanded="true" signature="768:1507" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2182,34 +2130,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11263#11655#0" expanded="true" />
-            <element signature="e#11654#11655#0" expanded="true" />
-            <element signature="e#11693#15267#0" expanded="true" />
-            <element signature="e#14020#14333#0" expanded="true" />
-            <element signature="e#14332#14333#0" expanded="true" />
-            <element signature="e#14815#15128#0" expanded="true" />
-            <element signature="e#15127#15128#0" expanded="true" />
-            <element signature="e#15266#15267#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#runQuery#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#22275#22283#0" expanded="true" />
-            <element signature="e#23389#23397#0" expanded="true" />
-            <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#25054#25069#0" expanded="true" />
-            <element signature="e#27292#27538#0" expanded="true" />
-            <element signature="e#27537#27538#0" expanded="true" />
-            <element signature="class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#28335#28350#0" expanded="true" />
-            <element signature="e#30923#31185#0" expanded="true" />
-            <element signature="e#31184#31185#0" expanded="true" />
-            <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetRooms#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#3242#3250#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2221,20 +2142,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="368" column="28" selection-start-line="368" selection-start-column="28" selection-end-line="368" selection-end-column="28" />
-          <folding>
-            <element signature="e#15732#15733#0" expanded="false" />
-            <element signature="e#15804#15805#0" expanded="false" />
-            <element signature="e#16629#16630#0" expanded="false" />
-            <element signature="e#16701#16702#0" expanded="false" />
-            <element signature="e#17249#17250#0" expanded="false" />
-            <element signature="e#17305#17306#0" expanded="false" />
-            <element signature="e#17814#17815#0" expanded="false" />
-            <element signature="e#17870#17871#0" expanded="false" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2242,45 +2154,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <marker date="1434598048731" expanded="true" signature="768:1507" placeholder="{...}" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/widget/Spinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="540" column="0" selection-start-line="540" selection-start-column="0" selection-end-line="540" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41876048">
-          <caret line="365" column="24" selection-start-line="365" selection-start-column="24" selection-end-line="365" selection-end-column="24" />
+        <state vertical-scroll-proportion="-0.1558753">
+          <caret line="258" column="62" selection-start-line="258" selection-start-column="62" selection-end-line="258" selection-end-column="62" />
           <folding>
-            <element signature="e#11263#11655#0" expanded="true" />
-            <element signature="e#11654#11655#0" expanded="true" />
-            <element signature="e#11693#15267#0" expanded="true" />
-            <element signature="e#14020#14333#0" expanded="true" />
-            <element signature="e#14332#14333#0" expanded="true" />
-            <element signature="e#14815#15128#0" expanded="true" />
-            <element signature="e#15127#15128#0" expanded="true" />
-            <element signature="e#15266#15267#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#runQuery#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#22275#22283#0" expanded="true" />
-            <element signature="e#23389#23397#0" expanded="true" />
-            <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#25054#25069#0" expanded="true" />
-            <element signature="e#27292#27538#0" expanded="true" />
-            <element signature="e#27537#27538#0" expanded="true" />
-            <element signature="class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="e#28335#28350#0" expanded="true" />
-            <element signature="e#30923#31185#0" expanded="true" />
-            <element signature="e#31184#31185#0" expanded="true" />
-            <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
-            <element signature="class#GetRooms#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#3242#3250#0" expanded="true" />
           </folding>
         </state>
       </provider>
