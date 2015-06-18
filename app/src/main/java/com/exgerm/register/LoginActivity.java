@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
@@ -92,6 +93,7 @@ public class LoginActivity extends Activity {
     private static String url_get_groups = main_url + "get_groups.php";
     private static String url_get_hospitals = main_url + "get_hospitals.php";
     private static String url_get_hospital_geo = main_url + "get_hospital_geo.php";
+    private static String url_get_latest_version = main_url + "get_latest_version.php";
 
     //Column variables
     private static String TAG_CODE = "code";
@@ -504,9 +506,68 @@ public class LoginActivity extends Activity {
         }
         currentVersion = pInfo.versionName;
         Log.i("Current version: ", currentVersion);
+        new GetLatestVersion().execute();
 
 
         return currentVersion;
+    }
+
+    private class GetLatestVersion extends AsyncTask<Void, Void, Void>{
+        int update;
+        String urlDwn;
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            try {
+                List<NameValuePair> paramsGetVersion = new ArrayList<>();
+                paramsGetVersion.add(new BasicNameValuePair("version", currentVersion));
+
+                JSONObject json = jsonParser.makeHttpRequest(url_get_latest_version, "POST", paramsGetVersion);
+
+                Log.i("Check version: ", json.toString());
+
+                update = json.getInt("update");
+
+                if(update == 1){
+                    JSONArray array = (JSONArray) json.get("version");
+
+                    JSONObject innerObj = (JSONObject) array.get(0);
+                    Log.i("Update status:", "Available");
+                    urlDwn = String.valueOf(innerObj.get("download"));
+                } else if (update == 0) {
+                    Log.i("Update status:", "Latest");
+                }
+            } catch (JSONException e){
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            if(update == 1) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setMessage("Existe una  nueva version de Doseli");
+                builder.setTitle("Actualizacion disponible");
+                builder.setPositiveButton("Actualizar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String url = "http://" + urlDwn;
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        dialog.dismiss();
+                    }
+                });
+
+                builder.show();
+            }
+
+        }
     }
 
     private class GetGroups extends AsyncTask<Void, Void, Void>{
