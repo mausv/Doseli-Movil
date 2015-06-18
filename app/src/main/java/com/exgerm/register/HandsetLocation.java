@@ -158,8 +158,13 @@ public class HandsetLocation extends Activity {
                 switch (groupSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
-                        hospitalsList = new ArrayList<>();
-                        hospitalsList.clear();
+                        hospitalSpinner.setAdapter(null);
+                        areaSpinner.setAdapter(null);
+                        areaSelectedId = "";
+                        locationSpinner.setAdapter(null);
+                        locationSelectedId = "";
+                        roomSpinner.setAdapter(null);
+                        roomSelectedId = "";
                         break;
                     default:
                         new GetHospitals().execute();
@@ -184,35 +189,16 @@ public class HandsetLocation extends Activity {
                 switch (hospitalSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
+                        areaSpinner.setAdapter(null);
+                        areaSelectedId = "";
+                        locationSpinner.setAdapter(null);
+                        locationSelectedId = "";
+                        roomSpinner.setAdapter(null);
+                        roomSelectedId = "";
                         break;
                     default:
                         area = false;
                         new GetAreas().execute();
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-        locationSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                locationSelected = locationSpinner.getSelectedItem().toString();
-
-                switch (locationSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        break;
-                    default:
-                        int locationId = (int) locationSpinner.getSelectedItemId();
-                        Category cat = new Category(locationsList.get(locationId));
-                        locationSelectedId = String.valueOf(cat.getId());
-                        Log.d("Seleccionado: ", locationSelectedId);
-                        location = true;
-                        new GetRooms().execute();
                 }
             }
 
@@ -230,6 +216,10 @@ public class HandsetLocation extends Activity {
                 switch (areaSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
+                        locationSpinner.setAdapter(null);
+                        locationSelectedId = "";
+                        roomSpinner.setAdapter(null);
+                        roomSelectedId = "";
                         break;
                     default:
                         int areaId = (int) areaSpinner.getSelectedItemId();
@@ -247,6 +237,33 @@ public class HandsetLocation extends Activity {
             }
         });
 
+        locationSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                locationSelected = locationSpinner.getSelectedItem().toString();
+
+                switch (locationSelected) {
+                    case "Escoge":
+                        Log.d("Case ", "nothing");
+                        roomSpinner.setAdapter(null);
+                        roomSelectedId = "";
+                        break;
+                    default:
+                        int locationId = (int) locationSpinner.getSelectedItemId();
+                        Category cat = new Category(locationsList.get(locationId));
+                        locationSelectedId = String.valueOf(cat.getId());
+                        Log.d("Seleccionado: ", locationSelectedId);
+                        location = true;
+                        new GetRooms().execute();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         roomSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -255,6 +272,7 @@ public class HandsetLocation extends Activity {
                 switch (roomSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
+                        roomSelectedId = "";
                         break;
                     default:
                         int roomId = (int) roomSpinner.getSelectedItemId();
@@ -288,8 +306,7 @@ public class HandsetLocation extends Activity {
             public void onClick(View v) {
                 light = true;
                 String gVal = groupSpinner.getSelectedItem().toString();
-                String hVal = hospitalSpinner.getSelectedItem().toString();
-                if(areaSpinner.getSelectedItem() == null){
+                /*if(areaSpinner.getSelectedItem() == null){
                     areaVaul = "";
                     area = false;
                 } else {
@@ -312,7 +329,7 @@ public class HandsetLocation extends Activity {
                 } else {
                     String rVal = roomSpinner.getSelectedItem().toString();
                     room = true;
-                }
+                }*/
                 if((!(groupSpinner.getSelectedItem() == null)) && (!(gVal.equals("Escoge")))){
                     System.out.println("Group correct");
                     groupVaul = groupSpinner.getSelectedItem().toString();
@@ -320,7 +337,7 @@ public class HandsetLocation extends Activity {
                     System.out.println("Red light");
                     light = false;
                 }
-                if((!(hospitalSpinner.getSelectedItem() == null)) && (!(hVal.equals("Escoge"))) ){
+                if((!(hospitalSpinner.getSelectedItem() == null)) && (!(hospitalSpinner.getSelectedItem().toString().equals("Escoge"))) ){
                     System.out.println("Hospital correct");
                     hospitalVaul = hospitalSpinner.getSelectedItem().toString();
                 } else {
@@ -349,7 +366,7 @@ public class HandsetLocation extends Activity {
                 } else {
                     Log.d("error", "Falta campos.");
                     AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
-                    builder.setMessage("Debes llenar todos los campos para poder posicionar un aparato");
+                    builder.setMessage("Debes llenar por lo menos grupo y hospital para avanzar");
                     builder.setTitle("Revisa tus datos");
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
