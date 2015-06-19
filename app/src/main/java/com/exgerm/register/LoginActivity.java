@@ -54,6 +54,7 @@ public class LoginActivity extends Activity {
     protected TextView textLat;
     protected TextView textLong;
     public Boolean geoBoxCorrect = false;
+    public TextView versionTV;
     /*protected double fixedLatTop = 25.66896339;
     protected double fixedLongTop = -100.32322168;
     protected double fixedLatLow = 25.6671841;
@@ -120,13 +121,6 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        getImei();
-
-        getCurrentVer();
-
-        Log.d("IMEI: ", imei);
-
         //Initialize protected objects
         groupSpinner = (Spinner) findViewById(R.id.loginGroupSpinner);
         hospitalSpinner = (Spinner) findViewById(R.id.loginHospitalSpinner);
@@ -134,6 +128,15 @@ public class LoginActivity extends Activity {
         textLat = (TextView) findViewById(R.id.latitudeTextView);
         textLong = (TextView) findViewById(R.id.longitudeTextView);
         mAltas = (Button) findViewById(R.id.button);
+        versionTV = (TextView) findViewById(R.id.versionTV);
+
+        getImei();
+
+        getCurrentVer();
+
+        Log.d("IMEI: ", imei);
+
+
 
         groupsList = new ArrayList<>();
         new GetGroups().execute();
@@ -504,7 +507,9 @@ public class LoginActivity extends Activity {
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
+
         currentVersion = pInfo.versionName;
+        versionTV.setText("ver: " + currentVersion);
         Log.i("Current version: ", currentVersion);
         new GetLatestVersion().execute();
 
