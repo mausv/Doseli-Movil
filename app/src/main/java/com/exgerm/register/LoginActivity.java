@@ -311,7 +311,7 @@ public class LoginActivity extends Activity {
                         Log.d("Case ", "nothing");
                         break;
                     default:
-                        //new GetGeo().execute();
+                        new GetGeo().execute();
 
                 }
             }
@@ -690,7 +690,6 @@ public class LoginActivity extends Activity {
         @Override
         protected Void doInBackground(Void... params) {
             int success;
-            hospitalsList = new ArrayList<>();
 
             try {
 
