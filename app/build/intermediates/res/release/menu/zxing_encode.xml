@@ -26,4 +26,4 @@
         android:orderInCategory="2"
         android:showAsAction="withText|ifRoom"/>
 </menu>
-<!-- From: file:/home/ralf/src/zxing-android-minimal/zxing-android/res-orig/menu/zxing_encode.xml --><!-- From: file:/E:/Register/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/menu/zxing_encode.xml -->
+<!-- From: file:/home/ralf/src/zxing-android-minimal/zxing-android/res-orig/menu/zxing_encode.xml --><!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/menu/zxing_encode.xml -->

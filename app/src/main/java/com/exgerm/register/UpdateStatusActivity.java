@@ -6,6 +6,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
@@ -87,6 +89,8 @@ public class UpdateStatusActivity extends Activity {
     public String token;
     public Boolean uuidExists = false;
 
+    public Boolean networkConnection;
+
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_PRODUCT = "product";
@@ -102,6 +106,8 @@ public class UpdateStatusActivity extends Activity {
         setContentView(R.layout.activity_update_status);
 
         Log.d("IMEI: ", LoginActivity.imei);
+
+        networkConnection = isNetworkAvailable();
 
         //Initialize objects
         mStatusText = (EditText) findViewById(R.id.statusTextBox);
@@ -275,7 +281,11 @@ public class UpdateStatusActivity extends Activity {
                                                      //String hsp = currentUser.get("Hospital").toString();
                                                      System.out.println(hspOb);
                                                      // Building Parameters
-                                                     new CreateNewProduct().execute();
+                                                     if(networkConnection == true){
+                                                         new CreateNewProduct().execute();
+                                                     } else {
+                                                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline VALUES('" + mid + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
+                                                     }
 
                                                  }
                                              }
@@ -357,90 +367,6 @@ public class UpdateStatusActivity extends Activity {
                 // Handle cancel
             }
         }
-    }
-
-    private void runQuery() {
-        /*ParseQuery<ParseObject> query = ParseQuery.getQuery("Series");
-        query.whereEqualTo("UUID", qrToken.getText());
-        query.whereEqualTo("Usado", true);
-        query.getFirstInBackground(new GetCallback<ParseObject>() {
-            public void done(ParseObject object, ParseException e) {
-                if (object == null) {
-                    Log.d("error", "Aparato sin alta.");
-                    AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                    builder.setMessage("Este aparato no esta dado de alta");
-                    builder.setTitle("Vuelve a intentar");
-                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int which) {
-                            //Close the dialog
-                            dialogInterface.dismiss();
-                        }
-                    });
-
-                    qrId.setText("");
-
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
-                } else {
-                    String hsp = hspOb;
-                    Log.d("id", "Retrieved the object.");
-                    String mod = object.getString("Modelo");
-                    String status = object.getString("Serie");
-                    String status2 = object.getString("Hospital");
-                    System.out.println("Aparato: " + mod + status);
-                    System.out.println("Hospital: " + status2);
-                    aparato = mod + status;
-
-                    if (!aparato.equals("nullnull")) {
-                        qrId.setText(aparato);
-                    } else {
-                        qrId.setText("");
-                        //There was an error
-                        AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                        builder.setMessage("Este aparato no esta dado de alta");
-                        builder.setTitle("Vuelve a intentar");
-                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int which) {
-                                //Close the dialog
-                                dialogInterface.dismiss();
-                            }
-                        });
-
-                        AlertDialog dialog = builder.create();
-                        dialog.show();
-                    }
-
-                    if (hsp.equals(status2)) {
-                        qrHsp.setText(status2);
-                    } else {
-                        qrHsp.setText("");
-                        qrId.setText("");
-                        //There was an error
-                        AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                        builder.setMessage("Este aparato no corresponde a este hospital");
-                        builder.setTitle("Vuelve a intentar");
-                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int which) {
-                                //Close the dialog
-                                dialogInterface.dismiss();
-                            }
-                        });
-
-                        AlertDialog dialog = builder.create();
-                        dialog.show();
-                    }
-
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e1) {
-                        e1.printStackTrace();
-                    }
-                }
-            }
-        });*/
     }
 
     class CreateNewProduct extends AsyncTask<String, String, String> {
@@ -660,6 +586,23 @@ public class UpdateStatusActivity extends Activity {
                 qrId.setText("");
             }
         }
+    }
+
+    private boolean isNetworkAvailable () {
+        boolean haveConnectedWifi = false;
+        boolean haveConnectedMobile = false;
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo[] netInfo = cm.getAllNetworkInfo();
+        for (NetworkInfo ni : netInfo) {
+            if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+                if (ni.isConnected())
+                    haveConnectedWifi = true;
+            if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
+                if (ni.isConnected())
+                    haveConnectedMobile = true;
+        }
+        return haveConnectedWifi || haveConnectedMobile;
     }
 
     @Override

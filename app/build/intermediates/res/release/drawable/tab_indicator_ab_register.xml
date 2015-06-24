@@ -35,4 +35,4 @@
     <item android:state_focused="true" android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/tab_unselected_pressed_register" />
     <item android:state_focused="true" android:state_selected="true"  android:state_pressed="true" android:drawable="@drawable/tab_selected_pressed_register" />
 </selector>
-<!-- From: file:/E:/Register/app/src/main/res/drawable/tab_indicator_ab_register.xml -->
+<!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/drawable/tab_indicator_ab_register.xml -->

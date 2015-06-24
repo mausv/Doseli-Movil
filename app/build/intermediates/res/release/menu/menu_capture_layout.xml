@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/E:/Register/app/src/main/res/menu/menu_capture_layout.xml -->
+<!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/menu/menu_capture_layout.xml -->
