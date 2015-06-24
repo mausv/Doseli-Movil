@@ -8,12 +8,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Menu;
@@ -33,7 +35,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.lang.reflect.Array;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,6 +74,8 @@ public class LoginActivity extends Activity {
     protected double fixedLongTop;
     protected double fixedLatLow;
     protected double fixedLongLow;
+
+    public static SQLiteDatabase offlineDb;
 
 
     private ArrayList<Category> groupsList;
@@ -136,7 +144,8 @@ public class LoginActivity extends Activity {
 
         Log.d("IMEI: ", imei);
 
-
+        offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline(token VARCHAR, state VARCHAR, comment VARCHAR, users_id VARCHAR, user_name VARCHAR, lowBattery VARCHAR, changeBattery VARCHAR, lowLiquid VARCHAR, changeLiquid VARCHAR, physicalDamage VARCHAR, physicalRepair VARCHAR, hospitals_id VARCHAR, hospital_name VARCHAR);");
 
         groupsList = new ArrayList<>();
         new GetGroups().execute();

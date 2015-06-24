@@ -380,6 +380,7 @@ public class HandsetRegister extends Activity {
             params.add(new BasicNameValuePair("token", uuid));
             params.add(new BasicNameValuePair("model", TAG_MODEL));
             params.add(new BasicNameValuePair("serial_number", TAG_SERIAL_NUMBER));
+            params.add(new BasicNameValuePair("user", LoginActivity.userId));
 
             // getting JSON Object
             // Note that create product url accepts POST method
