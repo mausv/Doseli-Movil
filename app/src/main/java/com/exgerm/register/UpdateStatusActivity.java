@@ -291,7 +291,7 @@ public class UpdateStatusActivity extends Activity {
                                                      if(networkConnection == true){
                                                          new CreateNewProduct().execute();
                                                      } else if(networkConnection == false){
-                                                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline VALUES('" + mid + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
+                                                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline VALUES('" + token + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
                                                          AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                                                          builder.setTitle("Fuera de línea");
                                                          builder.setMessage("Guardado en pendientes para mandar despues");
@@ -313,32 +313,15 @@ public class UpdateStatusActivity extends Activity {
         );
 
         mQrButton.setOnClickListener(new View.OnClickListener() {
-                                         @Override
-                                         public void onClick(View v) {
-                                            if(networkConnection == true) {
-                                                IntentIntegrator integrator = new IntentIntegrator(UpdateStatusActivity.this);
-                                                integrator.setCaptureLayout(R.layout.activity_capture_layout);
-                                                integrator.setPrompt("Escanea un dosificador");
-                                                integrator.initiateScan();
-                                            } else if (networkConnection == false){
-                                                qrId.setText("Fuera de linea");
-                                                AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                                                builder.setMessage("No hay internet, por lo tanto se agregara el reporte a pendientes");
-                                                builder.setTitle("Fuera de linea");
-                                                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialogInterface, int which) {
-                                                        //Close the dialog
-                                                        dialogInterface.dismiss();
-                                                    }
-                                                });
+             @Override
+             public void onClick(View v) {
+                    IntentIntegrator integrator = new IntentIntegrator(UpdateStatusActivity.this);
+                    integrator.setCaptureLayout(R.layout.activity_capture_layout);
+                    integrator.setPrompt("Escanea un dosificador");
+                    integrator.initiateScan();
 
-                                                AlertDialog dialog = builder.create();
-                                                dialog.show();
-                                            }
-
-                                         }
-                                     }
+             }
+         }
 
         );
     }
@@ -393,7 +376,16 @@ public class UpdateStatusActivity extends Activity {
                 qrToken.setText("" + forId);
                 token = "" + forId;
                 System.out.println(token);
-                new GetProductDetails().execute();
+
+                if(networkConnection == true) {
+
+                    new GetProductDetails().execute();
+
+                } else if (networkConnection == false) {
+
+                    qrId.setText("Fuera de línea");
+
+                }
                 //runQuery();
                 //qrResult.setText("" + forAid2);
 

@@ -11,12 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
@@ -31,17 +25,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -155,17 +140,15 @@
               <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.37573963">
-                      <caret line="248" column="79" selection-start-line="248" selection-start-column="79" selection-end-line="248" selection-end-column="79" />
+                    <state vertical-scroll-proportion="1.0059172">
+                      <caret line="385" column="51" selection-start-line="385" selection-start-column="51" selection-end-line="385" selection-end-column="51" />
                       <folding>
-                        <element signature="e#5880#15058#0" expanded="true" />
-                        <element signature="e#14183#14691#0" expanded="true" />
-                        <element signature="e#14690#14691#0" expanded="true" />
-                        <element signature="e#15057#15058#0" expanded="true" />
-                        <element signature="e#15109#17103#0" expanded="true" />
-                        <element signature="e#16340#16821#0" expanded="true" />
-                        <element signature="e#16820#16821#0" expanded="true" />
-                        <element signature="e#17102#17103#0" expanded="true" />
+                        <element signature="e#5880#15060#0" expanded="true" />
+                        <element signature="e#14185#14693#0" expanded="true" />
+                        <element signature="e#14692#14693#0" expanded="true" />
+                        <element signature="e#15059#15060#0" expanded="true" />
+                        <element signature="e#15111#15529#0" expanded="true" />
+                        <element signature="e#15528#15529#0" expanded="true" />
                         <element signature="class#GetProductDetails#0;class#UpdateStatusActivity#0" expanded="false" />
                       </folding>
                     </state>
@@ -203,15 +186,15 @@
           <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.2957265">
-                  <caret line="224" column="81" selection-start-line="224" selection-start-column="81" selection-end-line="224" selection-end-column="81" />
+                <state vertical-scroll-proportion="0.36068377">
+                  <caret line="293" column="144" selection-start-line="293" selection-start-column="144" selection-end-line="293" selection-end-column="144" />
                   <folding>
-                    <element signature="e#5880#15058#0" expanded="true" />
-                    <element signature="e#14183#14691#0" expanded="true" />
-                    <element signature="e#14690#14691#0" expanded="true" />
-                    <element signature="e#15057#15058#0" expanded="true" />
-                    <element signature="e#15109#17103#0" expanded="true" />
-                    <element signature="e#17102#17103#0" expanded="true" />
+                    <element signature="e#5880#15060#0" expanded="true" />
+                    <element signature="e#14185#14693#0" expanded="true" />
+                    <element signature="e#14692#14693#0" expanded="true" />
+                    <element signature="e#15059#15060#0" expanded="true" />
+                    <element signature="e#15111#15529#0" expanded="true" />
+                    <element signature="e#15528#15529#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -1767,7 +1750,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="6206000600000001015F19A80B01400?" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ZX1D926748" />
     <property name="android.project.structure.last.selected" value="Project" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/key/Key.jks" />
@@ -2030,7 +2013,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435186754537</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added check for internet connection">
+      <created>1435353158658</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1435353158658</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2094,11 +2083,12 @@
     <MESSAGE value="Fixed visual version" />
     <MESSAGE value="Fixed GeoBox crashing" />
     <MESSAGE value="Added offline to SQLite Database. Missing: Check for internet connection and sending only if no internet connection is available" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added offline to SQLite Database. Missing: Check for internet connection and sending only if no internet connection is available" />
+    <MESSAGE value="Added check for internet connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added check for internet connection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2150,12 +2140,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
           <folding>
-            <element signature="e#5880#15058#0" expanded="true" />
-            <element signature="e#14183#14691#0" expanded="true" />
-            <element signature="e#14690#14691#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15109#17103#0" expanded="true" />
-            <element signature="e#17102#17103#0" expanded="true" />
+            <element signature="e#5880#15060#0" expanded="true" />
+            <element signature="e#14185#14693#0" expanded="true" />
+            <element signature="e#14692#14693#0" expanded="true" />
+            <element signature="e#15059#15060#0" expanded="true" />
+            <element signature="e#15111#15529#0" expanded="true" />
+            <element signature="e#15528#15529#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2207,12 +2197,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
           <folding>
-            <element signature="e#5880#15058#0" expanded="true" />
-            <element signature="e#14183#14691#0" expanded="true" />
-            <element signature="e#14690#14691#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15109#17103#0" expanded="true" />
-            <element signature="e#17102#17103#0" expanded="true" />
+            <element signature="e#5880#15060#0" expanded="true" />
+            <element signature="e#14185#14693#0" expanded="true" />
+            <element signature="e#14692#14693#0" expanded="true" />
+            <element signature="e#15059#15060#0" expanded="true" />
+            <element signature="e#15111#15529#0" expanded="true" />
+            <element signature="e#15528#15529#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2511,15 +2501,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2957265">
-          <caret line="224" column="81" selection-start-line="224" selection-start-column="81" selection-end-line="224" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.36068377">
+          <caret line="293" column="144" selection-start-line="293" selection-start-column="144" selection-end-line="293" selection-end-column="144" />
           <folding>
-            <element signature="e#5880#15058#0" expanded="true" />
-            <element signature="e#14183#14691#0" expanded="true" />
-            <element signature="e#14690#14691#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15109#17103#0" expanded="true" />
-            <element signature="e#17102#17103#0" expanded="true" />
+            <element signature="e#5880#15060#0" expanded="true" />
+            <element signature="e#14185#14693#0" expanded="true" />
+            <element signature="e#14692#14693#0" expanded="true" />
+            <element signature="e#15059#15060#0" expanded="true" />
+            <element signature="e#15111#15529#0" expanded="true" />
+            <element signature="e#15528#15529#0" expanded="true" />
           </folding>
         </state>
       </provider>
