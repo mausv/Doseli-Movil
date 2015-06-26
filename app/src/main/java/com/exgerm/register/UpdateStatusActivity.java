@@ -89,7 +89,7 @@ public class UpdateStatusActivity extends Activity {
     public String token;
     public Boolean uuidExists = false;
 
-    public Boolean networkConnection;
+    public Boolean networkConnection = false;
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
@@ -107,7 +107,13 @@ public class UpdateStatusActivity extends Activity {
 
         Log.d("IMEI: ", LoginActivity.imei);
 
-        networkConnection = isNetworkAvailable();
+        if(isOnline() == false){
+            Log.i("Internet status: ", "Not Available");
+            networkConnection = false;
+        } else {
+            Log.i("Internet status: ", "Available");
+            networkConnection = true;
+        }
 
         //Initialize objects
         mStatusText = (EditText) findViewById(R.id.statusTextBox);
@@ -199,7 +205,8 @@ public class UpdateStatusActivity extends Activity {
                                                  String fecha = fechaAct.toString();*/
 
 
-                                                 if (id.isEmpty()) {
+
+                                                 if (id.isEmpty() && networkConnection == true) {
                                                      //There was an error
                                                      AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                                                      builder.setMessage("Debes escanear un aparato primero");
@@ -283,8 +290,20 @@ public class UpdateStatusActivity extends Activity {
                                                      // Building Parameters
                                                      if(networkConnection == true){
                                                          new CreateNewProduct().execute();
-                                                     } else {
+                                                     } else if(networkConnection == false){
                                                          LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline VALUES('" + mid + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
+                                                         AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
+                                                         builder.setTitle("Fuera de línea");
+                                                         builder.setMessage("Guardado en pendientes para mandar despues");
+                                                         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                             @Override
+                                                             public void onClick(DialogInterface dialog, int which) {
+                                                                 dialog.dismiss();
+                                                                 finish();
+                                                             }
+                                                         });
+                                                         AlertDialog dialog = builder.create();
+                                                         dialog.show();
                                                      }
 
                                                  }
@@ -296,11 +315,27 @@ public class UpdateStatusActivity extends Activity {
         mQrButton.setOnClickListener(new View.OnClickListener() {
                                          @Override
                                          public void onClick(View v) {
+                                            if(networkConnection == true) {
+                                                IntentIntegrator integrator = new IntentIntegrator(UpdateStatusActivity.this);
+                                                integrator.setCaptureLayout(R.layout.activity_capture_layout);
+                                                integrator.setPrompt("Escanea un dosificador");
+                                                integrator.initiateScan();
+                                            } else if (networkConnection == false){
+                                                qrId.setText("Fuera de linea");
+                                                AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
+                                                builder.setMessage("No hay internet, por lo tanto se agregara el reporte a pendientes");
+                                                builder.setTitle("Fuera de linea");
+                                                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialogInterface, int which) {
+                                                        //Close the dialog
+                                                        dialogInterface.dismiss();
+                                                    }
+                                                });
 
-                                             IntentIntegrator integrator = new IntentIntegrator(UpdateStatusActivity.this);
-                                             integrator.setCaptureLayout(R.layout.activity_capture_layout);
-                                             integrator.setPrompt("Escanea un dosificador");
-                                             integrator.initiateScan();
+                                                AlertDialog dialog = builder.create();
+                                                dialog.show();
+                                            }
 
                                          }
                                      }
@@ -588,21 +623,12 @@ public class UpdateStatusActivity extends Activity {
         }
     }
 
-    private boolean isNetworkAvailable () {
-        boolean haveConnectedWifi = false;
-        boolean haveConnectedMobile = false;
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo[] netInfo = cm.getAllNetworkInfo();
-        for (NetworkInfo ni : netInfo) {
-            if (ni.getTypeName().equalsIgnoreCase("WIFI"))
-                if (ni.isConnected())
-                    haveConnectedWifi = true;
-            if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
-                if (ni.isConnected())
-                    haveConnectedMobile = true;
-        }
-        return haveConnectedWifi || haveConnectedMobile;
+        return cm.getActiveNetworkInfo() != null &&
+                cm.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
     @Override
