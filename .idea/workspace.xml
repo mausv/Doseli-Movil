@@ -12,13 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
@@ -143,12 +136,12 @@
                     <state vertical-scroll-proportion="1.0059172">
                       <caret line="385" column="51" selection-start-line="385" selection-start-column="51" selection-end-line="385" selection-end-column="51" />
                       <folding>
-                        <element signature="e#5880#15060#0" expanded="true" />
-                        <element signature="e#14185#14693#0" expanded="true" />
-                        <element signature="e#14692#14693#0" expanded="true" />
-                        <element signature="e#15059#15060#0" expanded="true" />
-                        <element signature="e#15111#15529#0" expanded="true" />
-                        <element signature="e#15528#15529#0" expanded="true" />
+                        <element signature="e#5880#15031#0" expanded="true" />
+                        <element signature="e#14156#14664#0" expanded="true" />
+                        <element signature="e#14663#14664#0" expanded="true" />
+                        <element signature="e#15030#15031#0" expanded="true" />
+                        <element signature="e#15082#15500#0" expanded="true" />
+                        <element signature="e#15499#15500#0" expanded="true" />
                         <element signature="class#GetProductDetails#0;class#UpdateStatusActivity#0" expanded="false" />
                       </folding>
                     </state>
@@ -186,15 +179,15 @@
           <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36068377">
-                  <caret line="293" column="144" selection-start-line="293" selection-start-column="144" selection-end-line="293" selection-end-column="144" />
+                <state vertical-scroll-proportion="0.33162394">
+                  <caret line="208" column="65" selection-start-line="208" selection-start-column="65" selection-end-line="208" selection-end-column="65" />
                   <folding>
-                    <element signature="e#5880#15060#0" expanded="true" />
-                    <element signature="e#14185#14693#0" expanded="true" />
-                    <element signature="e#14692#14693#0" expanded="true" />
-                    <element signature="e#15059#15060#0" expanded="true" />
-                    <element signature="e#15111#15529#0" expanded="true" />
-                    <element signature="e#15528#15529#0" expanded="true" />
+                    <element signature="e#5880#15031#0" expanded="true" />
+                    <element signature="e#14156#14664#0" expanded="true" />
+                    <element signature="e#14663#14664#0" expanded="true" />
+                    <element signature="e#15030#15031#0" expanded="true" />
+                    <element signature="e#15082#15500#0" expanded="true" />
+                    <element signature="e#15499#15500#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -2019,7 +2012,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435353158658</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed token missing SQLite">
+      <created>1435356264263</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1435356264263</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2084,7 +2083,8 @@
     <MESSAGE value="Fixed GeoBox crashing" />
     <MESSAGE value="Added offline to SQLite Database. Missing: Check for internet connection and sending only if no internet connection is available" />
     <MESSAGE value="Added check for internet connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added check for internet connection" />
+    <MESSAGE value="Fixed token missing SQLite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed token missing SQLite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2140,12 +2140,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
           <folding>
-            <element signature="e#5880#15060#0" expanded="true" />
-            <element signature="e#14185#14693#0" expanded="true" />
-            <element signature="e#14692#14693#0" expanded="true" />
-            <element signature="e#15059#15060#0" expanded="true" />
-            <element signature="e#15111#15529#0" expanded="true" />
-            <element signature="e#15528#15529#0" expanded="true" />
+            <element signature="e#5880#15031#0" expanded="true" />
+            <element signature="e#14156#14664#0" expanded="true" />
+            <element signature="e#14663#14664#0" expanded="true" />
+            <element signature="e#15030#15031#0" expanded="true" />
+            <element signature="e#15082#15500#0" expanded="true" />
+            <element signature="e#15499#15500#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2197,12 +2197,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
           <folding>
-            <element signature="e#5880#15060#0" expanded="true" />
-            <element signature="e#14185#14693#0" expanded="true" />
-            <element signature="e#14692#14693#0" expanded="true" />
-            <element signature="e#15059#15060#0" expanded="true" />
-            <element signature="e#15111#15529#0" expanded="true" />
-            <element signature="e#15528#15529#0" expanded="true" />
+            <element signature="e#5880#15031#0" expanded="true" />
+            <element signature="e#14156#14664#0" expanded="true" />
+            <element signature="e#14663#14664#0" expanded="true" />
+            <element signature="e#15030#15031#0" expanded="true" />
+            <element signature="e#15082#15500#0" expanded="true" />
+            <element signature="e#15499#15500#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2501,15 +2501,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36068377">
-          <caret line="293" column="144" selection-start-line="293" selection-start-column="144" selection-end-line="293" selection-end-column="144" />
+        <state vertical-scroll-proportion="0.33162394">
+          <caret line="208" column="65" selection-start-line="208" selection-start-column="65" selection-end-line="208" selection-end-column="65" />
           <folding>
-            <element signature="e#5880#15060#0" expanded="true" />
-            <element signature="e#14185#14693#0" expanded="true" />
-            <element signature="e#14692#14693#0" expanded="true" />
-            <element signature="e#15059#15060#0" expanded="true" />
-            <element signature="e#15111#15529#0" expanded="true" />
-            <element signature="e#15528#15529#0" expanded="true" />
+            <element signature="e#5880#15031#0" expanded="true" />
+            <element signature="e#14156#14664#0" expanded="true" />
+            <element signature="e#14663#14664#0" expanded="true" />
+            <element signature="e#15030#15031#0" expanded="true" />
+            <element signature="e#15082#15500#0" expanded="true" />
+            <element signature="e#15499#15500#0" expanded="true" />
           </folding>
         </state>
       </provider>

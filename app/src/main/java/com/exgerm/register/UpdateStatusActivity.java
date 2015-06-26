@@ -206,7 +206,7 @@ public class UpdateStatusActivity extends Activity {
 
 
 
-                                                 if (id.isEmpty() && networkConnection == true) {
+                                                 if (id.isEmpty()) {
                                                      //There was an error
                                                      AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                                                      builder.setMessage("Debes escanear un aparato primero");
