@@ -262,6 +262,7 @@
     <string name="error2">Batería Baja</string>
     <string name="error3">Falta Liquido</string>
     <string name="logout_title">Cerrar Sesión</string>
+    <string name="pending">Enviar Pendientes</string>
     <string name="resumen">Resumen</string>
     <string name="send">Enviar Reporte</string>
     <string name="solucion1">Reparación</string>

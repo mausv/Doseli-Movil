@@ -2,6 +2,7 @@ package com.exgerm.register;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -63,6 +64,8 @@ public class HomepageActivity extends ListActivity {
     //JSON Parser
     JSONParser jsonParser = new JSONParser();
 
+    public List<PendingReport> pendingArray;
+
     private String reportsIdentifier = "reports";
     private String reportsArrayIdentifier = "report";
 
@@ -75,9 +78,6 @@ public class HomepageActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
         mTitle = (TextView) findViewById(R.id.title);
-        filterCat = (Spinner) findViewById(R.id.filterCat);
-        filterDate = (Spinner) findViewById(R.id.filterDate);
-        filterBtn = (Button) findViewById(R.id.filterBtn);
 
         hspOb = LoginActivity.hspName;
 
@@ -92,7 +92,7 @@ public class HomepageActivity extends ListActivity {
         new GetReports().execute();
 
 
-        String[] modCat = new String [7];
+        /*String[] modCat = new String [7];
         modCat[0] = "Sin Filtro";
         modCat[1] = "Daño Físico";
         modCat[2] = "Batería Baja";
@@ -169,7 +169,7 @@ public class HomepageActivity extends ListActivity {
 
                  System.out.println("Dif: " + Days.daysBetween(dob2.withTimeAtStartOfDay(),str2.withTimeAtStartOfDay()).getDays());
 
-                 /*ParseQuery<ParseObject> query = new ParseQuery<>(hspOb);
+                 *//*ParseQuery<ParseObject> query = new ParseQuery<>(hspOb);
                  query.orderByDescending("createdAt");
                  query.whereGreaterThanOrEqualTo("createdAt", dob3);
                  query.whereLessThanOrEqualTo("createdAt", str3);
@@ -189,7 +189,7 @@ public class HomepageActivity extends ListActivity {
                              Toast.makeText(HomepageActivity.this, "Hubo un error en la conexión, vuelve a ingresar.", Toast.LENGTH_LONG).show();
                          }
                      }
-                 });*/
+                 });*//*
 
              }
 
@@ -204,7 +204,7 @@ public class HomepageActivity extends ListActivity {
                     @Override
                     public void onClick(View v) {
 
-                        /*ParseQuery<ParseObject> query = new ParseQuery<>(hspOb);
+                        *//*ParseQuery<ParseObject> query = new ParseQuery<>(hspOb);
                         query.orderByDescending("createdAt");
                         if(!(selCat == "Sin Filtro")){
                             query.whereContains(selCat, "X");
@@ -275,9 +275,9 @@ public class HomepageActivity extends ListActivity {
                                     }
                                 }
                             });
-                        }*/
+                        }*//*
                     }
-                });
+                });*/
 
     }
 
@@ -327,7 +327,10 @@ public class HomepageActivity extends ListActivity {
                 break;
             case R.id.send_pending:
                 //Send pending from SQLite
-                //CODE
+                pendingArray = getAll();
+                for(int i = 0; i < pendingArray.size(); i++){
+                    Log.i("0: ", pendingArray.get(i).getToken());
+                }
 
                 break;
         }
@@ -383,6 +386,63 @@ public class HomepageActivity extends ListActivity {
                 adapter.addAll(latestReports);
             }
 
+        }
+    }
+
+    public class PendingReport {
+        private int id;
+        private String token;
+        private String state;
+        private String device_comment;
+        private String users_id;
+        private String user_name;
+        private String lowBattery;
+        private String changeBattery;
+        private String lowLiquid;
+        private String changeLiquid;
+        private String physicalDamage;
+        private String physicalRepair;
+        private String hospitals_id;
+        private String hospital_name;
+
+        public void setId (int id){
+            this.id = id;
+        }
+
+        public void setToken (String token) {
+            this.token = token;
+        }
+
+        public int getId () {
+            return this.id;
+        }
+
+        public String getToken() {
+            return this.token;
+        }
+    }
+
+    public List<PendingReport> getAll() {
+        List<PendingReport> pendingReports = new ArrayList<PendingReport>();
+        PendingReport member = null;
+        Cursor c = null;
+        try {
+            c = LoginActivity.offlineDb.rawQuery("Select * from DoseliOffline", null);
+            if (c.moveToFirst()) {
+                do {
+                    member = new PendingReport();
+                    member.setId(c.getInt(c.getColumnIndex("hospitals_id")));
+                    member.setToken(c.getString(c.getColumnIndex("token")));
+                    pendingReports.add(member);
+                } while (c.moveToNext());
+            }
+            Log.i("PReports: ", pendingReports.toString());
+            return pendingReports;
+        }
+        finally {
+            if (c != null) {
+                c.close();
+            }
         }
     }
 

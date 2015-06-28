@@ -37,12 +37,12 @@ public final class R {
 		public static final int zxing_decode_failed = 0x7f0e000b;
 		public static final int zxing_decode_succeeded = 0x7f0e000c;
 		public static final int zxing_format_text_view = 0x7f0e004b;
-		public static final int zxing_help_contents = 0x7f0e009c;
-		public static final int zxing_image_view = 0x7f0e009b;
+		public static final int zxing_help_contents = 0x7f0e0099;
+		public static final int zxing_image_view = 0x7f0e0098;
 		public static final int zxing_launch_product_query = 0x7f0e000d;
-		public static final int zxing_menu_encode = 0x7f0e00a5;
-		public static final int zxing_menu_help = 0x7f0e00a3;
-		public static final int zxing_menu_share = 0x7f0e00a4;
+		public static final int zxing_menu_encode = 0x7f0e00a3;
+		public static final int zxing_menu_help = 0x7f0e00a1;
+		public static final int zxing_menu_share = 0x7f0e00a2;
 		public static final int zxing_meta_text_view = 0x7f0e004f;
 		public static final int zxing_meta_text_view_label = 0x7f0e004e;
 		public static final int zxing_preview_view = 0x7f0e0047;
