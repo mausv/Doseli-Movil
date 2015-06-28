@@ -11,6 +11,7 @@
     <string name="update_location">Posicionar Aparato</string>
     <string name="logout_title">Cerrar Sesión</string>
     <string name="title_activity_update_status">Reporte de Aparatos</string>
+    <string name="pending">Enviar Pendientes</string>
     <string name="title_activity_status_detail_view">Aparato</string>
     <string name="url">URL</string>
     <string name="aid">ID</string>

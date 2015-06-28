@@ -325,6 +325,11 @@ public class HomepageActivity extends ListActivity {
                 startActivity(takeUserToLogin);
 
                 break;
+            case R.id.send_pending:
+                //Send pending from SQLite
+                //CODE
+
+                break;
         }
 
         //noinspection SimplifiableIfStatement
