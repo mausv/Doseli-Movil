@@ -33,6 +33,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -291,6 +292,7 @@ public class UpdateStatusActivity extends Activity {
                                                      if(networkConnection == true){
                                                          new CreateNewProduct().execute();
                                                      } else if(networkConnection == false){
+                                                         long size = new File(LoginActivity.offlineDb.getPath()).length();
                                                          LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline VALUES('" + token + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
                                                          AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                                                          builder.setTitle("Fuera de línea");

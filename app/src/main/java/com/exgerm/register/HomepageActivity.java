@@ -72,6 +72,8 @@ public class HomepageActivity extends ListActivity {
     Report cat2 = new Report("Mauricio", "July","Good");
 
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
+    private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
+    private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -329,8 +331,10 @@ public class HomepageActivity extends ListActivity {
                 //Send pending from SQLite
                 pendingArray = getAll();
                 for(int i = 0; i < pendingArray.size(); i++){
-                    Log.i("0: ", pendingArray.get(i).getToken());
+                    Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
                 }
+
+                new SendPending().execute();
 
                 break;
         }
@@ -341,6 +345,127 @@ public class HomepageActivity extends ListActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public class SendPending extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+        }
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            for (int i = 0; i < pendingArray.size(); i++) {
+                int successGD;
+                String mid = "";
+
+                String tokenT = pendingArray.get(i).getToken();
+
+                // Check for success tag
+                try {
+                    // Building Parameters
+                    List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
+                    paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
+
+                    // getting product details by making HTTP request
+                    // Note that product details url will use GET request
+                    JSONObject json = jsonParser.makeHttpRequest(
+                            url_get_details, "POST", paramsGetDetails);
+
+                    // check your log for json response
+                    Log.d("Single Product Details", json.toString());
+
+                    // json success tag
+                    successGD = json.getInt("success");
+                    if (successGD == 1) {
+                        Log.i("Token status: ", "valid");
+                        // successfully received product details
+                        JSONArray productObj = json
+                                .getJSONArray("product"); // JSON Array
+
+                        // get first product object from JSON Array
+                        JSONObject product = productObj.getJSONObject(0);
+
+                        // product with this pid found
+                        String aparato = product.getString("model") + product.getString("serial_number");
+                        mid = product.getString("id");
+                        Log.d("Aparato: ", aparato);
+
+                        // Building Parameters
+                        List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
+                        Log.i("machines_id", mid);
+                        Log.i("state", pendingArray.get(i).getState());
+                        Log.i("comment", pendingArray.get(i).getDevice_comment());
+                        Log.i("users_id", pendingArray.get(i).getUsers_id());
+                        Log.i("user_name", pendingArray.get(i).getUser_name());
+                        Log.i("lowBattery", pendingArray.get(i).getLowBattery());
+                        Log.i("changeBattery", pendingArray.get(i).getChangeBattery());
+                        Log.i("lowLiquid", pendingArray.get(i).getLowLiquid());
+                        Log.i("changeLiquid", pendingArray.get(i).getChangeLiquid());
+                        Log.i("physicalDamage", pendingArray.get(i).getPhysicalDamage());
+                        Log.i("physicalRepair", pendingArray.get(i).getPhysicalRepair());
+                        Log.i("hospitals_id", pendingArray.get(i).getHospitals_id());
+                        Log.i("hospital_name", pendingArray.get(i).getHospital_name());
+                        paramsP.add(new BasicNameValuePair("machines_id", mid));
+                        paramsP.add(new BasicNameValuePair("state", pendingArray.get(i).getState()));
+                        paramsP.add(new BasicNameValuePair("comment", pendingArray.get(i).getDevice_comment()));
+                        paramsP.add(new BasicNameValuePair("users_id", pendingArray.get(i).getUsers_id()));
+                        paramsP.add(new BasicNameValuePair("user_name", pendingArray.get(i).getUser_name()));
+                        paramsP.add(new BasicNameValuePair("lowBattery", pendingArray.get(i).getLowBattery()));
+                        paramsP.add(new BasicNameValuePair("changeBattery", pendingArray.get(i).getChangeBattery()));
+                        paramsP.add(new BasicNameValuePair("lowLiquid", pendingArray.get(i).getLowLiquid()));
+                        paramsP.add(new BasicNameValuePair("changeLiquid", pendingArray.get(i).getChangeLiquid()));
+                        paramsP.add(new BasicNameValuePair("physicalDamage", pendingArray.get(i).getPhysicalDamage()));
+                        paramsP.add(new BasicNameValuePair("physicalRepair", pendingArray.get(i).getPhysicalRepair()));
+                        paramsP.add(new BasicNameValuePair("hospitals_id", pendingArray.get(i).getHospitals_id()));
+                        paramsP.add(new BasicNameValuePair("hospital_name", pendingArray.get(i).getHospital_name()));
+
+                        // getting JSON Object
+                        // Note that create product url accepts POST method
+                        JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_report,
+                                "POST", paramsP);
+
+                        // check log cat fro response
+                        Log.d("Create Response", jsonP.toString());
+
+                        // check for success tag
+                        try {
+                            int success = jsonP.getInt("success");
+
+                            if (success == 1) {
+                                // successfully created product
+                    /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
+                    startActivity(i);*/
+                                Log.i("Report status: ", "sent");
+
+                                // closing this screen
+                            } else {
+                                // failed to create product
+                                Log.i("Report status: ", "failed");
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+                    } else if (successGD == 0) {
+                        Log.i("Token status: ", "invalid");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return null;
+        }
+
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+        }
     }
 
     public class GetReports extends AsyncTask<Void, Void, Void> {
@@ -405,6 +530,78 @@ public class HomepageActivity extends ListActivity {
         private String hospitals_id;
         private String hospital_name;
 
+        public String getHospital_name() {
+            return hospital_name;
+        }
+
+        public void setHospital_name(String hospital_name) {
+            this.hospital_name = hospital_name;
+        }
+
+        public String getLowBattery() {
+            return lowBattery;
+        }
+
+        public void setLowBattery(String lowBattery) {
+            this.lowBattery = lowBattery;
+        }
+
+        public String getChangeBattery() {
+            return changeBattery;
+        }
+
+        public void setChangeBattery(String changeBattery) {
+            this.changeBattery = changeBattery;
+        }
+
+        public String getLowLiquid() {
+            return lowLiquid;
+        }
+
+        public void setLowLiquid(String lowLiquid) {
+            this.lowLiquid = lowLiquid;
+        }
+
+        public String getChangeLiquid() {
+            return changeLiquid;
+        }
+
+        public void setChangeLiquid(String changeLiquid) {
+            this.changeLiquid = changeLiquid;
+        }
+
+        public String getPhysicalDamage() {
+            return physicalDamage;
+        }
+
+        public void setPhysicalDamage(String physicalDamage) {
+            this.physicalDamage = physicalDamage;
+        }
+
+        public String getPhysicalRepair() {
+            return physicalRepair;
+        }
+
+        public void setPhysicalRepair(String physicalRepair) {
+            this.physicalRepair = physicalRepair;
+        }
+
+        public String getHospitals_id() {
+            return hospitals_id;
+        }
+
+        public void setHospitals_id(String hospitals_id) {
+            this.hospitals_id = hospitals_id;
+        }
+
+        public String getUser_name() {
+            return user_name;
+        }
+
+        public void setUser_name(String user_name) {
+            this.user_name = user_name;
+        }
+
         public void setId (int id){
             this.id = id;
         }
@@ -420,6 +617,30 @@ public class HomepageActivity extends ListActivity {
         public String getToken() {
             return this.token;
         }
+
+        public String getState() {
+            return state;
+        }
+
+        public void setState(String state) {
+            this.state = state;
+        }
+
+        public String getDevice_comment() {
+            return device_comment;
+        }
+
+        public void setDevice_comment(String device_comment) {
+            this.device_comment = device_comment;
+        }
+
+        public String getUsers_id() {
+            return users_id;
+        }
+
+        public void setUsers_id(String users_id) {
+            this.users_id = users_id;
+        }
     }
 
     public List<PendingReport> getAll() {
@@ -431,8 +652,19 @@ public class HomepageActivity extends ListActivity {
             if (c.moveToFirst()) {
                 do {
                     member = new PendingReport();
-                    member.setId(c.getInt(c.getColumnIndex("hospitals_id")));
                     member.setToken(c.getString(c.getColumnIndex("token")));
+                    member.setState(c.getString(c.getColumnIndex("state")));
+                    member.setDevice_comment(c.getString(c.getColumnIndex("device_comment")));
+                    member.setUsers_id(c.getString(c.getColumnIndex("users_id")));
+                    member.setUser_name(c.getString(c.getColumnIndex("user_name")));
+                    member.setLowBattery(c.getString(c.getColumnIndex("lowBattery")));
+                    member.setChangeBattery(c.getString(c.getColumnIndex("changeBattery")));
+                    member.setLowLiquid(c.getString(c.getColumnIndex("lowLiquid")));
+                    member.setChangeLiquid(c.getString(c.getColumnIndex("changeLiquid")));
+                    member.setPhysicalDamage(c.getString(c.getColumnIndex("physicalDamage")));
+                    member.setPhysicalRepair(c.getString(c.getColumnIndex("physicalRepair")));
+                    member.setHospitals_id(c.getString(c.getColumnIndex("hospitals_id")));
+                    member.setHospital_name(c.getString(c.getColumnIndex("hospital_name")));
                     pendingReports.add(member);
                 } while (c.moveToNext());
             }
