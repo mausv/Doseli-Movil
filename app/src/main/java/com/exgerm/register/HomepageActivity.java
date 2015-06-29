@@ -471,7 +471,7 @@ public class HomepageActivity extends ListActivity {
                     } else if (successGD == 0) {
                         Log.i("Token status: ", "invalid");
 
-                        LoginActivity.offlineDb.delete("DoseliOffline", "WHERE id = " + pendingArray.get(i).getId(), null);
+                        LoginActivity.offlineDb.delete("DoseliOffline", "id = " + pendingArray.get(i).getId(), null);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
