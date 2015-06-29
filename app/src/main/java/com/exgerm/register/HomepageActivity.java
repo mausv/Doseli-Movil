@@ -1,6 +1,8 @@
 package com.exgerm.register;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.AsyncTask;
@@ -69,7 +71,8 @@ public class HomepageActivity extends ListActivity {
     private String reportsIdentifier = "reports";
     private String reportsArrayIdentifier = "report";
 
-    Report cat2 = new Report("Mauricio", "July","Good");
+    //Progress Dialog
+    private ProgressDialog pDialog;
 
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
@@ -352,6 +355,11 @@ public class HomepageActivity extends ListActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            pDialog = new ProgressDialog(HomepageActivity.this);
+            pDialog.setMessage("Enviando pendientes...");
+            pDialog.setIndeterminate(false);
+            pDialog.setCancelable(true);
+            pDialog.show();
 
         }
 
@@ -458,6 +466,9 @@ public class HomepageActivity extends ListActivity {
                 }
 
             }
+
+            LoginActivity.offlineDb.delete("DoseliOffline", null, null);
+            LoginActivity.offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline(token VARCHAR, state VARCHAR, device_comment VARCHAR, users_id VARCHAR, user_name VARCHAR, lowBattery VARCHAR, changeBattery VARCHAR, lowLiquid VARCHAR, changeLiquid VARCHAR, physicalDamage VARCHAR, physicalRepair VARCHAR, hospitals_id VARCHAR, hospital_name VARCHAR);");
             return null;
         }
 
@@ -465,6 +476,7 @@ public class HomepageActivity extends ListActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+            pDialog.dismiss();
         }
     }
 
