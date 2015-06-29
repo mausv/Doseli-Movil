@@ -3,8 +3,11 @@ package com.exgerm.register;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -333,11 +336,26 @@ public class HomepageActivity extends ListActivity {
             case R.id.send_pending:
                 //Send pending from SQLite
                 pendingArray = getAll();
-                for(int i = 0; i < pendingArray.size(); i++){
+                /*for(int i = 0; i < pendingArray.size(); i++){
                     Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
-                }
+                }*/
 
-                new SendPending().execute();
+                if(isOnline() == true) {
+
+                    new SendPending().execute();
+
+                } else if(isOnline() == false){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+                    builder.setMessage("Necesitas conexion para mandar tus pendientes");
+                    builder.setTitle("Falta conexion");
+                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    builder.show();
+                }
 
                 break;
         }
@@ -471,6 +489,16 @@ public class HomepageActivity extends ListActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             pDialog.dismiss();
+            AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+            builder.setTitle("Listo");
+            builder.setMessage("Reportes pendientes enviados");
+            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            builder.show();
         }
     }
 
@@ -683,6 +711,14 @@ public class HomepageActivity extends ListActivity {
                 c.close();
             }
         }
+    }
+
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null &&
+                cm.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
     @Override
