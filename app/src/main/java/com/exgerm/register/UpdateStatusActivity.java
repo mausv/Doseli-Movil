@@ -293,7 +293,7 @@ public class UpdateStatusActivity extends Activity {
                                                          new CreateNewProduct().execute();
                                                      } else if(networkConnection == false){
                                                          long size = new File(LoginActivity.offlineDb.getPath()).length();
-                                                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline VALUES('" + token + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
+                                                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline (token, state, device_comment, users_id, user_name, lowBattery, changeBattery, lowLiquid, changeLiquid, physicalDamage, physicalRepair, hospitals_id, hospital_name) VALUES('" + token + "', '" + estado + "', '" + newStatus + "', '" + LoginActivity.userId + "', '" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', '" + s3 + "', '" + e1 + "', '" + s1 + "', '" + LoginActivity.hospitalSelectedId + "', '" + LoginActivity.hospitalSelected + "');");
                                                          AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                                                          builder.setTitle("Fuera de línea");
                                                          builder.setMessage("Guardado en pendientes para mandar despues");

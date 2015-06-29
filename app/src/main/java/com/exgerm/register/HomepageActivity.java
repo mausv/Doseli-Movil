@@ -403,19 +403,6 @@ public class HomepageActivity extends ListActivity {
 
                         // Building Parameters
                         List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
-                        Log.i("machines_id", mid);
-                        Log.i("state", pendingArray.get(i).getState());
-                        Log.i("comment", pendingArray.get(i).getDevice_comment());
-                        Log.i("users_id", pendingArray.get(i).getUsers_id());
-                        Log.i("user_name", pendingArray.get(i).getUser_name());
-                        Log.i("lowBattery", pendingArray.get(i).getLowBattery());
-                        Log.i("changeBattery", pendingArray.get(i).getChangeBattery());
-                        Log.i("lowLiquid", pendingArray.get(i).getLowLiquid());
-                        Log.i("changeLiquid", pendingArray.get(i).getChangeLiquid());
-                        Log.i("physicalDamage", pendingArray.get(i).getPhysicalDamage());
-                        Log.i("physicalRepair", pendingArray.get(i).getPhysicalRepair());
-                        Log.i("hospitals_id", pendingArray.get(i).getHospitals_id());
-                        Log.i("hospital_name", pendingArray.get(i).getHospital_name());
                         paramsP.add(new BasicNameValuePair("machines_id", mid));
                         paramsP.add(new BasicNameValuePair("state", pendingArray.get(i).getState()));
                         paramsP.add(new BasicNameValuePair("comment", pendingArray.get(i).getDevice_comment()));
@@ -453,6 +440,11 @@ public class HomepageActivity extends ListActivity {
                                 // failed to create product
                                 Log.i("Report status: ", "failed");
                             }
+
+                            Log.i("SId: ", String.valueOf(pendingArray.get(i).getId()));
+
+                            LoginActivity.offlineDb.delete("DoseliOffline", "id = " + String.valueOf(pendingArray.get(i).getId()), null);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -460,6 +452,8 @@ public class HomepageActivity extends ListActivity {
 
                     } else if (successGD == 0) {
                         Log.i("Token status: ", "invalid");
+
+                        LoginActivity.offlineDb.delete("DoseliOffline", "WHERE id = " + pendingArray.get(i).getId(), null);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -467,8 +461,8 @@ public class HomepageActivity extends ListActivity {
 
             }
 
-            LoginActivity.offlineDb.delete("DoseliOffline", null, null);
-            LoginActivity.offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline(token VARCHAR, state VARCHAR, device_comment VARCHAR, users_id VARCHAR, user_name VARCHAR, lowBattery VARCHAR, changeBattery VARCHAR, lowLiquid VARCHAR, changeLiquid VARCHAR, physicalDamage VARCHAR, physicalRepair VARCHAR, hospitals_id VARCHAR, hospital_name VARCHAR);");
+//            LoginActivity.offlineDb.delete("DoseliOffline", null, null);
+//            LoginActivity.offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline(id INTEGER PRIMARY KEY, token VARCHAR, state VARCHAR, device_comment VARCHAR, users_id VARCHAR, user_name VARCHAR, lowBattery VARCHAR, changeBattery VARCHAR, lowLiquid VARCHAR, changeLiquid VARCHAR, physicalDamage VARCHAR, physicalRepair VARCHAR, hospitals_id VARCHAR, hospital_name VARCHAR);");
             return null;
         }
 
@@ -664,6 +658,7 @@ public class HomepageActivity extends ListActivity {
             if (c.moveToFirst()) {
                 do {
                     member = new PendingReport();
+                    member.setId(c.getInt(c.getColumnIndex("id")));
                     member.setToken(c.getString(c.getColumnIndex("token")));
                     member.setState(c.getString(c.getColumnIndex("state")));
                     member.setDevice_comment(c.getString(c.getColumnIndex("device_comment")));
