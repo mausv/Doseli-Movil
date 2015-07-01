@@ -47,8 +47,7 @@ public class HandsetLocation extends Activity {
     protected Spinner hospitalSpinner;
     protected Spinner areaSpinner;
     protected Spinner locationSpinner;
-    protected Spinner roomSpinner;
-    protected EditText floor;
+    protected EditText ref;
     protected Button scan;
     protected TextView qrId;
     protected TextView qrResult;
@@ -95,7 +94,6 @@ public class HandsetLocation extends Activity {
 
     private ArrayList<Category> roomsList;
     private String roomCategoryIdentifier = "room";
-    private String roomSelectedId = "";
     private String roomSelectedIdentifier = "";
     private String roomSelected = "";
 
@@ -147,7 +145,7 @@ public class HandsetLocation extends Activity {
         hospitalSpinner = (Spinner) findViewById(R.id.hospital);
         areaSpinner = (Spinner) findViewById(R.id.area);
         locationSpinner = (Spinner) findViewById(R.id.location);
-        roomSpinner = (Spinner) findViewById(R.id.room);
+        ref = (EditText) findViewById(R.id.ref);
         scan = (Button) findViewById(R.id.scan);
         qrId = (TextView) findViewById(R.id.aparatoTV);
         qrResult = (TextView) findViewById(R.id.idQr);
@@ -169,15 +167,15 @@ public class HandsetLocation extends Activity {
                 switch (groupSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
+                        light = false;
                         hospitalSpinner.setAdapter(spinnerAdapterE);
                         areaSpinner.setAdapter(spinnerAdapterE);
                         areaSelectedId = "";
                         locationSpinner.setAdapter(spinnerAdapterE);
                         locationSelectedId = "";
-                        roomSpinner.setAdapter(spinnerAdapterE);
-                        roomSelectedId = "";
                         break;
                     default:
+                        light = true;
                         new GetHospitals().execute();
                 }
             }
@@ -200,15 +198,15 @@ public class HandsetLocation extends Activity {
                 switch (hospitalSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
+                        light = false;
                         areaSpinner.setAdapter(spinnerAdapterE);
                         areaSelectedId = "";
                         locationSpinner.setAdapter(spinnerAdapterE);
                         locationSelectedId = "";
-                        roomSpinner.setAdapter(spinnerAdapterE);
-                        roomSelectedId = "";
                         break;
                     default:
                         area = false;
+                        light = true;
                         new GetAreas().execute();
                 }
             }
@@ -227,10 +225,9 @@ public class HandsetLocation extends Activity {
                 switch (areaSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
+                        light = false;
                         locationSpinner.setAdapter(spinnerAdapterE);
                         locationSelectedId = "";
-                        roomSpinner.setAdapter(spinnerAdapterE);
-                        roomSelectedId = "";
                         break;
                     default:
                         int areaId = (int) areaSpinner.getSelectedItemId();
@@ -238,6 +235,7 @@ public class HandsetLocation extends Activity {
                         areaSelectedId = String.valueOf(cat.getId());
                         Log.d("Seleccionado: ", areaSelectedId);
                         area = true;
+                        light = true;
                         new GetLocations().execute();
                 }
             }
@@ -256,8 +254,7 @@ public class HandsetLocation extends Activity {
                 switch (locationSelected) {
                     case "Escoge":
                         Log.d("Case ", "nothing");
-                        roomSpinner.setAdapter(spinnerAdapterE);
-                        roomSelectedId = "";
+                        light = false;
                         break;
                     default:
                         int locationId = (int) locationSpinner.getSelectedItemId();
@@ -265,34 +262,7 @@ public class HandsetLocation extends Activity {
                         locationSelectedId = String.valueOf(cat.getId());
                         Log.d("Seleccionado: ", locationSelectedId);
                         location = true;
-                        new GetRooms().execute();
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-        roomSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                roomSelected = roomSpinner.getSelectedItem().toString();
-
-                switch (roomSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        roomSelectedId = "";
-                        break;
-                    default:
-                        int roomId = (int) roomSpinner.getSelectedItemId();
-                        Category cat = new Category(roomsList.get(roomId));
-                        roomSelectedId = String.valueOf(cat.getId());
-                        Log.d("Seleccionado: ", roomSelectedId);
-                        room = true;
-                        Log.d("Room id: ", roomSelectedId);
-                        Log.d("Room: ", roomSelected);
+                        light = true;
                 }
             }
 
@@ -315,8 +285,8 @@ public class HandsetLocation extends Activity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                light = true;
                 String gVal = groupSpinner.getSelectedItem().toString();
+                roomSelected = ref.getText().toString();
                 /*if(areaSpinner.getSelectedItem() == null){
                     areaVaul = "";
                     area = false;
@@ -377,7 +347,7 @@ public class HandsetLocation extends Activity {
                 } else {
                     Log.d("error", "Falta campos.");
                     AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
-                    builder.setMessage("Debes llenar por lo menos grupo y hospital para avanzar");
+                    builder.setMessage("Debes llenar todos los campos para poder actualizar los datos");
                     builder.setTitle("Revisa tus datos");
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
@@ -607,8 +577,6 @@ public class HandsetLocation extends Activity {
                 break;
             case "location": locationSpinner.setAdapter(spinnerAdapter);
                 break;
-            case "room": roomSpinner.setAdapter(spinnerAdapter);
-                break;
         }
     }
 
@@ -735,22 +703,14 @@ public class HandsetLocation extends Activity {
             params.add(new BasicNameValuePair("group_id", groupSelectedId));
             params.add(new BasicNameValuePair("hospital", hospitalSelected));
             params.add(new BasicNameValuePair("hospital_id", hospitalSelectedId));
-            if(!areaSelectedId.equals("")) {
-                Log.i("Added", "a");
-                params.add(new BasicNameValuePair("area", areaSelected));
-                params.add(new BasicNameValuePair("area_id", areaSelectedId));
-            }
+            params.add(new BasicNameValuePair("area", areaSelected));
+            params.add(new BasicNameValuePair("area_id", areaSelectedId));
+            params.add(new BasicNameValuePair("location", locationSelected));
+            params.add(new BasicNameValuePair("location_id", locationSelectedId));
 
-            if(!locationSelectedId.equals("")) {
-                Log.i("Added", "l");
-                params.add(new BasicNameValuePair("location", locationSelected));
-                params.add(new BasicNameValuePair("location_id", locationSelectedId));
-            }
-
-            if(!roomSelectedId.equals("")) {
+            if(!roomSelected.equals("")) {
                 Log.i("Added", "r");
                 params.add(new BasicNameValuePair("room", roomSelected));
-                params.add(new BasicNameValuePair("room_id", roomSelectedId));
             }
 
             // getting JSON Object
@@ -1042,72 +1002,6 @@ public class HandsetLocation extends Activity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             populateSpinner("location");
-        }
-    }
-
-    private class GetRooms extends AsyncTask<Void, Void, Void>{
-
-        @Override
-        protected Void doInBackground(Void... params) {
-            int success;
-            roomsList = new ArrayList<>();
-
-            try {
-
-                List<NameValuePair> paramsGetTargets = new ArrayList<>();
-                paramsGetTargets.add(new BasicNameValuePair(hospitalCategoryIdentifier, hospitalSelectedId));
-                paramsGetTargets.add(new BasicNameValuePair(areaCategoryIdentifier, areaSelectedId));
-                paramsGetTargets.add(new BasicNameValuePair(locationCategoryIdentifier, locationSelectedId));
-
-                JSONObject json = jsonParser.makeHttpRequest
-                        (url_get_rooms, "POST", paramsGetTargets);
-
-                Log.d ("Check rooms: ", json.toString());
-
-                success = json.getInt(TAG_SUCCESS);
-
-                if(success == 1){
-
-                    Log.d("Product: ", json.getJSONArray("rooms").toString());
-
-                    if (json != null) {
-                        try {
-                            JSONArray categories = json
-                                    .getJSONArray("rooms");
-                            int size = categories.length();
-
-                            roomsList.add(0, new Category(0,"Escoge"));
-
-                            for (int i = 0; i < size; i++) {
-                                JSONObject catObj = (JSONObject) categories.get(i);
-                                Category cat = new Category(catObj.getInt("id"),
-                                        catObj.getString("room"));
-                                roomsList.add(cat);
-                            }
-                            Log.d("Rooms: ", roomsList.toString());
-
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-
-                    } else {
-                        Log.e("JSON Data", "Didn't receive any data from server!");
-                    }
-
-                }
-
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-            populateSpinner("room");
         }
     }
 }

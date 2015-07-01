@@ -1431,12 +1431,12 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0e0006;
         public static final int qrButton=0x7f0e008e;
         public static final int radio=0x7f0e0033;
+        public static final int ref=0x7f0e005f;
         public static final int registerButton=0x7f0e0074;
         public static final int registerEmail=0x7f0e0077;
         public static final int registerPassword=0x7f0e0075;
         public static final int registerUsername=0x7f0e0076;
         public static final int rfc=0x7f0e0079;
-        public static final int room=0x7f0e0062;
         public static final int scan=0x7f0e0054;
         public static final int search_badge=0x7f0e003d;
         public static final int search_bar=0x7f0e003c;
@@ -1477,7 +1477,7 @@ containing a value of this type.
         public static final int textView5=0x7f0e005a;
         public static final int textView6=0x7f0e005c;
         public static final int textView7=0x7f0e007f;
-        public static final int textView8=0x7f0e005f;
+        public static final int textView8=0x7f0e0062;
         public static final int title=0x7f0e002f;
         public static final int token=0x7f0e0061;
         public static final int tvDetails=0x7f0e0092;

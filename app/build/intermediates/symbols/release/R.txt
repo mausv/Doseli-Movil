@@ -461,12 +461,12 @@ int id progress_circular 0x7f0e0005
 int id progress_horizontal 0x7f0e0006
 int id qrButton 0x7f0e008e
 int id radio 0x7f0e0033
+int id ref 0x7f0e005f
 int id registerButton 0x7f0e0074
 int id registerEmail 0x7f0e0077
 int id registerPassword 0x7f0e0075
 int id registerUsername 0x7f0e0076
 int id rfc 0x7f0e0079
-int id room 0x7f0e0062
 int id scan 0x7f0e0054
 int id search_badge 0x7f0e003d
 int id search_bar 0x7f0e003c
@@ -507,7 +507,7 @@ int id textView4 0x7f0e0058
 int id textView5 0x7f0e005a
 int id textView6 0x7f0e005c
 int id textView7 0x7f0e007f
-int id textView8 0x7f0e005f
+int id textView8 0x7f0e0062
 int id title 0x7f0e002f
 int id token 0x7f0e0061
 int id tvDetails 0x7f0e0092
