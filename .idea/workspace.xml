@@ -10,7 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
+    <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="Changed HandsetLocation items and functionality">
       <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\classes\debug\com\exgerm\register\HandsetLocation$7$1.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\classes\debug\com\exgerm\register\HandsetLocation$7$2.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\classes\debug\com\exgerm\register\HandsetLocation$7.class" afterPath="" />
@@ -333,10 +333,10 @@
                 <state vertical-scroll-proportion="0.0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding>
-                    <marker date="1435790988974" expanded="true" signature="197802:197819" placeholder="..." />
-                    <marker date="1435790988974" expanded="true" signature="197802:197837" placeholder="..." />
-                    <marker date="1435790988974" expanded="true" signature="197802:197850" placeholder="..." />
-                    <marker date="1435790988974" expanded="true" signature="197802:197865" placeholder="..." />
+                    <marker date="1435791057356" expanded="true" signature="198025:198042" placeholder="..." />
+                    <marker date="1435791057356" expanded="true" signature="198025:198060" placeholder="..." />
+                    <marker date="1435791057356" expanded="true" signature="198025:198073" placeholder="..." />
+                    <marker date="1435791057356" expanded="true" signature="198025:198088" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -2318,7 +2318,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435618188242</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Changed HandsetLocation items and functionality">
+      <created>1435791071860</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1435791071860</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2332,7 +2338,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-171" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2497,10 +2503,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1435790988974" expanded="true" signature="197802:197819" placeholder="..." />
-            <marker date="1435790988974" expanded="true" signature="197802:197837" placeholder="..." />
-            <marker date="1435790988974" expanded="true" signature="197802:197850" placeholder="..." />
-            <marker date="1435790988974" expanded="true" signature="197802:197865" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198042" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198060" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198073" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198088" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -2701,10 +2707,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1435790988974" expanded="true" signature="197802:197819" placeholder="..." />
-            <marker date="1435790988974" expanded="true" signature="197802:197837" placeholder="..." />
-            <marker date="1435790988974" expanded="true" signature="197802:197850" placeholder="..." />
-            <marker date="1435790988974" expanded="true" signature="197802:197865" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198042" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198060" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198073" placeholder="..." />
+            <marker date="1435791057356" expanded="true" signature="198025:198088" placeholder="..." />
           </folding>
         </state>
       </provider>
