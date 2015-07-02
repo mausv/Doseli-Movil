@@ -17,27 +17,10 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Delen met"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Delen met %s"</string>
-    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/values-nl/values.xml -->
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-nl/values.xml -->
     <eat-comment/>
     <string name="zxing_app_name">Barcode Scanner</string>
-    <string name="zxing_button_cancel">Annuleren</string>
     <string name="zxing_button_ok">OK</string>
-    <string name="zxing_contents_contact">Contactpersooninformatie</string>
-    <string name="zxing_contents_email">E-mailadres</string>
-    <string name="zxing_contents_location">Geografische coördinaten</string>
-    <string name="zxing_contents_phone">Telefoonnummer</string>
-    <string name="zxing_contents_sms">Sms-adres</string>
-    <string name="zxing_contents_text">Platte tekst</string>
-    <string name="zxing_menu_encode_mecard">MECARD gebruiken</string>
-    <string name="zxing_menu_encode_vcard">vCard gebruiken</string>
-    <string name="zxing_menu_help">Help</string>
-    <string name="zxing_menu_share">Delen</string>
     <string name="zxing_msg_camera_framework_bug">Sorry, er is een probleem met de Android-camera. Probeer je telefoon opnieuw op te starten.</string>
-    <string name="zxing_msg_default_format">Formaat</string>
-    <string name="zxing_msg_default_meta">Metadata</string>
     <string name="zxing_msg_default_status">Plaats een barcode binnen de rechthoek om deze te scannen.</string>
-    <string name="zxing_msg_default_time">Tijd</string>
-    <string name="zxing_msg_default_type">Type</string>
-    <string name="zxing_msg_encode_contents_failed">Kan geen barcode genereren op basis van de opgegeven gegevens.</string>
-    <string name="zxing_msg_unmount_usb">Sorry, de SD-kaart is niet toegankelijk.</string>
 </resources>

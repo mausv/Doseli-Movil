@@ -93,7 +93,7 @@ public class HandsetRegister extends Activity {
                                     @Override
                                     public void onClick(View v) {
                                         IntentIntegrator integrator = new IntentIntegrator(HandsetRegister.this);
-                                        integrator.setCaptureLayout(R.layout.activity_capture_layout);
+                                        integrator.setCaptureActivity(CaptureLayout.class);
                                         integrator.setPrompt("Escanea un dosificador");
                                         integrator.initiateScan();
                                     }

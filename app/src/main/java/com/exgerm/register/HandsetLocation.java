@@ -276,7 +276,7 @@ public class HandsetLocation extends Activity {
             @Override
             public void onClick(View v) {
                 IntentIntegrator integrator = new IntentIntegrator(HandsetLocation.this);
-                integrator.setCaptureLayout(R.layout.activity_capture_layout);
+                integrator.setCaptureActivity(CaptureLayout.class);
                 integrator.setPrompt("Escanea un dosificador");
                 integrator.initiateScan();
             }

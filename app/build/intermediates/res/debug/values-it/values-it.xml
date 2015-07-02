@@ -17,27 +17,10 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Ricerca vocale"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Condividi con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
-    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/values-it/values.xml -->
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-it/values.xml -->
     <eat-comment/>
     <string name="zxing_app_name">Barcode Scanner</string>
-    <string name="zxing_button_cancel">Annulla</string>
     <string name="zxing_button_ok">OK</string>
-    <string name="zxing_contents_contact">Info contatto</string>
-    <string name="zxing_contents_email">Indirizzo email</string>
-    <string name="zxing_contents_location">Coordinate geografiche</string>
-    <string name="zxing_contents_phone">Numero di telefono</string>
-    <string name="zxing_contents_sms">Numero SMS</string>
-    <string name="zxing_contents_text">Testo puro</string>
-    <string name="zxing_menu_encode_mecard">Usa MECARD</string>
-    <string name="zxing_menu_encode_vcard">Usa vCard</string>
-    <string name="zxing_menu_help">Aiuto</string>
-    <string name="zxing_menu_share">Condividi</string>
     <string name="zxing_msg_camera_framework_bug">Spiacenti, la fotocamera Android ha riscontrato un problema. Potrebbe essere necessario riavviare il dispositivo.</string>
-    <string name="zxing_msg_default_format">Formato</string>
-    <string name="zxing_msg_default_meta">Metadati</string>
     <string name="zxing_msg_default_status">Posiziona un codice a barre dentro il mirino rettangolare per la scansione.</string>
-    <string name="zxing_msg_default_time">Tempo</string>
-    <string name="zxing_msg_default_type">Tipo</string>
-    <string name="zxing_msg_encode_contents_failed">Impossibile codificare un codice a barre dai dati forniti.</string>
-    <string name="zxing_msg_unmount_usb">Spiacenti, la scheda SD non è accessibile.</string>
 </resources>

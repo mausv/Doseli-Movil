@@ -161,13 +161,13 @@
         android:text="Referencia"
         android:id="@+id/textView8"
         android:layout_below="@+id/textView6"
-        android:layout_alignParentBottom="false"
         android:gravity="center_vertical"
         android:textSize="16sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/location"
-        android:layout_toLeftOf="@+id/location" />
+        android:layout_toLeftOf="@+id/location"
+        android:layout_alignBottom="@+id/ref" />
 
     <EditText
         android:layout_width="wrap_content"

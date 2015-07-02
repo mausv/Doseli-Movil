@@ -17,27 +17,10 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Голосовой поиск"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
-    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.0.1/res/values-ru/values.xml -->
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-ru/values.xml -->
     <eat-comment/>
     <string name="zxing_app_name">Сканер штрих-кодов</string>
-    <string name="zxing_button_cancel">Отмена</string>
     <string name="zxing_button_ok">OK</string>
-    <string name="zxing_contents_contact">Контактная информация</string>
-    <string name="zxing_contents_email">Адрес эл. почты</string>
-    <string name="zxing_contents_location">Географические координаты</string>
-    <string name="zxing_contents_phone">Номер телефона</string>
-    <string name="zxing_contents_sms">Адрес для SMS</string>
-    <string name="zxing_contents_text">Текст</string>
-    <string name="zxing_menu_encode_mecard">Использовать MECARD</string>
-    <string name="zxing_menu_encode_vcard">Использовать vCard</string>
-    <string name="zxing_menu_help">Помощь</string>
-    <string name="zxing_menu_share">Поделиться</string>
     <string name="zxing_msg_camera_framework_bug">К сожалению, возникла ошибка камеры. Может потребоваться перезагрузить устройство.</string>
-    <string name="zxing_msg_default_format">Формат</string>
-    <string name="zxing_msg_default_meta">Метаданные</string>
     <string name="zxing_msg_default_status">Чтобы сканировать штрих-код, поместите его в прямоугольник видоискателя.</string>
-    <string name="zxing_msg_default_time">Время</string>
-    <string name="zxing_msg_default_type">Тип</string>
-    <string name="zxing_msg_encode_contents_failed">Невозможно создать штрих-код из текущих данных.</string>
-    <string name="zxing_msg_unmount_usb">К сожалению, SD-карта не доступна.</string>
 </resources>

@@ -317,10 +317,10 @@ public class UpdateStatusActivity extends Activity {
         mQrButton.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                    IntentIntegrator integrator = new IntentIntegrator(UpdateStatusActivity.this);
-                    integrator.setCaptureLayout(R.layout.activity_capture_layout);
-                    integrator.setPrompt("Escanea un dosificador");
-                    integrator.initiateScan();
+                 IntentIntegrator integrator = new IntentIntegrator(UpdateStatusActivity.this);
+                 integrator.setCaptureActivity(CaptureLayout.class);
+                 integrator.setPrompt("Escanea un dosificador");
+                 integrator.initiateScan();
 
              }
          }
