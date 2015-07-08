@@ -35,6 +35,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.reflect.Array;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -158,9 +160,7 @@ public class LoginActivity extends Activity {
         } else {
             Log.i("Internet status: ", "Available");
 
-            getCurrentVer();
-
-            new GetGroups().execute();
+            new CheckInternetConnection().execute();
         }
 
         //Initialize LocationManager and LocationListener
@@ -825,6 +825,53 @@ public class LoginActivity extends Activity {
 
         return cm.getActiveNetworkInfo() != null &&
                 cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
+    private class CheckInternetConnection extends AsyncTask <Void,Void,Void> {
+        int result;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            boolean checkNtwk = CheckNetwork.isConnectedToServer(LoginActivity.this);
+
+            if(checkNtwk == true) {
+                result = 1;
+            } else {
+                result = 2;
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            if(result == 1) {
+                Log.i("Internet status: ", "Available");
+
+                getCurrentVer();
+
+                new GetGroups().execute();
+            } else if (result == 2) {
+                Log.i("Internet status: ", "Not Available");
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setMessage("Esta aplicacion necesita internet como minimo para el inicio de sesion");
+                builder.setTitle("Fuera de linea");
+                builder.setPositiveButton("Cerrar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+                builder.show();
+            }
+        }
     }
 
 }
