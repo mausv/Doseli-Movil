@@ -10,17 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -65,10 +59,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.4095563">
+                    <state vertical-scroll-proportion="0.0">
                       <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
                       <folding>
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
@@ -82,11 +76,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+                    <state vertical-scroll-proportion="0.5802048">
+                      <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
                       <folding />
                     </state>
                   </provider>
@@ -164,8 +158,8 @@
               <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-0.013605442">
-                      <caret line="150" column="37" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
+                    <state vertical-scroll-proportion="-4.5238094">
+                      <caret line="162" column="38" selection-start-line="162" selection-start-column="38" selection-end-line="162" selection-end-column="38" />
                       <folding>
                         <element signature="e#30259#30260#0" expanded="true" />
                         <element signature="e#30303#30304#0" expanded="true" />
@@ -227,8 +221,8 @@
           <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4542536">
-                  <caret line="844" column="27" selection-start-line="844" selection-start-column="27" selection-end-line="844" selection-end-column="27" />
+                <state vertical-scroll-proportion="0.8635634">
+                  <caret line="859" column="31" selection-start-line="859" selection-start-column="31" selection-end-line="859" selection-end-column="31" />
                   <folding>
                     <element signature="e#28022#28030#0" expanded="true" />
                     <element signature="e#30259#30260#0" expanded="true" />
@@ -1792,9 +1786,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CaptureLayout.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckInternetConnection.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -2294,7 +2288,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436391807531</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fixed hospital name not appearing on the top of the homepage.">
+      <created>1436392105960</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1436392105960</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2321,7 +2321,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2257721" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30670926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30670926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2374,7 +2374,9 @@
     <MESSAGE value="Added version 1.0.4. Changed HandsetLocation items and functionality" />
     <MESSAGE value="Added version 1.0.5. Updated journeyapps' ZXing barcode scanning to version 3. Optimized scan and enabled rotation to the message." />
     <MESSAGE value="Added version 1.0.6. Fixed error when connection available but no internet available." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added version 1.0.6. Fixed error when connection available but no internet available." />
+    <MESSAGE value="Fixed hospital name not appearing on the top of the homepage." />
+    <MESSAGE value="Semi-fix overwrite install. NOTE: apk SHOULD be built from within the same computer for the installation to work correctly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Semi-fix overwrite install. NOTE: apk SHOULD be built from within the same computer for the installation to work correctly." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2835,17 +2837,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4095563">
+        <state vertical-scroll-proportion="0.0">
           <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
           <folding>
             <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
@@ -2855,6 +2849,14 @@
             <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onListItemClick#0;class#HomepageActivity#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5802048">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
