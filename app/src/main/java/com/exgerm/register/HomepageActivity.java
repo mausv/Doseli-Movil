@@ -86,6 +86,7 @@ public class HomepageActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
         mTitle = (TextView) findViewById(R.id.title);
+        mTitle.setText(LoginActivity.hospitalSelected);
 
         hspOb = LoginActivity.hspName;
 
