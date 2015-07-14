@@ -3,8 +3,10 @@ package com.exgerm.register;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -53,6 +55,8 @@ public class HandsetRegister extends Activity {
     private ProgressDialog pDialog;
 
     JSONParser jsonParser = new JSONParser();
+
+    private boolean networkConnection;
     
     //Array for spinner
     private ArrayList<Category> modelsList;
@@ -85,7 +89,16 @@ public class HandsetRegister extends Activity {
         id = (TextView) findViewById(R.id.id);
 
         //Add items
-        new GetCategories().execute();
+        networkConnection = isOnline();
+
+        if(networkConnection == true) {
+
+            new GetCategories().execute();
+
+        } else {
+            modelsList = LoginActivity.modelsOff;
+            populateSpinner();
+        }
 
         scan.setOnClickListener(new View.OnClickListener()
 
@@ -200,7 +213,16 @@ public class HandsetRegister extends Activity {
 
                 uuid = forId;
 
-                new CheckQR().execute();
+                if(networkConnection == true) {
+
+                    new CheckQR().execute();
+
+                } else if (networkConnection == false) {
+
+                    id.setText("Fuera de linea");
+                    state.setText("Fuera de linea");
+
+                }
 
 
             } else if (resultCode == RESULT_CANCELED) {
@@ -511,6 +533,14 @@ public class HandsetRegister extends Activity {
 
         // attaching data adapter to spinner
         spin.setAdapter(spinnerAdapter);
+    }
+
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null &&
+                cm.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
 }

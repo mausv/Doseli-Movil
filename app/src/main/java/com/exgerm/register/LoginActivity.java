@@ -58,6 +58,10 @@ public class LoginActivity extends Activity {
     protected TextView textLong;
     public Boolean geoBoxCorrect = false;
     public TextView versionTV;
+
+    //Offline
+    public static ArrayList<Category> modelsOff;
+
     /*protected double fixedLatTop = 25.66896339;
     protected double fixedLongTop = -100.32322168;
     protected double fixedLatLow = 25.6671841;
@@ -135,21 +139,30 @@ public class LoginActivity extends Activity {
         mAltas = (Button) findViewById(R.id.button);
         versionTV = (TextView) findViewById(R.id.versionTV);
 
+        modelsOff = new ArrayList<Category>();
+
         getImei();
 
         Log.d("IMEI: ", imei);
 
         offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
-        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline(id INTEGER PRIMARY KEY, token VARCHAR, state VARCHAR, device_comment VARCHAR, users_id VARCHAR, user_name VARCHAR, lowBattery VARCHAR, changeBattery VARCHAR, lowLiquid VARCHAR, changeLiquid VARCHAR, physicalDamage VARCHAR, physicalRepair VARCHAR, hospitals_id VARCHAR, hospital_name VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline" +
+                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
+                "state VARCHAR, device_comment VARCHAR, " +
+                "users_id VARCHAR, user_name VARCHAR, " +
+                "lowBattery VARCHAR, changeBattery VARCHAR, " +
+                "lowLiquid VARCHAR, changeLiquid VARCHAR, " +
+                "physicalDamage VARCHAR, physicalRepair VARCHAR, " +
+                "hospitals_id VARCHAR, hospital_name VARCHAR);");
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
                 "(id INTEGER PRIMARY KEY, model VARCHAR, " +
                 "serial_number VARCHAR, associated_by VARCHAR, " +
                 "token VARCHAR);");
-        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
-                "(token VARCHAR, group VARCHAR, group_id VARCHAR, " +
-                "hospital VARCHAR, hospital_id VARCHAR, " +
-                "area VARCHAR, area_id VARCHAR, " +
-                "location VARCHAR, location_id VARCHAR);");
+//        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
+//                "(token VARCHAR, group VARCHAR, group_id VARCHAR, " +
+//                "hospital VARCHAR, hospital_id VARCHAR, " +
+//                "area VARCHAR, area_id VARCHAR, " +
+//                "location VARCHAR, location_id VARCHAR);");
 
         groupsList = new ArrayList<>();
 
@@ -437,10 +450,7 @@ public class LoginActivity extends Activity {
                     System.out.println("geoBoxCorrect=true");
                     if (success == 1) {
 
-                        Toast.makeText(LoginActivity.this, "Bienvenido a " + hspName + ", " + userName, Toast.LENGTH_SHORT).show();
-
-                        Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
-                        startActivity(goHome);
+                        new GetOffModels().execute();
 
                     } else if (success == 3) {
 
@@ -472,10 +482,7 @@ public class LoginActivity extends Activity {
 
                 if (success == 1) {
 
-                    Toast.makeText(LoginActivity.this, "Bienvenido a " + hspName + ", " + userName, Toast.LENGTH_SHORT).show();
-
-                    Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
-                    startActivity(goHome);
+                    new GetOffModels().execute();
 
                 } else if (success == 3) {
 
@@ -880,6 +887,55 @@ public class LoginActivity extends Activity {
                 });
                 builder.show();
             }
+        }
+    }
+
+    private class GetOffModels extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            ServiceHandler jsonParser = new ServiceHandler();
+            String json = jsonParser.makeServiceCall(main_url + "get_models.php", ServiceHandler.POST);
+
+            Log.e("Response: ", "> " + json);
+
+            if (json != null) {
+                try {
+                    JSONObject jsonObj = new JSONObject(json);
+                    if (jsonObj != null) {
+                        JSONArray categories = jsonObj
+                                .getJSONArray("models");
+                        int size = categories.length();
+
+                        modelsOff.add(0, new Category(0,"Escoge"));
+
+                        for (int i = 0; i < size; i++) {
+                            JSONObject catObj = (JSONObject) categories.get(i);
+                            Category cat = new Category(catObj.getInt("id"),
+                                    catObj.getString("model"));
+                            modelsOff.add(cat);
+                        }
+                        Log.d("Models: ", modelsOff.toString());
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            } else {
+                Log.e("JSON Data", "Didn't receive any data from server!");
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            Toast.makeText(LoginActivity.this, "Bienvenido a " + hspName + ", " + userName, Toast.LENGTH_SHORT).show();
+
+            Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
+            startActivity(goHome);
         }
     }
 
