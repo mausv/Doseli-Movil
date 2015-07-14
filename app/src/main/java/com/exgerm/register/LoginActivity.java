@@ -90,8 +90,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.162/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.162/doseli/";
 
 
     //URLs
@@ -141,6 +141,15 @@ public class LoginActivity extends Activity {
 
         offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline(id INTEGER PRIMARY KEY, token VARCHAR, state VARCHAR, device_comment VARCHAR, users_id VARCHAR, user_name VARCHAR, lowBattery VARCHAR, changeBattery VARCHAR, lowLiquid VARCHAR, changeLiquid VARCHAR, physicalDamage VARCHAR, physicalRepair VARCHAR, hospitals_id VARCHAR, hospital_name VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
+                "(id INTEGER PRIMARY KEY, model VARCHAR, " +
+                "serial_number VARCHAR, associated_by VARCHAR, " +
+                "token VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
+                "(token VARCHAR, group VARCHAR, group_id VARCHAR, " +
+                "hospital VARCHAR, hospital_id VARCHAR, " +
+                "area VARCHAR, area_id VARCHAR, " +
+                "location VARCHAR, location_id VARCHAR);");
 
         groupsList = new ArrayList<>();
 
