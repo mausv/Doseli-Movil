@@ -155,14 +155,15 @@ public class LoginActivity extends Activity {
                 "physicalDamage VARCHAR, physicalRepair VARCHAR, " +
                 "hospitals_id VARCHAR, hospital_name VARCHAR);");
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
-                "(id INTEGER PRIMARY KEY, model VARCHAR, " +
+                "(id INTEGER PRIMARY KEY, mId VARCHAR, model VARCHAR, " +
                 "serial_number VARCHAR, associated_by VARCHAR, " +
                 "token VARCHAR);");
-//        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
-//                "(token VARCHAR, group VARCHAR, group_id VARCHAR, " +
-//                "hospital VARCHAR, hospital_id VARCHAR, " +
-//                "area VARCHAR, area_id VARCHAR, " +
-//                "location VARCHAR, location_id VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
+                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
+                "group_name VARCHAR, group_id VARCHAR, " +
+                "hospital VARCHAR, hospital_id VARCHAR, " +
+                "area VARCHAR, area_id VARCHAR, " +
+                "location VARCHAR, location_id VARCHAR);");
 
         groupsList = new ArrayList<>();
 

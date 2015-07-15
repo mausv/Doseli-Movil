@@ -120,7 +120,7 @@ public class HandsetRegister extends Activity {
                 CharSequence sta = state.getText();
                 final String modelo = spin.getSelectedItem().toString();
                 final String unique = serie.getText().toString();
-                if (sta.equals("DISPONIBLE")) {
+                if (sta.equals("DISPONIBLE") || sta.equals("Fuera de linea")) {
                     if (unique.length() < 7) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(HandsetRegister.this);
                         builder.setTitle("Longitud incompleta");
@@ -136,7 +136,27 @@ public class HandsetRegister extends Activity {
                         AlertDialog dialog = builder.create();
                         dialog.show();
                     } else if (!modelo.equals("Escoge")) {
-                        new RegisterQR().execute();
+                        if (networkConnection == true) {
+                            new RegisterQR().execute();
+                        } else if (networkConnection == false) {
+                            String modText = spin.getSelectedItem().toString();
+                            String serieText = serie.getText().toString();
+                            LoginActivity.offlineDb.execSQL("INSERT INTO DoseliAltas " +
+                                    "(model, serial_number, associated_by, token) " +
+                                    "VALUES ('" + modText + "', '" + serieText + "', " +
+                                    "'" + LoginActivity.userId + "', '" + uuid + "');");
+                            AlertDialog.Builder builder = new AlertDialog.Builder(HandsetRegister.this);
+                            builder.setTitle("Fuera de linea");
+                            builder.setMessage("Guardado en pendientes para mandar despues");
+                            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    finish();
+                                }
+                            });
+                            builder.show();
+                        }
                     } else {
                         //There was an error
                         AlertDialog.Builder builder = new AlertDialog.Builder(HandsetRegister.this);
