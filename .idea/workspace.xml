@@ -10,57 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$CheckQR$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$CheckQR$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$CheckQR.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$CheckQR.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$GetCategories.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$GetCategories.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$RegisterQR$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$RegisterQR$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$RegisterQR.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister$RegisterQR.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -103,31 +62,49 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+                    <state vertical-scroll-proportion="2.0716724">
+                      <caret line="350" column="9" selection-start-line="350" selection-start-column="9" selection-end-line="350" selection-end-column="9" />
                       <folding>
+                        <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="e#14633#14634#0" expanded="false" />
-                        <element signature="e#14705#14706#0" expanded="false" />
-                        <element signature="e#21581#21582#0" expanded="false" />
-                        <element signature="e#21637#21638#0" expanded="false" />
+                        <element signature="e#15613#15628#0" expanded="true" />
+                        <element signature="e#15810#15825#0" expanded="true" />
                         <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#onListItemClick#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#28460#28461#0" expanded="true" />
+                        <element signature="e#28493#28494#0" expanded="true" />
+                        <element signature="e#28530#28531#0" expanded="true" />
+                        <element signature="e#28566#28567#0" expanded="true" />
+                        <element signature="e#28602#28603#0" expanded="true" />
+                        <element signature="e#28638#28639#0" expanded="true" />
+                        <element signature="e#28684#28685#0" expanded="true" />
+                        <element signature="e#28726#28727#0" expanded="true" />
+                        <element signature="e#28770#28771#0" expanded="true" />
+                        <element signature="e#28814#28815#0" expanded="true" />
+                        <element signature="e#28876#28877#0" expanded="true" />
+                        <element signature="e#28934#28935#0" expanded="true" />
+                        <element signature="e#28978#28979#0" expanded="true" />
+                        <element signature="e#29022#29023#0" expanded="true" />
+                        <element signature="e#29084#29085#0" expanded="true" />
+                        <element signature="e#29142#29143#0" expanded="true" />
+                        <element signature="e#29178#29179#0" expanded="true" />
+                        <element signature="e#29214#29215#0" expanded="true" />
+                        <element signature="e#29260#29261#0" expanded="true" />
+                        <element signature="e#29302#29303#0" expanded="true" />
+                        <element signature="e#29494#29518#0" expanded="true" />
+                        <element signature="e#30632#30647#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.85324234">
+                    <state vertical-scroll-proportion="0.0">
                       <caret line="157" column="55" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
                       <folding />
                     </state>
@@ -158,17 +135,39 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="529" column="43" selection-start-line="529" selection-start-column="43" selection-end-line="529" selection-end-column="43" />
+                    <state vertical-scroll-proportion="0.56462586">
+                      <caret line="334" column="32" selection-start-line="334" selection-start-column="32" selection-end-line="334" selection-end-column="32" />
                       <folding>
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#15613#15628#0" expanded="true" />
+                        <element signature="e#15810#15825#0" expanded="true" />
+                        <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#onListItemClick#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#28460#28461#0" expanded="true" />
+                        <element signature="e#28493#28494#0" expanded="true" />
+                        <element signature="e#28530#28531#0" expanded="true" />
+                        <element signature="e#28566#28567#0" expanded="true" />
+                        <element signature="e#28602#28603#0" expanded="true" />
+                        <element signature="e#28638#28639#0" expanded="true" />
+                        <element signature="e#28684#28685#0" expanded="true" />
+                        <element signature="e#28726#28727#0" expanded="true" />
+                        <element signature="e#28770#28771#0" expanded="true" />
+                        <element signature="e#28814#28815#0" expanded="true" />
+                        <element signature="e#28876#28877#0" expanded="true" />
+                        <element signature="e#28934#28935#0" expanded="true" />
+                        <element signature="e#28978#28979#0" expanded="true" />
+                        <element signature="e#29022#29023#0" expanded="true" />
+                        <element signature="e#29084#29085#0" expanded="true" />
+                        <element signature="e#29142#29143#0" expanded="true" />
+                        <element signature="e#29178#29179#0" expanded="true" />
+                        <element signature="e#29214#29215#0" expanded="true" />
+                        <element signature="e#29260#29261#0" expanded="true" />
+                        <element signature="e#29302#29303#0" expanded="true" />
+                        <element signature="e#29494#29518#0" expanded="true" />
+                        <element signature="e#30632#30647#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -197,10 +196,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5544218">
+                    <state vertical-scroll-proportion="0.0">
                       <caret line="420" column="55" selection-start-line="420" selection-start-column="55" selection-end-line="420" selection-end-column="55" />
                       <folding>
                         <element signature="e#5871#6205#0" expanded="true" />
@@ -231,11 +230,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5221843">
-                      <caret line="306" column="92" selection-start-line="306" selection-start-column="92" selection-end-line="306" selection-end-column="92" />
+                    <state vertical-scroll-proportion="0.0">
+                      <caret line="297" column="66" selection-start-line="297" selection-start-column="66" selection-end-line="297" selection-end-column="66" />
                       <folding>
                         <element signature="docComment;class#GetProductDetails#0;class#UpdateStatusActivity#0" expanded="false" />
                         <element signature="method#onCreateOptionsMenu#0;class#UpdateStatusActivity#0" expanded="false" />
@@ -287,16 +286,39 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="680" column="40" selection-start-line="680" selection-start-column="40" selection-end-line="680" selection-end-column="40" />
+                    <state vertical-scroll-proportion="0.69624573">
+                      <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
                       <folding>
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#15613#15628#0" expanded="true" />
+                        <element signature="e#15810#15825#0" expanded="true" />
                         <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="method#onListItemClick#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#28460#28461#0" expanded="true" />
+                        <element signature="e#28493#28494#0" expanded="true" />
+                        <element signature="e#28530#28531#0" expanded="true" />
+                        <element signature="e#28566#28567#0" expanded="true" />
+                        <element signature="e#28602#28603#0" expanded="true" />
+                        <element signature="e#28638#28639#0" expanded="true" />
+                        <element signature="e#28684#28685#0" expanded="true" />
+                        <element signature="e#28726#28727#0" expanded="true" />
+                        <element signature="e#28770#28771#0" expanded="true" />
+                        <element signature="e#28814#28815#0" expanded="true" />
+                        <element signature="e#28876#28877#0" expanded="true" />
+                        <element signature="e#28934#28935#0" expanded="true" />
+                        <element signature="e#28978#28979#0" expanded="true" />
+                        <element signature="e#29022#29023#0" expanded="true" />
+                        <element signature="e#29084#29085#0" expanded="true" />
+                        <element signature="e#29142#29143#0" expanded="true" />
+                        <element signature="e#29178#29179#0" expanded="true" />
+                        <element signature="e#29214#29215#0" expanded="true" />
+                        <element signature="e#29260#29261#0" expanded="true" />
+                        <element signature="e#29302#29303#0" expanded="true" />
+                        <element signature="e#29494#29518#0" expanded="true" />
+                        <element signature="e#30632#30647#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -332,11 +354,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.50680274">
-                      <caret line="144" column="85" selection-start-line="144" selection-start-column="85" selection-end-line="144" selection-end-column="85" />
+                    <state vertical-scroll-proportion="0.0">
+                      <caret line="159" column="28" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
                       <folding>
                         <element signature="e#3614#8661#0" expanded="true" />
                         <element signature="e#5871#6205#0" expanded="true" />
@@ -356,6 +378,26 @@
                     <state vertical-scroll-proportion="0.0">
                       <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
                       <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.46258503">
+                      <caret line="391" column="34" selection-start-line="391" selection-start-column="34" selection-end-line="391" selection-end-column="34" />
+                      <folding>
+                        <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#15613#15628#0" expanded="true" />
+                        <element signature="e#15810#15825#0" expanded="true" />
+                        <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#29494#29518#0" expanded="true" />
+                        <element signature="e#30632#30647#0" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -1844,12 +1886,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CaptureLayout.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckInternetConnection.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/JSONParser.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       </list>
     </option>
   </component>
@@ -2549,7 +2591,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436912949974</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="When no internet is available in HandsetRegister it goes into the offline SQLite database for later use. Sending this is still pending.">
+      <created>1436998012158</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1436998012158</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2563,7 +2611,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-171" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2636,7 +2684,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2654,16 +2702,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#14633#14634#0" expanded="false" />
-            <element signature="e#14705#14706#0" expanded="false" />
-            <element signature="e#21581#21582#0" expanded="false" />
-            <element signature="e#21637#21638#0" expanded="false" />
+            <element signature="e#15613#15628#0" expanded="true" />
+            <element signature="e#15810#15825#0" expanded="true" />
             <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onListItemClick#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#29494#29518#0" expanded="true" />
+            <element signature="e#30632#30647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3036,28 +3083,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
-          <folding>
-            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#14633#14634#0" expanded="false" />
-            <element signature="e#14705#14706#0" expanded="false" />
-            <element signature="e#21581#21582#0" expanded="false" />
-            <element signature="e#21637#21638#0" expanded="false" />
-            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onListItemClick#0;class#HomepageActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85324234">
+        <state vertical-scroll-proportion="0.0">
           <caret line="157" column="55" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
           <folding />
         </state>
@@ -3065,8 +3093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5221843">
-          <caret line="306" column="92" selection-start-line="306" selection-start-column="92" selection-end-line="306" selection-end-column="92" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="297" column="66" selection-start-line="297" selection-start-column="66" selection-end-line="297" selection-end-column="66" />
           <folding>
             <element signature="docComment;class#GetProductDetails#0;class#UpdateStatusActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#UpdateStatusActivity#0" expanded="false" />
@@ -3077,8 +3105,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50680274">
-          <caret line="144" column="85" selection-start-line="144" selection-start-column="85" selection-end-line="144" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="28" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
           <folding>
             <element signature="e#3614#8661#0" expanded="true" />
             <element signature="e#5871#6205#0" expanded="true" />
@@ -3087,6 +3115,24 @@
             <element signature="class#CheckQR#0;class#HandsetRegister#0" expanded="false" />
             <element signature="class#RegisterQR#0;class#HandsetRegister#0" expanded="false" />
             <element signature="class#GetCategories#0;class#HandsetRegister#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46258503">
+          <caret line="391" column="34" selection-start-line="391" selection-start-column="34" selection-end-line="391" selection-end-column="34" />
+          <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#15613#15628#0" expanded="true" />
+            <element signature="e#15810#15825#0" expanded="true" />
+            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#29494#29518#0" expanded="true" />
+            <element signature="e#30632#30647#0" expanded="true" />
           </folding>
         </state>
       </provider>

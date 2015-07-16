@@ -14,14 +14,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -31,17 +27,6 @@ import java.util.Date;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
-import org.joda.time.Days;
-import org.joda.time.LocalDate;
-import org.joda.time.LocalDateTime;
-import org.joda.time.LocalTime;
-import org.joda.time.Months;
-import org.joda.time.Years;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-import org.joda.time.format.DateTimeFormatterBuilder;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -70,6 +55,8 @@ public class HomepageActivity extends ListActivity {
     JSONParser jsonParser = new JSONParser();
 
     public List<PendingReport> pendingArray;
+    public List<PendingRegisterHandset> pendingRegisterArray;
+    public List<PendingRegisterLocation> pendingLocationArray;
 
     private String reportsIdentifier = "reports";
     private String reportsArrayIdentifier = "report";
@@ -80,6 +67,7 @@ public class HomepageActivity extends ListActivity {
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
     private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
+    private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -337,6 +325,7 @@ public class HomepageActivity extends ListActivity {
             case R.id.send_pending:
                 //Send pending from SQLite
                 pendingArray = getAll();
+                pendingRegisterArray = getRegisterHandset();
                 /*for(int i = 0; i < pendingArray.size(); i++){
                     Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
                 }*/
@@ -384,6 +373,58 @@ public class HomepageActivity extends ListActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
+            for (int i = 0; i < pendingRegisterArray.size(); i++) {
+                int successGD;
+                String mid = "";
+
+                String tokenT = pendingRegisterArray.get(i).getToken();
+
+                // Check for success tag
+                // Building Parameters
+                List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
+                paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
+
+                // Building Parameters
+                List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
+                paramsP.add(new BasicNameValuePair("token", pendingRegisterArray.get(i).getToken()));
+                paramsP.add(new BasicNameValuePair("model", pendingRegisterArray.get(i).getModel()));
+                paramsP.add(new BasicNameValuePair("serial_number", pendingRegisterArray.get(i).getSerial_number()));
+                paramsP.add(new BasicNameValuePair("user", pendingRegisterArray.get(i).getAssociated_by()));
+
+                // getting JSON Object
+                // Note that create product url accepts POST method
+                JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_register_handset,
+                        "POST", paramsP);
+
+                // check log cat fro response
+                Log.d("Create Response", jsonP.toString());
+
+                // check for success tag
+                try {
+                    int success = jsonP.getInt("success");
+
+                    if (success == 1) {
+                        // successfully created product
+            /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
+            startActivity(i);*/
+                        Log.i("Report status: ", "sent");
+
+                        // closing this screen
+                    } else {
+                        // failed to create product
+                        Log.i("Report status: ", "failed");
+                    }
+
+                    Log.i("SId: ", String.valueOf(pendingRegisterArray.get(i).getId()));
+
+                    LoginActivity.offlineDb.delete("DoseliAltas", "id = " + String.valueOf(pendingRegisterArray.get(i).getId()), null);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
             for (int i = 0; i < pendingArray.size(); i++) {
                 int successGD;
                 String mid = "";
@@ -675,6 +716,86 @@ public class HomepageActivity extends ListActivity {
 
         public void setUsers_id(String users_id) {
             this.users_id = users_id;
+        }
+    }
+
+    public class PendingRegisterHandset {
+        private int id;
+        private String model;
+        private String serial_number;
+        private String associated_by;
+        private String token;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getModel() {
+            return model;
+        }
+
+        public void setModel(String model) {
+            this.model = model;
+        }
+
+        public String getSerial_number() {
+            return serial_number;
+        }
+
+        public void setSerial_number(String serial_number) {
+            this.serial_number = serial_number;
+        }
+
+        public String getAssociated_by() {
+            return associated_by;
+        }
+
+        public void setAssociated_by(String associated_by) {
+            this.associated_by = associated_by;
+        }
+
+        public String getToken() {
+            return token;
+        }
+
+        public void setToken(String token) {
+            this.token = token;
+        }
+
+    }
+
+    public class PendingRegisterLocation {
+
+    }
+
+    public List<PendingRegisterHandset> getRegisterHandset() {
+        List<PendingRegisterHandset> pendingRegister = new ArrayList<PendingRegisterHandset>();
+        PendingRegisterHandset member = null;
+        Cursor c = null;
+        try {
+            c = LoginActivity.offlineDb.rawQuery("Select * from DoseliAltas", null);
+            if (c.moveToFirst()) {
+                do {
+                    member = new PendingRegisterHandset();
+                    member.setId(c.getInt(c.getColumnIndex("id")));
+                    member.setToken(c.getString(c.getColumnIndex("token")));
+                    member.setModel(c.getString(c.getColumnIndex("model")));
+                    member.setSerial_number(c.getString(c.getColumnIndex("serial_number")));
+                    member.setAssociated_by(c.getString(c.getColumnIndex("associated_by")));
+                    pendingRegister.add(member);
+                } while (c.moveToNext());
+            }
+            Log.i("PReports: ", pendingRegister.toString());
+            return pendingRegister;
+        }
+        finally {
+            if (c != null) {
+                c.close();
+            }
         }
     }
 
