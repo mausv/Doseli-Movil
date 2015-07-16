@@ -61,6 +61,8 @@ public class LoginActivity extends Activity {
 
     //Offline
     public static ArrayList<Category> modelsOff;
+    public static ArrayList<Category> areasOff;
+    public static ArrayList<Category> locationsOff;
 
     /*protected double fixedLatTop = 25.66896339;
     protected double fixedLongTop = -100.32322168;
@@ -104,6 +106,7 @@ public class LoginActivity extends Activity {
     private static String url_get_hospitals = main_url + "get_hospitals.php";
     private static String url_get_hospital_geo = main_url + "get_hospital_geo.php";
     private static String url_get_latest_version = main_url + "get_latest_version.php";
+    private static String url_get_off = main_url + "get_latest_version.php";
 
     //Column variables
     private static String TAG_CODE = "code";
@@ -140,6 +143,8 @@ public class LoginActivity extends Activity {
         versionTV = (TextView) findViewById(R.id.versionTV);
 
         modelsOff = new ArrayList<Category>();
+        areasOff = new ArrayList<Category>();
+        locationsOff = new ArrayList<Category>();
 
         getImei();
 
@@ -894,8 +899,8 @@ public class LoginActivity extends Activity {
     private class GetOffModels extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... params) {
-            ServiceHandler jsonParser = new ServiceHandler();
-            String json = jsonParser.makeServiceCall(main_url + "get_models.php", ServiceHandler.POST);
+            ServiceHandler jsonParsers = new ServiceHandler();
+            String json = jsonParsers.makeServiceCall(main_url + "get_models.php", ServiceHandler.POST);
 
             Log.e("Response: ", "> " + json);
 
@@ -925,6 +930,12 @@ public class LoginActivity extends Activity {
             } else {
                 Log.e("JSON Data", "Didn't receive any data from server!");
             }
+
+            List<NameValuePair> param = new ArrayList<>();
+            param.add(new BasicNameValuePair("hospital_id", hospitalSelectedId));
+
+            JSONObject jsonObj = jsonParser.makeHttpRequest(
+                    url_get_off, "POST", param);
 
             return null;
         }
