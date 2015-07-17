@@ -3,8 +3,10 @@ package com.exgerm.register;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -113,6 +115,8 @@ public class HandsetLocation extends Activity {
     public String uuid;
     public Boolean uuidExists = false;
 
+    public boolean networkAvailable;
+
     private static String TAG_SUCCESS = "success";
     private static final String TAG_PRODUCT = "product";
     private static final String TAG_ID = "id";
@@ -152,7 +156,21 @@ public class HandsetLocation extends Activity {
         qrToken = (TextView) findViewById(R.id.token);
         update = (Button) findViewById(R.id.updateLocation);
 
-        new GetGroups().execute();
+        networkAvailable = isOnline();
+
+        if(networkAvailable == true) {
+
+            new GetGroups().execute();
+
+        } else if (networkAvailable == false) {
+
+            areasList = LoginActivity.areasOff;
+            locationsList = LoginActivity.locationsOff;
+
+            populateSpinner("area");
+            populateSpinner("location");
+
+        }
 
         groupSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -164,19 +182,32 @@ public class HandsetLocation extends Activity {
                 groupSelectedId = String.valueOf(cat.getId());
                 Log.d("Seleccionado: ", groupSelectedId);
 
-                switch (groupSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        light = false;
-                        hospitalSpinner.setAdapter(spinnerAdapterE);
-                        areaSpinner.setAdapter(spinnerAdapterE);
-                        areaSelectedId = "";
-                        locationSpinner.setAdapter(spinnerAdapterE);
-                        locationSelectedId = "";
-                        break;
-                    default:
-                        light = true;
-                        new GetHospitals().execute();
+                if (networkAvailable == true) {
+                    switch (groupSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            light = false;
+                            hospitalSpinner.setAdapter(spinnerAdapterE);
+                            areaSpinner.setAdapter(spinnerAdapterE);
+                            areaSelectedId = "";
+                            locationSpinner.setAdapter(spinnerAdapterE);
+                            locationSelectedId = "";
+                            break;
+                        default:
+                            light = true;
+                            new GetHospitals().execute();
+                    }
+                } else if (networkAvailable == false) {
+                    switch (groupSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            light = false;
+                            areaSelectedId = "";
+                            locationSelectedId = "";
+                            break;
+                        default:
+                            light = true;
+                    }
                 }
             }
 
@@ -195,19 +226,33 @@ public class HandsetLocation extends Activity {
                 hospitalSelectedId = String.valueOf(cat.getId());
                 Log.d("Seleccionado: ", hospitalSelectedId);
 
-                switch (hospitalSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        light = false;
-                        areaSpinner.setAdapter(spinnerAdapterE);
-                        areaSelectedId = "";
-                        locationSpinner.setAdapter(spinnerAdapterE);
-                        locationSelectedId = "";
-                        break;
-                    default:
-                        area = false;
-                        light = true;
-                        new GetAreas().execute();
+                if (networkAvailable == true) {
+                    switch (hospitalSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            light = false;
+                            areaSpinner.setAdapter(spinnerAdapterE);
+                            areaSelectedId = "";
+                            locationSpinner.setAdapter(spinnerAdapterE);
+                            locationSelectedId = "";
+                            break;
+                        default:
+                            area = false;
+                            light = true;
+                            new GetAreas().execute();
+                    }
+                } else if (networkAvailable == false) {
+                    switch (hospitalSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            light = false;
+                            areaSelectedId = "";
+                            locationSelectedId = "";
+                            break;
+                        default:
+                            area = false;
+                            light = true;
+                    }
                 }
             }
 
@@ -222,21 +267,40 @@ public class HandsetLocation extends Activity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 areaSelected = areaSpinner.getSelectedItem().toString();
 
-                switch (areaSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        light = false;
-                        locationSpinner.setAdapter(spinnerAdapterE);
-                        locationSelectedId = "";
-                        break;
-                    default:
-                        int areaId = (int) areaSpinner.getSelectedItemId();
-                        Category cat = new Category(areasList.get(areaId));
-                        areaSelectedId = String.valueOf(cat.getId());
-                        Log.d("Seleccionado: ", areaSelectedId);
-                        area = true;
-                        light = true;
-                        new GetLocations().execute();
+                if(networkAvailable == true) {
+
+                    switch (areaSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            light = false;
+                            locationSpinner.setAdapter(spinnerAdapterE);
+                            locationSelectedId = "";
+                            break;
+                        default:
+                            int areaId = (int) areaSpinner.getSelectedItemId();
+                            Category cat = new Category(areasList.get(areaId));
+                            areaSelectedId = String.valueOf(cat.getId());
+                            Log.d("Seleccionado: ", areaSelectedId);
+                            area = true;
+                            light = true;
+                            new GetLocations().execute();
+                    }
+
+                } else if (networkAvailable == false) {
+                    switch (areaSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            light = false;
+                            locationSelectedId = "";
+                            break;
+                        default:
+                            int areaId = (int) areaSpinner.getSelectedItemId();
+                            Category cat = new Category(areasList.get(areaId));
+                            areaSelectedId = String.valueOf(cat.getId());
+                            Log.d("Seleccionado: ", areaSelectedId);
+                            area = true;
+                            light = true;
+                    }
                 }
             }
 
@@ -1004,4 +1068,13 @@ public class HandsetLocation extends Activity {
             populateSpinner("location");
         }
     }
+
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null &&
+                cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
 }
