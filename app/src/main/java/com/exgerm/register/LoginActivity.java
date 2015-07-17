@@ -106,7 +106,7 @@ public class LoginActivity extends Activity {
     private static String url_get_hospitals = main_url + "get_hospitals.php";
     private static String url_get_hospital_geo = main_url + "get_hospital_geo.php";
     private static String url_get_latest_version = main_url + "get_latest_version.php";
-    private static String url_get_off = main_url + "get_latest_version.php";
+    private static String url_get_off = main_url + "get_hospital_offline.php";
 
     //Column variables
     private static String TAG_CODE = "code";
@@ -936,6 +936,53 @@ public class LoginActivity extends Activity {
 
             JSONObject jsonObj = jsonParser.makeHttpRequest(
                     url_get_off, "POST", param);
+
+            Log.i("AP: ", jsonObj.toString());
+
+            try {
+                int success = jsonObj.getInt("success");
+
+                if(success == 1){
+
+                    if (jsonObj != null) {
+
+                        JSONArray innerObjAreas = jsonObj.getJSONArray("areas");
+
+                        int sizeAreas = innerObjAreas.length();
+
+                        areasOff.add(0, new Category(0, "Escoge"));
+
+                        for (int i = 0; i < sizeAreas; i++) {
+                            JSONObject areaObj = (JSONObject) innerObjAreas.get(i);
+                            Category catArea = new Category(areaObj.getInt("id"),
+                                    areaObj.getString("name"));
+                            areasOff.add(catArea);
+                        }
+
+                        Log.i("Areas: ", areasOff.toString());
+
+                        JSONArray innerObjLocations = jsonObj.getJSONArray("locations");
+
+                        int sizeLocations = innerObjLocations.length();
+
+                        locationsOff.add(0, new Category(0, "Escoge"));
+
+                        for (int i = 0; i < sizeLocations; i++) {
+                            JSONObject locationsObj = (JSONObject) innerObjLocations.get(i);
+                            Category catArea = new Category(locationsObj.getInt("id"),
+                                    locationsObj.getString("name"));
+                            locationsOff.add(catArea);
+                        }
+
+                        Log.i("Locations: ", locationsOff.toString());
+
+                    }
+
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
 
             return null;
         }
