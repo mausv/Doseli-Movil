@@ -164,9 +164,13 @@ public class HandsetLocation extends Activity {
 
         } else if (networkAvailable == false) {
 
+            groupsList = LoginActivity.groupsOff;
+            hospitalsList = LoginActivity.hospitalsOff;
             areasList = LoginActivity.areasOff;
             locationsList = LoginActivity.locationsOff;
 
+            populateSpinner("group");
+            populateSpinner("hospital");
             populateSpinner("area");
             populateSpinner("location");
 
@@ -391,7 +395,30 @@ public class HandsetLocation extends Activity {
                 }
                 if (light && sLight == true) {
 
-                    new SetLocation().execute();
+                    if (networkAvailable == true) {
+
+                        new SetLocation().execute();
+
+                    } else if (networkAvailable == false) {
+                        LoginActivity.offlineDb.execSQL("INSERT INTO DoseliPosicion " +
+                                "(token, group_name, group_id, hospital, hospital_id, area, area_id, location, location_id) " +
+                                "VALUES ('" + uuid + "', '" + groupSelected + "', '" + groupSelectedId + "', " +
+                                "'" + hospitalSelected + "', '" + hospitalSelectedId + "', " +
+                                "'" + areaSelected + "', '" + areaSelectedId + "', " +
+                                "'" + locationSelected + "', '" + locationSelectedId + "')");
+                        AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
+                        builder.setTitle("Fuera de linea");
+                        builder.setMessage("Guardado en pendientes para mandar despues");
+                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                                finish();
+                            }
+                        });
+                        builder.show();
+
+                    }
 
                 } else if (sLight == false){
                     Log.d("error", "Falta aparato.");
@@ -454,7 +481,13 @@ public class HandsetLocation extends Activity {
                 //qrId.setText(forAid);
                 qrToken.setText("" + forId);
                 uuid = forId;
-                new CheckQR().execute();
+
+                if (networkAvailable == true) {
+                    new CheckQR().execute();
+                } else if (networkAvailable == false) {
+                    sLight = true;
+                    qrId.setText("Fuera de linea");
+                }
 
 
             } else if (resultCode == RESULT_CANCELED) {

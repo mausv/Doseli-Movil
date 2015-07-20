@@ -60,6 +60,8 @@ public class LoginActivity extends Activity {
     public TextView versionTV;
 
     //Offline
+    public static ArrayList<Category> groupsOff;
+    public static ArrayList<Category> hospitalsOff;
     public static ArrayList<Category> modelsOff;
     public static ArrayList<Category> areasOff;
     public static ArrayList<Category> locationsOff;
@@ -97,7 +99,7 @@ public class LoginActivity extends Activity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.162/doseli/";
+    public static String main_url = "http://192.168.1.160/doseli/";
 
 
     //URLs
@@ -141,11 +143,6 @@ public class LoginActivity extends Activity {
         textLong = (TextView) findViewById(R.id.longitudeTextView);
         mAltas = (Button) findViewById(R.id.button);
         versionTV = (TextView) findViewById(R.id.versionTV);
-
-        modelsOff = new ArrayList<Category>();
-        areasOff = new ArrayList<Category>();
-        locationsOff = new ArrayList<Category>();
-
         getImei();
 
         Log.d("IMEI: ", imei);
@@ -899,6 +896,13 @@ public class LoginActivity extends Activity {
     private class GetOffModels extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... params) {
+
+            groupsOff = new ArrayList<Category>();
+            hospitalsOff = new ArrayList<Category>();
+            modelsOff = new ArrayList<Category>();
+            areasOff = new ArrayList<Category>();
+            locationsOff = new ArrayList<Category>();
+
             ServiceHandler jsonParsers = new ServiceHandler();
             String json = jsonParsers.makeServiceCall(main_url + "get_models.php", ServiceHandler.POST);
 
@@ -945,6 +949,10 @@ public class LoginActivity extends Activity {
                 if(success == 1){
 
                     if (jsonObj != null) {
+
+                        groupsOff.add(0, new Category(Integer.parseInt(groupSelectedId), groupSelected));
+
+                        hospitalsOff.add(0, new Category(Integer.parseInt(hospitalSelectedId), hospitalSelected));
 
                         JSONArray innerObjAreas = jsonObj.getJSONArray("areas");
 
