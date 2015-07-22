@@ -162,10 +162,11 @@ public class LoginActivity extends Activity {
                 "token VARCHAR);");
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
                 "(id INTEGER PRIMARY KEY, token VARCHAR, " +
-                "group_name VARCHAR, group_id VARCHAR, " +
-                "hospital VARCHAR, hospital_id VARCHAR, " +
-                "area VARCHAR, area_id VARCHAR, " +
-                "location VARCHAR, location_id VARCHAR);");
+                "group_id VARCHAR, " +
+                "hospital_id VARCHAR, " +
+                "area_id VARCHAR, " +
+                "location_id VARCHAR, " +
+                "reference VARCHAR);");
 
         groupsList = new ArrayList<>();
 

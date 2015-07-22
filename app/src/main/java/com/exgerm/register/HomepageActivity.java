@@ -68,6 +68,7 @@ public class HomepageActivity extends ListActivity {
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
     private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
     private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine.php";
+    private static String url_pending_register_location = LoginActivity.main_url + "pending_register_location.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -326,6 +327,7 @@ public class HomepageActivity extends ListActivity {
                 //Send pending from SQLite
                 pendingArray = getAll();
                 pendingRegisterArray = getRegisterHandset();
+                pendingLocationArray = getRegisterLocation();
                 /*for(int i = 0; i < pendingArray.size(); i++){
                     Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
                 }*/
@@ -418,6 +420,55 @@ public class HomepageActivity extends ListActivity {
                     Log.i("SId: ", String.valueOf(pendingRegisterArray.get(i).getId()));
 
                     LoginActivity.offlineDb.delete("DoseliAltas", "id = " + String.valueOf(pendingRegisterArray.get(i).getId()), null);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            for (int i = 0; i < pendingLocationArray.size(); i++) {
+                int successGD;
+                String mid = "";
+
+                // Check for success tag
+
+                // Building Parameters
+                List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
+                paramsP.add(new BasicNameValuePair("token", pendingLocationArray.get(i).getToken()));
+                paramsP.add(new BasicNameValuePair("group_id", pendingLocationArray.get(i).getGroup_id()));
+                paramsP.add(new BasicNameValuePair("hospital_id", pendingLocationArray.get(i).getHospital_id()));
+                paramsP.add(new BasicNameValuePair("area_id", pendingLocationArray.get(i).getArea_id()));
+                paramsP.add(new BasicNameValuePair("location_id", pendingLocationArray.get(i).getLocation_id()));
+                paramsP.add(new BasicNameValuePair("reference", pendingLocationArray.get(i).getReference()));
+
+                // getting JSON Object
+                // Note that create product url accepts POST method
+                JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_register_location,
+                        "POST", paramsP);
+
+                // check log cat fro response
+                Log.d("Create Response", jsonP.toString());
+
+                // check for success tag
+                try {
+                    int success = jsonP.getInt("success");
+
+                    if (success == 1) {
+                        // successfully created product
+            /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
+            startActivity(i);*/
+                        Log.i("Report status: ", "sent");
+
+                        // closing this screen
+                    } else {
+                        // failed to create product
+                        Log.i("Report status: ", "failed");
+                    }
+
+                    Log.i("SId: ", String.valueOf(pendingLocationArray.get(i).getId()));
+
+                    LoginActivity.offlineDb.delete("DoseliPosicion", "id = " + String.valueOf(pendingLocationArray.get(i).getId()), null);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -770,6 +821,69 @@ public class HomepageActivity extends ListActivity {
 
     public class PendingRegisterLocation {
 
+        private int id;
+        private String token;
+        private String group_id;
+        private String hospital_id;
+        private String area_id;
+        private String location_id;
+        private String reference;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getToken() {
+            return token;
+        }
+
+        public void setToken(String token) {
+            this.token = token;
+        }
+
+        public String getGroup_id() {
+            return group_id;
+        }
+
+        public void setGroup_id(String group_id) {
+            this.group_id = group_id;
+        }
+
+        public String getHospital_id() {
+            return hospital_id;
+        }
+
+        public void setHospital_id(String hospital_id) {
+            this.hospital_id = hospital_id;
+        }
+
+        public String getArea_id() {
+            return area_id;
+        }
+
+        public void setArea_id(String area_id) {
+            this.area_id = area_id;
+        }
+
+        public String getLocation_id() {
+            return location_id;
+        }
+
+        public void setLocation_id(String location_id) {
+            this.location_id = location_id;
+        }
+
+        public String getReference() {
+            return reference;
+        }
+
+        public void setReference(String reference) {
+            this.reference = reference;
+        }
     }
 
     public List<PendingRegisterHandset> getRegisterHandset() {
@@ -791,6 +905,35 @@ public class HomepageActivity extends ListActivity {
             }
             Log.i("PReports: ", pendingRegister.toString());
             return pendingRegister;
+        }
+        finally {
+            if (c != null) {
+                c.close();
+            }
+        }
+    }
+
+    public List<PendingRegisterLocation> getRegisterLocation() {
+        List<PendingRegisterLocation> pendingLocation = new ArrayList<PendingRegisterLocation>();
+        PendingRegisterLocation member = null;
+        Cursor c = null;
+        try {
+            c = LoginActivity.offlineDb.rawQuery("Select * from DoseliPosicion", null);
+            if (c.moveToFirst()) {
+                do {
+                    member = new PendingRegisterLocation();
+                    member.setId(c.getInt(c.getColumnIndex("id")));
+                    member.setToken(c.getString(c.getColumnIndex("token")));
+                    member.setGroup_id(c.getString(c.getColumnIndex("group_id")));
+                    member.setHospital_id(c.getString(c.getColumnIndex("hospital_id")));
+                    member.setArea_id(c.getString(c.getColumnIndex("area_id")));
+                    member.setLocation_id(c.getString(c.getColumnIndex("location_id")));
+                    member.setReference(c.getString(c.getColumnIndex("reference")));
+                    pendingLocation.add(member);
+                } while (c.moveToNext());
+            }
+            Log.i("PLocations: ", pendingLocation.toString());
+            return pendingLocation;
         }
         finally {
             if (c != null) {

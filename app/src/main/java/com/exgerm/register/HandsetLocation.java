@@ -401,11 +401,12 @@ public class HandsetLocation extends Activity {
 
                     } else if (networkAvailable == false) {
                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliPosicion " +
-                                "(token, group_name, group_id, hospital, hospital_id, area, area_id, location, location_id) " +
-                                "VALUES ('" + uuid + "', '" + groupSelected + "', '" + groupSelectedId + "', " +
-                                "'" + hospitalSelected + "', '" + hospitalSelectedId + "', " +
-                                "'" + areaSelected + "', '" + areaSelectedId + "', " +
-                                "'" + locationSelected + "', '" + locationSelectedId + "')");
+                                "(token, group_id, hospital_id, area_id, location_id, reference) " +
+                                "VALUES ('" + uuid + "', '" + groupSelectedId + "', " +
+                                "'" + hospitalSelectedId + "', " +
+                                "'" + areaSelectedId + "', " +
+                                "'" + locationSelectedId + "', " +
+                                "'" + roomSelected + "')");
                         AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
                         builder.setTitle("Fuera de linea");
                         builder.setMessage("Guardado en pendientes para mandar despues");
