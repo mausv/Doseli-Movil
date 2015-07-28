@@ -6,21 +6,20 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -61,6 +60,10 @@
                       <folding>
                         <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+                        <element signature="e#14585#14586#0" expanded="false" />
+                        <element signature="e#14657#14658#0" expanded="false" />
+                        <element signature="e#27752#27753#0" expanded="false" />
+                        <element signature="e#27816#27817#0" expanded="false" />
                         <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
                       </folding>
@@ -132,11 +135,13 @@
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.23129252">
-                      <caret line="391" column="71" selection-start-line="391" selection-start-column="71" selection-end-line="391" selection-end-column="71" />
+                      <caret line="394" column="86" selection-start-line="394" selection-start-column="86" selection-end-line="394" selection-end-column="86" />
                       <folding>
                         <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-                        <element signature="e#15988#16003#0" expanded="true" />
+                        <element signature="e#16259#16274#0" expanded="true" />
+                        <element signature="e#28192#28420#0" expanded="true" />
+                        <element signature="e#28419#28420#0" expanded="true" />
                         <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
                       </folding>
@@ -368,11 +373,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.23129252">
-                      <caret line="328" column="39" selection-start-line="328" selection-start-column="39" selection-end-line="328" selection-end-column="39" />
+                    <state vertical-scroll-proportion="0.0">
+                      <caret line="315" column="50" selection-start-line="315" selection-start-column="50" selection-end-line="315" selection-end-column="50" />
                       <folding />
                     </state>
                   </provider>
@@ -413,11 +418,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="442" column="48" selection-start-line="442" selection-start-column="48" selection-end-line="442" selection-end-column="48" />
+                    <state vertical-scroll-proportion="0.4217687">
+                      <caret line="615" column="39" selection-start-line="615" selection-start-column="39" selection-end-line="615" selection-end-column="39" />
                       <folding>
                         <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
                         <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
@@ -1916,8 +1921,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       </list>
     </option>
   </component>
@@ -2625,7 +2630,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437598034484</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Finished fixing crashes due to script errors.">
+      <created>1438035389281</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1438035389281</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2683,8 +2694,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixed token missing SQLite" />
-    <MESSAGE value="Added send pending to the menu on HomepageActivity" />
     <MESSAGE value="Added reading from SQLite database" />
     <MESSAGE value="Added sending report offline mode" />
     <MESSAGE value="Fixed login without internet crash" />
@@ -2708,7 +2717,9 @@
     <MESSAGE value="Fixed spinners in HandsetLocation overwritting the later ones." />
     <MESSAGE value="When no internet is available in HansetLocation, the positioning is saved in an offline SQLDatabase for later send." />
     <MESSAGE value="Sending locations through send pending is working now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending locations through send pending is working now." />
+    <MESSAGE value="Finished fixing crashes due to script errors" />
+    <MESSAGE value="Finished fixing crashes due to script errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished fixing crashes due to script errors." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3300,24 +3311,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="442" column="48" selection-start-line="442" selection-start-column="48" selection-end-line="442" selection-end-column="48" />
+          <caret line="315" column="50" selection-start-line="315" selection-start-column="50" selection-end-line="315" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4217687">
+          <caret line="615" column="39" selection-start-line="615" selection-start-column="39" selection-end-line="615" selection-end-column="39" />
           <folding>
             <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23129252">
-          <caret line="328" column="39" selection-start-line="328" selection-start-column="39" selection-end-line="328" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>

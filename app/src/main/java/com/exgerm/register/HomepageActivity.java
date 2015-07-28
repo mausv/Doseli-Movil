@@ -361,6 +361,7 @@ public class HomepageActivity extends ListActivity {
     }
 
     public class SendPending extends AsyncTask<Void, Void, Void> {
+        int status = 0;
 
         @Override
         protected void onPreExecute() {
@@ -375,162 +376,29 @@ public class HomepageActivity extends ListActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            for (int i = 0; i < pendingRegisterArray.size(); i++) {
-                int successGD;
-                String mid = "";
+            if(pendingRegisterArray.size() > 0 || pendingLocationArray.size() > 0 || pendingArray.size() > 0) {
+                if (pendingRegisterArray.size() > 0) {
+                    for (int i = 0; i < pendingRegisterArray.size(); i++) {
+                        int successGD;
+                        String mid = "";
 
-                String tokenT = pendingRegisterArray.get(i).getToken();
+                        String tokenT = pendingRegisterArray.get(i).getToken();
 
-                // Check for success tag
-                // Building Parameters
-                List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
-                paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
-
-                // Building Parameters
-                List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
-                paramsP.add(new BasicNameValuePair("token", pendingRegisterArray.get(i).getToken()));
-                paramsP.add(new BasicNameValuePair("model", pendingRegisterArray.get(i).getModel()));
-                paramsP.add(new BasicNameValuePair("serial_number", pendingRegisterArray.get(i).getSerial_number()));
-                paramsP.add(new BasicNameValuePair("user", pendingRegisterArray.get(i).getAssociated_by()));
-
-                // getting JSON Object
-                // Note that create product url accepts POST method
-                JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_register_handset,
-                        "POST", paramsP);
-
-                // check log cat fro response
-                Log.d("Create Response", jsonP.toString());
-
-                // check for success tag
-                try {
-                    int success = jsonP.getInt("success");
-
-                    if (success == 1) {
-                        // successfully created product
-            /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
-            startActivity(i);*/
-                        Log.i("Report status: ", "sent");
-
-                        // closing this screen
-                    } else {
-                        // failed to create product
-                        Log.i("Report status: ", "failed");
-                    }
-
-                    Log.i("SId: ", String.valueOf(pendingRegisterArray.get(i).getId()));
-
-                    LoginActivity.offlineDb.delete("DoseliAltas", "id = " + String.valueOf(pendingRegisterArray.get(i).getId()), null);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-
-            for (int i = 0; i < pendingLocationArray.size(); i++) {
-                int successGD;
-                String mid = "";
-
-                // Check for success tag
-
-                // Building Parameters
-                List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
-                paramsP.add(new BasicNameValuePair("token", pendingLocationArray.get(i).getToken()));
-                paramsP.add(new BasicNameValuePair("group_id", pendingLocationArray.get(i).getGroup_id()));
-                paramsP.add(new BasicNameValuePair("hospital_id", pendingLocationArray.get(i).getHospital_id()));
-                paramsP.add(new BasicNameValuePair("area_id", pendingLocationArray.get(i).getArea_id()));
-                paramsP.add(new BasicNameValuePair("location_id", pendingLocationArray.get(i).getLocation_id()));
-                paramsP.add(new BasicNameValuePair("reference", pendingLocationArray.get(i).getReference()));
-
-                // getting JSON Object
-                // Note that create product url accepts POST method
-                JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_register_location,
-                        "POST", paramsP);
-
-                // check log cat fro response
-                Log.d("Create Response", jsonP.toString());
-
-                // check for success tag
-                try {
-                    int success = jsonP.getInt("success");
-
-                    if (success == 1) {
-                        // successfully created product
-            /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
-            startActivity(i);*/
-                        Log.i("Report status: ", "sent");
-
-                        // closing this screen
-                    } else {
-                        // failed to create product
-                        Log.i("Report status: ", "failed");
-                    }
-
-                    Log.i("SId: ", String.valueOf(pendingLocationArray.get(i).getId()));
-
-                    LoginActivity.offlineDb.delete("DoseliPosicion", "id = " + String.valueOf(pendingLocationArray.get(i).getId()), null);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-
-            for (int i = 0; i < pendingArray.size(); i++) {
-                int successGD;
-                String mid = "";
-
-                String tokenT = pendingArray.get(i).getToken();
-
-                // Check for success tag
-                try {
-                    // Building Parameters
-                    List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
-                    paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
-
-                    // getting product details by making HTTP request
-                    // Note that product details url will use GET request
-                    JSONObject json = jsonParser.makeHttpRequest(
-                            url_get_details, "POST", paramsGetDetails);
-
-                    // check your log for json response
-                    Log.d("Single Product Details", json.toString());
-
-                    // json success tag
-                    successGD = json.getInt("success");
-                    if (successGD == 1) {
-                        Log.i("Token status: ", "valid");
-                        // successfully received product details
-                        JSONArray productObj = json
-                                .getJSONArray("product"); // JSON Array
-
-                        // get first product object from JSON Array
-                        JSONObject product = productObj.getJSONObject(0);
-
-                        // product with this pid found
-                        String aparato = product.getString("model") + product.getString("serial_number");
-                        mid = product.getString("id");
-                        Log.d("Aparato: ", aparato);
+                        // Check for success tag
+                        // Building Parameters
+                        List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
+                        paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
 
                         // Building Parameters
                         List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
-                        paramsP.add(new BasicNameValuePair("machines_id", mid));
-                        paramsP.add(new BasicNameValuePair("state", pendingArray.get(i).getState()));
-                        paramsP.add(new BasicNameValuePair("comment", pendingArray.get(i).getDevice_comment()));
-                        paramsP.add(new BasicNameValuePair("users_id", pendingArray.get(i).getUsers_id()));
-                        paramsP.add(new BasicNameValuePair("user_name", pendingArray.get(i).getUser_name()));
-                        paramsP.add(new BasicNameValuePair("lowBattery", pendingArray.get(i).getLowBattery()));
-                        paramsP.add(new BasicNameValuePair("changeBattery", pendingArray.get(i).getChangeBattery()));
-                        paramsP.add(new BasicNameValuePair("lowLiquid", pendingArray.get(i).getLowLiquid()));
-                        paramsP.add(new BasicNameValuePair("changeLiquid", pendingArray.get(i).getChangeLiquid()));
-                        paramsP.add(new BasicNameValuePair("physicalDamage", pendingArray.get(i).getPhysicalDamage()));
-                        paramsP.add(new BasicNameValuePair("physicalRepair", pendingArray.get(i).getPhysicalRepair()));
-                        paramsP.add(new BasicNameValuePair("hospitals_id", pendingArray.get(i).getHospitals_id()));
-                        paramsP.add(new BasicNameValuePair("hospital_name", pendingArray.get(i).getHospital_name()));
+                        paramsP.add(new BasicNameValuePair("token", pendingRegisterArray.get(i).getToken()));
+                        paramsP.add(new BasicNameValuePair("model", pendingRegisterArray.get(i).getModel()));
+                        paramsP.add(new BasicNameValuePair("serial_number", pendingRegisterArray.get(i).getSerial_number()));
+                        paramsP.add(new BasicNameValuePair("user", pendingRegisterArray.get(i).getAssociated_by()));
 
                         // getting JSON Object
                         // Note that create product url accepts POST method
-                        JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_report,
+                        JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_register_handset,
                                 "POST", paramsP);
 
                         // check log cat fro response
@@ -542,8 +410,8 @@ public class HomepageActivity extends ListActivity {
 
                             if (success == 1) {
                                 // successfully created product
-                    /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
-                    startActivity(i);*/
+            /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
+            startActivity(i);*/
                                 Log.i("Report status: ", "sent");
 
                                 // closing this screen
@@ -552,24 +420,168 @@ public class HomepageActivity extends ListActivity {
                                 Log.i("Report status: ", "failed");
                             }
 
-                            Log.i("SId: ", String.valueOf(pendingArray.get(i).getId()));
+                            Log.i("SId: ", String.valueOf(pendingRegisterArray.get(i).getId()));
 
-                            LoginActivity.offlineDb.delete("DoseliOffline", "id = " + String.valueOf(pendingArray.get(i).getId()), null);
+                            LoginActivity.offlineDb.delete("DoseliAltas", "id = " + String.valueOf(pendingRegisterArray.get(i).getId()), null);
 
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 
-
-                    } else if (successGD == 0) {
-                        Log.i("Token status: ", "invalid");
-
-                        LoginActivity.offlineDb.delete("DoseliOffline", "id = " + pendingArray.get(i).getId(), null);
                     }
-                } catch (JSONException e) {
-                    e.printStackTrace();
                 }
 
+                if (pendingLocationArray.size() > 0) {
+                    for (int i = 0; i < pendingLocationArray.size(); i++) {
+                        int successGD;
+                        String mid = "";
+
+                        // Check for success tag
+
+                        // Building Parameters
+                        List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
+                        paramsP.add(new BasicNameValuePair("token", pendingLocationArray.get(i).getToken()));
+                        paramsP.add(new BasicNameValuePair("group_id", pendingLocationArray.get(i).getGroup_id()));
+                        paramsP.add(new BasicNameValuePair("hospital_id", pendingLocationArray.get(i).getHospital_id()));
+                        paramsP.add(new BasicNameValuePair("area_id", pendingLocationArray.get(i).getArea_id()));
+                        paramsP.add(new BasicNameValuePair("location_id", pendingLocationArray.get(i).getLocation_id()));
+                        paramsP.add(new BasicNameValuePair("reference", pendingLocationArray.get(i).getReference()));
+
+                        // getting JSON Object
+                        // Note that create product url accepts POST method
+                        JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_register_location,
+                                "POST", paramsP);
+
+                        // check log cat fro response
+                        Log.d("Create Response", jsonP.toString());
+
+                        // check for success tag
+                        try {
+                            int success = jsonP.getInt("success");
+
+                            if (success == 1) {
+                                // successfully created product
+            /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
+            startActivity(i);*/
+                                Log.i("Report status: ", "sent");
+
+                                // closing this screen
+                            } else {
+                                // failed to create product
+                                Log.i("Report status: ", "failed");
+                            }
+
+                            Log.i("SId: ", String.valueOf(pendingLocationArray.get(i).getId()));
+
+                            LoginActivity.offlineDb.delete("DoseliPosicion", "id = " + String.valueOf(pendingLocationArray.get(i).getId()), null);
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }
+
+                if (pendingArray.size() > 0) {
+                    for (int i = 0; i < pendingArray.size(); i++) {
+                        int successGD;
+                        String mid = "";
+
+                        String tokenT = pendingArray.get(i).getToken();
+
+                        // Check for success tag
+                        try {
+                            // Building Parameters
+                            List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
+                            paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
+
+                            // getting product details by making HTTP request
+                            // Note that product details url will use GET request
+                            JSONObject json = jsonParser.makeHttpRequest(
+                                    url_get_details, "POST", paramsGetDetails);
+
+                            // check your log for json response
+                            Log.d("Single Product Details", json.toString());
+
+                            // json success tag
+                            successGD = json.getInt("success");
+                            if (successGD == 1) {
+                                Log.i("Token status: ", "valid");
+                                // successfully received product details
+                                JSONArray productObj = json
+                                        .getJSONArray("product"); // JSON Array
+
+                                // get first product object from JSON Array
+                                JSONObject product = productObj.getJSONObject(0);
+
+                                // product with this pid found
+                                String aparato = product.getString("model") + product.getString("serial_number");
+                                mid = product.getString("id");
+                                Log.d("Aparato: ", aparato);
+
+                                // Building Parameters
+                                List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
+                                paramsP.add(new BasicNameValuePair("machines_id", mid));
+                                paramsP.add(new BasicNameValuePair("state", pendingArray.get(i).getState()));
+                                paramsP.add(new BasicNameValuePair("comment", pendingArray.get(i).getDevice_comment()));
+                                paramsP.add(new BasicNameValuePair("users_id", pendingArray.get(i).getUsers_id()));
+                                paramsP.add(new BasicNameValuePair("user_name", pendingArray.get(i).getUser_name()));
+                                paramsP.add(new BasicNameValuePair("lowBattery", pendingArray.get(i).getLowBattery()));
+                                paramsP.add(new BasicNameValuePair("changeBattery", pendingArray.get(i).getChangeBattery()));
+                                paramsP.add(new BasicNameValuePair("lowLiquid", pendingArray.get(i).getLowLiquid()));
+                                paramsP.add(new BasicNameValuePair("changeLiquid", pendingArray.get(i).getChangeLiquid()));
+                                paramsP.add(new BasicNameValuePair("physicalDamage", pendingArray.get(i).getPhysicalDamage()));
+                                paramsP.add(new BasicNameValuePair("physicalRepair", pendingArray.get(i).getPhysicalRepair()));
+                                paramsP.add(new BasicNameValuePair("hospitals_id", pendingArray.get(i).getHospitals_id()));
+                                paramsP.add(new BasicNameValuePair("hospital_name", pendingArray.get(i).getHospital_name()));
+
+                                // getting JSON Object
+                                // Note that create product url accepts POST method
+                                JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_report,
+                                        "POST", paramsP);
+
+                                // check log cat fro response
+                                Log.d("Create Response", jsonP.toString());
+
+                                // check for success tag
+                                try {
+                                    int success = jsonP.getInt("success");
+
+                                    if (success == 1) {
+                                        // successfully created product
+                    /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
+                    startActivity(i);*/
+                                        Log.i("Report status: ", "sent");
+
+                                        // closing this screen
+                                    } else {
+                                        // failed to create product
+                                        Log.i("Report status: ", "failed");
+                                    }
+
+                                    Log.i("SId: ", String.valueOf(pendingArray.get(i).getId()));
+
+                                    LoginActivity.offlineDb.delete("DoseliOffline", "id = " + String.valueOf(pendingArray.get(i).getId()), null);
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+
+
+                            } else if (successGD == 0) {
+                                Log.i("Token status: ", "invalid");
+
+                                LoginActivity.offlineDb.delete("DoseliOffline", "id = " + pendingArray.get(i).getId(), null);
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }
+                status = 1;
+            } else {
+                status = 0;
             }
 
 //            LoginActivity.offlineDb.delete("DoseliOffline", null, null);
@@ -581,17 +593,31 @@ public class HomepageActivity extends ListActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            pDialog.dismiss();
-            AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
-            builder.setTitle("Listo");
-            builder.setMessage("Reportes pendientes enviados");
-            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
-            builder.show();
+            if(status == 1) {
+                pDialog.dismiss();
+                AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+                builder.setTitle("Listo");
+                builder.setMessage("Reportes pendientes enviados");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.show();
+            } else if (status == 0){
+                pDialog.dismiss();
+                AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+                builder.setTitle("Todo completo");
+                builder.setMessage("No hay pendientes");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.show();
+            }
         }
     }
 
