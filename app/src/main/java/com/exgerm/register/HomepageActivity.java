@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TabHost;
 import android.widget.TextView;
 
 
@@ -76,6 +77,21 @@ public class HomepageActivity extends ListActivity {
         setContentView(R.layout.activity_homepage);
         mTitle = (TextView) findViewById(R.id.title);
         mTitle.setText(LoginActivity.hospitalSelected);
+
+        //Setting the tabs
+        TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
+
+        tabHost.setup();
+
+        TabHost.TabSpec tabSpec = tabHost.newTabSpec("summary");
+        tabSpec.setContent(R.id.tabSummary);
+        tabSpec.setIndicator("Resumen");
+        tabHost.addTab(tabSpec);
+
+        tabSpec = tabHost.newTabSpec("reports");
+        tabSpec.setContent(R.id.tabReports);
+        tabSpec.setIndicator("Reportes");
+        tabHost.addTab(tabSpec);
 
         hspOb = LoginActivity.hspName;
 
