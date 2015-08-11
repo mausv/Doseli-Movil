@@ -74,6 +74,12 @@
                         android:layout_alignTop="@+id/miscTot7"
                         android:layout_toRightOf="@+id/miscTot7"
                         android:layout_toEndOf="@+id/miscTot7" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/totalChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
                 </RelativeLayout>
 
                 <LinearLayout

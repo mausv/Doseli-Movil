@@ -21,6 +21,13 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.data.ChartData;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.utils.ColorTemplate;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,6 +84,24 @@ public class HomepageActivity extends ListActivity {
         setContentView(R.layout.activity_homepage);
         mTitle = (TextView) findViewById(R.id.title);
         mTitle.setText(LoginActivity.hospitalSelected);
+        PieChart pieChart = (PieChart) findViewById(R.id.totalChart);
+
+        int totalHandsets = 8;
+        int totalChecked = 6;
+        int missing = totalHandsets - totalChecked;
+
+        ArrayList<Entry> valsChecked = new ArrayList<Entry>();
+        valsChecked.add(new Entry(missing, 0));
+        valsChecked.add(new Entry(totalChecked, 1));
+
+        String[] xVals = new String[] { "Total", "Checked"};
+
+        PieDataSet  dataSet = new PieDataSet(valsChecked, "Total values");
+        dataSet.setColors(new int[] {getResources().getColor(R.color.redColor), getResources().getColor(R.color.greenColor)});
+        PieData data = new PieData(xVals, dataSet);
+
+        pieChart.setData(data);
+        pieChart.invalidate();
 
         //Setting the tabs
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
@@ -1040,4 +1065,5 @@ public class HomepageActivity extends ListActivity {
         startActivity(goToDetailView);
 
     }
+
 }
