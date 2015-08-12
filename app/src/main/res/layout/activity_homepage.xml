@@ -53,33 +53,23 @@
                         android:layout_height="wrap_content"
                         android:text="#"
                         android:id="@+id/txtTotalHandsets"
-                        android:layout_above="@+id/miscTot7"
-                        android:layout_toRightOf="@+id/miscTot7"
-                        android:layout_toEndOf="@+id/miscTot7" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Revisados en los ultimos 7 dias:"
-                        android:id="@+id/miscTot7"
-                        android:layout_below="@+id/miscHandset"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#"
-                        android:id="@+id/textView9"
-                        android:layout_alignTop="@+id/miscTot7"
-                        android:layout_toRightOf="@+id/miscTot7"
-                        android:layout_toEndOf="@+id/miscTot7" />
+                        android:layout_toRightOf="@+id/miscHandset"/>
 
                     <com.github.mikephil.charting.charts.PieChart
                         android:id="@+id/totalChart"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_below="@+id/miscTot7" />
+                        android:layout_below="@+id/daySwitch" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dias: "
+                        android:id="@+id/daySwitch"
+                        android:layout_below="@+id/miscHandset"
+                        android:checked="false"
+                        android:textOff="15"
+                        android:textOn="30" />
 
                 </RelativeLayout>
 

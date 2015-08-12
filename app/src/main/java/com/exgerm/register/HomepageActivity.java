@@ -15,8 +15,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -65,8 +67,12 @@ public class HomepageActivity extends ListActivity {
 
     PieChart pieChart;
     int totalHandsets;
-    int totalChecked;
+    int totalChecked15;
+    int totalChecked30;
     int missing;
+    private Switch daySwitch;
+    int daysChoice = 15;
+    private TextView txtTotalHandsets;
 
     public List<PendingReport> pendingArray;
     public List<PendingRegisterHandset> pendingRegisterArray;
@@ -92,8 +98,26 @@ public class HomepageActivity extends ListActivity {
         mTitle = (TextView) findViewById(R.id.title);
         mTitle.setText(LoginActivity.hospitalSelected);
         pieChart = (PieChart) findViewById(R.id.totalChart);
+        daySwitch = (Switch) findViewById(R.id.daySwitch);
+        txtTotalHandsets = (TextView) findViewById(R.id.txtTotalHandsets);
 
         new GetCheckedDevices().execute();
+
+        daySwitch.setChecked(false);
+
+        daySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if(!isChecked) {
+                    daysChoice = 15;
+                } else {
+                    daysChoice = 30;
+                }
+
+                new GetCheckedDevices().execute();
+            }
+        });
 
         //Setting the tabs
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
@@ -1018,11 +1042,18 @@ public class HomepageActivity extends ListActivity {
                 try {
                     JSONArray devices = jsonObjCheck.getJSONArray("devices");
                     JSONObject totalDevices = (JSONObject) devices.get(0);
-                    JSONObject totalCheckedDevices = (JSONObject) devices.get(1);
+                    JSONObject totalCheckedDevicesFifteen = (JSONObject) devices.get(1);
+                    JSONObject totalCheckedDevicesThirty = (JSONObject) devices.get(2);
 
                     totalHandsets = totalDevices.getInt("count");
-                    totalChecked = totalCheckedDevices.getInt("checked_count_15");
-                    missing = totalHandsets - totalChecked;
+                    totalChecked15 = totalCheckedDevicesFifteen.getInt("checked_count_15");
+                    totalChecked30 = totalCheckedDevicesThirty.getInt("checked_count_30");
+
+                    if(daysChoice == 15) {
+                        missing = totalHandsets - totalChecked15;
+                    } else {
+                        missing = totalHandsets - totalChecked30;
+                    }
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -1036,9 +1067,15 @@ public class HomepageActivity extends ListActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
+            txtTotalHandsets.setText(String.valueOf(totalHandsets));
+
             ArrayList<Entry> valsChecked = new ArrayList<>();
             valsChecked.add(new Entry(missing, 0));
-            valsChecked.add(new Entry(totalChecked, 1));
+            if(daysChoice == 15) {
+                valsChecked.add(new Entry(totalChecked15, 1));
+            } else {
+                valsChecked.add(new Entry(totalChecked30, 1));
+            }
 
             String[] xVals = new String[] { "Falta", "Revisados"};
 
