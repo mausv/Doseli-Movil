@@ -37,8 +37,10 @@
         android:id="@+id/statusDetailView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/solucion3CB"
-        android:text="Cargando" />
+        android:text="Cargando"
+        android:layout_below="@+id/error3CB"
+        android:layout_alignRight="@+id/statusDetailViewUser"
+        android:layout_alignEnd="@+id/statusDetailViewUser" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -117,21 +119,22 @@
         android:layout_height="wrap_content"
         android:text="Errores"
         android:id="@+id/erroresFinal"
-        android:layout_toRightOf="@+id/statusDetailViewUser"
         android:checked="false"
         android:clickable="false"
-        android:enabled="true" />
+        android:enabled="true"
+        android:layout_below="@+id/statusDetailView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Funciona"
         android:id="@+id/perFinal"
-        android:layout_toRightOf="@+id/erroresFinal"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/solucion2CB"
-        android:layout_alignEnd="@+id/solucion2CB"
         android:clickable="false"
-        android:enabled="true" />
+        android:enabled="true"
+        android:layout_alignTop="@+id/erroresFinal"
+        android:layout_toRightOf="@+id/error1CB"
+        android:layout_toEndOf="@+id/error1CB" />
 
 </RelativeLayout>

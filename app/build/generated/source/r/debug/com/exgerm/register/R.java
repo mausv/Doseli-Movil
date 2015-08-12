@@ -1381,8 +1381,8 @@ containing a value of this type.
         public static final int end=0x7f0c001b;
         public static final int enviar=0x7f0c0077;
         public static final int error1CB=0x7f0c007f;
-        public static final int error2CB=0x7f0c0082;
-        public static final int error3CB=0x7f0c0081;
+        public static final int error2CB=0x7f0c0081;
+        public static final int error3CB=0x7f0c007e;
         public static final int erroresFinal=0x7f0c0084;
         public static final int expand_activities_button=0x7f0c0029;
         public static final int expanded_menu=0x7f0c002f;
@@ -1450,8 +1450,8 @@ containing a value of this type.
         public static final int showHome=0x7f0c0017;
         public static final int showTitle=0x7f0c0018;
         public static final int solucion1CB=0x7f0c0080;
-        public static final int solucion2CB=0x7f0c0083;
-        public static final int solucion3CB=0x7f0c007e;
+        public static final int solucion2CB=0x7f0c0082;
+        public static final int solucion3CB=0x7f0c0083;
         public static final int spinner=0x7f0c0055;
         public static final int split_action_bar=0x7f0c0007;
         public static final int state=0x7f0c005a;

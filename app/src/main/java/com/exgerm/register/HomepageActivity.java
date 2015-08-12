@@ -21,6 +21,7 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.ChartData;
 import com.github.mikephil.charting.data.Entry;
@@ -62,6 +63,11 @@ public class HomepageActivity extends ListActivity {
     //JSON Parser
     JSONParser jsonParser = new JSONParser();
 
+    PieChart pieChart;
+    int totalHandsets;
+    int totalChecked;
+    int missing;
+
     public List<PendingReport> pendingArray;
     public List<PendingRegisterHandset> pendingRegisterArray;
     public List<PendingRegisterLocation> pendingLocationArray;
@@ -77,6 +83,7 @@ public class HomepageActivity extends ListActivity {
     private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
     private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine.php";
     private static String url_pending_register_location = LoginActivity.main_url + "pending_register_location.php";
+    private static String url_get_checked_devices = LoginActivity.main_url + "get_checked_devices.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,24 +91,9 @@ public class HomepageActivity extends ListActivity {
         setContentView(R.layout.activity_homepage);
         mTitle = (TextView) findViewById(R.id.title);
         mTitle.setText(LoginActivity.hospitalSelected);
-        PieChart pieChart = (PieChart) findViewById(R.id.totalChart);
+        pieChart = (PieChart) findViewById(R.id.totalChart);
 
-        int totalHandsets = 8;
-        int totalChecked = 6;
-        int missing = totalHandsets - totalChecked;
-
-        ArrayList<Entry> valsChecked = new ArrayList<Entry>();
-        valsChecked.add(new Entry(missing, 0));
-        valsChecked.add(new Entry(totalChecked, 1));
-
-        String[] xVals = new String[] { "Total", "Checked"};
-
-        PieDataSet  dataSet = new PieDataSet(valsChecked, "Total values");
-        dataSet.setColors(new int[] {getResources().getColor(R.color.redColor), getResources().getColor(R.color.greenColor)});
-        PieData data = new PieData(xVals, dataSet);
-
-        pieChart.setData(data);
-        pieChart.invalidate();
+        new GetCheckedDevices().execute();
 
         //Setting the tabs
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
@@ -1006,6 +998,66 @@ public class HomepageActivity extends ListActivity {
             if (c != null) {
                 c.close();
             }
+        }
+    }
+
+    public class GetCheckedDevices extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            List<NameValuePair> checkedParams = new ArrayList<>();
+            checkedParams.add(new BasicNameValuePair("hsp_code", LoginActivity.hspCode));
+
+            JSONObject jsonObjCheck = jsonParser.makeHttpRequest(url_get_checked_devices, "POST", checkedParams);
+
+            if(jsonObjCheck != null) {
+                try {
+                    JSONArray devices = jsonObjCheck.getJSONArray("devices");
+                    JSONObject totalDevices = (JSONObject) devices.get(0);
+                    JSONObject totalCheckedDevices = (JSONObject) devices.get(1);
+
+                    totalHandsets = totalDevices.getInt("count");
+                    totalChecked = totalCheckedDevices.getInt("checked_count_15");
+                    missing = totalHandsets - totalChecked;
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            ArrayList<Entry> valsChecked = new ArrayList<>();
+            valsChecked.add(new Entry(missing, 0));
+            valsChecked.add(new Entry(totalChecked, 1));
+
+            String[] xVals = new String[] { "Falta", "Revisados"};
+
+            pieChart.setCenterTextColor(getResources().getColor(R.color.whiteColor));
+
+            PieDataSet  dataSet = new PieDataSet(valsChecked, "Equipos revisados");
+            pieChart.setDescription("");
+            dataSet.setColors(new int[]{getResources().getColor(R.color.redColor), getResources().getColor(R.color.greenColor)});
+            dataSet.setValueTextColor(getResources().getColor(R.color.whiteColor));
+            PieData data = new PieData(xVals, dataSet);
+
+            pieChart.animateXY(2000,2000);
+
+            pieChart.spin(1000, 0, -260f, Easing.EasingOption.EaseInOutQuad);
+
+            pieChart.setData(data);
+
+            pieChart.invalidate();
+
         }
     }
 

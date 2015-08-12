@@ -413,8 +413,8 @@ int id edit_query 0x7f0c003a
 int id end 0x7f0c001b
 int id enviar 0x7f0c0077
 int id error1CB 0x7f0c007f
-int id error2CB 0x7f0c0082
-int id error3CB 0x7f0c0081
+int id error2CB 0x7f0c0081
+int id error3CB 0x7f0c007e
 int id erroresFinal 0x7f0c0084
 int id expand_activities_button 0x7f0c0029
 int id expanded_menu 0x7f0c002f
@@ -482,8 +482,8 @@ int id showCustom 0x7f0c0016
 int id showHome 0x7f0c0017
 int id showTitle 0x7f0c0018
 int id solucion1CB 0x7f0c0080
-int id solucion2CB 0x7f0c0083
-int id solucion3CB 0x7f0c007e
+int id solucion2CB 0x7f0c0082
+int id solucion3CB 0x7f0c0083
 int id spinner 0x7f0c0055
 int id split_action_bar 0x7f0c0007
 int id state 0x7f0c005a
