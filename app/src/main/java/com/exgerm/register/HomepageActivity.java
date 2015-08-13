@@ -30,7 +30,9 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.utils.ValueFormatter;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -1077,7 +1079,7 @@ public class HomepageActivity extends ListActivity {
                 valsChecked.add(new Entry(totalChecked30, 1));
             }
 
-            String[] xVals = new String[] { "Falta", "Revisados"};
+            String[] xVals = new String[] { "Faltan", "Revisados"};
 
             pieChart.setCenterTextColor(getResources().getColor(R.color.whiteColor));
 
@@ -1086,6 +1088,7 @@ public class HomepageActivity extends ListActivity {
             dataSet.setColors(new int[]{getResources().getColor(R.color.redColor), getResources().getColor(R.color.greenColor)});
             dataSet.setValueTextColor(getResources().getColor(R.color.whiteColor));
             PieData data = new PieData(xVals, dataSet);
+            dataSet.setValueFormatter(new CheckedFormatter());
 
             pieChart.animateXY(2000,2000);
 
@@ -1095,6 +1098,19 @@ public class HomepageActivity extends ListActivity {
 
             pieChart.invalidate();
 
+        }
+    }
+
+    public class CheckedFormatter implements ValueFormatter {
+        private DecimalFormat mFormat;
+
+        public CheckedFormatter () {
+            mFormat = new DecimalFormat("###,###,##0");
+        }
+
+        @Override
+        public String getFormattedValue(float value) {
+            return mFormat.format(value);
         }
     }
 

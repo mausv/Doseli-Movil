@@ -46,14 +46,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Aparatos:"
-                        android:id="@+id/miscHandset" />
+                        android:id="@+id/miscHandset"
+                        android:textSize="20dp"
+                        android:textColor="#010101" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="#"
                         android:id="@+id/txtTotalHandsets"
-                        android:layout_toRightOf="@+id/miscHandset"/>
+                        android:layout_toRightOf="@+id/miscHandset"
+                        android:textSize="20dp"
+                        android:layout_alignParentEnd="false"
+                        android:paddingStart="5dp" />
 
                     <com.github.mikephil.charting.charts.PieChart
                         android:id="@+id/totalChart"
@@ -69,7 +74,8 @@
                         android:layout_below="@+id/miscHandset"
                         android:checked="false"
                         android:textOff="15"
-                        android:textOn="30" />
+                        android:textOn="30"
+                        android:textSize="20dp" />
 
                 </RelativeLayout>
 

@@ -6,7 +6,7 @@
         jumboMode="false"
         revision="22.0.1"
         sha1="3fce86548feba9dd220128fa651498c51d099cd8">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.3-0ce87887550f1614561b7691c3c25796f2e9fb52.jar" />
+        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\MPAndroidChart-v2.1.3-0ce87887550f1614561b7691c3c25796f2e9fb52.jar" />
     </item>
 
 </items>

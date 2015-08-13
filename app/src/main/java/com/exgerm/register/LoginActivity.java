@@ -53,7 +53,6 @@ public class LoginActivity extends Activity {
     public static String hspName;
     public static String hspCode;
     protected Button mLogin;
-    protected Button mAltas;
     protected TextView textLat;
     protected TextView textLong;
     public Boolean geoBoxCorrect = false;
@@ -98,8 +97,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.127/doseli/";
+    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    //public static String main_url = "http://192.168.1.127/doseli/";
 
 
     //URLs
@@ -141,7 +140,6 @@ public class LoginActivity extends Activity {
         mLogin = (Button) findViewById(R.id.loginButton);
         textLat = (TextView) findViewById(R.id.latitudeTextView);
         textLong = (TextView) findViewById(R.id.longitudeTextView);
-        mAltas = (Button) findViewById(R.id.button);
         versionTV = (TextView) findViewById(R.id.versionTV);
         getImei();
 
@@ -311,13 +309,6 @@ public class LoginActivity extends Activity {
             }*/
 
 
-        });
-        mAltas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent takeAltas = new Intent(LoginActivity.this, HandsetRegister.class);
-                startActivity(takeAltas);
-            }
         });
 
         groupSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
