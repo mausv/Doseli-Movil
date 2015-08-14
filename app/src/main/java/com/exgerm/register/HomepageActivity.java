@@ -377,9 +377,7 @@ public class HomepageActivity extends ListActivity {
 
                 break;
             case R.id.logout:
-                //Take the user back to the login activity
-                Intent takeUserToLogin = new Intent(this, LoginActivity.class);
-                startActivity(takeUserToLogin);
+                finish();
 
                 break;
             case R.id.send_pending:
