@@ -235,6 +235,14 @@
     <string name="zxing_button_ok">OK</string>
     <string name="zxing_msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
     <string name="zxing_msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="ActionBar.Solid.Doseli_theme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_doseli_theme</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_doseli_theme</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_doseli_theme</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Doseli_theme</item>
+    </style>
     <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
     <eat-comment/>
     <style name="ActionBar.Solid.Register" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
@@ -243,14 +251,36 @@
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_register</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Register</item>
     </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="ActionBar.Transparent.Doseli_theme" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_doseli_theme</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
+    <eat-comment/>
     <style name="ActionBar.Transparent.Register" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@drawable/ab_transparent_register</item>
         <item name="android:actionMenuTextColor">@color/whiteColor</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Register</item>
     </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="ActionBarTabStyle.Doseli_theme" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
+    <eat-comment/>
     <style name="ActionBarTabStyle.Register" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
         <item name="android:background">@drawable/tab_indicator_ab_register</item>
     </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="ActionButton.CloseMode.Doseli_theme" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
+    <eat-comment/>
     <style name="ActionButton.CloseMode.Register" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
         <item name="android:background">@drawable/btn_cab_done_register</item>
     </style>
@@ -1013,11 +1043,25 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="DropDownListView.Doseli_theme" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_doseli_theme</item>
+    </style>
     <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
     <eat-comment/>
     <style name="DropDownListView.Register" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_register</item>
     </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="DropDownNav.Doseli_theme" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_doseli_theme</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_doseli_theme</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
+    <eat-comment/>
     <style name="DropDownNav.Register" parent="@android:style/Widget.Holo.Light.Spinner">
         <item name="android:background">@drawable/spinner_background_ab_register</item>
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_register</item>
@@ -1153,11 +1197,23 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
     <style name="Platform.AppCompat.Light.Dialog" parent="Platform.AppCompat.Dialog"/>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="PopupMenu.Doseli_theme" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_doseli_theme</item>	
+    </style>
     <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
     <eat-comment/>
     <style name="PopupMenu.Register" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_register</item>	
     </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="ProgressBar.Doseli_theme" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
+    <eat-comment/>
     <style name="ProgressBar.Register" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_register</item>
     </style>
@@ -1263,6 +1319,27 @@
     <style name="Theme.AppCompat.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
+    <eat-comment/>
+    <style name="Theme.Doseli_theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_doseli_theme</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Doseli_theme</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Doseli_theme</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Doseli_theme</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Doseli_theme</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Doseli_theme</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_doseli_theme</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_doseli_theme</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Doseli_theme</item>
+        
+                <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Doseli_theme.Widget</item>
+
+    </style>
+    <style name="Theme.Doseli_theme.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Doseli_theme</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Doseli_theme</item>
     </style>
     <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/styles_register.xml -->
     <eat-comment/>
