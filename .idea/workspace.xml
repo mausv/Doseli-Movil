@@ -10,28 +10,133 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_status_detail_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_status_detail_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_status_detail_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_status_detail_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+    <list default="true" id="e9cff0d3-a65c-49c2-bd35-aa53e1df36aa" name="Default" comment="Fixed logout option in ActionBar.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/good.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ab_background_textured_doseli_theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_cab_done_doseli_theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/progress_horizontal_doseli_theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selectable_background_doseli_theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spinner_background_ab_doseli_theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tab_indicator_ab_doseli_theme.xml" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\ab_bottom_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\ab_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\ab_stacked_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\ab_texture_tile_register.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\ab_transparent_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\btn_cab_done_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\btn_cab_done_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\btn_cab_done_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\cab_background_bottom_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\cab_background_top_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\list_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\list_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\menu_dropdown_panel_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\progress_bg_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\progress_primary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\progress_secondary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\spinner_ab_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\spinner_ab_disabled_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\spinner_ab_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\spinner_ab_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\tab_selected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\tab_selected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\tab_selected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\tab_unselected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\tab_unselected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-hdpi\tab_unselected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\ab_bottom_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\ab_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\ab_stacked_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\ab_texture_tile_register.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\ab_transparent_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\btn_cab_done_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\btn_cab_done_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\btn_cab_done_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\cab_background_bottom_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\cab_background_top_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\list_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\list_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\menu_dropdown_panel_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\progress_bg_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\progress_primary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\progress_secondary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\spinner_ab_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\spinner_ab_disabled_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\spinner_ab_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\spinner_ab_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\tab_selected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\tab_selected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\tab_selected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\tab_unselected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\tab_unselected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-mdpi\tab_unselected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\ab_bottom_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\ab_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\ab_stacked_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\ab_texture_tile_register.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\ab_transparent_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\btn_cab_done_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\btn_cab_done_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\btn_cab_done_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\cab_background_bottom_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\cab_background_top_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\drawable\ab_background_textured_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\drawable\btn_cab_done_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\drawable\progress_horizontal_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\drawable\selectable_background_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\drawable\spinner_background_ab_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\drawable\tab_indicator_ab_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\list_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\list_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\menu_dropdown_panel_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\progress_bg_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\progress_primary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\progress_secondary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\spinner_ab_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\spinner_ab_disabled_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\spinner_ab_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\spinner_ab_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\tab_selected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\tab_selected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\tab_selected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\tab_unselected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\tab_unselected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\tab_unselected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xhdpi\values\styles_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\ab_bottom_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\ab_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\ab_stacked_solid_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\ab_texture_tile_register.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\ab_transparent_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\btn_cab_done_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\btn_cab_done_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\btn_cab_done_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\cab_background_bottom_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\cab_background_top_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\list_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\list_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\menu_dropdown_panel_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\progress_bg_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\progress_primary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\progress_secondary_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\spinner_ab_default_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\spinner_ab_disabled_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\spinner_ab_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\spinner_ab_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\tab_selected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\tab_selected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\tab_selected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\tab_unselected_focused_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\tab_unselected_pressed_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable-xxhdpi\tab_unselected_register.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable\ab_background_textured_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable\btn_cab_done_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable\progress_horizontal_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable\selectable_background_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable\spinner_background_ab_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\drawable\tab_indicator_ab_register.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mauricio\Documents\Doseli-Movil\app\src\main\res\values\styles_register.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -1997,6 +2102,38 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Doseli-Movil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Doseli-Movil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2505,7 +2642,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439572004555</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Fixed logout option in ActionBar.">
+      <created>1439574576837</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1439574576837</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -2519,7 +2662,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2533,13 +2676,13 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2246941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3047831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3047831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2196162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33926585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2563,7 +2706,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixed crash when invalid token" />
     <MESSAGE value="Changed HandsetLocation items and functionality" />
     <MESSAGE value="Added version 1.0.4. Changed HandsetLocation items and functionality" />
     <MESSAGE value="Added version 1.0.5. Updated journeyapps' ZXing barcode scanning to version 3. Optimized scan and enabled rotation to the message." />
@@ -2588,7 +2730,8 @@
     <MESSAGE value="Added real values to the PieChart.&#10;Added animations to the PieChart.&#10;Fixed the size.&#10;Changed StatusDetailView for a better reading of info." />
     <MESSAGE value="Changed LoginActivity from LinearLayout to RelativeLayout.&#10;Changed the icon of the app." />
     <MESSAGE value="Changed theme." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed theme." />
+    <MESSAGE value="Fixed logout option in ActionBar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed logout option in ActionBar." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2930,6 +3073,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2974,14 +3118,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles_register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
@@ -3038,6 +3174,14 @@
             <element signature="class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ab_background_textured_doseli_theme.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
