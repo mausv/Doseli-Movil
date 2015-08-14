@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,51 +7,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.exgerm.register.LoginActivity">
+    tools:context="com.exgerm.register.LoginActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="129dp"
+        android:layout_height="105dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/doseli_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Grupo:"
         android:id="@+id/groupTV"
-        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/longitudeTextView"
-        android:layout_alignEnd="@+id/longitudeTextView"
-        android:layout_alignBottom="@+id/loginGroupSpinner"
-        android:gravity="center_vertical" />
+        android:layout_alignParentStart="true" />
 
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginGroupSpinner"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/groupTV"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hospital:"
         android:id="@+id/hospitalTV"
+        android:gravity="center_vertical"
         android:layout_below="@+id/loginGroupSpinner"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/loginHospitalSpinner"
-        android:gravity="center_vertical"
-        android:layout_toLeftOf="@+id/loginHospitalSpinner"
-        android:layout_toStartOf="@+id/loginHospitalSpinner" />
+        android:layout_alignParentStart="true" />
 
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginHospitalSpinner"
-        android:layout_below="@+id/loginGroupSpinner"
-        android:layout_toRightOf="@+id/groupTV"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/hospitalTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/loginButton"
@@ -60,9 +63,7 @@
         android:text="Iniciar sesión"
         android:textColor="@color/whiteColor"
         android:background="@color/blueColor"
-        android:layout_below="@+id/hospitalTV"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/loginHospitalSpinner"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -71,9 +72,9 @@
         android:layout_height="wrap_content"
         android:text="Version"
         android:id="@+id/versionTV"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_below="@+id/loginButton"
-        android:layout_gravity="center_horizontal" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/latitudeTextView"
@@ -94,5 +95,5 @@
         android:layout_above="@+id/latitudeTextView"
         android:layout_alignParentLeft="true" />
 
-</LinearLayout>
+</RelativeLayout>
 <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/layout/activity_login.xml -->
