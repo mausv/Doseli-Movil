@@ -64,6 +64,10 @@ public class HomepageActivity extends ListActivity {
     JSONArray categories;
     ReportsAdapter adapter;
 
+    ArrayList<Missing> arrayOfMissing;
+    JSONArray arrayOfMissing2;
+    MissingAdapter missingAdapter;
+
     //JSON Parser
     JSONParser jsonParser = new JSONParser();
 
@@ -92,6 +96,7 @@ public class HomepageActivity extends ListActivity {
     private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine.php";
     private static String url_pending_register_location = LoginActivity.main_url + "pending_register_location.php";
     private static String url_get_checked_devices = LoginActivity.main_url + "get_checked_devices.php";
+    private static String url_get_missing_check_devices = LoginActivity.main_url + "get_missing_check_devices.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +116,7 @@ public class HomepageActivity extends ListActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-                if(!isChecked) {
+                if (!isChecked) {
                     daysChoice = 15;
                 } else {
                     daysChoice = 30;
@@ -131,6 +136,11 @@ public class HomepageActivity extends ListActivity {
         tabSpec.setIndicator("Resumen");
         tabHost.addTab(tabSpec);
 
+        tabSpec = tabHost.newTabSpec("handsets");
+        tabSpec.setContent(R.id.tabHandsets);
+        tabSpec.setIndicator("Aparatos");
+        tabHost.addTab(tabSpec);
+
         tabSpec = tabHost.newTabSpec("reports");
         tabSpec.setContent(R.id.tabReports);
         tabSpec.setIndicator("Reportes");
@@ -141,11 +151,16 @@ public class HomepageActivity extends ListActivity {
         Log.d("HSP: ", hspOb);
 
         arrayOfReports = new ArrayList<Report>();
+        arrayOfMissing = new ArrayList<Missing>();
         adapter = new ReportsAdapter(this, arrayOfReports);
+        missingAdapter = new MissingAdapter(this, arrayOfMissing);
         ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(adapter);
+        ListView missingView = (ListView) findViewById(R.id.listMissing);
+        missingView.setAdapter(missingAdapter);
 
 
+        new GetMissing().execute();
         new GetReports().execute();
 
 
@@ -674,6 +689,47 @@ public class HomepageActivity extends ListActivity {
                     }
                 });
                 builder.show();
+            }
+        }
+    }
+
+    public class GetMissing extends AsyncTask<Void, Void, Void> {
+
+        int success;
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            List<NameValuePair> param = new ArrayList<>();
+            param.add(new BasicNameValuePair("hsp_code", LoginActivity.hospitalSelectedId));
+            param.add(new BasicNameValuePair("days", "15"));
+
+            JSONObject jsonMissing = jsonParser.makeHttpRequest(url_get_missing_check_devices, "POST", param);
+
+            if(jsonMissing != null) {
+                try {
+                    success = jsonMissing.getInt("success");
+
+                    if(success == 1) {
+
+                        arrayOfMissing2 = (JSONArray) jsonMissing.get("devices");
+
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            if(success == 1) {
+                ArrayList<Missing> latestMissing = Missing.fromJson(arrayOfMissing2);
+                missingAdapter.addAll(latestMissing);
             }
         }
     }

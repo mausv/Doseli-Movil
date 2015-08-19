@@ -97,8 +97,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.127/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.162/doseli/";
 
 
     //URLs
