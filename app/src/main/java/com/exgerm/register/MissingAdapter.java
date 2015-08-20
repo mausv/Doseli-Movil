@@ -30,11 +30,13 @@ public class MissingAdapter extends ArrayAdapter<Missing> {
         TextView model = (TextView) convertView.findViewById(R.id.mModel);
         TextView serial_number = (TextView) convertView.findViewById(R.id.mSerial);
         TextView qr = (TextView) convertView.findViewById(R.id.mQr);
+        TextView location = (TextView) convertView.findViewById(R.id.mLocation);
         TextView reference = (TextView) convertView.findViewById(R.id.mRef);
 
         model.setText(missing.model);
         serial_number.setText(missing.serial_number);
-        qr.setText(missing.qr);
+        qr.setText(" - QR: " + missing.qr);
+        location.setText(missing.location);
         reference.setText(missing.reference);
 
         return convertView;

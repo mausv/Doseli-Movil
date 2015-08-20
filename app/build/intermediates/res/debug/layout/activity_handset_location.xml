@@ -112,14 +112,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
-        android:layout_alignBottom="@+id/location"
+        android:layout_alignBottom="@+id/mLocation"
         android:layout_toStartOf="@+id/area"
         android:layout_toLeftOf="@+id/area" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/location"
+        android:id="@+id/mLocation"
         android:layout_below="@+id/area"
         android:layout_toEndOf="@+id/textView6"
         android:visibility="visible"
@@ -165,15 +165,15 @@
         android:textSize="16sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/location"
-        android:layout_toLeftOf="@+id/location"
+        android:layout_toStartOf="@+id/mLocation"
+        android:layout_toLeftOf="@+id/mLocation"
         android:layout_alignBottom="@+id/ref" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ref"
-        android:layout_below="@+id/location"
+        android:layout_below="@+id/mLocation"
         android:layout_toRightOf="@+id/textView6"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

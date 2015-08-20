@@ -22,20 +22,13 @@ import android.widget.TextView;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.parse.FindCallback;
-import com.parse.GetCallback;
-import com.parse.SaveCallback;
 
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.Date;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.joda.time.DateTime;
-import org.joda.time.Days;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -148,7 +141,7 @@ public class HandsetLocation extends Activity {
         groupSpinner = (Spinner) findViewById(R.id.group);
         hospitalSpinner = (Spinner) findViewById(R.id.hospital);
         areaSpinner = (Spinner) findViewById(R.id.area);
-        locationSpinner = (Spinner) findViewById(R.id.location);
+        locationSpinner = (Spinner) findViewById(R.id.mLocation);
         ref = (EditText) findViewById(R.id.ref);
         scan = (Button) findViewById(R.id.scan);
         qrId = (TextView) findViewById(R.id.aparatoTV);

@@ -14,6 +14,7 @@ public class Missing {
     public String model;
     public String serial_number;
     public String qr;
+    public String location;
     public String reference;
 
     public Missing(JSONObject object) {
@@ -22,6 +23,7 @@ public class Missing {
             this.model = object.getString("model");
             this.serial_number = object.getString("serial_number");
             this.qr = object.getString("qr");
+            this.location = object.getString("location");
             this.reference = object.getString("reference");
         } catch (JSONException e) {
             e.printStackTrace();

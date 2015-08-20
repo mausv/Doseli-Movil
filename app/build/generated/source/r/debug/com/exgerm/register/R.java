@@ -1408,12 +1408,12 @@ containing a value of this type.
         public static final int listMissing=0x7f0c0064;
         public static final int listMode=0x7f0c0010;
         public static final int list_item=0x7f0c002c;
-        public static final int location=0x7f0c004f;
         public static final int loginButton=0x7f0c005c;
         public static final int loginGroupSpinner=0x7f0c0068;
         public static final int loginHospitalSpinner=0x7f0c006a;
         public static final int logout=0x7f0c00a3;
         public static final int longitudeTextView=0x7f0c006d;
+        public static final int mLocation=0x7f0c004f;
         public static final int mModel=0x7f0c0094;
         public static final int mQr=0x7f0c0096;
         public static final int mRef=0x7f0c0097;
