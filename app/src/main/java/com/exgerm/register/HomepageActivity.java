@@ -77,7 +77,9 @@ public class HomepageActivity extends ListActivity {
     int totalChecked30;
     int missing;
     private Switch daySwitch;
+    private Switch missingSwitch;
     int daysChoice = 15;
+    int missingDaysChoice = 15;
     private TextView txtTotalHandsets;
 
     public List<PendingReport> pendingArray;
@@ -106,6 +108,7 @@ public class HomepageActivity extends ListActivity {
         mTitle.setText(LoginActivity.hospitalSelected);
         pieChart = (PieChart) findViewById(R.id.totalChart);
         daySwitch = (Switch) findViewById(R.id.daySwitch);
+        missingSwitch = (Switch) findViewById(R.id.missingSwitch);
         txtTotalHandsets = (TextView) findViewById(R.id.txtTotalHandsets);
 
         new GetCheckedDevices().execute();
@@ -123,6 +126,22 @@ public class HomepageActivity extends ListActivity {
                 }
 
                 new GetCheckedDevices().execute();
+            }
+        });
+
+        missingSwitch.setChecked(false);
+
+        missingSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if(!isChecked) {
+                    missingDaysChoice = 15;
+                } else {
+                    missingDaysChoice = 30;
+                }
+
+                new GetMissing().execute();
             }
         });
 
@@ -701,7 +720,7 @@ public class HomepageActivity extends ListActivity {
         protected Void doInBackground(Void... params) {
             List<NameValuePair> param = new ArrayList<>();
             param.add(new BasicNameValuePair("hsp_code", LoginActivity.hospitalSelectedId));
-            param.add(new BasicNameValuePair("days", "15"));
+            param.add(new BasicNameValuePair("days", String.valueOf(missingDaysChoice)));
 
             JSONObject jsonMissing = jsonParser.makeHttpRequest(url_get_missing_check_devices, "POST", param);
 
@@ -728,8 +747,11 @@ public class HomepageActivity extends ListActivity {
             super.onPostExecute(aVoid);
 
             if(success == 1) {
+                missingAdapter.clear();
                 ArrayList<Missing> latestMissing = Missing.fromJson(arrayOfMissing2);
                 missingAdapter.addAll(latestMissing);
+            } else {
+                missingAdapter.clear();
             }
         }
     }
