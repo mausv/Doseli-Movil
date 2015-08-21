@@ -85,8 +85,8 @@ public class LoginActivity extends Activity {
     private ArrayList<Category> groupsList;
     private String groupIdentifier = "groups";
     private String groupCategoryIdentifier = "group";
-    private String groupSelectedId = "0";
-    private String groupSelected = "";
+    public static String groupSelectedId = "0";
+    public static String groupSelected = "";
 
     private ArrayList<Category> hospitalsList;
     private String hospitalIdentifier = "hospitals";
@@ -98,7 +98,7 @@ public class LoginActivity extends Activity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.162/doseli/";
+    public static String main_url = "http://192.168.1.188/doseli/";
 
 
     //URLs

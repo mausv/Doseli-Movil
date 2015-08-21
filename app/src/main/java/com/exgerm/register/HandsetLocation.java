@@ -96,6 +96,9 @@ public class HandsetLocation extends Activity {
     private Boolean location;
     private Boolean room;
 
+    private int firstBoot = 2;
+    private int hospitalFirstCheck = 1;
+
     List<String> lablesE = new ArrayList<String>();
 
     // Creating adapter for spinner
@@ -178,6 +181,7 @@ public class HandsetLocation extends Activity {
                 Category cat = new Category(groupsList.get(groupId));
                 groupSelectedId = String.valueOf(cat.getId());
                 Log.d("Seleccionado: ", groupSelectedId);
+                Log.i("Boot: ", String.valueOf(firstBoot));
 
                 if (networkAvailable == true) {
                     switch (groupSelected) {
@@ -669,6 +673,48 @@ public class HandsetLocation extends Activity {
             case "location": locationSpinner.setAdapter(spinnerAdapter);
                 break;
         }
+
+        firstBoot();
+    }
+
+    public void firstBoot () {
+
+        if (firstBoot == 1){
+            int flag = -1;
+
+            for (int i = 0; i < hospitalsList.size(); i++) {
+
+                if (hospitalsList.get(i).getId() == Integer.parseInt(LoginActivity.hospitalSelectedId)){
+                    flag = i;
+                }
+
+            }
+
+            if(flag != -1) {
+                hospitalSpinner.setSelection(flag);
+            }
+
+            firstBoot--;
+        }
+
+        if (firstBoot == 2) {
+            int flag = -1;
+
+            for (int i = 0; i < groupsList.size(); i++) {
+
+                if (groupsList.get(i).getId() == Integer.parseInt(LoginActivity.groupSelectedId)){
+                    flag = i;
+                }
+
+            }
+
+            if(flag != -1) {
+                groupSpinner.setSelection(flag);
+            }
+
+            firstBoot--;
+        }
+
     }
 
     class CheckQR extends AsyncTask<String, String, String> {
@@ -965,6 +1011,7 @@ public class HandsetLocation extends Activity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             populateSpinner("hospital");
+
         }
     }
 
