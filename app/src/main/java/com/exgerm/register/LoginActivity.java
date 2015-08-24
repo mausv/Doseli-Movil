@@ -523,6 +523,19 @@ public class LoginActivity extends Activity {
 
             AlertDialog dialog = builder.create();
             dialog.show();
+        } else if(code == 3) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+            builder.setMessage("No se puede establecer una conexion con la Base de Datos. Contactar a Sistemas.");
+            builder.setTitle("Error en Base de Datos");
+            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
     }
 
@@ -609,6 +622,7 @@ public class LoginActivity extends Activity {
     }
 
     private class GetGroups extends AsyncTask<Void, Void, Void>{
+        int code = 0;
 
         @Override
         protected Void doInBackground(Void... params) {
@@ -638,10 +652,12 @@ public class LoginActivity extends Activity {
 
                 } catch (JSONException e) {
                     e.printStackTrace();
+                    code = 3;
                 }
 
             } else {
                 Log.e("JSON Data", "Didn't receive any data from server!");
+                code = 3;
             }
 
             return null;
@@ -651,6 +667,9 @@ public class LoginActivity extends Activity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             populateSpinner(groupCategoryIdentifier);
+            if (code == 3) {
+                AdviceUser(3);
+            }
         }
     }
 

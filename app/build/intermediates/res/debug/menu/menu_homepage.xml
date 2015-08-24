@@ -34,6 +34,12 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/handsets"
+        android:orderInCategory="100"
+        android:title="@string/handsets"
+        app:showAsAction="ifRoom"/>
+
+    <item
         android:id="@+id/logout"
         android:orderInCategory="100"
         android:title="@string/logout_title"

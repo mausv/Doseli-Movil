@@ -68,6 +68,10 @@
             android:label="@string/title_activity_handset_location"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".Handsets"
+            android:label="@string/title_activity_handsets" >
+        </activity>
     </application>
 
 </manifest>

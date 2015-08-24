@@ -32,5 +32,7 @@
     <string name="title_activity_custom_missing_check">CustomMissingCheck</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_handsets">Aparatos</string>
+    <string name="handsets">Aparatos</string>
 
 </resources>

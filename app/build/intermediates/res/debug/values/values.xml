@@ -208,6 +208,7 @@
     <string name="error1">Daño Físico</string>
     <string name="error2">Batería Baja</string>
     <string name="error3">Falta Liquido</string>
+    <string name="handsets">Aparatos</string>
     <string name="hello_world">Hello world!</string>
     <string name="logout_title">Cerrar Sesión</string>
     <string name="pending">Enviar Pendientes</string>
@@ -221,6 +222,7 @@
     <string name="title_activity_custom_missing_check">CustomMissingCheck</string>
     <string name="title_activity_handset_location">Posicionar Aparato</string>
     <string name="title_activity_handset_register">Altas</string>
+    <string name="title_activity_handsets">Aparatos</string>
     <string name="title_activity_login">Inicio</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_report_stolen">Reportar Robo</string>
