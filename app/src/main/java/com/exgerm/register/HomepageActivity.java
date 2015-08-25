@@ -411,6 +411,11 @@ public class HomepageActivity extends ListActivity {
                 startActivity(stolen);
 
                 break;
+            case R.id.handsets:
+                Intent takeToHandsetList = new Intent(this, Handsets.class);
+                startActivity(takeToHandsetList);
+
+                break;
             case R.id.logout:
                 finish();
 

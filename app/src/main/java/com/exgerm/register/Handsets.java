@@ -1,16 +1,95 @@
 package com.exgerm.register;
 
+import android.app.Activity;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
-public class Handsets extends ActionBarActivity {
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Handsets extends Activity {
+
+    JSONParser jsonParser = new JSONParser();
+    ArrayList<Handset> arrayOfHandsets;
+    JSONArray arrayOfHandsets2;
+
+    HandsetAdapter adapter;
+
+    private static String url_get_handsets_list = LoginActivity.main_url + "get_all_handsets.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handsets);
+
+        arrayOfHandsets = new ArrayList<Handset>();
+
+        adapter = new HandsetAdapter(this, arrayOfHandsets);
+
+        ListView listView = (ListView) findViewById(R.id.listViewHandsets);
+        listView.setAdapter(adapter);
+
+        new GetHandsets().execute();
+
+    }
+
+    public class GetHandsets extends AsyncTask<Void, Void, Void> {
+
+        int success;
+
+        @Override
+        protected Void doInBackground(Void... params) {
+
+            List<NameValuePair> param = new ArrayList<>();
+            param.add(new BasicNameValuePair("hsp_code", LoginActivity.hospitalSelectedId));
+
+            JSONObject json = jsonParser.makeHttpRequest(url_get_handsets_list, "POST", param);
+
+            Log.e("Response: ", "> " + json);
+
+            if (json != null) {
+                try {
+                    success = json.getInt("success");
+
+                    if (success == 1) {
+
+                        arrayOfHandsets2 = (JSONArray) json.get("devices");
+
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            } else {
+                Log.e("JSON Data", "Didn't receive any data from server!");
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            if (success == 1) {
+                ArrayList<Handset> handsetsList = Handset.fromJson(arrayOfHandsets2);
+                adapter.addAll(handsetsList);
+            } else {
+                adapter.clear();
+            }
+
+        }
     }
 
     @Override
