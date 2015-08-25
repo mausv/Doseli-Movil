@@ -33,6 +33,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_handsets">Aparatos</string>
-    <string name="handsets">Aparatos</string>
+    <string name="handsets">Lista de Aparatos</string>
 
 </resources>

@@ -208,7 +208,7 @@
     <string name="error1">Daño Físico</string>
     <string name="error2">Batería Baja</string>
     <string name="error3">Falta Liquido</string>
-    <string name="handsets">Aparatos</string>
+    <string name="handsets">Lista de Aparatos</string>
     <string name="hello_world">Hello world!</string>
     <string name="logout_title">Cerrar Sesión</string>
     <string name="pending">Enviar Pendientes</string>
