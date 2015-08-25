@@ -72,6 +72,10 @@
             android:name=".Handsets"
             android:label="@string/title_activity_handsets" >
         </activity>
+        <activity
+            android:name=".FullReportDetailView"
+            android:label="@string/title_activity_full_report_detail_view" >
+        </activity>
     </application>
 
 </manifest>
