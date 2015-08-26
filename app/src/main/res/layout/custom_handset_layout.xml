@@ -6,42 +6,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MODEL"
-        android:id="@+id/hModel"
-        android:layout_alignParentTop="true"
+        android:text="HANDSET"
+        android:id="@+id/hHandset"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:textColor="@color/blueColor"
+        android:textSize="15sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="@color/blueColor"
-        android:textSize="15sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SERIAL"
-        android:id="@+id/hSerial"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/hModel"
-        android:layout_toEndOf="@+id/hModel"
-        android:textColor="@color/blueColor"
-        android:textSize="15sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="QR"
-        android:id="@+id/hQr"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/hSerial"
-        android:layout_toEndOf="@+id/hSerial"
-        android:textSize="15sp"
-        android:textColor="@color/blueColor" />
+        android:gravity="center_vertical" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REFERENCE"
         android:id="@+id/hRef"
-        android:layout_below="@+id/hModel"
+        android:layout_below="@+id/hHandset"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -52,9 +32,11 @@
         android:layout_height="wrap_content"
         android:text="LOCATION"
         android:id="@+id/hLocation"
-        android:layout_above="@+id/hRef"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textColor="@color/darkBlueColor" />
+        android:textColor="@color/darkBlueColor"
+        android:textAlignment="gravity"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/hHandset" />
 
 </RelativeLayout>

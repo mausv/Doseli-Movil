@@ -26,15 +26,11 @@ public class HandsetAdapter extends ArrayAdapter<Handset>{
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_handset_layout, parent, false);
         }
 
-        TextView model = (TextView) convertView.findViewById(R.id.hModel);
-        TextView serial_number = (TextView) convertView.findViewById(R.id.hSerial);
-        TextView qr = (TextView) convertView.findViewById(R.id.hQr);
+        TextView handsetM = (TextView) convertView.findViewById(R.id.hHandset);
         TextView location = (TextView) convertView.findViewById(R.id.hLocation);
         TextView reference = (TextView) convertView.findViewById(R.id.hRef);
 
-        model.setText(handset.model);
-        serial_number.setText(handset.serial_number);
-        qr.setText(" - QR: " + handset.qr);
+        handsetM.setText(handset.model + handset.serial_number + " - QR: " + handset.qr);
         location.setText(handset.location);
         reference.setText(handset.reference);
 
