@@ -8,29 +8,29 @@ package com.google.zxing.client.android;
 
 public final class R {
 	public static final class color {
-		public static final int zxing_possible_result_points = 0x7f0b0036;
-		public static final int zxing_result_view = 0x7f0b0037;
-		public static final int zxing_status_text = 0x7f0b0038;
-		public static final int zxing_transparent = 0x7f0b0039;
-		public static final int zxing_viewfinder_laser = 0x7f0b003a;
-		public static final int zxing_viewfinder_mask = 0x7f0b003b;
+		public static final int zxing_possible_result_points = 0x7f0b0037;
+		public static final int zxing_result_view = 0x7f0b0038;
+		public static final int zxing_status_text = 0x7f0b0039;
+		public static final int zxing_transparent = 0x7f0b003a;
+		public static final int zxing_viewfinder_laser = 0x7f0b003b;
+		public static final int zxing_viewfinder_mask = 0x7f0b003c;
 	}
 	public static final class id {
 		public static final int zxing_back_button = 0x7f0c0009;
-		public static final int zxing_barcode_scanner = 0x7f0c00a4;
-		public static final int zxing_barcode_surface = 0x7f0c00a1;
+		public static final int zxing_barcode_scanner = 0x7f0c00b1;
+		public static final int zxing_barcode_surface = 0x7f0c00ae;
 		public static final int zxing_camera_error = 0x7f0c000a;
 		public static final int zxing_decode = 0x7f0c000b;
 		public static final int zxing_decode_failed = 0x7f0c000c;
 		public static final int zxing_decode_succeeded = 0x7f0c000d;
 		public static final int zxing_possible_result_points = 0x7f0c000e;
 		public static final int zxing_prewiew_size_ready = 0x7f0c000f;
-		public static final int zxing_status_view = 0x7f0c00a3;
-		public static final int zxing_viewfinder_view = 0x7f0c00a2;
+		public static final int zxing_status_view = 0x7f0c00b0;
+		public static final int zxing_viewfinder_view = 0x7f0c00af;
 	}
 	public static final class layout {
-		public static final int zxing_barcode_scanner = 0x7f030026;
-		public static final int zxing_capture = 0x7f030027;
+		public static final int zxing_barcode_scanner = 0x7f030028;
+		public static final int zxing_capture = 0x7f030029;
 	}
 	public static final class raw {
 		public static final int zxing_beep = 0x7f050000;

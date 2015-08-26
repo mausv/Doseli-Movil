@@ -16,31 +16,29 @@ public class FullHandsetReport {
     public String serial;
     public String location;
     public String date;
-    public String physicalDamage;
-    public String physicalRepair;
-    public String lowBattery;
-    public String changeBattery;
-    public String lowLiquid;
-    public String changeLiquid;
+    public int physicalDamage;
+    public int physicalRepair;
+    public int lowBattery;
+    public int changeBattery;
+    public int lowLiquid;
+    public int changeLiquid;
     public String comment;
-    public String state;
+    public int state;
 
     public FullHandsetReport(JSONObject object) {
         try {
             this.id = object.getInt("id");
             this.user = object.getString("user_name");
-            this.model = object.getString("model");
-            this.serial = object.getString("serial_number");
             this.location = object.getString("location");
-            this.date = object.getString("created_at");
-            this.physicalDamage = object.getString("physicalDamage");
-            this.physicalRepair = object.getString("physicalRepair");
-            this.lowBattery = object.getString("lowBattery");
-            this.changeBattery = object.getString("changeBattery");
-            this.lowLiquid = object.getString("lowLiquid");
-            this.changeLiquid = object.getString("changeLiquid");
+            this.date = object.getString("reported_at");
+            this.physicalDamage = object.getInt("physicalDamage");
+            this.physicalRepair = object.getInt("physicalRepair");
+            this.lowBattery = object.getInt("lowBattery");
+            this.changeBattery = object.getInt("changeBattery");
+            this.lowLiquid = object.getInt("lowLiquid");
+            this.changeLiquid = object.getInt("changeLiquid");
             this.comment = object.getString("comment");
-            this.state = object.getString("state");
+            this.state = object.getInt("state");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -48,7 +46,7 @@ public class FullHandsetReport {
     }
 
     public static ArrayList<FullHandsetReport> fromJson(JSONArray jsonObjects) {
-        ArrayList<FullHandsetReport> handset = new ArrayList<>();
+        ArrayList<FullHandsetReport> handset = new ArrayList<FullHandsetReport>();
         for (int i = 0; i < jsonObjects.length(); i++) {
             try {
                 handset.add(new FullHandsetReport(jsonObjects.getJSONObject(i)));

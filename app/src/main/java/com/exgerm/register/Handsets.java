@@ -1,12 +1,15 @@
 package com.exgerm.register;
 
 import android.app.Activity;
+import android.app.ListActivity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 
 import org.apache.http.NameValuePair;
@@ -18,7 +21,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Handsets extends Activity {
+public class Handsets extends ListActivity {
 
     JSONParser jsonParser = new JSONParser();
     ArrayList<Handset> arrayOfHandsets;
@@ -37,7 +40,7 @@ public class Handsets extends Activity {
 
         adapter = new HandsetAdapter(this, arrayOfHandsets);
 
-        ListView listView = (ListView) findViewById(R.id.listViewHandsets);
+        ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(adapter);
 
         new GetHandsets().execute();
@@ -112,5 +115,24 @@ public class Handsets extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+
+        Handset statusObject = adapter.getItem(position);
+        String objectId = statusObject.qr;
+        String handset = statusObject.model + statusObject.serial_number + " - QR: " + statusObject.qr;
+        String location = statusObject.location;
+        String reference = statusObject.reference;
+
+        Intent goToDetailView = new Intent(Handsets.this, FullReportDetailView.class);
+        goToDetailView.putExtra("objectID", objectId);
+        goToDetailView.putExtra("handset", handset);
+        goToDetailView.putExtra("location", location);
+        goToDetailView.putExtra("reference", reference);
+        startActivity(goToDetailView);
+
     }
 }

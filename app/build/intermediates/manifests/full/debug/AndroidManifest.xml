@@ -96,6 +96,10 @@
             android:label="@string/title_activity_handsets" >
         </activity>
         <activity
+            android:name="com.exgerm.register.FullReportDetailView"
+            android:label="@string/title_activity_full_report_detail_view" >
+        </activity>
+        <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"
             android:screenOrientation="sensorLandscape"

@@ -10,7 +10,9 @@
         android:id="@+id/hModel"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="@color/blueColor"
+        android:textSize="15sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +21,9 @@
         android:id="@+id/hSerial"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/hModel"
-        android:layout_toEndOf="@+id/hModel" />
+        android:layout_toEndOf="@+id/hModel"
+        android:textColor="@color/blueColor"
+        android:textSize="15sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +32,9 @@
         android:id="@+id/hQr"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/hSerial"
-        android:layout_toEndOf="@+id/hSerial" />
+        android:layout_toEndOf="@+id/hSerial"
+        android:textSize="15sp"
+        android:textColor="@color/blueColor" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,6 +54,7 @@
         android:id="@+id/hLocation"
         android:layout_above="@+id/hRef"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/darkBlueColor" />
 
 </RelativeLayout>
