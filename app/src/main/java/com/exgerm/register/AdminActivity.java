@@ -63,8 +63,12 @@ public class AdminActivity extends Activity {
             try {
                 arrayOfAdmin2 = (JSONArray) jsonAdm.get("hospitals");
 
-                totalHospitals = jsonAdm.getString("hospitals_count");
-                totalHandsets = jsonAdm.getString("handsets_count");
+                JSONArray innerArray = (JSONArray) jsonAdm.get("count");
+
+                JSONObject innerObj = (JSONObject) innerArray.get(0);
+
+                totalHospitals = innerObj.getString("hospitals");
+                totalHandsets = innerObj.getString("handsets");
 
             } catch (JSONException e) {
                 e.printStackTrace();
