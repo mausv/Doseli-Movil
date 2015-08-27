@@ -207,6 +207,7 @@
     <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
+    <string name="admin">Administrador</string>
     <string name="aid">ID</string>
     <string name="app_name">Doseli</string>
     <string name="comment">COMENTARIO</string>
@@ -223,6 +224,7 @@
     <string name="solucion2">Cambio de Baterías</string>
     <string name="solucion3">Cambio de Líquido</string>
     <string name="textaid">Aparato #</string>
+    <string name="title_activity_admin">Administrador</string>
     <string name="title_activity_capture_layout">CaptureLayout</string>
     <string name="title_activity_custom_missing_check">CustomMissingCheck</string>
     <string name="title_activity_full_report_detail_view">Reporte de Aparato</string>

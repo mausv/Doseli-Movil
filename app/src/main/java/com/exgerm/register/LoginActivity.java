@@ -52,6 +52,7 @@ public class LoginActivity extends Activity {
     public static String userName;
     public static String hspName;
     public static String hspCode;
+    public static String userType;
     protected Button mLogin;
     protected TextView textLat;
     protected TextView textLong;
@@ -420,6 +421,8 @@ public class LoginActivity extends Activity {
                 userName = String.valueOf(innerObj.get("name"));
 
                 userId = String.valueOf(innerObj.get("id"));
+
+                userType = String.valueOf(innerObj.get("userType_id"));
 
                 Log.d("User's name: ", userName);
 

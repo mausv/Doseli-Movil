@@ -36,5 +36,6 @@
     <string name="handsets">Lista de Aparatos</string>
     <string name="title_activity_full_report_detail_view">Reporte de Aparato</string>
     <string name="title_activity_admin">Administrador</string>
+    <string name="admin">Administrador</string>
 
 </resources>

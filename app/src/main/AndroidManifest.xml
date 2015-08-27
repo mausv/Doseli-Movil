@@ -70,15 +70,18 @@
         </activity>
         <activity
             android:name=".Handsets"
-            android:label="@string/title_activity_handsets" >
+            android:label="@string/title_activity_handsets"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".FullReportDetailView"
-            android:label="@string/title_activity_full_report_detail_view" >
+            android:label="@string/title_activity_full_report_detail_view"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".AdminActivity"
-            android:label="@string/title_activity_admin" >
+            android:label="@string/title_activity_admin"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

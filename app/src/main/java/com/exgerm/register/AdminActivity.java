@@ -1,16 +1,91 @@
 package com.exgerm.register;
 
+import android.app.Activity;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.TextView;
 
-public class AdminActivity extends ActionBarActivity {
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.w3c.dom.Text;
 
-    @Override
+import java.util.ArrayList;
+import java.util.List;
+
+public class AdminActivity extends Activity {
+
+    JSONParser jsonParser = new JSONParser();
+    ArrayList<AdmHospital> arrayOfAdmin;
+    JSONArray arrayOfAdmin2;
+
+    TextView textViewTotalHospitals;
+    TextView textViewTotalHandsets;
+
+    AdmHospitalAdapter admHospitalAdapter;
+
+    private static String url_get_all_admin_objects = LoginActivity.main_url + "get_all_admin_objects.php";
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
+        textViewTotalHospitals = (TextView) findViewById(R.id.textViewHospitalsAdmin);
+        textViewTotalHandsets = (TextView) findViewById(R.id.textViewHandsetsAdmin);
+
+        arrayOfAdmin = new ArrayList<>();
+
+        admHospitalAdapter = new AdmHospitalAdapter(this, arrayOfAdmin);
+        ListView listView = (ListView) findViewById(android.R.id.list);
+        listView.setAdapter(admHospitalAdapter);
+
+        new GetAdminObjects().execute();
+    }
+
+    public class GetAdminObjects extends AsyncTask<Void, Void, Void> {
+        String totalHospitals;
+        String totalHandsets;
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            List<NameValuePair> paramsAdm = new ArrayList<>();
+            paramsAdm.add(new BasicNameValuePair("userType_id", LoginActivity.userType));
+
+            JSONObject jsonAdm = jsonParser.makeHttpRequest(url_get_all_admin_objects, "POST", paramsAdm);
+
+            Log.e("Response: ", "> " + jsonAdm);
+            try {
+                arrayOfAdmin2 = (JSONArray) jsonAdm.get("hospitals");
+
+                totalHospitals = jsonAdm.getString("hospitals_count");
+                totalHandsets = jsonAdm.getString("handsets_count");
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            textViewTotalHospitals.setText(totalHospitals);
+            textViewTotalHandsets.setText(totalHandsets);
+
+            admHospitalAdapter.clear();
+            ArrayList<AdmHospital> latestAdmHospital = AdmHospital.fromJson(arrayOfAdmin2);
+            admHospitalAdapter.addAll(latestAdmHospital);
+
+
+        }
     }
 
     @Override

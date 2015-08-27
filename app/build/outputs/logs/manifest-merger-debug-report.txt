@@ -144,16 +144,28 @@ ADDED from AndroidManifest.xml:66:9
 		ADDED from AndroidManifest.xml:67:13
 activity#com.exgerm.register.Handsets
 ADDED from AndroidManifest.xml:71:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:74:13
 	android:label
 		ADDED from AndroidManifest.xml:73:13
 	android:name
 		ADDED from AndroidManifest.xml:72:13
 activity#com.exgerm.register.FullReportDetailView
-ADDED from AndroidManifest.xml:75:9
+ADDED from AndroidManifest.xml:76:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:79:13
 	android:label
-		ADDED from AndroidManifest.xml:77:13
+		ADDED from AndroidManifest.xml:78:13
 	android:name
-		ADDED from AndroidManifest.xml:76:13
+		ADDED from AndroidManifest.xml:77:13
+activity#com.exgerm.register.AdminActivity
+ADDED from AndroidManifest.xml:81:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:84:13
+	android:label
+		ADDED from AndroidManifest.xml:83:13
+	android:name
+		ADDED from AndroidManifest.xml:82:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:21.0.3:15:5

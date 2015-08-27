@@ -416,9 +416,9 @@ public class HomepageActivity extends ListActivity {
                 startActivity(takeToHandsetList);
 
                 break;
-            case R.id.logout:
-                finish();
-
+            case R.id.admin:
+                Intent takeToAdmin = new Intent(this, AdminActivity.class);
+                startActivity(takeToAdmin);
                 break;
             case R.id.send_pending:
                 //Send pending from SQLite
