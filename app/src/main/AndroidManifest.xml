@@ -19,35 +19,39 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
+            android:logo="@android:color/transparent"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".HomepageActivity"
+            android:logo="@android:color/transparent"
             android:label="@string/resumen"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Register"
+            android:logo="@android:color/transparent"
             android:label="Registrar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".UpdateStatusActivity"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_update_status"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".StatusDetailView"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_status_detail_view"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".CaptureLayout"
+            android:logo="@android:color/transparent"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"
@@ -55,33 +59,48 @@
         </activity>
         <activity
             android:name=".ReportStolenActivity"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_report_stolen"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".HandsetRegister"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_handset_register"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".HandsetLocation"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_handset_location"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Handsets"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_handsets"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".FullReportDetailView"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_full_report_detail_view"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".AdminActivity"
+            android:logo="@android:color/transparent"
             android:label="@string/title_activity_admin"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

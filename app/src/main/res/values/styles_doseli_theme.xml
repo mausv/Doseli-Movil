@@ -19,6 +19,10 @@
 
 <resources>
 
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@drawable/splash_screen</item>
+    </style>
+
     <style name="Theme.Doseli_theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_doseli_theme</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Doseli_theme</item>
