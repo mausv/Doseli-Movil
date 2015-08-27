@@ -417,8 +417,21 @@ public class HomepageActivity extends ListActivity {
 
                 break;
             case R.id.admin:
-                Intent takeToAdmin = new Intent(this, AdminActivity.class);
-                startActivity(takeToAdmin);
+                if(Integer.parseInt(LoginActivity.userType) == 2) {
+                    Intent takeToAdmin = new Intent(this, AdminActivity.class);
+                    startActivity(takeToAdmin);
+                } else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("Faltan permisos");
+                    builder.setMessage("No tienes el permiso para acceder a esta parte del sistema");
+                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    builder.show();
+                }
                 break;
             case R.id.send_pending:
                 //Send pending from SQLite
