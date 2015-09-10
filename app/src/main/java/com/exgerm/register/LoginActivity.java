@@ -15,8 +15,11 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -145,6 +148,14 @@ public class LoginActivity extends Activity {
         getImei();
 
         Log.d("IMEI: ", imei);
+
+        boolean locationEnabled = isLocationEnabled(this);
+        if(locationEnabled == false) {
+            Toast.makeText(LoginActivity.this, "Prende el GPS", Toast.LENGTH_LONG).show();
+
+            Intent settings = new Intent("com.google.android.gms.location.settings.GOOGLE_LOCATION_SETTINGS");
+            startActivity(settings);
+        }
 
         offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline" +
@@ -858,6 +869,28 @@ public class LoginActivity extends Activity {
 
         return cm.getActiveNetworkInfo() != null &&
                 cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
+    public static boolean isLocationEnabled(Context context) {
+        int locationMode = 0;
+        String locationProviders;
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+            try {
+                locationMode = Settings.Secure.getInt(context.getContentResolver(), Settings.Secure.LOCATION_MODE);
+
+            } catch (Settings.SettingNotFoundException e) {
+                e.printStackTrace();
+            }
+
+            return locationMode != Settings.Secure.LOCATION_MODE_OFF;
+
+        }else{
+            locationProviders = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
+            return !TextUtils.isEmpty(locationProviders);
+        }
+
+
     }
 
     private class CheckInternetConnection extends AsyncTask <Void,Void,Void> {
