@@ -31,6 +31,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.ChartData;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
@@ -73,6 +81,8 @@ public class LoginActivity extends Activity {
     protected double fixedLongTop = -100.32322168;
     protected double fixedLatLow = 25.6671841;
     protected double fixedLongLow = -100.32149971;*/
+
+    BarChart challengeChart;
 
     protected double lat;
     protected double lon;
@@ -148,6 +158,7 @@ public class LoginActivity extends Activity {
         textLat = (TextView) findViewById(R.id.latitudeTextView);
         textLong = (TextView) findViewById(R.id.longitudeTextView);
         versionTV = (TextView) findViewById(R.id.versionTV);
+        challengeChart = (BarChart) findViewById(R.id.challengeChart);
         getImei();
 
         Log.d("IMEI: ", imei);
@@ -624,6 +635,26 @@ public class LoginActivity extends Activity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+            ArrayList<BarEntry> valsChallenge = new ArrayList<>();
+            for(int l = 0; l < challengeList.size(); l++) {
+                valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(l).getPercent())), l));
+            }
+
+            ArrayList<String> ar = new ArrayList<>();
+            for(int k = 0; k < challengeList.size(); k++) {
+                ar.add(challengeList.get(k).getName());
+            }
+
+            String[] xVals = new String[ar.size()];
+            xVals = ar.toArray(xVals);
+
+            BarDataSet dataSet = new BarDataSet(valsChallenge, "Cumplimiento");
+            challengeChart.setDescription("");
+            BarData data = new BarData(xVals, dataSet);
+
+            challengeChart.setData(data);
+
+            challengeChart.invalidate();
         }
     }
 
