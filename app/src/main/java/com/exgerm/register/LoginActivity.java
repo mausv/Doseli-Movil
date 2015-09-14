@@ -101,8 +101,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.188/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.152/doseli/";
 
 
     //URLs
@@ -112,6 +112,7 @@ public class LoginActivity extends Activity {
     private static String url_get_hospital_geo = main_url + "get_hospital_geo.php";
     private static String url_get_latest_version = main_url + "get_latest_version.php";
     private static String url_get_off = main_url + "get_hospital_offline.php";
+    private static String url_get_challenge = main_url + "challenge_summary.php";
 
     //Column variables
     private static String TAG_CODE = "code";
@@ -577,6 +578,35 @@ public class LoginActivity extends Activity {
         return currentVersion;
     }
 
+    private class GetChallenge extends AsyncTask<Void, Void, Void> {
+        int success = 0;
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                List<NameValuePair> paramsGetChallenge = new ArrayList<>();
+                paramsGetChallenge.add(new BasicNameValuePair("user", "0"));
+
+                JSONObject json = jsonParser.makeHttpRequest(url_get_challenge, "POST", paramsGetChallenge);
+
+                System.out.println("ChallengeJsonObj: " + json.toString());
+
+                success = json.getInt("success");
+
+                if(success == 1) {
+                    JSONArray usersArray = (JSONArray) json.get("users");
+
+                    System.out.println("Users array: " + usersArray);
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+    }
+
     private class GetLatestVersion extends AsyncTask<Void, Void, Void>{
         int update;
         String urlDwn;
@@ -922,6 +952,8 @@ public class LoginActivity extends Activity {
                 Log.i("Internet status: ", "Available");
 
                 getCurrentVer();
+
+                new GetChallenge().execute();
 
                 new GetGroups().execute();
             } else if (result == 2) {
