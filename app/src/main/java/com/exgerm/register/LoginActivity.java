@@ -98,6 +98,8 @@ public class LoginActivity extends Activity {
     public static String hospitalSelectedId = "0";
     public static String hospitalSelected = "";
 
+    private ArrayList<ChallengeUser> challengeList;
+
     //Progress Dialog
     private ProgressDialog pDialog;
 
@@ -595,6 +597,19 @@ public class LoginActivity extends Activity {
 
                 if(success == 1) {
                     JSONArray usersArray = (JSONArray) json.get("users");
+                    challengeList = new ArrayList<>();
+
+                    for (int i = 0; i < usersArray.length(); i++) {
+                        JSONObject tempInnerObj = (JSONObject) usersArray.get(i);
+                        ChallengeUser tempObj = new ChallengeUser();
+                        tempObj.setId(tempInnerObj.getInt("user_id"));
+                        tempObj.setName(tempInnerObj.getString("user_name"));
+                        tempObj.setPercent(tempInnerObj.getInt("user_percent"));
+
+                        challengeList.add(i, tempObj);
+
+                        System.out.println("Challenge object: " + challengeList.get(i).getName() + challengeList.get(i).getPercent());
+                    }
 
                     System.out.println("Users array: " + usersArray);
 
@@ -604,6 +619,11 @@ public class LoginActivity extends Activity {
             }
 
             return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
         }
     }
 
