@@ -18,6 +18,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -50,7 +51,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Array;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -119,8 +126,10 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.152/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.152/doseli/";
+
+    File fileDir;
 
 
     //URLs
@@ -166,6 +175,10 @@ public class LoginActivity extends Activity {
         versionTV = (TextView) findViewById(R.id.versionTV);
         challengeChart = (BarChart) findViewById(R.id.challengeChart);
         getImei();
+
+        fileDir = getFilesDir();
+
+        System.out.println("DIR: " + this.getFilesDir());
 
         Log.d("IMEI: ", imei);
 
@@ -728,10 +741,46 @@ public class LoginActivity extends Activity {
                 builder.setPositiveButton("Actualizar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String url = "http://" + urlDwn;
+                        /*String url = "http://" + urlDwn;
                         Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
-                        startActivity(i);
+                        startActivity(i);*/
+
+                        new Thread (new Runnable() {
+
+                            @Override
+                            public void run() {
+                                try {
+                                    URL url = new URL(LoginActivity.main_url + "doseli.apk");
+                                    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                                    urlConnection.setRequestMethod("GET");
+                                    urlConnection.connect();
+
+                                    FileOutputStream fileOutput = openFileOutput("doseli.apk", Context.MODE_WORLD_READABLE);
+                                    InputStream inputStream = urlConnection.getInputStream();
+
+                                    byte[] buffer = new byte[1024];
+                                    int bufferLength = 0;
+
+                                    while ((bufferLength = inputStream.read(buffer)) > 0) {
+                                        fileOutput.write(buffer, 0, bufferLength);
+                                    }
+                                    fileOutput.close();
+
+
+                                    File apkFile = new File(fileDir + "/doseli.apk");
+                                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                                    intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
+                                    startActivity(intent);
+                                    finishAffinity();
+
+                                } catch (MalformedURLException e) {
+                                    e.printStackTrace();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }).start();
                         dialog.dismiss();
                     }
                 });
