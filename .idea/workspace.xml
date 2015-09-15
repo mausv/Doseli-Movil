@@ -179,10 +179,10 @@
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.08869565">
-                  <caret line="120" column="53" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
+                  <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
                   <folding>
-                    <element signature="class#13227:14169" expanded="false" />
-                    <element signature="class#14227:15132" expanded="false" />
+                    <element signature="class#13281:14223" expanded="false" />
+                    <element signature="class#14281:15186" expanded="false" />
                     <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#AdviceUser#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
@@ -313,11 +313,11 @@
           <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.50956523">
-                  <caret line="671" column="0" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.5982609">
+                  <caret line="657" column="42" selection-start-line="657" selection-start-column="42" selection-end-line="657" selection-end-column="42" />
                   <folding>
-                    <element signature="class#13227:14169" expanded="false" />
-                    <element signature="class#14227:15132" expanded="false" />
+                    <element signature="class#13281:14223" expanded="false" />
+                    <element signature="class#14281:15186" expanded="false" />
                     <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#AdviceUser#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
@@ -2447,7 +2447,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442288970045</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added random colors.&#10;Added new line on legend.">
+      <created>1442330225107</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1442330225107</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2526,7 +2532,8 @@
     <MESSAGE value="Added Challenge Objects" />
     <MESSAGE value="Almost finished ChallengeChart. Need to change legend." />
     <MESSAGE value="Changed legend. Need to change colors randomly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed legend. Need to change colors randomly." />
+    <MESSAGE value="Added random colors.&#10;Added new line on legend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added random colors.&#10;Added new line on legend." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3007,11 +3014,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50956523">
-          <caret line="671" column="0" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5982609">
+          <caret line="657" column="42" selection-start-line="657" selection-start-column="42" selection-end-line="657" selection-end-column="42" />
           <folding>
-            <element signature="class#13227:14169" expanded="false" />
-            <element signature="class#14227:15132" expanded="false" />
+            <element signature="class#13281:14223" expanded="false" />
+            <element signature="class#14281:15186" expanded="false" />
             <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#AdviceUser#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />

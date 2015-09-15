@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
@@ -649,7 +650,7 @@ public class LoginActivity extends Activity {
                 valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
 
                 ar = new ArrayList<>();
-                ar.add("");
+                ar.add("Cumplimiento del mes actual");
 
                 // generate the random integers for r, g and b value
                 Random rand = new Random();
@@ -669,6 +670,9 @@ public class LoginActivity extends Activity {
             xVals = ar.toArray(xVals);
             challengeChart.setDescription("");
             BarData data = new BarData(xVals, dataSets);
+            YAxis yAxis = challengeChart.getAxisLeft();
+
+            yAxis.setAxisMaxValue(100f);
 
             Legend legend = challengeChart.getLegend();
 
