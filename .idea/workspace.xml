@@ -18,6 +18,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" />
@@ -172,14 +175,14 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="119" column="56" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.08869565">
+                  <caret line="120" column="53" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
                   <folding>
-                    <element signature="class#13146:14088" expanded="false" />
-                    <element signature="class#14146:15051" expanded="false" />
+                    <element signature="class#13227:14169" expanded="false" />
+                    <element signature="class#14227:15132" expanded="false" />
                     <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#AdviceUser#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
@@ -232,11 +235,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3882784">
-                  <caret line="1180" column="83" selection-start-line="1182" selection-start-column="12" selection-end-line="1182" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="1182" column="35" selection-start-line="1182" selection-start-column="35" selection-end-line="1182" selection-end-column="35" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
@@ -310,11 +313,11 @@
           <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6278261">
-                  <caret line="652" column="62" selection-start-line="652" selection-start-column="62" selection-end-line="652" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.50956523">
+                  <caret line="671" column="0" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
                   <folding>
-                    <element signature="class#13146:14088" expanded="false" />
-                    <element signature="class#14146:15051" expanded="false" />
+                    <element signature="class#13227:14169" expanded="false" />
+                    <element signature="class#14227:15132" expanded="false" />
                     <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#AdviceUser#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
@@ -1934,8 +1937,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1912" />
+    <option name="y" value="-427" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -2149,7 +2152,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ZX1D926748" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0123456789ABCDEF" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -2438,11 +2441,17 @@
       <option name="project" value="LOCAL" />
       <updated>1442273108253</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changed legend. Need to change colors randomly.">
+      <created>1442288970045</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1442288970045</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-427" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2516,7 +2525,8 @@
     <MESSAGE value="Started ChallengeSummary" />
     <MESSAGE value="Added Challenge Objects" />
     <MESSAGE value="Almost finished ChallengeChart. Need to change legend." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finished ChallengeChart. Need to change legend." />
+    <MESSAGE value="Changed legend. Need to change colors randomly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed legend. Need to change colors randomly." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2885,16 +2895,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ChallengeUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2913,14 +2913,6 @@
             <element signature="e#531#532#0" expanded="true" />
             <element signature="e#566#567#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdminActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2981,10 +2973,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdminActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3882784">
-          <caret line="1180" column="83" selection-start-line="1182" selection-start-column="12" selection-end-line="1182" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1182" column="35" selection-start-line="1182" selection-start-column="35" selection-end-line="1182" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
@@ -2997,11 +3007,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6278261">
-          <caret line="652" column="62" selection-start-line="652" selection-start-column="62" selection-end-line="652" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.50956523">
+          <caret line="671" column="0" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
           <folding>
-            <element signature="class#13146:14088" expanded="false" />
-            <element signature="class#14146:15051" expanded="false" />
+            <element signature="class#13227:14169" expanded="false" />
+            <element signature="class#14227:15132" expanded="false" />
             <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#AdviceUser#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />

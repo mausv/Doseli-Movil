@@ -33,6 +33,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
@@ -53,6 +54,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
 public class LoginActivity extends Activity {
@@ -116,8 +118,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.85/doseli/";
+    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    //public static String main_url = "http://192.168.1.152/doseli/";
 
 
     //URLs
@@ -647,10 +649,18 @@ public class LoginActivity extends Activity {
                 valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
 
                 ar = new ArrayList<>();
-                ar.add(challengeList.get(o).getName());
+                ar.add("");
+
+                // generate the random integers for r, g and b value
+                Random rand = new Random();
+                int r = rand.nextInt(255);
+                int g = rand.nextInt(255);
+                int b = rand.nextInt(255);
+
+                int randomColor = Color.rgb(r,g,b);
 
                 BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
-                bdS.setColors(ColorTemplate.VORDIPLOM_COLORS);
+                bdS.setColor(randomColor);
 
                 dataSets.add(bdS);
             }
@@ -659,6 +669,10 @@ public class LoginActivity extends Activity {
             xVals = ar.toArray(xVals);
             challengeChart.setDescription("");
             BarData data = new BarData(xVals, dataSets);
+
+            Legend legend = challengeChart.getLegend();
+
+            legend.setWordWrapEnabled(true);
 
             challengeChart.setData(data);
 
