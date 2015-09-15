@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -36,8 +37,10 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.ChartData;
+import com.github.mikephil.charting.data.DataSet;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.utils.ColorTemplate;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -114,7 +117,7 @@ public class LoginActivity extends Activity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.152/doseli/";
+    public static String main_url = "http://192.168.1.85/doseli/";
 
 
     //URLs
@@ -635,22 +638,27 @@ public class LoginActivity extends Activity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            ArrayList<BarEntry> valsChallenge = new ArrayList<>();
-            for(int l = 0; l < challengeList.size(); l++) {
-                valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(l).getPercent())), l));
-            }
-
+            ArrayList<BarEntry> valsChallenge;
             ArrayList<String> ar = new ArrayList<>();
-            for(int k = 0; k < challengeList.size(); k++) {
-                ar.add(challengeList.get(k).getName());
+            ArrayList<BarDataSet> dataSets = new ArrayList<>();
+
+            for(int o = 0; o < challengeList.size(); o++) {
+                valsChallenge = new ArrayList<>();
+                valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
+
+                ar = new ArrayList<>();
+                ar.add(challengeList.get(o).getName());
+
+                BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
+                bdS.setColors(ColorTemplate.VORDIPLOM_COLORS);
+
+                dataSets.add(bdS);
             }
 
             String[] xVals = new String[ar.size()];
             xVals = ar.toArray(xVals);
-
-            BarDataSet dataSet = new BarDataSet(valsChallenge, "Cumplimiento");
             challengeChart.setDescription("");
-            BarData data = new BarData(xVals, dataSet);
+            BarData data = new BarData(xVals, dataSets);
 
             challengeChart.setData(data);
 
