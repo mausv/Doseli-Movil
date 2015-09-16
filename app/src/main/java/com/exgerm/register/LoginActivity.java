@@ -71,7 +71,8 @@ public class LoginActivity extends Activity {
     protected Spinner groupSpinner;
     protected Spinner hospitalSpinner;
     public static String imei;
-    public static String currentVersion;
+    public static int currentVersion;
+    public static String currentVersionName;
     public static String userId;
     public static String userName;
     public static String hspName;
@@ -126,8 +127,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.152/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.85/doseli/";
 
     File fileDir;
 
@@ -440,7 +441,7 @@ public class LoginActivity extends Activity {
             List<NameValuePair> params = new ArrayList<>();
             params.add(new BasicNameValuePair("code", TAG_CODE));
             params.add(new BasicNameValuePair("imei", TAG_IMEI));
-            params.add(new BasicNameValuePair("ver", currentVersion));
+            params.add(new BasicNameValuePair("ver", currentVersionName));
             params.add(new BasicNameValuePair("long", String.valueOf(lon)));
             params.add(new BasicNameValuePair("lat", String.valueOf(lat)));
             params.add(new BasicNameValuePair("alt", String.valueOf(alt)));
@@ -593,7 +594,7 @@ public class LoginActivity extends Activity {
         return imei;
     }
 
-    public String getCurrentVer () {
+    public int getCurrentVer () {
         PackageInfo pInfo = null;
         try {
             pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
@@ -601,9 +602,11 @@ public class LoginActivity extends Activity {
             e.printStackTrace();
         }
 
-        currentVersion = pInfo.versionName;
-        versionTV.setText("ver: " + currentVersion);
-        Log.i("Current version: ", currentVersion);
+        currentVersion = pInfo.versionCode;
+        currentVersionName = pInfo.versionName;
+        versionTV.setText("ver: " + currentVersionName);
+        Log.i("Current version: ", String.valueOf(currentVersion));
+        Log.i("Current version name: " , currentVersionName);
         new GetLatestVersion().execute();
 
 
@@ -705,7 +708,7 @@ public class LoginActivity extends Activity {
         protected Void doInBackground(Void... params) {
             try {
                 List<NameValuePair> paramsGetVersion = new ArrayList<>();
-                paramsGetVersion.add(new BasicNameValuePair("version", currentVersion));
+                paramsGetVersion.add(new BasicNameValuePair("version", String.valueOf(currentVersion)));
 
                 JSONObject json = jsonParser.makeHttpRequest(url_get_latest_version, "POST", paramsGetVersion);
 
