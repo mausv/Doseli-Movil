@@ -127,8 +127,8 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.85/doseli/";
+    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    //public static String main_url = "http://192.168.1.85/doseli/";
 
     File fileDir;
 
@@ -740,7 +740,7 @@ public class LoginActivity extends Activity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                 builder.setMessage("Existe una  nueva version de Doseli");
-                builder.setTitle("Actualizacion disponible");
+                builder.setTitle("Actualización disponible");
                 builder.setPositiveButton("Actualizar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -748,6 +748,11 @@ public class LoginActivity extends Activity {
                         Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);*/
+                        pDialog = new ProgressDialog(LoginActivity.this);
+                        pDialog.setMessage("Descargando actualización...");
+                        pDialog.setIndeterminate(false);
+                        pDialog.setCancelable(true);
+                        pDialog.show();
 
                         new Thread (new Runnable() {
 
@@ -775,6 +780,7 @@ public class LoginActivity extends Activity {
                                     Intent intent = new Intent(Intent.ACTION_VIEW);
                                     intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
                                     startActivity(intent);
+                                    pDialog.dismiss();
                                     finishAffinity();
 
                                 } catch (MalformedURLException e) {
