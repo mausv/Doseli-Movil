@@ -687,6 +687,7 @@ public class LoginActivity extends Activity {
             challengeChart.setDescription("");
             BarData data = new BarData(xVals, dataSets);
             YAxis yAxis = challengeChart.getAxisLeft();
+            challengeChart.getAxisRight().setDrawLabels(false);
 
             yAxis.setAxisMaxValue(100f);
 
