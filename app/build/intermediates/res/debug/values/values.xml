@@ -217,6 +217,8 @@
     <string name="handsets">Lista de Aparatos</string>
     <string name="hello_world">Hello world!</string>
     <string name="logout_title">Cerrar Sesión</string>
+    <string name="maint1">Limpieza de Charola</string>
+    <string name="maint2">Limpieza de Aparato</string>
     <string name="pending">Enviar Pendientes</string>
     <string name="resumen">Resumen</string>
     <string name="send">Enviar Reporte</string>

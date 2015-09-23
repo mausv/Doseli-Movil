@@ -63,12 +63,17 @@ public class UpdateStatusActivity extends Activity {
     protected CheckBox cbS1;
     protected CheckBox cbS2;
     protected CheckBox cbS3;
+    protected CheckBox cbM1;
+    protected CheckBox cbM2;
+
     public String e1 = "0";
     public String e2 = "0";
     public String e3 = "0";
     public String s1 = "0";
     public String s2 = "0";
     public String s3 = "0";
+    public String maint1 = "0";
+    public String maint2 = "0";
     public String mid = "0";
 
     protected CheckBox cbS;
@@ -133,6 +138,10 @@ public class UpdateStatusActivity extends Activity {
         cbS1 = (CheckBox) findViewById(R.id.solucion1CB);
         cbS2 = (CheckBox) findViewById(R.id.solucion2CB);
         cbS3 = (CheckBox) findViewById(R.id.solucion3CB);
+
+        cbM1 = (CheckBox) findViewById(R.id.maint1CB);
+        cbM2 = (CheckBox) findViewById(R.id.maint2CB);
+
 
         cbS = (CheckBox) findViewById(R.id.erroresFinal);
         cbW = (CheckBox) findViewById(R.id.perFinal);
@@ -285,6 +294,14 @@ public class UpdateStatusActivity extends Activity {
                                                          s3 = "1";
                                                      }
 
+                                                     if (cbM1.isChecked()) {
+                                                         maint1 = "1";
+                                                     }
+
+                                                     if (cbM2.isChecked()) {
+                                                         maint2 = "1";
+                                                     }
+
                                                      //Store the status entered by user
                                                      //String hsp = currentUser.get("Hospital").toString();
                                                      System.out.println(hspOb);
@@ -296,11 +313,12 @@ public class UpdateStatusActivity extends Activity {
                                                          LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline " +
                                                                  "(token, state, device_comment, users_id, user_name, " +
                                                                  "lowBattery, changeBattery, lowLiquid, changeLiquid, " +
-                                                                 "physicalDamage, physicalRepair, hospitals_id, hospital_name) " +
+                                                                 "physicalDamage, physicalRepair, trayClean, machineClean, " +
+                                                                 "hospitals_id, hospital_name) " +
                                                                  "VALUES('" + token + "', '" + estado + "', " +
                                                                  "'" + newStatus + "', '" + LoginActivity.userId + "', " +
                                                                  "'" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', " +
-                                                                 "'" + s3 + "', '" + e1 + "', '" + s1 + "', " +
+                                                                 "'" + s3 + "', '" + e1 + "', '" + s1 + "', '" + maint1 + "', '" + maint2 + "', " +
                                                                  "'" + LoginActivity.hospitalSelectedId + "', " +
                                                                  "'" + LoginActivity.hospitalSelected + "');");
                                                          AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
@@ -440,6 +458,8 @@ public class UpdateStatusActivity extends Activity {
             params.add(new BasicNameValuePair("changeLiquid", s3));
             params.add(new BasicNameValuePair("physicalDamage", e1));
             params.add(new BasicNameValuePair("physicalRepair", s1));
+            params.add(new BasicNameValuePair("trayClean", maint1));
+            params.add(new BasicNameValuePair("machineClean", maint2));
             params.add(new BasicNameValuePair("hospitals_id", LoginActivity.hospitalSelectedId));
             params.add(new BasicNameValuePair("hospital_name", LoginActivity.hospitalSelected));
 

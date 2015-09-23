@@ -12,20 +12,22 @@
         android:id="@+id/statusTextBox"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/error3CB"
         android:gravity="top"
-        android:hint="@string/comment" />
+        android:hint="@string/comment"
+        android:layout_below="@+id/maint1CB"
+        android:layout_alignRight="@+id/aparatoID"
+        android:layout_alignEnd="@+id/aparatoID" />
 
     <Button
         android:id="@+id/statusButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/erroresFinal"
         android:textColor="@color/whiteColor"
         android:background="@color/blueColor"
-        android:text="@string/send" />
+        android:text="@string/send"
+        android:layout_below="@+id/erroresFinal"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/qrButton"
@@ -38,7 +40,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/error1CB"
-        android:layout_toLeftOf="@+id/solucion1CB"/>
+        android:layout_alignRight="@+id/error2CB"
+        android:layout_alignEnd="@+id/error2CB" />
 
     <TextView
         android:id="@+id/url"
@@ -46,11 +49,9 @@
         android:layout_height="50dp"
         android:gravity="top"
         android:hint="@string/url"
-        android:layout_toRightOf="@+id/token"
-        android:layout_below="@+id/statusButton"
-        android:layout_alignRight="@+id/perFinal"
-        android:layout_alignEnd="@+id/perFinal"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:layout_below="@+id/token"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/aparatoID"
@@ -60,7 +61,9 @@
         android:hint="@string/aid"
         android:textSize="15dp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textAID" />
+        android:layout_toRightOf="@+id/solucion1CB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/textAID"
@@ -70,8 +73,9 @@
         android:hint="@string/textaid"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/qrButton"
-        android:layout_alignRight="@+id/perFinal"
-        android:layout_alignEnd="@+id/perFinal"/>
+        android:layout_toStartOf="@+id/erroresFinal"
+        android:layout_alignRight="@+id/solucion1CB"
+        android:layout_alignEnd="@+id/solucion1CB" />
 
     <TextView
         android:id="@+id/token"
@@ -79,10 +83,9 @@
         android:layout_height="50dp"
         android:gravity="top"
         android:hint="@string/token"
+        android:visibility="invisible"
         android:layout_below="@+id/statusButton"
-        android:layout_toLeftOf="@+id/perFinal"
-        android:layout_toStartOf="@+id/perFinal"
-        android:visibility="invisible" />
+        android:layout_alignParentLeft="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -150,17 +153,17 @@
         android:text="Errores"
         android:id="@+id/erroresFinal"
         android:layout_below="@+id/statusTextBox"
-        android:layout_alignRight="@+id/error3CB"
-        android:layout_alignEnd="@+id/error3CB" />
+        android:layout_toLeftOf="@+id/perFinal"
+        android:layout_toStartOf="@+id/perFinal" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Funciona"
         android:id="@+id/perFinal"
-        android:layout_below="@+id/statusTextBox"
-        android:layout_alignRight="@+id/solucion1CB"
-        android:layout_alignEnd="@+id/solucion1CB" />
+        android:layout_above="@+id/statusButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -177,10 +180,9 @@
         android:layout_height="50dp"
         android:gravity="top"
         android:hint="HOSPITAL"
-        android:layout_below="@+id/token"
-        android:layout_toLeftOf="@+id/perFinal"
-        android:layout_toStartOf="@+id/perFinal"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:layout_below="@+id/idMachine"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/idMachine"
@@ -190,8 +192,31 @@
         android:hint="ID"
         android:visibility="invisible"
         android:layout_below="@+id/url"
-        android:layout_toRightOf="@+id/error1CB"
-        android:layout_toEndOf="@+id/error1CB" />
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint1"
+        android:id="@+id/maint1CB"
+        android:textSize="14sp"
+        android:layout_below="@+id/error3CB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_toLeftOf="@+id/solucion3CB"
+        android:layout_toStartOf="@+id/solucion3CB" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint2"
+        android:id="@+id/maint2CB"
+        android:textSize="14sp"
+        android:checked="false"
+        android:layout_below="@+id/solucion3CB"
+        android:layout_alignLeft="@+id/solucion3CB"
+        android:layout_alignStart="@+id/solucion3CB" />
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/layout/activity_update_status.xml -->

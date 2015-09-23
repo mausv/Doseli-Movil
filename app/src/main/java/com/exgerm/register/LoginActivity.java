@@ -18,7 +18,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -39,11 +38,6 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.data.ChartData;
-import com.github.mikephil.charting.data.DataSet;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.PieData;
-import com.github.mikephil.charting.utils.ColorTemplate;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -59,7 +53,6 @@ import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -127,8 +120,10 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.85/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.152/doseli/";
+
+    public static int newestDbVersion = 2;
 
     File fileDir;
 
@@ -192,6 +187,15 @@ public class LoginActivity extends Activity {
         }
 
         offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
+
+        System.out.println("Version def: " + offlineDb.getVersion());
+
+        if(offlineDb.getVersion() != newestDbVersion) {
+            offlineDb.execSQL("DROP TABLE IF EXISTS DoseliOffline");
+            offlineDb.setVersion(newestDbVersion);
+            Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
+        }
+
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline" +
                 "(id INTEGER PRIMARY KEY, token VARCHAR, " +
                 "state VARCHAR, device_comment VARCHAR, " +
@@ -199,6 +203,7 @@ public class LoginActivity extends Activity {
                 "lowBattery VARCHAR, changeBattery VARCHAR, " +
                 "lowLiquid VARCHAR, changeLiquid VARCHAR, " +
                 "physicalDamage VARCHAR, physicalRepair VARCHAR, " +
+                "trayClean VARCHAR, machineClean VARCHAR," +
                 "hospitals_id VARCHAR, hospital_name VARCHAR);");
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
                 "(id INTEGER PRIMARY KEY, mId VARCHAR, model VARCHAR, " +

@@ -37,5 +37,7 @@
     <string name="title_activity_full_report_detail_view">Reporte de Aparato</string>
     <string name="title_activity_admin">Administrador</string>
     <string name="admin">Administrador</string>
+    <string name="maint1">Limpieza de Charola</string>
+    <string name="maint2">Limpieza de Aparato</string>
 
 </resources>

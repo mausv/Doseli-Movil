@@ -642,6 +642,8 @@ public class HomepageActivity extends ListActivity {
                                 paramsP.add(new BasicNameValuePair("changeLiquid", pendingArray.get(i).getChangeLiquid()));
                                 paramsP.add(new BasicNameValuePair("physicalDamage", pendingArray.get(i).getPhysicalDamage()));
                                 paramsP.add(new BasicNameValuePair("physicalRepair", pendingArray.get(i).getPhysicalRepair()));
+                                paramsP.add(new BasicNameValuePair("trayClean", pendingArray.get(i).getTrayClean()));
+                                paramsP.add(new BasicNameValuePair("machineClean", pendingArray.get(i).getMachineClean()));
                                 paramsP.add(new BasicNameValuePair("hospitals_id", pendingArray.get(i).getHospitals_id()));
                                 paramsP.add(new BasicNameValuePair("hospital_name", pendingArray.get(i).getHospital_name()));
 
@@ -834,8 +836,26 @@ public class HomepageActivity extends ListActivity {
         private String changeLiquid;
         private String physicalDamage;
         private String physicalRepair;
+        private String trayClean;
+        private String machineClean;
         private String hospitals_id;
         private String hospital_name;
+
+        public String getTrayClean() {
+            return trayClean;
+        }
+
+        public void setTrayClean(String trayClean) {
+            this.trayClean = trayClean;
+        }
+
+        public String getMachineClean() {
+            return machineClean;
+        }
+
+        public void setMachineClean(String machineClean) {
+            this.machineClean = machineClean;
+        }
 
         public String getHospital_name() {
             return hospital_name;
@@ -1230,6 +1250,8 @@ public class HomepageActivity extends ListActivity {
                     member.setChangeLiquid(c.getString(c.getColumnIndex("changeLiquid")));
                     member.setPhysicalDamage(c.getString(c.getColumnIndex("physicalDamage")));
                     member.setPhysicalRepair(c.getString(c.getColumnIndex("physicalRepair")));
+                    member.setTrayClean(c.getString(c.getColumnIndex("trayClean")));
+                    member.setMachineClean(c.getString(c.getColumnIndex("machineClean")));
                     member.setHospitals_id(c.getString(c.getColumnIndex("hospitals_id")));
                     member.setHospital_name(c.getString(c.getColumnIndex("hospital_name")));
                     pendingReports.add(member);
