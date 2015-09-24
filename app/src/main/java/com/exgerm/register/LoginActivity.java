@@ -120,10 +120,10 @@ public class LoginActivity extends Activity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.152/doseli/";
+    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    //public static String main_url = "http://192.168.1.152/doseli/";
 
-    public static int newestDbVersion = 2;
+    public static int newestDbVersion = 1;
 
     File fileDir;
 
@@ -190,12 +190,6 @@ public class LoginActivity extends Activity {
 
         System.out.println("Version def: " + offlineDb.getVersion());
 
-        if(offlineDb.getVersion() != newestDbVersion) {
-            offlineDb.execSQL("DROP TABLE IF EXISTS DoseliOffline");
-            offlineDb.setVersion(newestDbVersion);
-            Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
-        }
-
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline" +
                 "(id INTEGER PRIMARY KEY, token VARCHAR, " +
                 "state VARCHAR, device_comment VARCHAR, " +
@@ -203,7 +197,6 @@ public class LoginActivity extends Activity {
                 "lowBattery VARCHAR, changeBattery VARCHAR, " +
                 "lowLiquid VARCHAR, changeLiquid VARCHAR, " +
                 "physicalDamage VARCHAR, physicalRepair VARCHAR, " +
-                "trayClean VARCHAR, machineClean VARCHAR," +
                 "hospitals_id VARCHAR, hospital_name VARCHAR);");
         offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
                 "(id INTEGER PRIMARY KEY, mId VARCHAR, model VARCHAR, " +
@@ -216,6 +209,19 @@ public class LoginActivity extends Activity {
                 "area_id VARCHAR, " +
                 "location_id VARCHAR, " +
                 "reference VARCHAR);");
+
+        if(offlineDb.getVersion() != newestDbVersion) {
+            switch(offlineDb.getVersion()) {
+                case 0:
+                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
+                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
+                    offlineDb.setVersion(newestDbVersion);
+                    Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
+
+
 
         groupsList = new ArrayList<>();
 
