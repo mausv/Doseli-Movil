@@ -37,6 +37,8 @@ public class FullHandsetReportAdapter extends ArrayAdapter<FullHandsetReport>{
         CheckBox changeBattery = (CheckBox) convertView.findViewById(R.id.cHsolucion2CB);
         CheckBox lowLiquid = (CheckBox) convertView.findViewById(R.id.cHerror3CB);
         CheckBox changeLiquid = (CheckBox) convertView.findViewById(R.id.cHsolucion3CB);
+        CheckBox trayClean = (CheckBox) convertView.findViewById(R.id.cHmaint1CB);
+        CheckBox machineClean = (CheckBox) convertView.findViewById(R.id.cHmaint2CB);
         TextView comment = (TextView) convertView.findViewById(R.id.cHstatusDetailView);
         CheckBox error = (CheckBox) convertView.findViewById(R.id.cHerroresFinal);
         CheckBox per = (CheckBox) convertView.findViewById(R.id.cHperFinal);
@@ -73,6 +75,16 @@ public class FullHandsetReportAdapter extends ArrayAdapter<FullHandsetReport>{
             changeLiquid.setChecked(true);
         } else {
             changeLiquid.setChecked(false);
+        }
+        if(handset.trayClean == 1) {
+            trayClean.setChecked(true);
+        } else {
+            trayClean.setChecked(false);
+        }
+        if(handset.machineClean == 1) {
+            machineClean.setChecked(true);
+        } else {
+            machineClean.setChecked(false);
         }
         if(handset.state == 1) {
             per.setChecked(true);

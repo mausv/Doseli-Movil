@@ -37,6 +37,8 @@ public class StatusDetailView extends Activity {
     protected CheckBox sol1CB;
     protected CheckBox sol2CB;
     protected CheckBox sol3CB;
+    protected CheckBox maint1CB;
+    protected CheckBox maint2CB;
 
     JSONParser jsonParser = new JSONParser();
 
@@ -61,6 +63,8 @@ public class StatusDetailView extends Activity {
         sol1CB = (CheckBox) findViewById(R.id.solucion1CB);
         sol2CB = (CheckBox) findViewById(R.id.solucion2CB);
         sol3CB = (CheckBox) findViewById(R.id.solucion3CB);
+        maint1CB = (CheckBox) findViewById(R.id.maint1);
+        maint2CB = (CheckBox) findViewById(R.id.maint2);
 
         //Get the intent that started the activity
         Intent intent = getIntent();
@@ -86,6 +90,8 @@ public class StatusDetailView extends Activity {
         String sol1Checked;
         String sol2Checked;
         String sol3Checked;
+        String maint1Checked;
+        String maint2Checked;
 
         @Override
         protected void onPreExecute() {
@@ -117,6 +123,8 @@ public class StatusDetailView extends Activity {
                     sol1Checked = String.valueOf(innerObj.get("physicalRepair"));
                     sol2Checked = String.valueOf(innerObj.get("changeBattery"));
                     sol3Checked = String.valueOf(innerObj.get("changeLiquid"));
+                    maint1Checked = String.valueOf(innerObj.get("trayClean"));
+                    maint2Checked = String.valueOf(innerObj.get("machineClean"));
 
                     username = String.valueOf(innerObj.get("user_name"));
                     userStatus = String.valueOf(innerObj.get("comment"));
@@ -161,6 +169,12 @@ public class StatusDetailView extends Activity {
             }
             if (sol3Checked.equals(x)) {
                 sol3CB.setChecked(true);
+            }
+            if (maint1Checked.equals(x)) {
+                maint1CB.setChecked(true);
+            }
+            if (maint2Checked.equals(x)) {
+                maint2CB.setChecked(true);
             }
 
             mUser.setText(username);

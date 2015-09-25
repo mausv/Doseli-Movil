@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exgerm.register.StatusDetailView">
+
 
     <TextView
         android:id="@+id/cHstatusDetailViewUser"
@@ -12,10 +18,19 @@
         android:textSize="20dp" />
 
     <TextView
+        android:id="@+id/cHstatusDetailViewHsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cHstatusDetailViewUser"
+        android:text="Lugar"
+        android:textColor="#ff1a3572" />
+
+    <TextView
         android:id="@+id/cHstatusDetailViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cHstatusDetailViewUser"
+        android:layout_toRightOf="@+id/cHstatusDetailViewHsp"
         android:text="Fecha" />
 
     <TextView
@@ -23,9 +38,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Cargando"
-        android:layout_below="@+id/cHerror3CB"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/cHmaint1CB"
+        android:layout_alignRight="@+id/cHperFinal"
+        android:layout_alignEnd="@+id/cHperFinal" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -107,9 +122,9 @@
         android:checked="false"
         android:clickable="false"
         android:enabled="true"
-        android:layout_below="@+id/cHstatusDetailView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/cHperFinal"
+        android:layout_toLeftOf="@+id/cHperFinal"
+        android:layout_toStartOf="@+id/cHperFinal" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -118,8 +133,34 @@
         android:id="@+id/cHperFinal"
         android:clickable="false"
         android:enabled="true"
-        android:layout_alignTop="@+id/cHerroresFinal"
-        android:layout_toRightOf="@+id/cHerror1CB"
-        android:layout_toEndOf="@+id/cHerror1CB" />
+        android:layout_below="@+id/cHstatusDetailView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint1"
+        android:id="@+id/cHmaint1CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:layout_below="@+id/cHerror3CB"
+        android:layout_toLeftOf="@+id/cHsolucion3CB"
+        android:layout_toStartOf="@+id/cHsolucion3CB"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint2"
+        android:id="@+id/cHmaint2CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:checked="false"
+        android:layout_alignBottom="@+id/cHmaint1CB"
+        android:layout_alignLeft="@+id/cHsolucion3CB"
+        android:layout_alignStart="@+id/cHsolucion3CB" />
 
 </RelativeLayout>

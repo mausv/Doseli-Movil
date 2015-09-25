@@ -22,6 +22,8 @@ public class FullHandsetReport {
     public int changeBattery;
     public int lowLiquid;
     public int changeLiquid;
+    public int trayClean;
+    public int machineClean;
     public String comment;
     public int state;
 
@@ -37,6 +39,8 @@ public class FullHandsetReport {
             this.changeBattery = object.getInt("changeBattery");
             this.lowLiquid = object.getInt("lowLiquid");
             this.changeLiquid = object.getInt("changeLiquid");
+            this.trayClean = object.getInt("trayClean");
+            this.machineClean = object.getInt("machineClean");
             this.comment = object.getString("comment");
             this.state = object.getInt("state");
         } catch (JSONException e) {

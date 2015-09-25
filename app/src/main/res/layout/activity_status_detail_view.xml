@@ -38,9 +38,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Cargando"
-        android:layout_below="@+id/error3CB"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/maint1"
+        android:layout_alignRight="@+id/perFinal"
+        android:layout_alignEnd="@+id/perFinal" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -122,9 +122,9 @@
         android:checked="false"
         android:clickable="false"
         android:enabled="true"
-        android:layout_below="@+id/statusDetailView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/perFinal"
+        android:layout_toLeftOf="@+id/perFinal"
+        android:layout_toStartOf="@+id/perFinal" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -133,8 +133,34 @@
         android:id="@+id/perFinal"
         android:clickable="false"
         android:enabled="true"
-        android:layout_alignTop="@+id/erroresFinal"
-        android:layout_toRightOf="@+id/error1CB"
-        android:layout_toEndOf="@+id/error1CB" />
+        android:layout_below="@+id/statusDetailView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint1"
+        android:id="@+id/maint1"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:layout_below="@+id/error3CB"
+        android:layout_toLeftOf="@+id/solucion3CB"
+        android:layout_toStartOf="@+id/solucion3CB"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint2"
+        android:id="@+id/maint2"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:checked="false"
+        android:layout_alignBottom="@+id/maint1"
+        android:layout_alignLeft="@+id/solucion3CB"
+        android:layout_alignStart="@+id/solucion3CB" />
 
 </RelativeLayout>
