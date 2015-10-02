@@ -1510,7 +1510,7 @@ containing a value of this type.
         public static final int textView4=0x7f0c0051;
         public static final int textView5=0x7f0c0053;
         public static final int textView6=0x7f0c0055;
-        public static final int textView7=0x7f0c0084;
+        public static final int tvDeleteMachineId =0x7f0c0084;
         public static final int textView8=0x7f0c005b;
         public static final int textView9=0x7f0c0046;
         public static final int textViewAdmChecked15=0x7f0c00b5;

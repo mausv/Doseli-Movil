@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9493000d-5010-4dc9-98cd-12b3d5253e37" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/exgerm/register/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/exgerm/register/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_report_stolen.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_report_stolen.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -2436,7 +2436,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443824770766</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Refreshed StolenActivity UI.">
+      <created>1443826919721</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1443826919721</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2526,7 +2532,8 @@
     <MESSAGE value="Started 1.4.0.&#10;Added Database check to update it.&#10;Updated code to send offline reports." />
     <MESSAGE value="Added a check for the columns machineClean and trayClean.&#10;Added updating SQLite Database." />
     <MESSAGE value="Renamed StolenActivity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed StolenActivity." />
+    <MESSAGE value="Refreshed StolenActivity UI." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refreshed StolenActivity UI." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3002,21 +3009,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_report_stolen.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27324915">
-          <caret line="206" column="38" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="674" column="0" selection-start-line="674" selection-start-column="0" selection-end-line="674" selection-end-column="0" />
           <folding>
             <element signature="class#13986:14928" expanded="false" />
             <element signature="class#14986:15891" expanded="false" />
@@ -3035,6 +3031,17 @@
             <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_report_stolen.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
