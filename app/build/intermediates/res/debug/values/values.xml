@@ -222,6 +222,7 @@
     <string name="pending">Enviar Pendientes</string>
     <string name="resumen">Resumen</string>
     <string name="send">Enviar Reporte</string>
+    <string name="send_delete">Enviar Baja</string>
     <string name="solucion1">Reparación</string>
     <string name="solucion2">Cambio de Baterías</string>
     <string name="solucion3">Cambio de Líquido</string>
@@ -235,7 +236,7 @@
     <string name="title_activity_handsets">Aparatos</string>
     <string name="title_activity_login">Inicio</string>
     <string name="title_activity_register">Register</string>
-    <string name="title_activity_report_stolen">Reportar Robo</string>
+    <string name="title_activity_report_stolen">Bajas</string>
     <string name="title_activity_status_detail_view">Aparato</string>
     <string name="title_activity_update_status">Reporte de Aparatos</string>
     <string name="token">TOKEN</string>
