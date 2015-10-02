@@ -40,4 +40,6 @@
     <string name="maint1">Limpieza de Charola</string>
     <string name="maint2">Limpieza de Aparato</string>
 
+    <string name="send_delete">Enviar Baja</string>
+
 </resources>
