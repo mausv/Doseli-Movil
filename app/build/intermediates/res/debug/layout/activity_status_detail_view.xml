@@ -169,6 +169,8 @@
         android:text="Reportar Robo"
         android:id="@+id/btnStolenDetailView"
         android:layout_below="@+id/erroresFinal"
+        android:textColor="@color/whiteColor"
+        android:background="@color/blueColor"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
