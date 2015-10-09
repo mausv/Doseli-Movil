@@ -1,12 +1,16 @@
 package com.exgerm.register;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -23,6 +27,8 @@ import java.util.List;
 public class StatusDetailView extends Activity {
 
     String objectId;
+    String qr;
+    String user_id;
     String hspOb;
     protected TextView mStatus;
     protected TextView mUser;
@@ -40,10 +46,12 @@ public class StatusDetailView extends Activity {
     protected CheckBox maint1CB;
     protected CheckBox maint2CB;
 
+    protected Button btnReportStolen;
+
     JSONParser jsonParser = new JSONParser();
 
     protected static final String get_specs_url = LoginActivity.main_url + "get_machine_details_specs.php";
-
+    protected static final String url_report_stolen = LoginActivity.main_url + "report_stolen.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,16 +73,40 @@ public class StatusDetailView extends Activity {
         sol3CB = (CheckBox) findViewById(R.id.solucion3CB);
         maint1CB = (CheckBox) findViewById(R.id.maint1);
         maint2CB = (CheckBox) findViewById(R.id.maint2);
+        btnReportStolen = (Button) findViewById(R.id.btnStolenDetailView);
 
         //Get the intent that started the activity
         Intent intent = getIntent();
         objectId = intent.getStringExtra("objectID");
+        qr = intent.getStringExtra("qrs_id");
+        user_id = LoginActivity.userId;
 
         Log.e("Obj Id: ", objectId);
+        Log.e("Obj QR: ", qr);
 
         new GetMachineDetails().execute();
 
-
+        btnReportStolen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder report = new AlertDialog.Builder(StatusDetailView.this);
+                report.setTitle("Reportar Robo");
+                report.setMessage("¿Estas seguro que quieres reportar el aparato como robado?");
+                report.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        new GenerateStolenReport().execute();
+                    }
+                });
+                report.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+                report.show();
+            }
+        });
     }
 
     class GetMachineDetails extends AsyncTask<String, String, String> {
@@ -182,6 +214,47 @@ public class StatusDetailView extends Activity {
             mDate.setText(userDate);
             mHsp.setText(userHsp);
 
+        }
+    }
+
+    class GenerateStolenReport extends AsyncTask<Void, Void, Void> {
+        int success = 0;
+        @Override
+        protected Void doInBackground(Void... params) {
+            List<NameValuePair> paramsToReport = new ArrayList<>();
+            paramsToReport.add(new BasicNameValuePair("qrs_id", qr));
+            paramsToReport.add(new BasicNameValuePair("deleted_by", user_id));
+
+            JSONObject reportStolen = jsonParser.makeHttpRequest(url_report_stolen, "POST", paramsToReport);
+
+            try {
+                success = reportStolen.getInt("success");
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            if(success == 1) {
+                AlertDialog.Builder build = new AlertDialog.Builder(StatusDetailView.this);
+                build.setTitle("Aparato Robado");
+                build.setMessage("El aparato ha sido reportado robado");
+                build.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        finish();
+                    }
+                });
+                build.show();
+            }
         }
     }
 

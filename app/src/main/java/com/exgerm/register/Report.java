@@ -64,4 +64,8 @@ public class Report {
     public String getId () {
         return String.valueOf(this.id);
     }
+
+    public String getQrs_id() {
+        return qrs_id;
+    }
 }

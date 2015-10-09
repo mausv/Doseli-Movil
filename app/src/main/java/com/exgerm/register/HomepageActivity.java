@@ -1281,9 +1281,11 @@ public class HomepageActivity extends ListActivity {
 
         Report statusObject = adapter.getItem(position);
         String objectId = statusObject.getId();
+        String qr = statusObject.getQrs_id();
 
         Intent goToDetailView = new Intent(HomepageActivity.this, StatusDetailView.class);
         goToDetailView.putExtra("objectID", objectId);
+        goToDetailView.putExtra("qrs_id", qr);
         startActivity(goToDetailView);
 
     }

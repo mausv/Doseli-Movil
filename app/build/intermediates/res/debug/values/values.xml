@@ -241,7 +241,7 @@
     <string name="title_activity_update_status">Reporte de Aparatos</string>
     <string name="token">TOKEN</string>
     <string name="update_location">Posicionar Aparato</string>
-    <string name="update_status_stolen">Aparato Robado</string>
+    <string name="update_status_stolen">Bajas</string>
     <string name="update_status_title">Reportar</string>
     <string name="url">URL</string>
     <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
