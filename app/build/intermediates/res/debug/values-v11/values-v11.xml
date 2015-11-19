@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml -->
+    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
@@ -354,7 +354,7 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
-    <!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-v11/values.xml -->
+    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="zxing_CaptureTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
   </style>
