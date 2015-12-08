@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-mr-rIN/values-mr-rIN.xml -->
+=======
+    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-mr-rIN/values.xml -->
+>>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"मुख्‍यपृष्‍ठ नेव्‍हिगेट करा"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"वर नेव्‍हिगेट करा"</string>

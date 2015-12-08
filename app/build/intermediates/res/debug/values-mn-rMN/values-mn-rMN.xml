@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-mn-rMN/values-mn-rMN.xml -->
+=======
+    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-mn-rMN/values.xml -->
+>>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Нүүр хуудас руу шилжих"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Дээш шилжих"</string>

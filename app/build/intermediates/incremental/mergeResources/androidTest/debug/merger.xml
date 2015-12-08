@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\Users\mausv\Documents\Git\Doseli-Movil\app\src\androidTest\res"/><source path="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\generated\res\rs\androidTest\debug"/><source path="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="D:\Git\Doseli-Movil\app\src\androidTest\res"/><source path="D:\Git\Doseli-Movil\app\build\generated\res\rs\androidTest\debug"/><source path="D:\Git\Doseli-Movil\app\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>
+>>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62

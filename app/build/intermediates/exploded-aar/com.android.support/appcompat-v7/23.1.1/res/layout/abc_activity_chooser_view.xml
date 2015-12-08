@@ -68,5 +68,9 @@
 
     </FrameLayout>
 
+<<<<<<< HEAD:app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view.xml
 </view>
 <!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/appcompat/res/layout/abc_activity_chooser_view.xml -->
+=======
+</merge><!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_include.xml -->
+>>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62:app/build/intermediates/res/debug/layout/abc_activity_chooser_view_include.xml

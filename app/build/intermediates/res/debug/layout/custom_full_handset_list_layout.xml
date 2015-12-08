@@ -163,4 +163,8 @@
         android:layout_alignLeft="@+id/cHsolucion3CB"
         android:layout_alignStart="@+id/cHsolucion3CB" />
 
+<<<<<<< HEAD
 </RelativeLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/custom_full_handset_list_layout.xml -->
+=======
+</RelativeLayout><!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/layout/custom_full_handset_list_layout.xml -->
+>>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62

@@ -33,6 +33,7 @@
         android:addStatesFromChildren="true"
         android:background="?attr/actionBarItemBackground">
 
+<<<<<<< HEAD
         <ImageView android:id="@+id/image"
             android:layout_width="32dip"
             android:layout_height="32dip"
@@ -70,3 +71,6 @@
 
 </view>
 <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/lmp-mr1-supportlib-release/frameworks/support/v7/appcompat/res/layout/abc_activity_chooser_view.xml --><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view.xml -->
+=======
+</android.support.v7.widget.LinearLayoutCompat><!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view.xml -->
+>>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
