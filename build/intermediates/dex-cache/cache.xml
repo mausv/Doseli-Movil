@@ -2,74 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jar="D:\Git\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-70a61400ea031121c7228ec6551a45c2a874b207.jar" />
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="D:\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-697f6412f7e34e70eb5a125c6e0ae1dd336af005.jar" />
     </item>
     <item
-        jar="C:\Users\Mauricio\Documents\Doseli-Movil\app\libs\joda-time-2.7.jar"
+        jar="D:\Git\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\joda-time-2.7-97721aef00f749dc100d9a9a3af225158ed8eca9.jar" />
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="D:\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-965cb9664404b76ee027be2fbd87c393992c4ff8.jar" />
     </item>
     <item
-        jar="C:\Users\Mauricio\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="D:\Git\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\support-annotations-21.0.3-258d8c9b9c39836f5b3d3cffb092491b5d1fa11f.jar" />
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="D:\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-bf41625bda9fdbc2c995ee16d99dfa6726ca3f05.jar" />
     </item>
     <item
-        jar="C:\Users\Mauricio\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.3\3fce86548feba9dd220128fa651498c51d099cd8\MPAndroidChart-v2.1.3.jar"
+        jar="C:\Users\mausv\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="3fce86548feba9dd220128fa651498c51d099cd8">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\MPAndroidChart-v2.1.3-0ce87887550f1614561b7691c3c25796f2e9fb52.jar" />
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="D:\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-55524048caacbf7959989d3f0bc20f957a0d5d1b.jar" />
     </item>
     <item
-        jar="C:\Users\Mauricio\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jar="D:\Git\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-android-1.2.0-0eec8465c7f0e50147fb0601eae75d649c0fd59a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="64cb6719337d5cf41c896c9a975d8d5dc9c0a49b">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-b0211e75481929742fbc45336b3728950d92a509.jar" />
-    </item>
-    <item
-        jar="C:\Users\Mauricio\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\core-3.2.0-e3d4540bbfc4037bd24c37fe19fc5813ab3fc91a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Mauricio\Documents\Doseli-Movil\app\libs\Parse-1.8.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\Parse-1.8.0-8c9666d7f6125417a1608f32f8a3631e7247dbe8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\internal_impl-21.0.3-2cab2d1060a2fb4aa606433e8385e95526345157.jar" />
-    </item>
-    <item
-        jar="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\Mauricio\Documents\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-369c15ee18a9dea9fd4a15bea99d3dc38714bfcd.jar" />
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="D:\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-36669da749eb49dfe24364ea05e785e68c5c0453.jar" />
     </item>
 
 </items>

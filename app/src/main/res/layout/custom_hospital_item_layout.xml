@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="15 Dias: "
-        android:id="@+id/textView15"
+        android:id="@+id/textFrequence"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/textViewAdmChecked15"
         android:layout_toStartOf="@+id/textViewAdmChecked15" />
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:text="30 Dias: "
         android:id="@+id/textView30"
-        android:layout_below="@+id/textView15"
-        android:layout_alignLeft="@+id/textView15"
-        android:layout_alignStart="@+id/textView15" />
+        android:layout_below="@+id/textFrequence"
+        android:layout_alignLeft="@+id/textFrequence"
+        android:layout_alignStart="@+id/textFrequence" />
 </RelativeLayout>

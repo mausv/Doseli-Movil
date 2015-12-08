@@ -19,6 +19,8 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
@@ -121,7 +123,7 @@ public class LoginActivity extends Activity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.152/doseli/";
+    public static String main_url = "http://192.168.1.114/doseli/";
 
     public static int newestDbVersion = 1;
 

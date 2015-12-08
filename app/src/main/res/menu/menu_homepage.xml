@@ -1,9 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomepageActivity">
 
-    <item
+    <!--<item
         android:id="@+id/update_status"
         android:orderInCategory="100"
         android:title="@string/update_status_title"
@@ -43,5 +43,5 @@
         android:id="@+id/admin"
         android:orderInCategory="100"
         android:title="@string/admin"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom"/>-->
 </menu>

@@ -1,20 +1,27 @@
 package com.exgerm.register;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
+import android.app.Fragment;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ListView;
@@ -22,6 +29,7 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TabHost;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.github.mikephil.charting.animation.Easing;
@@ -93,6 +101,12 @@ public class HomepageActivity extends ListActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
+    private String[] mTitles;
+    private DrawerLayout mDrawerLayout;
+    private ListView mDrawerList;
+    private ActionBarDrawerToggle mDrawerToggle;
+    private String mActivityTitle;
+
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
     private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
@@ -105,12 +119,26 @@ public class HomepageActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+
         mTitle = (TextView) findViewById(R.id.title);
         mTitle.setText(LoginActivity.hospitalSelected);
         pieChart = (PieChart) findViewById(R.id.totalChart);
         daySwitch = (Switch) findViewById(R.id.daySwitch);
         missingSwitch = (Switch) findViewById(R.id.missingSwitch);
         txtTotalHandsets = (TextView) findViewById(R.id.txtTotalHandsets);
+        mTitles = getResources().getStringArray(R.array.drawer_main_array);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mActivityTitle = getTitle().toString();
+
+        setupDrawer();
+
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mTitles));
+
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         new GetCheckedDevices().execute();
 
@@ -386,7 +414,7 @@ public class HomepageActivity extends ListActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        switch (id){
+        /*switch (id){
             case R.id.update_status:
                 //Take user to update status activity
                 Intent intent = new Intent(this, UpdateStatusActivity.class);
@@ -438,9 +466,9 @@ public class HomepageActivity extends ListActivity {
                 pendingArray = getAll();
                 pendingRegisterArray = getRegisterHandset();
                 pendingLocationArray = getRegisterLocation();
-                /*for(int i = 0; i < pendingArray.size(); i++){
+                *//*for(int i = 0; i < pendingArray.size(); i++){
                     Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
-                }*/
+                }*//*
 
                 if(isOnline() == true) {
 
@@ -460,14 +488,51 @@ public class HomepageActivity extends ListActivity {
                 }
 
                 break;
-        }
+        }*/
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
 
+        if(mDrawerToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupDrawer() {
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
+                R.string.drawer_open, R.string.drawer_close) {
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                getActionBar().setTitle("Herramientas");
+                invalidateOptionsMenu();
+            }
+
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                getActionBar().setTitle(mActivityTitle);
+                invalidateOptionsMenu();
+            }
+        };
+
+        mDrawerToggle.setDrawerIndicatorEnabled(true);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
     public class SendPending extends AsyncTask<Void, Void, Void> {
@@ -1296,6 +1361,90 @@ public class HomepageActivity extends ListActivity {
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    private class DrawerItemClickListener implements ListView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            switch (position){
+                case 0:
+                    //Take user to update status activity
+                    Intent intent = new Intent(HomepageActivity.this, UpdateStatusActivity.class);
+                    startActivity(intent);
+
+                    break;
+                case 1:
+                    Intent locationR = new Intent(HomepageActivity.this, HandsetRegister.class);
+                    startActivity(locationR);
+
+                    break;
+                case 2:
+                    Intent location = new Intent(HomepageActivity.this, HandsetLocation.class);
+                    startActivity(location);
+
+                    break;
+                case 3:
+                    Intent stolen = new Intent(HomepageActivity.this, ReportStolenActivity.class);
+                    startActivity(stolen);
+
+                    break;
+                case 4:
+                    Intent takeToHandsetList = new Intent(HomepageActivity.this, Handsets.class);
+                    startActivity(takeToHandsetList);
+
+                    break;
+                case 5:
+                    Intent takeUserToHospitalList = new Intent(HomepageActivity.this, UserHospitals.class);
+                    startActivity(takeUserToHospitalList);
+
+                    break;
+                case 6:
+                    //Send pending from SQLite
+                    pendingArray = getAll();
+                    pendingRegisterArray = getRegisterHandset();
+                    pendingLocationArray = getRegisterLocation();
+                /*for(int i = 0; i < pendingArray.size(); i++){
+                    Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
+                }*/
+
+                    if(isOnline() == true) {
+
+                        new SendPending().execute();
+
+                    } else if(isOnline() == false){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+                        builder.setMessage("Necesitas conexion para mandar tus pendientes");
+                        builder.setTitle("Falta conexion");
+                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                        builder.show();
+                    }
+
+                    break;
+                case 7:
+                    if(Integer.parseInt(LoginActivity.userType) == 2) {
+                        Intent takeToAdmin = new Intent(HomepageActivity.this, AdminActivity.class);
+                        startActivity(takeToAdmin);
+                    } else {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+                        builder.setTitle("Faltan permisos");
+                        builder.setMessage("No tienes el permiso para acceder a esta parte del sistema");
+                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                        builder.show();
+                    }
+                    break;
+
+            }
+        }
     }
 
 }

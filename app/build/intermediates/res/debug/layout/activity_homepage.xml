@@ -1,5 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomepageActivity">
@@ -8,17 +10,16 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
         android:gravity="center_horizontal"
         android:text="HOSPITAL"
-        android:layout_below="@+id/loginButton"
         android:textColor="#ff32beff"
         android:textSize="20sp" />
 
     <TabHost
+        android:id="@+id/tabHost"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/tabHost"
-        android:layout_below="@+id/title"
         android:layout_centerHorizontal="true">
 
         <LinearLayout
@@ -29,7 +30,7 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></TabWidget>
+                android:layout_height="63dp"></TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -43,19 +44,19 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/miscHandset"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Aparatos:"
-                        android:id="@+id/miscHandset"
-                        android:textSize="20sp"
-                        android:textColor="#010101" />
+                        android:textColor="#010101"
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/txtTotalHandsets"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="#"
-                        android:id="@+id/txtTotalHandsets"
                         android:layout_toRightOf="@+id/miscHandset"
+                        android:text="#"
                         android:textSize="20sp" />
 
                     <com.github.mikephil.charting.charts.PieChart
@@ -65,12 +66,12 @@
                         android:layout_below="@+id/daySwitch" />
 
                     <Switch
+                        android:id="@+id/daySwitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dias: "
-                        android:id="@+id/daySwitch"
                         android:layout_below="@+id/miscHandset"
                         android:checked="false"
+                        android:text="Dias: "
                         android:textOff="15"
                         android:textOn="30"
                         android:textSize="20sp" />
@@ -78,34 +79,34 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:orientation="vertical"
+                    android:id="@+id/tabHandsets"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/tabHandsets">
+                    android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txtHandsets"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Aparatos que faltan por revisar:"
-                        android:id="@+id/txtHandsets"
                         android:textSize="20sp" />
 
                     <Switch
+                        android:id="@+id/missingSwitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtHandsets"
-                        android:text="Dias: "
-                        android:id="@+id/missingSwitch"
                         android:checked="false"
+                        android:text="Dias: "
                         android:textOff="15"
                         android:textOn="30"
                         android:textSize="20sp" />
 
                     <ListView
+                        android:id="@+id/listMissing"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_below="@+id/missingSwitch"
-                        android:id="@+id/listMissing" />
+                        android:layout_below="@+id/missingSwitch" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -116,13 +117,23 @@
 
                     <ListView
                         android:id="@android:id/list"
-                        android:layout_height = "match_parent"
-                        android:layout_width = "match_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
                 </LinearLayout>
 
             </FrameLayout>
         </LinearLayout>
     </TabHost>
 
-</RelativeLayout>
-<!-- From: file:/C:/Users/Mauricio/Documents/Doseli-Movil/app/src/main/res/layout/activity_homepage.xml -->
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+
+</android.support.v4.widget.DrawerLayout>
+<!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/layout/activity_homepage.xml -->

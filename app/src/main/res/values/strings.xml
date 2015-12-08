@@ -30,6 +30,7 @@
     <string name="title_activity_handset_register">Altas</string>
     <string name="title_activity_handset_location">Posicionar Aparato</string>
     <string name="title_activity_custom_missing_check">CustomMissingCheck</string>
+    <string name="title_activity_user_hospitals">Mis Hospitales</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_handsets">Aparatos</string>
@@ -41,5 +42,22 @@
     <string name="maint2">Limpieza de Aparato</string>
 
     <string name="send_delete">Enviar Baja</string>
+
+    <string-array name="drawer_main_array">
+        <item>Reportar</item>
+        <item>Altas</item>
+        <item>Posicionar Aparato</item>
+        <item>Bajas</item>
+        <item>Lista de Aparatos</item>
+        <item>Mis Hospitales</item>
+        <item>Enviar Pendientes</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
 
 </resources>
