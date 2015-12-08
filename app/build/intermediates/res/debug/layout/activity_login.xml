@@ -106,4 +106,4 @@
             android:layout_above="@+id/latitudeTextView"
             android:layout_alignParentLeft="true" />
 
-</RelativeLayout><!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/layout/activity_login.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/activity_login.xml -->

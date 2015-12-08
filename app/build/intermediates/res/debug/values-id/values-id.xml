@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-id/values.xml -->
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values-id/values.xml -->
     <eat-comment/>
     <string name="zxing_app_name">Barcode Scanner</string>
     <string name="zxing_button_ok">OK</string>

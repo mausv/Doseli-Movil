@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="HOSPITAL"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:id="@+id/textUserHospital"
+        android:textColor="@color/blueColor"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:id="@+id/textTotal"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textChecked"
+        android:layout_toStartOf="@+id/textChecked"
+        android:textColor="@color/greenColor"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/textUserHospital" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECKED"
+        android:id="@+id/textChecked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/redColor"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/textUserHospital" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREQUENCE"
+        android:id="@+id/textFrequence"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textTotal"
+        android:layout_toStartOf="@+id/textTotal"
+        android:layout_alignBottom="@+id/textUserHospital"
+        android:gravity="center" />
+
+</GridLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/custom_user_hospital.xml -->
