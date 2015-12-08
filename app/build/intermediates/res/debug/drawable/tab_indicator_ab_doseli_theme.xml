@@ -35,8 +35,4 @@
     <item android:state_focused="true" android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/tab_unselected_pressed_doseli_theme" />
     <item android:state_focused="true" android:state_selected="true"  android:state_pressed="true" android:drawable="@drawable/tab_selected_pressed_doseli_theme" />
 </selector>
-<<<<<<< HEAD
 <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/drawable/tab_indicator_ab_doseli_theme.xml -->
-=======
-<!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/drawable/tab_indicator_ab_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62

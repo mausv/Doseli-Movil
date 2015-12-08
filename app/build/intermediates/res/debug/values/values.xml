@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="drawer_main_array">
@@ -14,9 +13,6 @@
         <item>Administrador</item>
     </string-array>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -39,17 +35,10 @@
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="blueColor">#33b5e5</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
-    <eat-comment/>
-    <color name="blueColor">#33b5e5</color>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -59,23 +48,15 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="darkBlueColor">#003399</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
-    <eat-comment/>
-    <color name="darkBlueColor">#003399</color>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="error_color">#FFDD2C00</color>
@@ -87,12 +68,6 @@
     <eat-comment/>
     <color name="greenColor">#FF00B006</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
-    <eat-comment/>
-    <color name="greenColor">#FF00B006</color>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -113,17 +88,10 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="redColor">#FFA91304</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
-    <eat-comment/>
-    <color name="redColor">#FFA91304</color>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <color name="ripple_material_dark">#4dffffff</color>
     <color name="ripple_material_light">#1f000000</color>
@@ -143,19 +111,11 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="themeColor">#ff8808</color>
     <color name="whiteColor">#FFFFFFFF</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
-    <eat-comment/>
-    <color name="themeColor">#ff8808</color>
-    <color name="whiteColor">#FFFFFFFF</color>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <color name="zxing_possible_result_points">#c0ffbd21</color>
     <color name="zxing_result_view">#b0000000</color>
@@ -201,11 +161,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -267,7 +223,6 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -276,13 +231,6 @@
     <eat-comment/>
     <dimen name="appbar_elevation">4dp</dimen>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/dimens.xml -->
-    <eat-comment/>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -336,14 +284,10 @@
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <item name="zxing_back_button" type="id"/>
     <item name="zxing_camera_error" type="id"/>
@@ -352,11 +296,7 @@
     <item name="zxing_decode_succeeded" type="id"/>
     <item name="zxing_possible_result_points" type="id"/>
     <item name="zxing_prewiew_size_ready" type="id"/>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -385,11 +325,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/strings.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/strings.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="action_websearch">Web search</string>
@@ -444,21 +380,13 @@
     <string name="update_status_stolen">Bajas</string>
     <string name="update_status_title">Reportar</string>
     <string name="url">URL</string>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <string name="zxing_app_name">Barcode Scanner</string>
     <string name="zxing_button_ok">OK</string>
     <string name="zxing_msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
     <string name="zxing_msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="ActionBar.Solid.Doseli_theme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_solid_doseli_theme</item>
@@ -479,11 +407,7 @@
     <style name="ActionButton.CloseMode.Doseli_theme" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
         <item name="android:background">@drawable/btn_cab_done_doseli_theme</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/styles.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -494,7 +418,6 @@
     <style name="AppTheme" parent="AppTheme.Base"/>
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-<<<<<<< HEAD
         <item name="colorPrimary">#3F51B5</item>
         <!-- Light Indigo -->
         <item name="colorPrimaryDark">#3949AB</item>
@@ -503,10 +426,6 @@
         <!-- Blue -->
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    </style>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1422,7 +1341,6 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
@@ -1436,9 +1354,6 @@
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="DropDownListView.Doseli_theme" parent="@android:style/Widget.Holo.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_doseli_theme</item>
@@ -1448,11 +1363,7 @@
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_doseli_theme</item>
         <item name="android:dropDownSelector">@drawable/selectable_background_doseli_theme</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1531,7 +1442,6 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
-<<<<<<< HEAD
     <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="">
         <!-- Action Bar styles -->
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
@@ -1552,10 +1462,6 @@
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
-=======
-    <style name="Platform.AppCompat.Light.Dialog" parent="Platform.AppCompat.Dialog"/>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="PopupMenu.Doseli_theme" parent="@android:style/Widget.Holo.ListPopupWindow">
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_doseli_theme</item>
@@ -1563,11 +1469,7 @@
     <style name="ProgressBar.Doseli_theme" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_doseli_theme</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
@@ -1611,23 +1513,15 @@
     <style name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" parent="android:Widget">
         <item name="android:layout_marginLeft">@dimen/abc_dropdownitem_text_padding_left</item>
     </style>
-<<<<<<< HEAD
     <style name="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation">
         <item name="android:paddingLeft">@dimen/abc_action_bar_navigation_padding_start_material</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">@drawable/splash_screen</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
@@ -1743,11 +1637,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="Theme.Doseli_theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_doseli_theme</item>
@@ -1768,11 +1658,7 @@
         <item name="android:popupMenuStyle">@style/PopupMenu.Doseli_theme</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Doseli_theme</item>
     </style>
-<<<<<<< HEAD
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
-=======
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
@@ -1868,7 +1754,6 @@
     <style name="Widget.AppCompat.Spinner.Underlined" parent="Base.Widget.AppCompat.Spinner.Underlined"/>
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
-<<<<<<< HEAD
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml -->
     <eat-comment/>
@@ -1922,10 +1807,6 @@
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
-=======
-    <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/values/values.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
     <eat-comment/>
     <style name="zxing_CaptureTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
   </style>

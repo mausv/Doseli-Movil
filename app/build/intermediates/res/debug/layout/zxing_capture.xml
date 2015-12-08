@@ -23,8 +23,4 @@
         android:id="@+id/zxing_barcode_scanner"/>
 
 </merge>
-<<<<<<< HEAD
 <!-- From: file:/home/ralf/src/zxing-android-minimal/zxing-android-embedded/res/layout/zxing_capture.xml --><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/layout/zxing_capture.xml -->
-=======
-<!-- From: file:/home/ralf/src/zxing-android-minimal/zxing-android-embedded/res/layout/zxing_capture.xml --><!-- From: file:/D:/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.1/res/layout/zxing_capture.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62

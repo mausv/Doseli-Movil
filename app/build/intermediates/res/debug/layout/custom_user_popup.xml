@@ -19,8 +19,4 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
         android:hint="Nombre" />
-<<<<<<< HEAD
 </LinearLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/custom_user_popup.xml -->
-=======
-</LinearLayout><!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/layout/custom_user_popup.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62

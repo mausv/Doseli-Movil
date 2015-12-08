@@ -22,8 +22,4 @@
     <item android:state_pressed="false" android:state_focused="true" android:drawable="@drawable/list_focused_doseli_theme" />
     <item android:state_pressed="true" android:drawable="@drawable/list_pressed_doseli_theme" />
     <item android:drawable="@android:color/transparent" />
-<<<<<<< HEAD
 </selector><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/drawable/selectable_background_doseli_theme.xml -->
-=======
-</selector><!-- From: file:/D:/Git/Doseli-Movil/app/src/main/res/drawable/selectable_background_doseli_theme.xml -->
->>>>>>> e680f240207b4eada24aa556ad8ad7f3b7efca62
