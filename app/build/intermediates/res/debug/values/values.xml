@@ -416,11 +416,11 @@
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="AppTheme.Base"/>
-    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimary">#00BAD2</item>
         <!-- Light Indigo -->
-        <item name="colorPrimaryDark">#3949AB</item>
+        <item name="colorPrimaryDark">#0097A7</item>
         <!-- Dark Indigo -->
         <item name="colorAccent">#00B0FF</item>
         <!-- Blue -->
@@ -1639,7 +1639,7 @@
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles_doseli_theme.xml -->
     <eat-comment/>
-    <style name="Theme.Doseli_theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+    <style name="Theme.Doseli_theme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_doseli_theme</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Doseli_theme</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Doseli_theme</item>

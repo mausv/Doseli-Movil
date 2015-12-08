@@ -13,8 +13,10 @@ import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -54,7 +56,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-public class HomepageActivity extends ListActivity {
+public class HomepageActivity extends AppCompatActivity {
 
     String hspOb;
 
@@ -120,8 +122,8 @@ public class HomepageActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         mTitle = (TextView) findViewById(R.id.title);
         mTitle.setText(LoginActivity.hospitalSelected);
@@ -135,6 +137,12 @@ public class HomepageActivity extends ListActivity {
         mActivityTitle = getTitle().toString();
 
         setupDrawer();
+
+        Snackbar snackbarWelcome = Snackbar.make(
+                findViewById(R.id.coordinator_homepage_layout),
+                "Bienvenido a " + LoginActivity.hospitalSelected + ", " + LoginActivity.userName,
+                Snackbar.LENGTH_SHORT);
+        snackbarWelcome.show();
 
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mTitles));
 
@@ -164,7 +172,7 @@ public class HomepageActivity extends ListActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-                if(!isChecked) {
+                if (!isChecked) {
                     missingDaysChoice = 15;
                 } else {
                     missingDaysChoice = 30;
@@ -204,6 +212,7 @@ public class HomepageActivity extends ListActivity {
         missingAdapter = new MissingAdapter(this, arrayOfMissing);
         ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new ListItemClickListener());
         ListView missingView = (ListView) findViewById(R.id.listMissing);
         missingView.setAdapter(missingAdapter);
 
@@ -507,13 +516,13 @@ public class HomepageActivity extends ListActivity {
                 R.string.drawer_open, R.string.drawer_close) {
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getActionBar().setTitle("Herramientas");
+                getSupportActionBar().setTitle(mActivityTitle);
                 invalidateOptionsMenu();
             }
 
             public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
-                getActionBar().setTitle(mActivityTitle);
+                getSupportActionBar().setTitle(mActivityTitle);
                 invalidateOptionsMenu();
             }
         };
@@ -1340,19 +1349,19 @@ public class HomepageActivity extends ListActivity {
                 cm.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
-    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
+    private class ListItemClickListener implements ListView.OnItemClickListener {
 
-        Report statusObject = adapter.getItem(position);
-        String objectId = statusObject.getId();
-        String qr = statusObject.getQrs_id();
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Report statusObject = adapter.getItem(position);
+            String objectId = statusObject.getId();
+            String qr = statusObject.getQrs_id();
 
-        Intent goToDetailView = new Intent(HomepageActivity.this, StatusDetailView.class);
-        goToDetailView.putExtra("objectID", objectId);
-        goToDetailView.putExtra("qrs_id", qr);
-        startActivity(goToDetailView);
-
+            Intent goToDetailView = new Intent(HomepageActivity.this, StatusDetailView.class);
+            goToDetailView.putExtra("objectID", objectId);
+            goToDetailView.putExtra("qrs_id", qr);
+            startActivity(goToDetailView);
+        }
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

@@ -60,7 +60,7 @@ import java.util.List;
 import java.util.Random;
 
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends AppCompatActivity {
 
     //User's info
     protected Spinner groupSpinner;
@@ -1226,8 +1226,6 @@ public class LoginActivity extends Activity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-
-            Toast.makeText(LoginActivity.this, "Bienvenido a " + hspName + ", " + userName, Toast.LENGTH_SHORT).show();
 
             Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
             startActivity(goHome);
