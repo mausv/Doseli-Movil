@@ -108,6 +108,8 @@ public class HomepageActivity extends AppCompatActivity {
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
     private String mActivityTitle;
+    HomepageDrawerAdapter homepageDrawerAdapter;
+    ArrayList<HomepageDrawerItem> arrayOfDrawerItems;
 
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
@@ -144,7 +146,16 @@ public class HomepageActivity extends AppCompatActivity {
                 Snackbar.LENGTH_SHORT);
         snackbarWelcome.show();
 
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mTitles));
+        arrayOfDrawerItems = new ArrayList<>();
+
+        for(int i = 0; i < mTitles.length; i++) {
+            HomepageDrawerItem tempDrawerItem = new HomepageDrawerItem(i, mTitles[i], mTitles[i]);
+            arrayOfDrawerItems.add(tempDrawerItem);
+        }
+
+        homepageDrawerAdapter = new HomepageDrawerAdapter(this, arrayOfDrawerItems);
+
+        mDrawerList.setAdapter(homepageDrawerAdapter);
 
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 

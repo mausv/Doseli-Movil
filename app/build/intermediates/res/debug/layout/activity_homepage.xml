@@ -139,7 +139,7 @@
             android:choiceMode="singleChoice"
             android:divider="@android:color/transparent"
             android:dividerHeight="0dp"
-            android:background="#111"/>
+            android:background="#0097a7"/>
 
     </android.support.v4.widget.DrawerLayout>
 </android.support.design.widget.CoordinatorLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/activity_homepage.xml -->
