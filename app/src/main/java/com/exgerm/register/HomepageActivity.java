@@ -1375,39 +1375,40 @@ public class HomepageActivity extends AppCompatActivity {
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            switch (position){
-                case 0:
+            Log.d("Drawer Item", mTitles[position]);
+            switch (mTitles[position]){
+                case "Reportar":
                     //Take user to update status activity
                     Intent intent = new Intent(HomepageActivity.this, UpdateStatusActivity.class);
                     startActivity(intent);
 
                     break;
-                case 1:
+                case "Altas":
                     Intent locationR = new Intent(HomepageActivity.this, HandsetRegister.class);
                     startActivity(locationR);
 
                     break;
-                case 2:
+                case "Posicionar Aparato":
                     Intent location = new Intent(HomepageActivity.this, HandsetLocation.class);
                     startActivity(location);
 
                     break;
-                case 3:
+                case "Bajas":
                     Intent stolen = new Intent(HomepageActivity.this, ReportStolenActivity.class);
                     startActivity(stolen);
 
                     break;
-                case 4:
+                case "Lista de Aparatos":
                     Intent takeToHandsetList = new Intent(HomepageActivity.this, Handsets.class);
                     startActivity(takeToHandsetList);
 
                     break;
-                case 5:
+                case "Mis Hospitales":
                     Intent takeUserToHospitalList = new Intent(HomepageActivity.this, UserHospitals.class);
                     startActivity(takeUserToHospitalList);
 
                     break;
-                case 6:
+                case "Enviar Pendientes":
                     //Send pending from SQLite
                     pendingArray = getAll();
                     pendingRegisterArray = getRegisterHandset();
@@ -1434,7 +1435,7 @@ public class HomepageActivity extends AppCompatActivity {
                     }
 
                     break;
-                case 7:
+                case "Administrador":
                     if(Integer.parseInt(LoginActivity.userType) == 2) {
                         Intent takeToAdmin = new Intent(HomepageActivity.this, AdminActivity.class);
                         startActivity(takeToAdmin);
