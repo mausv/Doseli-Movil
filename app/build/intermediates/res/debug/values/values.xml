@@ -37,7 +37,7 @@
     <color name="background_material_light">#ffeeeeee</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
     <eat-comment/>
-    <color name="blueColor">#33b5e5</color>
+    <color name="blueColor">#00BAD2</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
@@ -376,6 +376,10 @@
     <string name="title_activity_update_status">Reporte de Aparatos</string>
     <string name="title_activity_user_hospitals">Mis Hospitales</string>
     <string name="token">TOKEN</string>
+    <string name="tvHospitalGroup">GRUPO:</string>
+    <string name="tvHsp">HOSPITAL:</string>
+    <string name="tvLogin">INICIAR SESIÓN</string>
+    <string name="tvVersion">versión</string>
     <string name="update_location">Posicionar Aparato</string>
     <string name="update_status_stolen">Bajas</string>
     <string name="update_status_title">Reportar</string>
