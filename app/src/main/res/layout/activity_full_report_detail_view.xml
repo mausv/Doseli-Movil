@@ -14,9 +14,14 @@
         android:text="HANDSET"
         android:id="@+id/textViewHandset"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/blueColor"
-        android:textSize="20sp" />
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:background="#00bad2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,9 +30,14 @@
         android:text="LOCATION"
         android:id="@+id/textViewLocation"
         android:layout_below="@+id/textViewHandset"
-        android:layout_centerHorizontal="true"
         android:textSize="15sp"
-        android:textColor="@color/darkBlueColor" />
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:background="#00bad2" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -43,6 +53,11 @@
         android:text="REFERENCE"
         android:id="@+id/textViewReference"
         android:layout_below="@+id/textViewLocation"
-        android:layout_centerHorizontal="true"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:background="#00bad2" />
 </RelativeLayout>

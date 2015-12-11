@@ -9,22 +9,51 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.exgerm.register.UserHospitals">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reporte de ultima ronda según frecuencia:"
-        android:id="@+id/textView7"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lvUserHospitals"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView7" />
+        android:layout_below="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRECUENCIA/"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView12"
+        android:layout_toStartOf="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL/"
+        android:id="@+id/textView12"
+        android:textColor="@color/greenColor"
+        android:layout_above="@+id/lvUserHospitals"
+        android:layout_toLeftOf="@+id/textView13"
+        android:layout_toStartOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORTADOS"
+        android:id="@+id/textView13"
+        android:textColor="@color/redColor"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de reportes por hospital"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/activity_user_hospitals.xml -->

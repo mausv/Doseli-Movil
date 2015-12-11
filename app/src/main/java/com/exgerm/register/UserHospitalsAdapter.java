@@ -32,8 +32,8 @@ public class UserHospitalsAdapter extends ArrayAdapter<UserHospital>{
         TextView checked = (TextView) convertView.findViewById(R.id.textChecked);
 
         hospitalName.setText(userHospital.name);
-        frequence.setText(userHospital.frequence);
-        total.setText(String.valueOf(userHospital.total));
+        frequence.setText(userHospital.frequence + "/");
+        total.setText(String.valueOf(userHospital.total) + "/");
         checked.setText(String.valueOf(userHospital.checked));
 
         return convertView;

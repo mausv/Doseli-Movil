@@ -10,6 +10,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -41,7 +42,7 @@ import java.util.Date;
 import java.util.List;
 
 
-public class UpdateStatusActivity extends Activity {
+public class UpdateStatusActivity extends AppCompatActivity {
 
     String hspOb = LoginActivity.hspCode;
 

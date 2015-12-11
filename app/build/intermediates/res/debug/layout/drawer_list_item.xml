@@ -10,13 +10,13 @@
 
     <ImageView
         android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_height="25dp"
         android:id="@+id/imgDrawerIcon"
-        android:src="@android:drawable/btn_star_big_off" />
+        android:contentDescription="Icon of DrawerItem" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="25dp"
         android:text="Title"
         android:id="@+id/tvDrawerItemTitle"
         android:layout_gravity="center_horizontal"

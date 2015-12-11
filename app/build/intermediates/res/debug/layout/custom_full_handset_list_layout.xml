@@ -18,19 +18,10 @@
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/cHstatusDetailViewHsp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cHstatusDetailViewUser"
-        android:text="Lugar"
-        android:textColor="#ff1a3572" />
-
-    <TextView
         android:id="@+id/cHstatusDetailViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cHstatusDetailViewUser"
-        android:layout_toRightOf="@+id/cHstatusDetailViewHsp"
         android:text="Fecha" />
 
     <TextView

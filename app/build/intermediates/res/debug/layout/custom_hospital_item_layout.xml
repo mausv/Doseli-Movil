@@ -10,7 +10,10 @@
         android:drawableLeft="@drawable/ic_launcher"
         android:id="@+id/textViewAdmHospital"
         android:textColor="@color/blueColor"
-        android:gravity="center_vertical" />
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/textFrequence"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"

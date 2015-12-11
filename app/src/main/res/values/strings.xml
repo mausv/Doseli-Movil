@@ -44,9 +44,9 @@
     <string name="send_delete">Enviar Baja</string>
 
     <string-array name="drawer_main_array">
-        <item>Reportar</item>
         <item>Altas</item>
         <item>Posicionar Aparato</item>
+        <item>Reportar</item>
         <item>Bajas</item>
         <item>Lista de Aparatos</item>
         <item>Mis Hospitales</item>

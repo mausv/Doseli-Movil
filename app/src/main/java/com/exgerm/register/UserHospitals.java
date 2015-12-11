@@ -3,6 +3,7 @@ package com.exgerm.register;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -16,7 +17,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserHospitals extends Activity {
+public class UserHospitals extends AppCompatActivity {
 
     private ListView lvUserHospitals;
 

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -31,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class HandsetRegister extends Activity {
+public class HandsetRegister extends AppCompatActivity {
 
     private Button scan;
     private Button link;

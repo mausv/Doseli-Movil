@@ -19,6 +19,7 @@
             android:layout_below="@+id/loginButton"
             android:gravity="center_horizontal"
             android:text="HOSPITAL"
+            android:maxLength="15"
             android:textColor="#ff32beff"
             android:textSize="20sp" />
 

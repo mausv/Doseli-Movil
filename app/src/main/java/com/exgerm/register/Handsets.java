@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -23,7 +25,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Handsets extends ListActivity {
+public class Handsets extends AppCompatActivity {
 
     JSONParser jsonParser = new JSONParser();
     ArrayList<Handset> arrayOfHandsets;
@@ -47,6 +49,7 @@ public class Handsets extends ListActivity {
 
         ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new onListItemClick());
 
         new GetHandsets().execute();
 
@@ -122,22 +125,22 @@ public class Handsets extends ListActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
+    private class onListItemClick implements ListView.OnItemClickListener {
 
-        Handset statusObject = adapter.getItem(position);
-        String objectId = statusObject.qr;
-        String handset = statusObject.model + statusObject.serial_number + " - QR: " + statusObject.qr;
-        String location = statusObject.location;
-        String reference = statusObject.reference;
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Handset statusObject = adapter.getItem(position);
+            String objectId = statusObject.qr;
+            String handset = statusObject.model + statusObject.serial_number + " - QR: " + statusObject.qr;
+            String location = statusObject.location;
+            String reference = statusObject.reference;
 
-        Intent goToDetailView = new Intent(Handsets.this, FullReportDetailView.class);
-        goToDetailView.putExtra("objectID", objectId);
-        goToDetailView.putExtra("handset", handset);
-        goToDetailView.putExtra("location", location);
-        goToDetailView.putExtra("reference", reference);
-        startActivity(goToDetailView);
-
+            Intent goToDetailView = new Intent(Handsets.this, FullReportDetailView.class);
+            goToDetailView.putExtra("objectID", objectId);
+            goToDetailView.putExtra("handset", handset);
+            goToDetailView.putExtra("location", location);
+            goToDetailView.putExtra("reference", reference);
+            startActivity(goToDetailView);
+        }
     }
 }

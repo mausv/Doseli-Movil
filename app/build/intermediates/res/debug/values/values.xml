@@ -3,9 +3,9 @@
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="drawer_main_array">
-        <item>Reportar</item>
         <item>Altas</item>
         <item>Posicionar Aparato</item>
+        <item>Reportar</item>
         <item>Bajas</item>
         <item>Lista de Aparatos</item>
         <item>Mis Hospitales</item>
@@ -45,7 +45,11 @@
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
-    <color name="bright_foreground_material_light">@android:color/black</color>
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="bright_foreground_material_light">#000000</color>
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
