@@ -370,10 +370,10 @@ public class HandsetRegister extends AppCompatActivity {
             // The upwards operation is async, you need to wait until it finishes to asign the variable
             if (uuidExists == true) {
                 if (uuidUsed) {
-                    state.setTextColor(0xFFA91304);
+                    state.setTextColor(getResources().getColor(R.color.orangeColor));
                     state.setText("USADO");
                 } else {
-                    state.setTextColor(0xFF00B006);
+                    state.setTextColor(getResources().getColor(R.color.blueColor));
                     state.setText("DISPONIBLE");
                 }
             } else if(uuidExists == false){

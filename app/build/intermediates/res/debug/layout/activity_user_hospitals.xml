@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="TOTAL/"
         android:id="@+id/textView12"
-        android:textColor="@color/greenColor"
+        android:textColor="@color/blueColor"
         android:layout_above="@+id/lvUserHospitals"
         android:layout_toLeftOf="@+id/textView13"
         android:layout_toStartOf="@+id/textView13" />
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="REPORTADOS"
         android:id="@+id/textView13"
-        android:textColor="@color/redColor"
+        android:textColor="@color/orangeColor"
         android:layout_alignTop="@+id/textView12"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

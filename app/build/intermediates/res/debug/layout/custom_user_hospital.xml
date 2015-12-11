@@ -29,7 +29,7 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/textChecked"
         android:layout_toStartOf="@+id/textChecked"
-        android:textColor="@color/greenColor"
+        android:textColor="@color/blueColor"
         android:gravity="center_vertical"
         android:layout_alignBottom="@+id/textUserHospital" />
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="CHECKED"
         android:id="@+id/textChecked"
-        android:textColor="@color/redColor"
+        android:textColor="@color/orangeColor"
         android:gravity="center_vertical"
         android:layout_alignTop="@+id/textTotal"
         android:layout_alignParentRight="true"
