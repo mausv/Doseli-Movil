@@ -1,6 +1,5 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -752,63 +751,15 @@ public class LoginActivity extends AppCompatActivity {
 
             if(update == 1) {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                builder.setMessage("Existe una  nueva version de Doseli");
-                builder.setTitle("Actualización disponible");
-                builder.setPositiveButton("Actualizar", new DialogInterface.OnClickListener() {
+                Snackbar updateSnackbar = Snackbar.make(findViewById(R.id.coordinator_login_layout), "Actualización disponible", Snackbar.LENGTH_INDEFINITE);
+                updateSnackbar.setAction("ACTUALIZAR", new View.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        /*String url = "http://" + urlDwn;
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse(url));
-                        startActivity(i);*/
-                        pDialog = new ProgressDialog(LoginActivity.this);
-                        pDialog.setMessage("Descargando actualización...");
-                        pDialog.setIndeterminate(false);
-                        pDialog.setCancelable(true);
-                        pDialog.show();
-
-                        new Thread (new Runnable() {
-
-                            @Override
-                            public void run() {
-                                try {
-                                    URL url = new URL(LoginActivity.main_url + "doseli.apk");
-                                    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-                                    urlConnection.setRequestMethod("GET");
-                                    urlConnection.connect();
-
-                                    FileOutputStream fileOutput = openFileOutput("doseli.apk", Context.MODE_WORLD_READABLE);
-                                    InputStream inputStream = urlConnection.getInputStream();
-
-                                    byte[] buffer = new byte[1024];
-                                    int bufferLength = 0;
-
-                                    while ((bufferLength = inputStream.read(buffer)) > 0) {
-                                        fileOutput.write(buffer, 0, bufferLength);
-                                    }
-                                    fileOutput.close();
-
-
-                                    File apkFile = new File(fileDir + "/doseli.apk");
-                                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                                    intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
-                                    startActivity(intent);
-                                    pDialog.dismiss();
-                                    finishAffinity();
-
-                                } catch (MalformedURLException e) {
-                                    e.printStackTrace();
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        }).start();
-                        dialog.dismiss();
+                    public void onClick(View v) {
+                        new UpdateApplication().execute();
                     }
                 });
+                updateSnackbar.show();
 
-                builder.show();
             }
 
         }
@@ -1229,6 +1180,75 @@ public class LoginActivity extends AppCompatActivity {
 
             Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
             startActivity(goHome);
+        }
+    }
+
+    private class UpdateApplication extends AsyncTask<Void, String, Void> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            pDialog = new ProgressDialog(LoginActivity.this);
+            pDialog.setMessage("Descargando actualización...");
+            pDialog.setIndeterminate(false);
+            pDialog.setMax(100);
+            pDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            pDialog.setCancelable(true);
+            pDialog.show();
+
+        }
+
+        @Override
+        protected Void doInBackground(Void... params) {
+
+            new Thread (new Runnable() {
+
+                @Override
+                public void run() {
+                    try {
+                        URL url = new URL(LoginActivity.main_url + "doseli.apk");
+                        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                        urlConnection.setRequestMethod("GET");
+                        urlConnection.connect();
+                        int lengthOfFile = urlConnection.getContentLength();
+
+                        FileOutputStream fileOutput = openFileOutput("doseli.apk", Context.MODE_WORLD_READABLE);
+                        InputStream inputStream = urlConnection.getInputStream();
+
+                        byte[] buffer = new byte[1024];
+                        int bufferLength = 0;
+                        double total = 0;
+
+                        while ((bufferLength = inputStream.read(buffer)) > 0) {
+                            total += bufferLength;
+                            publishProgress(""+(int)((total*100)/lengthOfFile));
+                            fileOutput.write(buffer, 0, bufferLength);
+                        }
+                        fileOutput.close();
+
+
+                        File apkFile = new File(fileDir + "/doseli.apk");
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
+                        startActivity(intent);
+                        pDialog.dismiss();
+                        finishAffinity();
+
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
+
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+            pDialog.setProgress(Integer.parseInt(values[0]));
         }
     }
 
