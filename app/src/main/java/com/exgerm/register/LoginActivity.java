@@ -184,7 +184,7 @@ public class LoginActivity extends AppCompatActivity {
         Log.d("IMEI: ", imei);
 
         boolean locationEnabled = isLocationEnabled(this);
-        if(locationEnabled == false) {
+        if (locationEnabled == false) {
             Toast.makeText(LoginActivity.this, "Prende el GPS", Toast.LENGTH_LONG).show();
 
             Intent settings = new Intent("com.google.android.gms.location.settings.GOOGLE_LOCATION_SETTINGS");
@@ -194,7 +194,7 @@ public class LoginActivity extends AppCompatActivity {
         groupsList = new ArrayList<>();
 
 
-        if(isOnline() == false){
+        if (isOnline() == false) {
             Log.i("Internet status: ", "Not Available");
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setMessage("Esta aplicacion necesita internet como minimo para el inicio de sesión.");
@@ -265,10 +265,10 @@ public class LoginActivity extends AppCompatActivity {
         //Start the location manager
         Boolean op1 = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
         Boolean op2 = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
-        if(op1){
+        if (op1) {
             lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5, 0, ll);
         }
-        if(op2){
+        if (op2) {
             lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5, 0, ll);
         }
 
@@ -534,8 +534,8 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    void AdviceUser (int code) {
-        if(code == 1) {
+    void AdviceUser(int code) {
+        if (code == 1) {
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setMessage("Escoge un grupo primero");
             builder.setTitle("Falta un grupo");
@@ -548,7 +548,7 @@ public class LoginActivity extends AppCompatActivity {
 
             AlertDialog dialog = builder.create();
             dialog.show();
-        } else if(code == 2) {
+        } else if (code == 2) {
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setMessage("Escoge un hospital primero");
             builder.setTitle("Falta un hospital");
@@ -561,7 +561,7 @@ public class LoginActivity extends AppCompatActivity {
 
             AlertDialog dialog = builder.create();
             dialog.show();
-        } else if(code == 3) {
+        } else if (code == 3) {
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setMessage("No se puede establecer una conexion con la Base de Datos. Contactar a Sistemas.");
             builder.setTitle("Error en Base de Datos");
@@ -577,14 +577,14 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public String getImei () {
+    public String getImei() {
         TelephonyManager mgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         imei = mgr.getDeviceId();
 
         return imei;
     }
 
-    public int getCurrentVer () {
+    public int getCurrentVer() {
         PackageInfo pInfo = null;
         try {
             pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
@@ -596,7 +596,7 @@ public class LoginActivity extends AppCompatActivity {
         currentVersionName = pInfo.versionName;
         versionTV.setText("ver: " + currentVersionName);
         Log.i("Current version: ", String.valueOf(currentVersion));
-        Log.i("Current version name: " , currentVersionName);
+        Log.i("Current version name: ", currentVersionName);
         new GetLatestVersion().execute();
 
 
@@ -618,7 +618,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 success = json.getInt("success");
 
-                if(success == 1) {
+                if (success == 1) {
                     JSONArray usersArray = (JSONArray) json.get("users");
                     challengeList = new ArrayList<>();
 
@@ -651,7 +651,7 @@ public class LoginActivity extends AppCompatActivity {
             ArrayList<String> ar = new ArrayList<>();
             ArrayList<BarDataSet> dataSets = new ArrayList<>();
 
-            for(int o = 0; o < challengeList.size(); o++) {
+            for (int o = 0; o < challengeList.size(); o++) {
                 valsChallenge = new ArrayList<>();
                 valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
 
@@ -664,7 +664,7 @@ public class LoginActivity extends AppCompatActivity {
                 int g = rand.nextInt(255);
                 int b = rand.nextInt(255);
 
-                int randomColor = Color.rgb(r,g,b);
+                int randomColor = Color.rgb(r, g, b);
 
                 BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
                 bdS.setColor(randomColor);
@@ -691,7 +691,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private class GetLatestVersion extends AsyncTask<Void, Void, Void>{
+    private class GetLatestVersion extends AsyncTask<Void, Void, Void> {
         int update;
         String urlDwn;
 
@@ -707,7 +707,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 update = json.getInt("update");
 
-                if(update == 1){
+                if (update == 1) {
                     JSONArray array = (JSONArray) json.get("version");
 
                     JSONObject innerObj = (JSONObject) array.get(0);
@@ -716,7 +716,7 @@ public class LoginActivity extends AppCompatActivity {
                 } else if (update == 0) {
                     Log.i("Update status:", "Latest");
                 }
-            } catch (JSONException e){
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
 
@@ -727,7 +727,7 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
-            if(update == 1) {
+            if (update == 1) {
 
                 Snackbar updateSnackbar = Snackbar.make(findViewById(R.id.coordinator_login_layout), "Actualización disponible", Snackbar.LENGTH_INDEFINITE);
                 updateSnackbar.setAction("ACTUALIZAR", new View.OnClickListener() {
@@ -743,7 +743,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private class GetGroups extends AsyncTask<Void, Void, Void>{
+    private class GetGroups extends AsyncTask<Void, Void, Void> {
         int code = 0;
 
         @Override
@@ -761,7 +761,7 @@ public class LoginActivity extends AppCompatActivity {
                                 .getJSONArray(groupIdentifier);
                         int size = categories.length();
 
-                        groupsList.add(0, new Category(0,"Escoge"));
+                        groupsList.add(0, new Category(0, "Escoge"));
 
                         for (int i = 0; i < size; i++) {
                             JSONObject catObj = (JSONObject) categories.get(i);
@@ -795,7 +795,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private class GetHospitals extends AsyncTask<Void, Void, Void>{
+    private class GetHospitals extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... params) {
@@ -810,11 +810,11 @@ public class LoginActivity extends AppCompatActivity {
                 JSONObject json = jsonParser.makeHttpRequest
                         (url_get_hospitals, "POST", paramsGetTargets);
 
-                Log.d ("Check target: ", json.toString());
+                Log.d("Check target: ", json.toString());
 
                 success = json.getInt(TAG_SUCCESS);
 
-                if(success == 1){
+                if (success == 1) {
 
                     Log.d("Product: ", json.getJSONArray("hospitals").toString());
 
@@ -824,7 +824,7 @@ public class LoginActivity extends AppCompatActivity {
                                     .getJSONArray("hospitals");
                             int size = categories.length();
 
-                            hospitalsList.add(0, new Category(0,"Escoge"));
+                            hospitalsList.add(0, new Category(0, "Escoge"));
 
                             for (int i = 0; i < size; i++) {
                                 JSONObject catObj = (JSONObject) categories.get(i);
@@ -859,7 +859,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private class GetGeo extends AsyncTask<Void, Void, Void>{
+    private class GetGeo extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... params) {
@@ -873,11 +873,11 @@ public class LoginActivity extends AppCompatActivity {
                 JSONObject json = jsonParser.makeHttpRequest
                         (url_get_hospital_geo, "POST", paramsGetTargets);
 
-                Log.d ("Check target: ", json.toString());
+                Log.d("Check target: ", json.toString());
 
                 success = json.getInt(TAG_SUCCESS);
 
-                if(success == 1){
+                if (success == 1) {
 
                     Log.d("Product: ", json.getJSONArray("geo").toString());
 
@@ -942,9 +942,11 @@ public class LoginActivity extends AppCompatActivity {
 
         // attaching data adapter to spinner
         switch (option) {
-            case "group": groupSpinner.setAdapter(spinnerAdapter);
+            case "group":
+                groupSpinner.setAdapter(spinnerAdapter);
                 break;
-            case "hospital": hospitalSpinner.setAdapter(spinnerAdapter);
+            case "hospital":
+                hospitalSpinner.setAdapter(spinnerAdapter);
                 break;
         }
     }
@@ -983,7 +985,7 @@ public class LoginActivity extends AppCompatActivity {
         int locationMode = 0;
         String locationProviders;
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             try {
                 locationMode = Settings.Secure.getInt(context.getContentResolver(), Settings.Secure.LOCATION_MODE);
 
@@ -993,7 +995,7 @@ public class LoginActivity extends AppCompatActivity {
 
             return locationMode != Settings.Secure.LOCATION_MODE_OFF;
 
-        }else{
+        } else {
             locationProviders = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
             return !TextUtils.isEmpty(locationProviders);
         }
@@ -1001,7 +1003,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private class CheckInternetConnection extends AsyncTask <Void,Void,Void> {
+    private class CheckInternetConnection extends AsyncTask<Void, Void, Void> {
         int result;
 
         @Override
@@ -1013,7 +1015,7 @@ public class LoginActivity extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             boolean checkNtwk = CheckNetwork.isConnectedToServer(LoginActivity.this);
 
-            if(checkNtwk == true) {
+            if (checkNtwk == true) {
                 result = 1;
             } else {
                 result = 2;
@@ -1026,7 +1028,7 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
-            if(result == 1) {
+            if (result == 1) {
                 Log.i("Internet status: ", "Available");
 
                 getCurrentVer();
@@ -1073,7 +1075,7 @@ public class LoginActivity extends AppCompatActivity {
                                 .getJSONArray("models");
                         int size = categories.length();
 
-                        modelsOff.add(0, new Category(0,"Escoge"));
+                        modelsOff.add(0, new Category(0, "Escoge"));
 
                         for (int i = 0; i < size; i++) {
                             JSONObject catObj = (JSONObject) categories.get(i);
@@ -1103,7 +1105,7 @@ public class LoginActivity extends AppCompatActivity {
             try {
                 int success = jsonObj.getInt("success");
 
-                if(success == 1){
+                if (success == 1) {
 
                     if (jsonObj != null) {
 
@@ -1179,7 +1181,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... params) {
 
-            new Thread (new Runnable() {
+            new Thread(new Runnable() {
 
                 @Override
                 public void run() {
@@ -1199,7 +1201,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         while ((bufferLength = inputStream.read(buffer)) > 0) {
                             total += bufferLength;
-                            publishProgress(""+(int)((total*100)/lengthOfFile));
+                            publishProgress("" + (int) ((total * 100) / lengthOfFile));
                             fileOutput.write(buffer, 0, bufferLength);
                         }
                         fileOutput.close();
@@ -1230,7 +1232,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void initializeDatabase () {
+    private void initializeDatabase() {
         offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
 
         System.out.println("Version def: " + offlineDb.getVersion());
@@ -1255,8 +1257,8 @@ public class LoginActivity extends AppCompatActivity {
                 "location_id VARCHAR, " +
                 "reference VARCHAR);");
 
-        if(offlineDb.getVersion() != newestDbVersion) {
-            switch(offlineDb.getVersion()) {
+        if (offlineDb.getVersion() != newestDbVersion) {
+            switch (offlineDb.getVersion()) {
                 case 0:
                     offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
                     offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");

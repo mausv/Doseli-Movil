@@ -1283,6 +1283,7 @@ public class HomepageActivity extends AppCompatActivity {
                     break;
 
             }
+            mDrawerLayout.closeDrawer(mDrawerList);
         }
     }
 
