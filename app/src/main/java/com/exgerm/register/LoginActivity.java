@@ -128,6 +128,9 @@ public class LoginActivity extends AppCompatActivity {
 
     File fileDir;
 
+    LocationManager lm;
+    LocationListener ll;
+
 
     //URLs
     private static String url_login = main_url + "login.php";
@@ -246,9 +249,9 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         //Initialize LocationManager and LocationListener
-        LocationManager lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
-        LocationListener ll = new LocationListener() {
+        ll = new LocationListener() {
             protected double pLat;
             protected double pLong;
 
@@ -324,6 +327,7 @@ public class LoginActivity extends AppCompatActivity {
                     AdviceUser(2);
                 } else {
                     new Login().execute();
+                    new StopGps().execute();
                 }
 
             }
@@ -418,6 +422,16 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    class StopGps extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+
+            lm.removeUpdates(ll);
+
+            return null;
+        }
     }
 
     class Login extends AsyncTask<String, String, String> {
