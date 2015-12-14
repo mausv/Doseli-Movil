@@ -387,7 +387,7 @@
     <string name="tvHospitalGroup">GRUPO:</string>
     <string name="tvHsp">HOSPITAL:</string>
     <string name="tvLogin">INICIAR SESIÓN</string>
-    <string name="tvVersion">versión</string>
+    <string name="tvVersion">ver: x.x.x</string>
     <string name="update_location">Posicionar Aparato</string>
     <string name="update_status_stolen">Bajas</string>
     <string name="update_status_title">Reportar</string>
