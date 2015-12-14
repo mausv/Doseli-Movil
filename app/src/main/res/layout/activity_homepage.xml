@@ -12,17 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".HomepageActivity">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/loginButton"
-            android:gravity="center_horizontal"
-            android:text="HOSPITAL"
-            android:maxLength="15"
-            android:textColor="#ff32beff"
-            android:textSize="20sp" />
-
         <TabHost
             android:id="@+id/tabHost"
             android:layout_width="match_parent"

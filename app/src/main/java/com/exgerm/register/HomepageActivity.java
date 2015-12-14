@@ -43,6 +43,7 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.github.mikephil.charting.utils.ValueFormatter;
 
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -124,11 +125,12 @@ public class HomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+            getSupportActionBar().setTitle(LoginActivity.hospitalSelected);
+        }
 
-        mTitle = (TextView) findViewById(R.id.title);
-        mTitle.setText(LoginActivity.hospitalSelected);
         pieChart = (PieChart) findViewById(R.id.totalChart);
         daySwitch = (Switch) findViewById(R.id.daySwitch);
         missingSwitch = (Switch) findViewById(R.id.missingSwitch);
@@ -339,13 +341,17 @@ public class HomepageActivity extends AppCompatActivity {
                 R.string.drawer_open, R.string.drawer_close) {
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle(mActivityTitle);
+                if(getSupportActionBar() != null) {
+                    getSupportActionBar().setTitle("Herramientas");
+                }
                 invalidateOptionsMenu();
             }
 
             public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
-                getSupportActionBar().setTitle(mActivityTitle);
+                if(getSupportActionBar() != null) {
+                    getSupportActionBar().setTitle(LoginActivity.hospitalSelected);
+                }
                 invalidateOptionsMenu();
             }
         };
