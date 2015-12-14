@@ -175,6 +175,7 @@ public class LoginActivity extends AppCompatActivity {
         versionTV = (TextView) findViewById(R.id.versionTV);
         challengeChart = (BarChart) findViewById(R.id.challengeChart);
         getImei();
+        initializeDatabase();
 
         fileDir = getFilesDir();
 
@@ -190,50 +191,13 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(settings);
         }
 
-        offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
-
-        System.out.println("Version def: " + offlineDb.getVersion());
-
-        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline" +
-                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
-                "state VARCHAR, device_comment VARCHAR, " +
-                "users_id VARCHAR, user_name VARCHAR, " +
-                "lowBattery VARCHAR, changeBattery VARCHAR, " +
-                "lowLiquid VARCHAR, changeLiquid VARCHAR, " +
-                "physicalDamage VARCHAR, physicalRepair VARCHAR, " +
-                "hospitals_id VARCHAR, hospital_name VARCHAR);");
-        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
-                "(id INTEGER PRIMARY KEY, mId VARCHAR, model VARCHAR, " +
-                "serial_number VARCHAR, associated_by VARCHAR, " +
-                "token VARCHAR);");
-        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
-                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
-                "group_id VARCHAR, " +
-                "hospital_id VARCHAR, " +
-                "area_id VARCHAR, " +
-                "location_id VARCHAR, " +
-                "reference VARCHAR);");
-
-        if(offlineDb.getVersion() != newestDbVersion) {
-            switch(offlineDb.getVersion()) {
-                case 0:
-                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
-                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
-                    offlineDb.setVersion(newestDbVersion);
-                    Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
-                    break;
-            }
-        }
-
-
-
         groupsList = new ArrayList<>();
 
 
         if(isOnline() == false){
             Log.i("Internet status: ", "Not Available");
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-            builder.setMessage("Esta aplicacion necesita internet como minimo para el inicio de sesion");
+            builder.setMessage("Esta aplicacion necesita internet como minimo para el inicio de sesión.");
             builder.setTitle("Fuera de linea");
             builder.setPositiveButton("Cerrar", new DialogInterface.OnClickListener() {
                 @Override
@@ -1073,7 +1037,7 @@ public class LoginActivity extends AppCompatActivity {
             } else if (result == 2) {
                 Log.i("Internet status: ", "Not Available");
                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                builder.setMessage("Esta aplicacion necesita internet como minimo para el inicio de sesion");
+                builder.setMessage("No se pudo establecer una conexión con la base de datos, intentar de nuevo o contactar administrador.");
                 builder.setTitle("Fuera de linea");
                 builder.setPositiveButton("Cerrar", new DialogInterface.OnClickListener() {
                     @Override
@@ -1263,6 +1227,43 @@ public class LoginActivity extends AppCompatActivity {
         protected void onProgressUpdate(String... values) {
             super.onProgressUpdate(values);
             pDialog.setProgress(Integer.parseInt(values[0]));
+        }
+    }
+
+    private void initializeDatabase () {
+        offlineDb = openOrCreateDatabase("Doseli.db", MODE_PRIVATE, null);
+
+        System.out.println("Version def: " + offlineDb.getVersion());
+
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliOffline" +
+                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
+                "state VARCHAR, device_comment VARCHAR, " +
+                "users_id VARCHAR, user_name VARCHAR, " +
+                "lowBattery VARCHAR, changeBattery VARCHAR, " +
+                "lowLiquid VARCHAR, changeLiquid VARCHAR, " +
+                "physicalDamage VARCHAR, physicalRepair VARCHAR, " +
+                "hospitals_id VARCHAR, hospital_name VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliAltas" +
+                "(id INTEGER PRIMARY KEY, mId VARCHAR, model VARCHAR, " +
+                "serial_number VARCHAR, associated_by VARCHAR, " +
+                "token VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliPosicion" +
+                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
+                "group_id VARCHAR, " +
+                "hospital_id VARCHAR, " +
+                "area_id VARCHAR, " +
+                "location_id VARCHAR, " +
+                "reference VARCHAR);");
+
+        if(offlineDb.getVersion() != newestDbVersion) {
+            switch(offlineDb.getVersion()) {
+                case 0:
+                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
+                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
+                    offlineDb.setVersion(newestDbVersion);
+                    Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
+                    break;
+            }
         }
     }
 
