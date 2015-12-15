@@ -436,6 +436,8 @@
         <!-- Dark Indigo -->
         <item name="colorAccent">#00B0FF</item>
         <!-- Blue -->
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="buttonStyle">@style/RobotoButtonStyle</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
@@ -1480,6 +1482,14 @@
     </style>
     <style name="ProgressBar.Doseli_theme" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">inconsolata</item>
+    </style>
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">inconsolata</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
