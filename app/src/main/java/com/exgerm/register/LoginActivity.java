@@ -121,8 +121,8 @@ public class LoginActivity extends AppCompatActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.114/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.114/doseli/";
 
     public static int newestDbVersion = 1;
 
@@ -192,6 +192,12 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         groupsList = new ArrayList<>();
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
         if (isOnline() == false) {
@@ -414,7 +420,7 @@ public class LoginActivity extends AppCompatActivity {
             pDialog = new ProgressDialog(LoginActivity.this);
             pDialog.setMessage("Iniciando sesión...");
             pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
+            pDialog.setCancelable(false);
             pDialog.show();
 
             alertDialog = new AlertDialog.Builder(LoginActivity.this);
@@ -1054,6 +1060,17 @@ public class LoginActivity extends AppCompatActivity {
 
     private class GetOffModels extends AsyncTask<Void, Void, Void> {
         @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            pDialog = new ProgressDialog(LoginActivity.this);
+            pDialog.setMessage("Obteniendo datos para fuera de línea...");
+            pDialog.setIndeterminate(false);
+            pDialog.setCancelable(false);
+            pDialog.show();
+
+        }
+
+        @Override
         protected Void doInBackground(Void... params) {
 
             groupsOff = new ArrayList<Category>();
@@ -1157,6 +1174,8 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+
+            pDialog.dismiss();
 
             Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
             startActivity(goHome);
