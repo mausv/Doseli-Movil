@@ -1275,16 +1275,30 @@ public class LoginActivity extends AppCompatActivity {
                 "area_id VARCHAR, " +
                 "location_id VARCHAR, " +
                 "reference VARCHAR);");
+        offlineDb.execSQL("DROP TABLE IF EXISTS DoseliMissingReports;");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliMissingReports" +
+                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
+                "qr_id VARCHAR, " +
+                "model VARCHAR, " +
+                "serial_number VARCHAR);");
 
-        if (offlineDb.getVersion() != newestDbVersion) {
-            switch (offlineDb.getVersion()) {
-                case 0:
-                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
-                    offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
-                    offlineDb.setVersion(newestDbVersion);
-                    Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
-                    break;
+        if(offlineDb.getVersion() != newestDbVersion) {
+            while (offlineDb.getVersion() != newestDbVersion) {
+                switch (offlineDb.getVersion()) {
+                    case 0:
+                        // First changes to offline database
+                        offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
+                        offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
+                        offlineDb.setVersion(1);
+                        break;
+                    case 1:
+                        // Second changes to offline database
+
+                        offlineDb.setVersion(2);
+                        break;
+                }
             }
+            Toast.makeText(this, "Base de datos actualizada", Toast.LENGTH_SHORT).show();
         }
     }
 
