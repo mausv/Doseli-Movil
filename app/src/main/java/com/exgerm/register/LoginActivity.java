@@ -102,6 +102,7 @@ public class LoginActivity extends AppCompatActivity {
     protected double fixedLongLow;
 
     public static SQLiteDatabase offlineDb;
+    public static OfflineMissingHandsets offlineMissingHandsets;
 
 
     private ArrayList<Category> groupsList;
@@ -115,6 +116,7 @@ public class LoginActivity extends AppCompatActivity {
     private String hospitalCategoryIdentifier = "hospital";
     public static String hospitalSelectedId = "0";
     public static String hospitalSelected = "";
+    public static String hospitalSelectedFrequence = "";
 
     private ArrayList<ChallengeUser> challengeList;
 
@@ -122,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.114/doseli/";
+    public static String main_url = "http://192.168.1.142/doseli/";
 
     public static int newestDbVersion = 1;
 
@@ -140,6 +142,8 @@ public class LoginActivity extends AppCompatActivity {
     private static String url_get_latest_version = main_url + "get_latest_version.php";
     private static String url_get_off = main_url + "get_hospital_offline.php";
     private static String url_get_challenge = main_url + "challenge_summary.php";
+    private static String url_get_offline_missing_handsets = main_url + "get_missing_check_devices.php";
+    private static String url_get_hospital_frequence = main_url + "get_hospital_frequence.php";
 
     //Column variables
     private static String TAG_CODE = "code";
@@ -521,6 +525,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (success == 1) {
 
+                    new GetHospitalFrequence().execute();
+
                     new GetOffModels().execute();
 
                 } else if (success == 3) {
@@ -537,6 +543,33 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
             }
+        }
+    }
+
+    private class GetHospitalFrequence extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            try {
+                List<NameValuePair> paramsFrequence = new ArrayList<>();
+                paramsFrequence.add(new BasicNameValuePair("hsp_code", hospitalSelectedId));
+                JSONObject jsonFrequence = jsonParser.makeHttpRequest(url_get_hospital_frequence, "POST", paramsFrequence);
+
+                JSONArray frequenceArray = (JSONArray)jsonFrequence.get("frequence");
+                JSONObject innerObj = (JSONObject) frequenceArray.get(0);
+                hospitalSelectedFrequence = String.valueOf(innerObj.get("frequence"));
+                Log.d("Hospital frequence", hospitalSelectedFrequence);
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
         }
     }
 
@@ -1059,6 +1092,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private class GetOffModels extends AsyncTask<Void, Void, Void> {
+        JSONArray jsonArrayOffline;
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -1168,12 +1203,27 @@ public class LoginActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+            try {
+                offlineMissingHandsets = new OfflineMissingHandsets();
+                JSONParser jsonParser = new JSONParser();
+                List<NameValuePair> paramGetOffMissingHandsets = new ArrayList<>();
+                paramGetOffMissingHandsets.add(new BasicNameValuePair("hsp_code", hospitalSelectedId));
+                paramGetOffMissingHandsets.add(new BasicNameValuePair("days", hospitalSelectedFrequence));
+                JSONObject jsonOfflineObject = jsonParser.makeHttpRequest(url_get_offline_missing_handsets, "POST", paramGetOffMissingHandsets);
+                jsonArrayOffline = (JSONArray) jsonOfflineObject.get("devices");
+                Log.d("JSONOffline", jsonOfflineObject.toString());
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
             return null;
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+            offlineMissingHandsets.addMissingHandset(OfflineHandset.fromJson(jsonArrayOffline));
 
             pDialog.dismiss();
 
@@ -1275,12 +1325,6 @@ public class LoginActivity extends AppCompatActivity {
                 "area_id VARCHAR, " +
                 "location_id VARCHAR, " +
                 "reference VARCHAR);");
-        offlineDb.execSQL("DROP TABLE IF EXISTS DoseliMissingReports;");
-        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliMissingReports" +
-                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
-                "qr_id VARCHAR, " +
-                "model VARCHAR, " +
-                "serial_number VARCHAR);");
 
         if(offlineDb.getVersion() != newestDbVersion) {
             while (offlineDb.getVersion() != newestDbVersion) {
@@ -1290,11 +1334,6 @@ public class LoginActivity extends AppCompatActivity {
                         offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
                         offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
                         offlineDb.setVersion(1);
-                        break;
-                    case 1:
-                        // Second changes to offline database
-
-                        offlineDb.setVersion(2);
                         break;
                 }
             }

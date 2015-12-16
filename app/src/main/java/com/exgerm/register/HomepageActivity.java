@@ -111,6 +111,7 @@ public class HomepageActivity extends AppCompatActivity {
     private String mActivityTitle;
     HomepageDrawerAdapter homepageDrawerAdapter;
     ArrayList<HomepageDrawerItem> arrayOfDrawerItems;
+    private Button btnOfflineMissingHandsets;
 
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
@@ -138,6 +139,7 @@ public class HomepageActivity extends AppCompatActivity {
         mTitles = getResources().getStringArray(R.array.drawer_main_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        btnOfflineMissingHandsets = (Button) findViewById(R.id.btnOfflineMissingHandsets);
         mActivityTitle = getTitle().toString();
 
         setupDrawer();
@@ -233,6 +235,18 @@ public class HomepageActivity extends AppCompatActivity {
         new GetMissing().execute();
         new GetReports().execute();
 
+        btnOfflineMissingHandsets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToOffline();
+            }
+        });
+
+    }
+
+    private void goToOffline() {
+        Intent goToOffline = new Intent(this, OfflineMissingHandsetsActivity.class);
+        startActivity(goToOffline);
     }
 
     @Override

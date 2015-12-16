@@ -32,62 +32,63 @@
             android:name=".HomepageActivity"
             android:label="@string/resumen"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register"
             android:label="Registrar"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".UpdateStatusActivity"
             android:label="@string/title_activity_update_status"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".StatusDetailView"
             android:label="@string/title_activity_status_detail_view"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CaptureLayout"
             android:logo="@android:color/transparent"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".ReportStolenActivity"
             android:label="@string/title_activity_report_stolen"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HandsetRegister"
             android:label="@string/title_activity_handset_register"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HandsetLocation"
             android:label="@string/title_activity_handset_location"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Handsets"
             android:label="@string/title_activity_handsets"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FullReportDetailView"
             android:label="@string/title_activity_full_report_detail_view"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AdminActivity"
             android:label="@string/title_activity_admin"
             android:logo="@android:color/transparent"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".UserHospitals"
-            android:label="@string/title_activity_user_hospitals"></activity>
+            android:label="@string/title_activity_user_hospitals" />
+        <activity android:name=".OfflineMissingHandsetsActivity"></activity>
     </application>
 
 </manifest>
