@@ -26,16 +26,18 @@ public class AdmHospitalAdapter extends ArrayAdapter<AdmHospital>{
         }
 
         TextView name = (TextView) convertView.findViewById(R.id.textViewAdmHospital);
+        TextView sellers = (TextView) convertView.findViewById(R.id.tvAdmSellers);
         TextView checked_15 = (TextView) convertView.findViewById(R.id.textViewAdmChecked15);
         TextView missing_15 = (TextView) convertView.findViewById(R.id.textViewAdmMissing15);
         TextView checked_30 = (TextView) convertView.findViewById(R.id.textViewAdmChecked30);
         TextView missing_30 = (TextView) convertView.findViewById(R.id.textViewAdmMissing30);
 
         name.setText(hospital.name);
-        checked_15.setText("Revisados: " + hospital.checked_15);
-        missing_15.setText("Faltan: " + hospital.missing_15);
-        checked_30.setText("Revisados: " + hospital.checked_30);
-        missing_30.setText("Faltan: " + hospital.missing_30);
+        sellers.setText(hospital.sellers);
+        checked_15.setText(hospital.checked_15 + "/");
+        missing_15.setText(hospital.missing_15);
+        checked_30.setText(hospital.checked_30 + "/");
+        missing_30.setText(hospital.missing_30);
 
      return convertView;
     }

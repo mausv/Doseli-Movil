@@ -11,9 +11,10 @@
         android:id="@+id/textViewAdmHospital"
         android:textColor="@color/blueColor"
         android:gravity="center_vertical"
-        android:layout_toLeftOf="@+id/textFrequence"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tvAdmSellers"
+        android:layout_toLeftOf="@+id/tvAdmSellers" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,9 +47,9 @@
         android:layout_gravity="right"
         android:textColor="@color/blueColor"
         android:gravity="center_vertical"
-        android:layout_alignTop="@+id/textView30"
-        android:layout_toRightOf="@+id/textView30"
-        android:layout_toEndOf="@+id/textView30" />
+        android:layout_alignTop="@+id/textViewAdmMissing30"
+        android:layout_toRightOf="@+id/textFrequence"
+        android:layout_toEndOf="@+id/textFrequence" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,7 +65,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="15 Dias: "
+        android:text="15 D: "
         android:id="@+id/textFrequence"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/textViewAdmChecked15"
@@ -73,9 +74,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30 Dias: "
+        android:text="30 D: "
         android:id="@+id/textView30"
         android:layout_alignBottom="@+id/textViewAdmHospital"
-        android:layout_toRightOf="@+id/textViewAdmHospital"
-        android:layout_toEndOf="@+id/textViewAdmHospital" />
+        android:layout_toRightOf="@+id/tvAdmSellers"
+        android:layout_toEndOf="@+id/tvAdmSellers" />
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="SELLERS"
+        android:id="@+id/tvAdmSellers"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textFrequence"
+        android:layout_alignBottom="@+id/textView30" />
 </RelativeLayout>
