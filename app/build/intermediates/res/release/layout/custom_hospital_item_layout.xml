@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOSPITAL"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:id="@+id/textViewAdmHospital"
+        android:textColor="@color/blueColor"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/textFrequence"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECKED"
+        android:id="@+id/textViewAdmChecked15"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewAdmMissing15"
+        android:layout_toStartOf="@+id/textViewAdmMissing15"
+        android:textColor="@color/blueColor"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MISSING"
+        android:id="@+id/textViewAdmMissing15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/orangeColor"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECKED"
+        android:id="@+id/textViewAdmChecked30"
+        android:layout_gravity="right"
+        android:textColor="@color/blueColor"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_toRightOf="@+id/textView30"
+        android:layout_toEndOf="@+id/textView30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MISSING"
+        android:id="@+id/textViewAdmMissing30"
+        android:textColor="@color/orangeColor"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Dias: "
+        android:id="@+id/textFrequence"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewAdmChecked15"
+        android:layout_toStartOf="@+id/textViewAdmChecked15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 Dias: "
+        android:id="@+id/textView30"
+        android:layout_alignBottom="@+id/textViewAdmHospital"
+        android:layout_toRightOf="@+id/textViewAdmHospital"
+        android:layout_toEndOf="@+id/textViewAdmHospital" />
+</RelativeLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/custom_hospital_item_layout.xml -->

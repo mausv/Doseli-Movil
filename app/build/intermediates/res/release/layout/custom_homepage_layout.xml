@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/usernameHP"
+        android:text="username"
+        android:textColor="#ff000541"
+        android:drawableLeft="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/dateHP"
+        android:text="date"
+        android:paddingLeft="48dp"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/reference"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:id="@+id/statusView"
+        android:layout_alignBottom="@+id/usernameHP"
+        android:layout_alignRight="@+id/dateHP"
+        android:layout_alignEnd="@+id/dateHP" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusHP"
+        android:text="Status"
+        android:maxLength="50"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:textColor="#ff000000"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dateHP"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="handset"
+        android:id="@+id/handsetView"
+        android:layout_below="@+id/statusView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reference"
+        android:id="@+id/reference"
+        android:layout_below="@+id/handsetView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/custom_homepage_layout.xml -->

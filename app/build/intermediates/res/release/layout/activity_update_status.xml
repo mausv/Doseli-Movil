@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/statusTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:hint="@string/comment"
+        android:layout_below="@+id/maint1CB"
+        android:layout_alignRight="@+id/aparatoID"
+        android:layout_alignEnd="@+id/aparatoID" />
+
+    <Button
+        android:id="@+id/statusButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/whiteColor"
+        android:background="@color/blueColor"
+        android:text="@string/send"
+        android:layout_below="@+id/erroresFinal"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/qrButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteColor"
+        android:background="@color/blueColor"
+        android:text="Scan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/error1CB"
+        android:layout_alignRight="@+id/error2CB"
+        android:layout_alignEnd="@+id/error2CB" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:hint="@string/url"
+        android:visibility="invisible"
+        android:layout_below="@+id/token"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/aparatoID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:hint="@string/aid"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/solucion1CB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textAID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="@string/textaid"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/qrButton"
+        android:layout_toStartOf="@+id/erroresFinal"
+        android:layout_alignRight="@+id/solucion1CB"
+        android:layout_alignEnd="@+id/solucion1CB" />
+
+    <TextView
+        android:id="@+id/token"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:hint="@string/token"
+        android:visibility="invisible"
+        android:layout_below="@+id/statusButton"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error1"
+        android:id="@+id/error1CB"
+        android:layout_below="@+id/qrButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solucion1"
+        android:id="@+id/solucion1CB"
+        android:layout_below="@+id/qrButton"
+        android:layout_toRightOf="@+id/error3CB"
+        android:layout_toEndOf="@+id/error3CB"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error2"
+        android:id="@+id/error2CB"
+        android:layout_below="@+id/error1CB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solucion2"
+        android:id="@+id/solucion2CB"
+        android:layout_below="@+id/solucion1CB"
+        android:layout_toRightOf="@+id/error3CB"
+        android:layout_toEndOf="@+id/error3CB"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error3"
+        android:id="@+id/error3CB"
+        android:layout_below="@+id/error2CB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solucion3"
+        android:id="@+id/solucion3CB"
+        android:layout_alignTop="@+id/error3CB"
+        android:layout_toRightOf="@+id/error3CB"
+        android:layout_toEndOf="@+id/error3CB"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Errores"
+        android:id="@+id/erroresFinal"
+        android:layout_below="@+id/statusTextBox"
+        android:layout_toLeftOf="@+id/perFinal"
+        android:layout_toStartOf="@+id/perFinal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funciona"
+        android:id="@+id/perFinal"
+        android:layout_above="@+id/statusButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ESTADO"
+        android:id="@+id/tvDetails"
+        android:layout_toRightOf="@+id/url"
+        android:layout_below="@+id/statusButton"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/hospital"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:hint="HOSPITAL"
+        android:visibility="invisible"
+        android:layout_below="@+id/idMachine"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/idMachine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:hint="ID"
+        android:visibility="invisible"
+        android:layout_below="@+id/url"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint1"
+        android:id="@+id/maint1CB"
+        android:textSize="14sp"
+        android:layout_below="@+id/error3CB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_toLeftOf="@+id/solucion3CB"
+        android:layout_toStartOf="@+id/solucion3CB" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint2"
+        android:id="@+id/maint2CB"
+        android:textSize="14sp"
+        android:checked="false"
+        android:layout_below="@+id/solucion3CB"
+        android:layout_alignLeft="@+id/solucion3CB"
+        android:layout_alignStart="@+id/solucion3CB" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/activity_update_status.xml -->

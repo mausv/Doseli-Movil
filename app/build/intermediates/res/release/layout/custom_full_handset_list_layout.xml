@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exgerm.register.StatusDetailView">
+
+
+    <TextView
+        android:id="@+id/cHstatusDetailViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000541"
+        android:text="Usuario"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cHstatusDetailViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cHstatusDetailViewUser"
+        android:text="Fecha" />
+
+    <TextView
+        android:id="@+id/cHstatusDetailView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargando"
+        android:layout_below="@+id/cHmaint1CB"
+        android:layout_alignRight="@+id/cHperFinal"
+        android:layout_alignEnd="@+id/cHperFinal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error1"
+        android:id="@+id/cHerror1CB"
+        android:layout_below="@+id/cHstatusDetailViewDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solucion1"
+        android:id="@+id/cHsolucion1CB"
+        android:layout_below="@+id/cHstatusDetailViewDate"
+        android:layout_toRightOf="@+id/cHerror3CB"
+        android:layout_toEndOf="@+id/cHerror3CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error2"
+        android:id="@+id/cHerror2CB"
+        android:layout_below="@+id/cHerror1CB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solucion2"
+        android:id="@+id/cHsolucion2CB"
+        android:layout_below="@+id/cHsolucion1CB"
+        android:layout_toRightOf="@+id/cHerror3CB"
+        android:layout_toEndOf="@+id/cHerror3CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error3"
+        android:id="@+id/cHerror3CB"
+        android:layout_below="@+id/cHerror2CB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solucion3"
+        android:id="@+id/cHsolucion3CB"
+        android:layout_alignTop="@+id/cHerror3CB"
+        android:layout_toRightOf="@+id/cHerror3CB"
+        android:layout_toEndOf="@+id/cHerror3CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Errores"
+        android:id="@+id/cHerroresFinal"
+        android:checked="false"
+        android:clickable="false"
+        android:enabled="true"
+        android:layout_alignTop="@+id/cHperFinal"
+        android:layout_toLeftOf="@+id/cHperFinal"
+        android:layout_toStartOf="@+id/cHperFinal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funciona"
+        android:id="@+id/cHperFinal"
+        android:clickable="false"
+        android:enabled="true"
+        android:layout_below="@+id/cHstatusDetailView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint1"
+        android:id="@+id/cHmaint1CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:layout_below="@+id/cHerror3CB"
+        android:layout_toLeftOf="@+id/cHsolucion3CB"
+        android:layout_toStartOf="@+id/cHsolucion3CB"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maint2"
+        android:id="@+id/cHmaint2CB"
+        android:textSize="14dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:checked="false"
+        android:layout_alignBottom="@+id/cHmaint1CB"
+        android:layout_alignLeft="@+id/cHsolucion3CB"
+        android:layout_alignStart="@+id/cHsolucion3CB" />
+
+</RelativeLayout><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/layout/custom_full_handset_list_layout.xml -->

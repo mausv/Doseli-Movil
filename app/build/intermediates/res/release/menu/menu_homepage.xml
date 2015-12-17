@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomepageActivity">
+
+    <!--<item
+        android:id="@+id/update_status"
+        android:orderInCategory="100"
+        android:title="@string/update_status_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/update_register_device"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_handset_register"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/update_location"
+        android:orderInCategory="100"
+        android:title="@string/update_location"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/update_stolen"
+        android:orderInCategory="100"
+        android:title="@string/update_status_stolen"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/send_pending"
+        android:orderInCategory="100"
+        android:title="@string/pending"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/handsets"
+        android:orderInCategory="100"
+        android:title="@string/handsets"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/admin"
+        android:orderInCategory="100"
+        android:title="@string/admin"
+        app:showAsAction="ifRoom"/>-->
+</menu>
+<!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/menu/menu_homepage.xml -->
