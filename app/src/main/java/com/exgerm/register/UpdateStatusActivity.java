@@ -212,7 +212,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                  SimpleDateFormat gmtDateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
                                                  //gmtDateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
                                                  String fecha = gmtDateFormat.format(new Date());
-                                                 /*Date fechaAct = new Date();
+                                                 /*Date fechaAct = new Date()
                                                  String fecha = fechaAct.toString();*/
 
 
@@ -322,6 +322,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                                  "'" + s3 + "', '" + e1 + "', '" + s1 + "', '" + maint1 + "', '" + maint2 + "', " +
                                                                  "'" + LoginActivity.hospitalSelectedId + "', " +
                                                                  "'" + LoginActivity.hospitalSelected + "');");
+                                                         LoginActivity.offlineMissingHandsets.removeHandsetIfExists(token);
                                                          AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                                                          builder.setTitle("Fuera de línea");
                                                          builder.setMessage("Guardado en pendientes para mandar despues");
@@ -498,6 +499,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once done
             pDialog.dismiss();
+            LoginActivity.offlineMissingHandsets.removeHandsetIfExists(token);
             Toast.makeText(UpdateStatusActivity.this, "Reporte enviado", Toast.LENGTH_SHORT).show();
             Intent a = new Intent(UpdateStatusActivity.this, HomepageActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

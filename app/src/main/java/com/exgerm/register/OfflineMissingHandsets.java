@@ -1,5 +1,7 @@
 package com.exgerm.register;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,6 +20,13 @@ public class OfflineMissingHandsets {
 
     public ArrayList<OfflineHandset> getList() {
         return missingHandsets;
+    }
+
+    public void removeArrayOfHandsetsIfExists(ArrayList<OfflineHandset> arrayOfOfflineHandsets) {
+        for(int i = 0; i < arrayOfOfflineHandsets.size(); i++) {
+            removeHandsetIfExists(arrayOfOfflineHandsets.get(i).token);
+            Log.d("Token", arrayOfOfflineHandsets.get(i).token);
+        }
     }
 
     public void removeHandsetIfExists(String token) {

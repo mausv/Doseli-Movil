@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.location.Location;
@@ -1211,7 +1212,6 @@ public class LoginActivity extends AppCompatActivity {
                 paramGetOffMissingHandsets.add(new BasicNameValuePair("days", hospitalSelectedFrequence));
                 JSONObject jsonOfflineObject = jsonParser.makeHttpRequest(url_get_offline_missing_handsets, "POST", paramGetOffMissingHandsets);
                 jsonArrayOffline = (JSONArray) jsonOfflineObject.get("devices");
-                Log.d("JSONOffline", jsonOfflineObject.toString());
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -1225,10 +1225,38 @@ public class LoginActivity extends AppCompatActivity {
             super.onPostExecute(aVoid);
             offlineMissingHandsets.addMissingHandset(OfflineHandset.fromJson(jsonArrayOffline));
 
+            ArrayList<OfflineHandset> arrayToRemove;
+            arrayToRemove = getDevicesAlreadyAddedToPending();
+            offlineMissingHandsets.removeArrayOfHandsetsIfExists(arrayToRemove);
+
             pDialog.dismiss();
 
             Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
             startActivity(goHome);
+        }
+    }
+
+    public ArrayList<OfflineHandset> getDevicesAlreadyAddedToPending() {
+        ArrayList<OfflineHandset> offlineHandsets = new ArrayList<>();
+        OfflineHandset member = null;
+        Cursor c = null;
+        try {
+            c = offlineDb.rawQuery("Select * from DoseliOffline", null);
+            if(c.moveToFirst()) {
+                do {
+                    member = new OfflineHandset();
+                    member.id = c.getInt(c.getColumnIndex("id"));
+                    member.token = (c.getString(c.getColumnIndex("token")));
+                    offlineHandsets.add(member);
+                } while (c.moveToNext());
+            }
+            Log.d("OfflineHandsets", offlineHandsets.toString());
+            return offlineHandsets;
+        }
+        finally {
+            if (c != null) {
+                c.close();
+            }
         }
     }
 

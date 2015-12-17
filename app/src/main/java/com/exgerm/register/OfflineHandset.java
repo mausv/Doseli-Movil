@@ -32,6 +32,10 @@ public class OfflineHandset {
         }
     }
 
+    public OfflineHandset() {
+
+    }
+
     public static ArrayList<OfflineHandset> fromJson(JSONArray jsonObjects) {
         ArrayList<OfflineHandset> offlineHandsets = new ArrayList<OfflineHandset>();
         for (int i = 0; i < jsonObjects.length(); i++) {
