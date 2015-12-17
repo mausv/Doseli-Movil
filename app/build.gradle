@@ -9,8 +9,8 @@ android {
         applicationId "com.exgerm.register"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 14
-        versionName "1.5.0"
+        versionCode 15
+        versionName "1.5.1"
     }
     buildTypes {
         release {
