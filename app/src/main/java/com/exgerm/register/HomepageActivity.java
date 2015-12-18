@@ -623,6 +623,9 @@ public class HomepageActivity extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             if(status == 1) {
+                new GetCheckedDevices().execute();
+                new GetMissing().execute();
+                new GetReports().execute();
                 pDialog.dismiss();
                 AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
                 builder.setTitle("Listo");

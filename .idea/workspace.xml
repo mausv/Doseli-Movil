@@ -25,59 +25,35 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Response" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8b6d858-7797-4407-afb4-7d753633b676" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/AdmHospital.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/AdmHospital.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/AdmHospitalAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/AdmHospitalAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/AdminActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/AdminActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/FullReportDetailView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/FullReportDetailView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HandsetLocation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/Handsets.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/Handsets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$CheckedFormatter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$CheckedFormatter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetMissing.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetMissing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$ListItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$ListItemClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterHandset.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterHandset.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingReport.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageDrawerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageDrawerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/MissingAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/MissingAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/zxing/client/android/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/zxing/client/android/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/Register.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/Register.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UserHospitalsAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UserHospitalsAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospitalAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospitalAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/exgerm/register/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/exgerm/register/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/zxing/client/android/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/zxing/client/android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/custom_hospital_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/custom_hospital_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -92,29 +68,6 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="custom_hospital_item_layout.xml" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml">
-                <provider editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0">
-                    <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-                    <folding />
-                  </state>
-                </provider>
-                <provider selected="true" editor-type-id="android-designer">
-                  <state />
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsManager">
@@ -137,6 +90,8 @@
                 <state vertical-scroll-proportion="0.0">
                   <caret line="743" column="26" selection-start-line="743" selection-start-column="16" selection-end-line="743" selection-end-column="26" />
                   <folding>
+                    <element signature="e#7710#7711#0" expanded="false" />
+                    <element signature="e#7758#7759#0" expanded="false" />
                     <element signature="class#8095:9472" expanded="false" />
                     <element signature="method#onLocationChanged#0;class#8095:9472" expanded="false" />
                     <element signature="method#onStatusChanged#0;class#8095:9472" expanded="false" />
@@ -149,10 +104,22 @@
                     <element signature="method#doInBackground#0;class#StopGps#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#onPreExecute#0;class#Login#0;class#LoginActivity#0" expanded="false" />
                     <element signature="e#17187#17224#0" expanded="false" />
+                    <element signature="e#18952#18953#0" expanded="false" />
+                    <element signature="e#19024#19025#0" expanded="false" />
+                    <element signature="e#19694#19695#0" expanded="false" />
+                    <element signature="e#19766#19767#0" expanded="false" />
+                    <element signature="e#21349#21350#0" expanded="false" />
+                    <element signature="e#21405#21406#0" expanded="false" />
+                    <element signature="e#21915#21916#0" expanded="false" />
+                    <element signature="e#21971#21972#0" expanded="false" />
+                    <element signature="e#22539#22540#0" expanded="false" />
+                    <element signature="e#22595#22596#0" expanded="false" />
                     <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#onPostExecute#0;class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
+                    <element signature="e#28419#28420#0" expanded="false" />
+                    <element signature="e#28500#28501#0" expanded="false" />
                     <element signature="class#GetGroups#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#doInBackground#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#onPostExecute#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
@@ -170,6 +137,8 @@
                     <element signature="e#37573#37574#0" expanded="true" />
                     <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#onPostExecute#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
+                    <element signature="e#38805#38806#0" expanded="false" />
+                    <element signature="e#38861#38862#0" expanded="false" />
                     <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
                     <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
@@ -179,16 +148,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="1158" column="24" selection-start-line="1158" selection-start-column="24" selection-end-line="1158" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.6730769">
+                  <caret line="743" column="5" selection-start-line="743" selection-start-column="5" selection-end-line="743" selection-end-column="5" />
                   <folding>
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#8536#8537#0" expanded="false" />
-                    <element signature="e#8581#8582#0" expanded="false" />
+                    <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+                    <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+                    <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="e#9082#9140#0" expanded="false" />
                     <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="class#12854:13576" expanded="false" />
@@ -197,6 +166,7 @@
                     <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+                    <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="e#14992#15016#0" expanded="false" />
                     <element signature="e#15868#15890#0" expanded="false" />
                     <element signature="e#17587#17611#0" expanded="false" />
@@ -204,140 +174,20 @@
                     <element signature="e#20578#20627#0" expanded="false" />
                     <element signature="e#23883#23905#0" expanded="false" />
                     <element signature="e#26028#26102#0" expanded="false" />
-                    <element signature="e#27096#27097#0" expanded="false" />
-                    <element signature="e#27160#27161#0" expanded="false" />
-                    <element signature="e#27681#27682#0" expanded="false" />
-                    <element signature="e#27745#27746#0" expanded="false" />
-                    <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#31068#31069#0" expanded="false" />
-                    <element signature="e#31108#31109#0" expanded="false" />
-                    <element signature="e#31162#31163#0" expanded="false" />
-                    <element signature="e#31212#31213#0" expanded="false" />
-                    <element signature="e#31255#31256#0" expanded="false" />
-                    <element signature="e#31298#31299#0" expanded="false" />
-                    <element signature="e#31358#31359#0" expanded="false" />
-                    <element signature="e#31414#31415#0" expanded="false" />
-                    <element signature="e#31458#31459#0" expanded="false" />
-                    <element signature="e#31502#31503#0" expanded="false" />
-                    <element signature="e#31564#31565#0" expanded="false" />
-                    <element signature="e#31622#31623#0" expanded="false" />
-                    <element signature="e#31663#31664#0" expanded="false" />
-                    <element signature="e#31704#31705#0" expanded="false" />
-                    <element signature="e#31760#31761#0" expanded="false" />
-                    <element signature="e#31812#31813#0" expanded="false" />
-                    <element signature="e#31856#31857#0" expanded="false" />
-                    <element signature="e#31900#31901#0" expanded="false" />
-                    <element signature="e#31962#31963#0" expanded="false" />
-                    <element signature="e#32020#32021#0" expanded="false" />
-                    <element signature="e#32060#32061#0" expanded="false" />
-                    <element signature="e#32100#32101#0" expanded="false" />
-                    <element signature="e#32154#32155#0" expanded="false" />
-                    <element signature="e#32204#32205#0" expanded="false" />
-                    <element signature="e#32247#32248#0" expanded="false" />
-                    <element signature="e#32290#32291#0" expanded="false" />
-                    <element signature="e#32350#32351#0" expanded="false" />
-                    <element signature="e#32406#32407#0" expanded="false" />
-                    <element signature="e#32451#32452#0" expanded="false" />
-                    <element signature="e#32496#32497#0" expanded="false" />
                     <element signature="method#setPhysicalDamage#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#32665#32666#0" expanded="false" />
-                    <element signature="e#32710#32711#0" expanded="false" />
                     <element signature="method#setPhysicalRepair#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#32877#32878#0" expanded="false" />
-                    <element signature="e#32920#32921#0" expanded="false" />
-                    <element signature="e#32980#32981#0" expanded="false" />
-                    <element signature="e#33036#33037#0" expanded="false" />
-                    <element signature="e#33076#33077#0" expanded="false" />
-                    <element signature="e#33116#33117#0" expanded="false" />
-                    <element signature="e#33170#33171#0" expanded="false" />
-                    <element signature="e#33220#33221#0" expanded="false" />
-                    <element signature="e#33257#33258#0" expanded="false" />
-                    <element signature="e#33293#33294#0" expanded="false" />
-                    <element signature="e#33340#33341#0" expanded="false" />
-                    <element signature="e#33382#33383#0" expanded="false" />
-                    <element signature="e#33413#33414#0" expanded="false" />
-                    <element signature="e#33451#33452#0" expanded="false" />
-                    <element signature="e#33487#33488#0" expanded="false" />
-                    <element signature="e#33528#33529#0" expanded="false" />
-                    <element signature="e#33564#33565#0" expanded="false" />
-                    <element signature="e#33600#33601#0" expanded="false" />
-                    <element signature="e#33646#33647#0" expanded="false" />
-                    <element signature="e#33688#33689#0" expanded="false" />
-                    <element signature="e#33733#33734#0" expanded="false" />
-                    <element signature="e#33778#33779#0" expanded="false" />
                     <element signature="method#setDevice_comment#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#33941#33942#0" expanded="false" />
-                    <element signature="e#33980#33981#0" expanded="false" />
-                    <element signature="e#34032#34033#0" expanded="false" />
-                    <element signature="e#34080#34081#0" expanded="false" />
                     <element signature="class#PendingRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#34319#34320#0" expanded="false" />
-                    <element signature="e#34352#34353#0" expanded="false" />
-                    <element signature="e#34389#34390#0" expanded="false" />
-                    <element signature="e#34425#34426#0" expanded="false" />
-                    <element signature="e#34461#34462#0" expanded="false" />
-                    <element signature="e#34497#34498#0" expanded="false" />
-                    <element signature="e#34543#34544#0" expanded="false" />
-                    <element signature="e#34585#34586#0" expanded="false" />
-                    <element signature="e#34629#34630#0" expanded="false" />
-                    <element signature="e#34673#34674#0" expanded="false" />
-                    <element signature="e#34735#34736#0" expanded="false" />
-                    <element signature="e#34793#34794#0" expanded="false" />
-                    <element signature="e#34837#34838#0" expanded="false" />
-                    <element signature="e#34881#34882#0" expanded="false" />
-                    <element signature="e#34943#34944#0" expanded="false" />
-                    <element signature="e#35001#35002#0" expanded="false" />
-                    <element signature="e#35037#35038#0" expanded="false" />
-                    <element signature="e#35073#35074#0" expanded="false" />
-                    <element signature="e#35119#35120#0" expanded="false" />
-                    <element signature="e#35161#35162#0" expanded="false" />
                     <element signature="class#PendingRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#35468#35469#0" expanded="false" />
-                    <element signature="e#35501#35502#0" expanded="false" />
-                    <element signature="e#35538#35539#0" expanded="false" />
-                    <element signature="e#35574#35575#0" expanded="false" />
-                    <element signature="e#35610#35611#0" expanded="false" />
-                    <element signature="e#35646#35647#0" expanded="false" />
-                    <element signature="e#35692#35693#0" expanded="false" />
-                    <element signature="e#35734#35735#0" expanded="false" />
-                    <element signature="e#35773#35774#0" expanded="false" />
-                    <element signature="e#35812#35813#0" expanded="false" />
-                    <element signature="e#35864#35865#0" expanded="false" />
-                    <element signature="e#35912#35913#0" expanded="false" />
-                    <element signature="e#35954#35955#0" expanded="false" />
-                    <element signature="e#35996#35997#0" expanded="false" />
-                    <element signature="e#36054#36055#0" expanded="false" />
-                    <element signature="e#36108#36109#0" expanded="false" />
-                    <element signature="e#36146#36147#0" expanded="false" />
-                    <element signature="e#36184#36185#0" expanded="false" />
-                    <element signature="e#36234#36235#0" expanded="false" />
-                    <element signature="e#36280#36281#0" expanded="false" />
-                    <element signature="e#36322#36323#0" expanded="false" />
-                    <element signature="e#36364#36365#0" expanded="false" />
-                    <element signature="e#36422#36423#0" expanded="false" />
-                    <element signature="e#36476#36477#0" expanded="false" />
-                    <element signature="e#36516#36517#0" expanded="false" />
-                    <element signature="e#36556#36557#0" expanded="false" />
-                    <element signature="e#36610#36611#0" expanded="false" />
-                    <element signature="e#36660#36661#0" expanded="false" />
                     <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#39311#39312#0" expanded="false" />
-                    <element signature="e#39355#39356#0" expanded="false" />
                     <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
-                    <element signature="e#42186#42187#0" expanded="false" />
-                    <element signature="e#42252#42253#0" expanded="false" />
-                    <element signature="e#42326#42327#0" expanded="false" />
-                    <element signature="e#42378#42379#0" expanded="false" />
+                    <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
                     <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
@@ -354,7 +204,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -364,7 +216,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -386,23 +240,21 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_offline_missing_handsets.xml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="activity_offline_missing_handsets.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_offline_missing_handsets.xml">
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
+              </provider>
               <provider editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
                   <folding />
                 </state>
-              </provider>
-              <provider selected="true" editor-type-id="android-designer">
-                <state />
               </provider>
             </entry>
           </file>
@@ -418,14 +270,14 @@
           </file>
           <file leaf-file-name="custom_handset_layout.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_handset_layout.xml">
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
+              </provider>
               <provider editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
                   <folding />
                 </state>
-              </provider>
-              <provider selected="true" editor-type-id="android-designer">
-                <state />
               </provider>
             </entry>
           </file>
@@ -434,7 +286,13 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#504#505#0" expanded="false" />
+                    <element signature="e#542#543#0" expanded="false" />
+                    <element signature="e#1188#1189#0" expanded="false" />
+                    <element signature="e#1231#1232#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -447,7 +305,7 @@
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="1362" column="74" selection-start-line="1362" selection-start-column="74" selection-end-line="1362" selection-end-column="74" />
+                  <caret line="1235" column="9" selection-start-line="1235" selection-start-column="9" selection-end-line="1235" selection-end-column="9" />
                   <folding>
                     <element signature="class#8095:9472" expanded="false" />
                     <element signature="method#onLocationChanged#0;class#8095:9472" expanded="false" />
@@ -489,26 +347,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.3916084">
+                  <caret line="503" column="34" selection-start-line="503" selection-start-column="34" selection-end-line="503" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_admin.xml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="activity_admin.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml">
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
+              </provider>
               <provider editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
-              </provider>
-              <provider selected="true" editor-type-id="android-designer">
-                <state />
               </provider>
             </entry>
           </file>
@@ -517,7 +375,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -527,7 +387,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#1082#1095#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -537,7 +400,13 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#504#505#0" expanded="false" />
+                    <element signature="e#542#543#0" expanded="false" />
+                    <element signature="e#1188#1189#0" expanded="false" />
+                    <element signature="e#1231#1232#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -2049,10 +1918,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handsets.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_offline_missing_handset.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineMissingHandsetsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandsetsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineMissingHandsets.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_offline_missing_handsets.xml" />
@@ -2061,6 +1928,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospitalAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       </list>
     </option>
   </component>
@@ -2122,8 +1991,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2144,7 +2011,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2162,77 +2028,12 @@
               <option name="myItemId" value="Doseli-Movil" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="register" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2555,7 +2356,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450386924466</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added Sellers to AdminActivity.">
+      <created>1450391531741</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1450391531741</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2573,11 +2380,10 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33259177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33259177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2598,6 +2404,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2607,11 +2414,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33259177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18976545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2630,8 +2437,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2666,7 +2473,8 @@
     <MESSAGE value="Added OfflineMissingHandsets (2/2)" />
     <MESSAGE value="Test for fixing push error." />
     <MESSAGE value="Updated versionName to 1.5.1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated versionName to 1.5.1." />
+    <MESSAGE value="Added Sellers to AdminActivity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sellers to AdminActivity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2684,77 +2492,76 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_list_item.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_list_item.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_handset_register.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_handset_register.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_handsets.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_status_detail_view.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/FullReportDetailView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_full_report_detail_view.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageDrawerAdapter.java">
@@ -2765,14 +2572,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_full_handset_list_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
@@ -2784,25 +2591,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user_hospitals.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_user_hospital.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_user_hospital.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Register.java">
@@ -2844,14 +2651,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
@@ -2930,19 +2737,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5614679">
           <caret line="104" column="53" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/database/AbstractCursor.java">
@@ -2956,16 +2762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33203125">
           <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2998,15 +2794,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineMissingHandsets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#542#543#0" expanded="false" />
+            <element signature="e#1188#1189#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3020,198 +2824,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1158" column="24" selection-start-line="1158" selection-start-column="24" selection-end-line="1158" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8536#8537#0" expanded="false" />
-            <element signature="e#8581#8582#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#9082#9140#0" expanded="false" />
-            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#12854:13576" expanded="false" />
-            <element signature="method#onDrawerOpened#0;class#12854:13576" expanded="false" />
-            <element signature="method#onDrawerClosed#0;class#12854:13576" expanded="false" />
-            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#14992#15016#0" expanded="false" />
-            <element signature="e#15868#15890#0" expanded="false" />
-            <element signature="e#17587#17611#0" expanded="false" />
-            <element signature="e#18473#18495#0" expanded="false" />
-            <element signature="e#20578#20627#0" expanded="false" />
-            <element signature="e#23883#23905#0" expanded="false" />
-            <element signature="e#26028#26102#0" expanded="false" />
-            <element signature="e#27096#27097#0" expanded="false" />
-            <element signature="e#27160#27161#0" expanded="false" />
-            <element signature="e#27681#27682#0" expanded="false" />
-            <element signature="e#27745#27746#0" expanded="false" />
-            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#31068#31069#0" expanded="false" />
-            <element signature="e#31108#31109#0" expanded="false" />
-            <element signature="e#31162#31163#0" expanded="false" />
-            <element signature="e#31212#31213#0" expanded="false" />
-            <element signature="e#31255#31256#0" expanded="false" />
-            <element signature="e#31298#31299#0" expanded="false" />
-            <element signature="e#31358#31359#0" expanded="false" />
-            <element signature="e#31414#31415#0" expanded="false" />
-            <element signature="e#31458#31459#0" expanded="false" />
-            <element signature="e#31502#31503#0" expanded="false" />
-            <element signature="e#31564#31565#0" expanded="false" />
-            <element signature="e#31622#31623#0" expanded="false" />
-            <element signature="e#31663#31664#0" expanded="false" />
-            <element signature="e#31704#31705#0" expanded="false" />
-            <element signature="e#31760#31761#0" expanded="false" />
-            <element signature="e#31812#31813#0" expanded="false" />
-            <element signature="e#31856#31857#0" expanded="false" />
-            <element signature="e#31900#31901#0" expanded="false" />
-            <element signature="e#31962#31963#0" expanded="false" />
-            <element signature="e#32020#32021#0" expanded="false" />
-            <element signature="e#32060#32061#0" expanded="false" />
-            <element signature="e#32100#32101#0" expanded="false" />
-            <element signature="e#32154#32155#0" expanded="false" />
-            <element signature="e#32204#32205#0" expanded="false" />
-            <element signature="e#32247#32248#0" expanded="false" />
-            <element signature="e#32290#32291#0" expanded="false" />
-            <element signature="e#32350#32351#0" expanded="false" />
-            <element signature="e#32406#32407#0" expanded="false" />
-            <element signature="e#32451#32452#0" expanded="false" />
-            <element signature="e#32496#32497#0" expanded="false" />
-            <element signature="method#setPhysicalDamage#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#32665#32666#0" expanded="false" />
-            <element signature="e#32710#32711#0" expanded="false" />
-            <element signature="method#setPhysicalRepair#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#32877#32878#0" expanded="false" />
-            <element signature="e#32920#32921#0" expanded="false" />
-            <element signature="e#32980#32981#0" expanded="false" />
-            <element signature="e#33036#33037#0" expanded="false" />
-            <element signature="e#33076#33077#0" expanded="false" />
-            <element signature="e#33116#33117#0" expanded="false" />
-            <element signature="e#33170#33171#0" expanded="false" />
-            <element signature="e#33220#33221#0" expanded="false" />
-            <element signature="e#33257#33258#0" expanded="false" />
-            <element signature="e#33293#33294#0" expanded="false" />
-            <element signature="e#33340#33341#0" expanded="false" />
-            <element signature="e#33382#33383#0" expanded="false" />
-            <element signature="e#33413#33414#0" expanded="false" />
-            <element signature="e#33451#33452#0" expanded="false" />
-            <element signature="e#33487#33488#0" expanded="false" />
-            <element signature="e#33528#33529#0" expanded="false" />
-            <element signature="e#33564#33565#0" expanded="false" />
-            <element signature="e#33600#33601#0" expanded="false" />
-            <element signature="e#33646#33647#0" expanded="false" />
-            <element signature="e#33688#33689#0" expanded="false" />
-            <element signature="e#33733#33734#0" expanded="false" />
-            <element signature="e#33778#33779#0" expanded="false" />
-            <element signature="method#setDevice_comment#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#33941#33942#0" expanded="false" />
-            <element signature="e#33980#33981#0" expanded="false" />
-            <element signature="e#34032#34033#0" expanded="false" />
-            <element signature="e#34080#34081#0" expanded="false" />
-            <element signature="class#PendingRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#34319#34320#0" expanded="false" />
-            <element signature="e#34352#34353#0" expanded="false" />
-            <element signature="e#34389#34390#0" expanded="false" />
-            <element signature="e#34425#34426#0" expanded="false" />
-            <element signature="e#34461#34462#0" expanded="false" />
-            <element signature="e#34497#34498#0" expanded="false" />
-            <element signature="e#34543#34544#0" expanded="false" />
-            <element signature="e#34585#34586#0" expanded="false" />
-            <element signature="e#34629#34630#0" expanded="false" />
-            <element signature="e#34673#34674#0" expanded="false" />
-            <element signature="e#34735#34736#0" expanded="false" />
-            <element signature="e#34793#34794#0" expanded="false" />
-            <element signature="e#34837#34838#0" expanded="false" />
-            <element signature="e#34881#34882#0" expanded="false" />
-            <element signature="e#34943#34944#0" expanded="false" />
-            <element signature="e#35001#35002#0" expanded="false" />
-            <element signature="e#35037#35038#0" expanded="false" />
-            <element signature="e#35073#35074#0" expanded="false" />
-            <element signature="e#35119#35120#0" expanded="false" />
-            <element signature="e#35161#35162#0" expanded="false" />
-            <element signature="class#PendingRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#35468#35469#0" expanded="false" />
-            <element signature="e#35501#35502#0" expanded="false" />
-            <element signature="e#35538#35539#0" expanded="false" />
-            <element signature="e#35574#35575#0" expanded="false" />
-            <element signature="e#35610#35611#0" expanded="false" />
-            <element signature="e#35646#35647#0" expanded="false" />
-            <element signature="e#35692#35693#0" expanded="false" />
-            <element signature="e#35734#35735#0" expanded="false" />
-            <element signature="e#35773#35774#0" expanded="false" />
-            <element signature="e#35812#35813#0" expanded="false" />
-            <element signature="e#35864#35865#0" expanded="false" />
-            <element signature="e#35912#35913#0" expanded="false" />
-            <element signature="e#35954#35955#0" expanded="false" />
-            <element signature="e#35996#35997#0" expanded="false" />
-            <element signature="e#36054#36055#0" expanded="false" />
-            <element signature="e#36108#36109#0" expanded="false" />
-            <element signature="e#36146#36147#0" expanded="false" />
-            <element signature="e#36184#36185#0" expanded="false" />
-            <element signature="e#36234#36235#0" expanded="false" />
-            <element signature="e#36280#36281#0" expanded="false" />
-            <element signature="e#36322#36323#0" expanded="false" />
-            <element signature="e#36364#36365#0" expanded="false" />
-            <element signature="e#36422#36423#0" expanded="false" />
-            <element signature="e#36476#36477#0" expanded="false" />
-            <element signature="e#36516#36517#0" expanded="false" />
-            <element signature="e#36556#36557#0" expanded="false" />
-            <element signature="e#36610#36611#0" expanded="false" />
-            <element signature="e#36660#36661#0" expanded="false" />
-            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#39311#39312#0" expanded="false" />
-            <element signature="e#39355#39356#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#42186#42187#0" expanded="false" />
-            <element signature="e#42252#42253#0" expanded="false" />
-            <element signature="e#42326#42327#0" expanded="false" />
-            <element signature="e#42378#42379#0" expanded="false" />
-            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_handset_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3223,10 +2860,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1082#1095#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospitalAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_offline_missing_handsets.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -3234,7 +2925,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="743" column="26" selection-start-line="743" selection-start-column="16" selection-end-line="743" selection-end-column="26" />
+          <caret line="1235" column="9" selection-start-line="1235" selection-start-column="9" selection-end-line="1235" selection-end-column="9" />
           <folding>
             <element signature="class#8095:9472" expanded="false" />
             <element signature="method#onLocationChanged#0;class#8095:9472" expanded="false" />
@@ -3265,8 +2956,6 @@
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#37529#37530#0" expanded="true" />
-            <element signature="e#37573#37574#0" expanded="true" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
@@ -3277,53 +2966,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding />
+        <state vertical-scroll-proportion="0.6730769">
+          <caret line="743" column="5" selection-start-line="743" selection-start-column="5" selection-end-line="743" selection-end-column="5" />
+          <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#9082#9140#0" expanded="false" />
+            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#12854:13576" expanded="false" />
+            <element signature="method#onDrawerOpened#0;class#12854:13576" expanded="false" />
+            <element signature="method#onDrawerClosed#0;class#12854:13576" expanded="false" />
+            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#14992#15016#0" expanded="false" />
+            <element signature="e#15868#15890#0" expanded="false" />
+            <element signature="e#17587#17611#0" expanded="false" />
+            <element signature="e#18473#18495#0" expanded="false" />
+            <element signature="e#20578#20627#0" expanded="false" />
+            <element signature="e#23883#23905#0" expanded="false" />
+            <element signature="e#26028#26102#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#setPhysicalDamage#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#setPhysicalRepair#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#setDevice_comment#0;class#PendingReport#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#PendingRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#PendingRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospitalAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.3916084">
+          <caret line="503" column="34" selection-start-line="503" selection-start-column="34" selection-end-line="503" selection-end-column="34" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_offline_missing_handsets.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
   </component>
