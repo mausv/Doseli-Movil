@@ -736,6 +736,7 @@ public class HomepageActivity extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             if (success == 1) {
+                adapter.clear();
                 ArrayList<Report> latestReports = Report.fromJson(arrayOfReports2);
                 adapter.addAll(latestReports);
             }
