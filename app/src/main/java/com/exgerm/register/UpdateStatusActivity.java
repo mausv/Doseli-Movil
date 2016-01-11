@@ -1,27 +1,21 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.telephony.TelephonyManager;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,9 +30,7 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.net.URI;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
@@ -46,43 +38,40 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
     String hspOb = LoginActivity.hspCode;
 
-    protected EditText mStatusText;
     protected Button mStatusButton;
     protected Button mQrButton;
-    protected TextView qrResult;
-    protected TextView qrToken;
-    protected TextView qrId;
-    protected TextView qrHsp;
+    protected TextView txtHandsetName;
     protected String aparato = "";
-    protected String newStatus = "";
-    protected String estado;
-    public TextView idMachine;
+    protected String comment = "";
 
-    protected CheckBox cbE1;
-    protected CheckBox cbE2;
-    protected CheckBox cbE3;
-    protected CheckBox cbS1;
-    protected CheckBox cbS2;
-    protected CheckBox cbS3;
-    protected CheckBox cbM1;
-    protected CheckBox cbM2;
+    // Report items
+    protected EditText etComment;
+    protected CheckBox cbPhysicalDamage;
+    protected CheckBox cbLowBattery;
+    protected CheckBox cbLowLiquid;
+    protected CheckBox cbPhysicalRepair;
+    protected CheckBox cbChangeBattery;
+    protected CheckBox cbChangeLiquid;
+    protected CheckBox cbTrayClean;
+    protected CheckBox cbHandsetClean;
+    protected CheckBox cbError;
+    protected CheckBox cbNoError;
 
-    public String e1 = "0";
-    public String e2 = "0";
-    public String e3 = "0";
-    public String s1 = "0";
-    public String s2 = "0";
-    public String s3 = "0";
-    public String maint1 = "0";
-    public String maint2 = "0";
-    public String mid = "0";
+    // Report items values
+    protected String valPhysicalDamage = "0";
+    protected String valLowBattery = "0";
+    protected String valLowLiquid = "0";
+    protected String valPhysicalRepair = "0";
+    protected String valChangeBattery = "0";
+    protected String valChangeLiquid = "0";
+    protected String valTrayClean = "0";
+    protected String valHandsetClean = "0";
+    protected String mid = "0";
+    protected String valHandsetStatus;
+    protected String valHandsetStatus2;
 
-    protected CheckBox cbS;
-    protected CheckBox cbW;
     protected View.OnClickListener checkBoxListener1;
     protected View.OnClickListener checkBoxListener2;
-
-    protected TextView tv;
 
     private static String url_report = LoginActivity.main_url + "create_report.php";
 
@@ -123,47 +112,38 @@ public class UpdateStatusActivity extends AppCompatActivity {
         }
 
         //Initialize objects
-        mStatusText = (EditText) findViewById(R.id.statusTextBox);
-        mStatusButton = (Button) findViewById(R.id.statusButton);
-        mQrButton = (Button) findViewById(R.id.qrButton);
-        qrResult = (TextView) findViewById(R.id.url);
-        qrToken = (TextView) findViewById(R.id.token);
-        qrId = (TextView) findViewById(R.id.aparatoID);
-        qrHsp = (TextView) findViewById(R.id.hospital);
-        idMachine = (TextView) findViewById(R.id.idMachine);
+        etComment = (EditText) findViewById(R.id.etComment);
+        mStatusButton = (Button) findViewById(R.id.btnSendReport);
+        mQrButton = (Button) findViewById(R.id.btnQrScan);
+        txtHandsetName = (TextView) findViewById(R.id.txtHandsetId);
 
-        cbE1 = (CheckBox) findViewById(R.id.error1CB);
-        cbE2 = (CheckBox) findViewById(R.id.error2CB);
-        cbE3 = (CheckBox) findViewById(R.id.error3CB);
-
-        cbS1 = (CheckBox) findViewById(R.id.solucion1CB);
-        cbS2 = (CheckBox) findViewById(R.id.solucion2CB);
-        cbS3 = (CheckBox) findViewById(R.id.solucion3CB);
-
-        cbM1 = (CheckBox) findViewById(R.id.maint1CB);
-        cbM2 = (CheckBox) findViewById(R.id.maint2CB);
-
-
-        cbS = (CheckBox) findViewById(R.id.erroresFinal);
-        cbW = (CheckBox) findViewById(R.id.perFinal);
-        tv = (TextView) findViewById(R.id.tvDetails);
+        cbPhysicalDamage = (CheckBox) findViewById(R.id.cbErrorPhysicalDamage);
+        cbLowBattery = (CheckBox) findViewById(R.id.cbLowBattery);
+        cbLowLiquid = (CheckBox) findViewById(R.id.cbLowLiquid);
+        cbPhysicalRepair = (CheckBox) findViewById(R.id.cbPhysicalRepair);
+        cbChangeBattery = (CheckBox) findViewById(R.id.cbChangeBattery);
+        cbChangeLiquid = (CheckBox) findViewById(R.id.cbChangeLiquid);
+        cbTrayClean = (CheckBox) findViewById(R.id.cbTrayClean);
+        cbHandsetClean = (CheckBox) findViewById(R.id.cbHandsetClean);
+        cbError = (CheckBox) findViewById(R.id.cbError);
+        cbNoError = (CheckBox) findViewById(R.id.cbNoError);
 
         checkBoxListener1 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (cbW.isChecked()) {
-                    tv.setText("" + cbW.getText().toString());
-                    cbS.setChecked(false);
+                if (cbNoError.isChecked()) {
+                    valHandsetStatus = ("" + cbNoError.getText().toString());
+                    cbError.setChecked(false);
                 }
 
-                if (cbS.isChecked()) {
-                    tv.setText("" + cbS.getText().toString());
-                    cbW.setChecked(false);
+                if (cbError.isChecked()) {
+                    valHandsetStatus = ("" + cbError.getText().toString());
+                    cbNoError.setChecked(false);
                 }
 
-                if (!cbS.isChecked() && !cbW.isChecked()) {
-                    tv.setText("");
+                if (!cbError.isChecked() && !cbNoError.isChecked()) {
+                    valHandsetStatus = ("");
                 }
             }
         };
@@ -172,24 +152,24 @@ public class UpdateStatusActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (cbS.isChecked()) {
-                    tv.setText("" + cbS.getText().toString());
-                    cbW.setChecked(false);
+                if (cbError.isChecked()) {
+                    valHandsetStatus = ("" + cbError.getText().toString());
+                    cbNoError.setChecked(false);
                 }
 
-                if (cbW.isChecked()) {
-                    tv.setText("" + cbW.getText().toString());
-                    cbS.setChecked(false);
+                if (cbNoError.isChecked()) {
+                    valHandsetStatus = ("" + cbNoError.getText().toString());
+                    cbError.setChecked(false);
                 }
 
-                if (!cbS.isChecked() && !cbW.isChecked()) {
-                    tv.setText("");
+                if (!cbError.isChecked() && !cbNoError.isChecked()) {
+                    valHandsetStatus = ("");
                 }
             }
         };
 
-        cbW.setOnClickListener(checkBoxListener1);
-        cbS.setOnClickListener(checkBoxListener2);
+        cbNoError.setOnClickListener(checkBoxListener1);
+        cbError.setOnClickListener(checkBoxListener2);
 
 
         //Set listener to button click
@@ -200,20 +180,13 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                              public void onClick(View v) {
 
                                                  //Get the status the user entered and convert to string
-                                                 newStatus = mStatusText.getText().toString();
-                                                 estado = tv.getText().toString();
-                                                 if (tv.getText().toString().equals("Funciona")){
-                                                     estado = "1";
-                                                 } else if (tv.getText().toString().equals("Errores")){
-                                                     estado = "0";
+                                                 comment = etComment.getText().toString();
+                                                 if (valHandsetStatus.equals("Funciona")){
+                                                     valHandsetStatus2 = "1";
+                                                 } else if (valHandsetStatus.equals("Errores")){
+                                                     valHandsetStatus2 = "0";
                                                  }
-                                                 String id = qrId.getText().toString();
-                                                 String token = qrToken.getText().toString();
-                                                 SimpleDateFormat gmtDateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-                                                 //gmtDateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
-                                                 String fecha = gmtDateFormat.format(new Date());
-                                                 /*Date fechaAct = new Date()
-                                                 String fecha = fechaAct.toString();*/
+                                                 String id = txtHandsetName.getText().toString();
 
 
 
@@ -249,10 +222,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                      AlertDialog dialog = builder.create();
                                                      dialog.show();
 
-                                                 } else if (estado.isEmpty()) {
+                                                 } else if (valHandsetStatus2.isEmpty()) {
                                                      //There was an error
                                                      AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                                                     builder.setMessage("No puedes dejar el estado sin contestar");
+                                                     builder.setMessage("No puedes dejar el valHandsetStatus2 sin contestar");
                                                      builder.setTitle("Volver a intentar");
                                                      builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                                          @Override
@@ -267,40 +240,40 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
                                                  } else {
 
-                                                     if (newStatus.isEmpty()) {
-                                                         newStatus = "";
+                                                     if (comment.isEmpty()) {
+                                                         comment = "";
                                                      }
 
-                                                     if (cbE1.isChecked()) {
-                                                         e1 = "1";
+                                                     if (cbPhysicalDamage.isChecked()) {
+                                                         valPhysicalDamage = "1";
                                                      }
 
-                                                     if (cbE2.isChecked()) {
-                                                         e2 = "1";
+                                                     if (cbLowBattery.isChecked()) {
+                                                         valLowBattery = "1";
                                                      }
 
-                                                     if (cbE3.isChecked()) {
-                                                         e3 = "1";
+                                                     if (cbLowLiquid.isChecked()) {
+                                                         valLowLiquid = "1";
                                                      }
 
-                                                     if (cbS1.isChecked()) {
-                                                         s1 = "1";
+                                                     if (cbPhysicalRepair.isChecked()) {
+                                                         valPhysicalRepair = "1";
                                                      }
 
-                                                     if (cbS2.isChecked()) {
-                                                         s2 = "1";
+                                                     if (cbChangeBattery.isChecked()) {
+                                                         valChangeBattery = "1";
                                                      }
 
-                                                     if (cbS3.isChecked()) {
-                                                         s3 = "1";
+                                                     if (cbChangeLiquid.isChecked()) {
+                                                         valChangeLiquid = "1";
                                                      }
 
-                                                     if (cbM1.isChecked()) {
-                                                         maint1 = "1";
+                                                     if (cbTrayClean.isChecked()) {
+                                                         valTrayClean = "1";
                                                      }
 
-                                                     if (cbM2.isChecked()) {
-                                                         maint2 = "1";
+                                                     if (cbHandsetClean.isChecked()) {
+                                                         valHandsetClean = "1";
                                                      }
 
                                                      //Store the status entered by user
@@ -316,10 +289,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                                  "lowBattery, changeBattery, lowLiquid, changeLiquid, " +
                                                                  "physicalDamage, physicalRepair, trayClean, machineClean, " +
                                                                  "hospitals_id, hospital_name) " +
-                                                                 "VALUES('" + token + "', '" + estado + "', " +
-                                                                 "'" + newStatus + "', '" + LoginActivity.userId + "', " +
-                                                                 "'" + LoginActivity.userName + "', '" + e2 + "', '" + s2 + "', '" + e3 + "', " +
-                                                                 "'" + s3 + "', '" + e1 + "', '" + s1 + "', '" + maint1 + "', '" + maint2 + "', " +
+                                                                 "VALUES('" + token + "', '" + valHandsetStatus2 + "', " +
+                                                                 "'" + comment + "', '" + LoginActivity.userId + "', " +
+                                                                 "'" + LoginActivity.userName + "', '" + valLowBattery + "', '" + valChangeBattery + "', '" + valLowLiquid + "', " +
+                                                                 "'" + valChangeLiquid + "', '" + valPhysicalDamage + "', '" + valPhysicalRepair + "', '" + valTrayClean + "', '" + valHandsetClean + "', " +
                                                                  "'" + LoginActivity.hospitalSelectedId + "', " +
                                                                  "'" + LoginActivity.hospitalSelected + "');");
                                                          LoginActivity.offlineMissingHandsets.removeHandsetIfExists(token);
@@ -364,9 +337,8 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
 
-                qrId.setText("Cargando");
+                txtHandsetName.setText("Cargando");
                 String contents = intent.getStringExtra("SCAN_RESULT"); //this is the result
-                qrResult.setText(contents);
 
                 final URI uri = URI.create(contents);
                 final String path = uri.getPath();
@@ -394,17 +366,8 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
                 }
 
-                //Ej de URL exgerm.com/token/id/08012015/1/2
                 //Ej de URL exgerm.com/bdb75f0f769444989a02c8da465c6819
-                //Token: /08-01-2015/fecha /1/hospital /2/aparato
                 String forId = path.substring(path.lastIndexOf('/') + 1);
-                //String forAid = path.substring(pos2 + 1, pos2Fin);
-                //String forAid2 = path.substring(pos2Fin + 1, pos2Fin2);
-                //ParseUser currentUser = ParseUser.getCurrentUser();
-                //String hsp = currentUser.get("Codigo").toString();
-
-                //qrId.setText(forAid);
-                qrToken.setText("" + forId);
                 token = "" + forId;
                 System.out.println(token);
 
@@ -414,11 +377,9 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
                 } else if (networkConnection == false) {
 
-                    qrId.setText("Fuera de línea");
+                    txtHandsetName.setText("Fuera de línea");
 
                 }
-                //runQuery();
-                //qrResult.setText("" + forAid2);
 
 
             } else if (resultCode == RESULT_CANCELED) {
@@ -450,18 +411,18 @@ public class UpdateStatusActivity extends AppCompatActivity {
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();
             params.add(new BasicNameValuePair("machines_id", mid));
-            params.add(new BasicNameValuePair("state", estado));
-            params.add(new BasicNameValuePair("comment", newStatus));
+            params.add(new BasicNameValuePair("state", valHandsetStatus2));
+            params.add(new BasicNameValuePair("comment", comment));
             params.add(new BasicNameValuePair("users_id", LoginActivity.userId));
             params.add(new BasicNameValuePair("user_name", LoginActivity.userName));
-            params.add(new BasicNameValuePair("lowBattery", e2));
-            params.add(new BasicNameValuePair("changeBattery", s2));
-            params.add(new BasicNameValuePair("lowLiquid", e3));
-            params.add(new BasicNameValuePair("changeLiquid", s3));
-            params.add(new BasicNameValuePair("physicalDamage", e1));
-            params.add(new BasicNameValuePair("physicalRepair", s1));
-            params.add(new BasicNameValuePair("trayClean", maint1));
-            params.add(new BasicNameValuePair("machineClean", maint2));
+            params.add(new BasicNameValuePair("lowBattery", valLowBattery));
+            params.add(new BasicNameValuePair("changeBattery", valChangeBattery));
+            params.add(new BasicNameValuePair("lowLiquid", valLowLiquid));
+            params.add(new BasicNameValuePair("changeLiquid", valChangeLiquid));
+            params.add(new BasicNameValuePair("physicalDamage", valPhysicalDamage));
+            params.add(new BasicNameValuePair("physicalRepair", valPhysicalRepair));
+            params.add(new BasicNameValuePair("trayClean", valTrayClean));
+            params.add(new BasicNameValuePair("machineClean", valHandsetClean));
             params.add(new BasicNameValuePair("hospitals_id", LoginActivity.hospitalSelectedId));
             params.add(new BasicNameValuePair("hospital_name", LoginActivity.hospitalSelected));
 
@@ -470,25 +431,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
             JSONObject json = jsonParser.makeHttpRequest(url_report,
                     "POST", params);
 
-            // check log cat fro response
+            // check log cat for response
             Log.d("Create Response", json.toString());
 
             // check for success tag
-            try {
-                int success = json.getInt(TAG_SUCCESS);
-
-                if (success == 1) {
-                    // successfully created product
-                    /*Intent i = new Intent(getApplicationContext(), AllProductsActivity.class);
-                    startActivity(i);*/
-
-                    // closing this screen
-                } else {
-                    // failed to create product
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
 
             return null;
         }
@@ -544,13 +490,11 @@ public class UpdateStatusActivity extends AppCompatActivity {
          * */
         protected String doInBackground(String... params) {
 
-                    String tokenT = token;
-
                     // Check for success tag
                     try {
                         // Building Parameters
                         List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
-                        paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
+                        paramsGetDetails.add(new BasicNameValuePair("token", token));
                         paramsGetDetails.add(new BasicNameValuePair("current_hospitals_id", hspOb));
 
                         // getting product details by making HTTP request
@@ -598,10 +542,9 @@ public class UpdateStatusActivity extends AppCompatActivity {
             // The upwards operation is async, you need to wait until it finishes to asign the variable
             if (uuidExists == true) {
                 if (!aparato.equals("")) {
-                    qrId.setText(aparato);
-                    idMachine.setText(mid);
+                    txtHandsetName.setText(aparato);
                 } else {
-                    qrId.setText("");
+                    txtHandsetName.setText("");
                     //There was an error
                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                     builder.setMessage("Este aparato no esta dado de alta");
@@ -631,7 +574,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                         }
                     });
                     builder.show();
-                    qrId.setText("");
+                    txtHandsetName.setText("");
                 }
             } else if (uuidExists == false) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
@@ -644,7 +587,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                     }
                 });
                 builder.show();
-                qrId.setText("");
+                txtHandsetName.setText("");
             }
         }
     }

@@ -477,7 +477,7 @@ public class HandsetLocation extends AppCompatActivity {
                 //Token: /08-01-2015/fecha /1/hospital /2/aparato
                 String forId = path.substring(path.lastIndexOf('/') + 1);
 
-                //qrId.setText(forAid);
+                //txtHandsetName.setText(forAid);
                 qrToken.setText("" + forId);
                 uuid = forId;
 
@@ -505,10 +505,10 @@ public class HandsetLocation extends AppCompatActivity {
                 String status = object.getString("Serie");
                 aparato = mod + status;
                 if (!aparato.equals("nullnull")) {
-                    qrId.setText(aparato);
+                    txtHandsetName.setText(aparato);
                     sLight = true;
                 } else {
-                    qrId.setText("");
+                    txtHandsetName.setText("");
                     lightTwo = false;
                 }
 
@@ -525,7 +525,7 @@ public class HandsetLocation extends AppCompatActivity {
                         }
                     });
 
-                    qrId.setText("");
+                    txtHandsetName.setText("");
                     lightTwo = false;
 
                     AlertDialog dialog = builder.create();
@@ -543,7 +543,7 @@ public class HandsetLocation extends AppCompatActivity {
                         }
                     });
 
-                    qrId.setText("");
+                    txtHandsetName.setText("");
                     lightTwo = false;
 
                     AlertDialog dialog = builder.create();
@@ -569,10 +569,10 @@ public class HandsetLocation extends AppCompatActivity {
                     } else if (updated == false) {
 
                         if (!aparato.equals("nullnull")) {
-                            qrId.setText(aparato);
+                            txtHandsetName.setText(aparato);
                             sLight = true;
                         } else {
-                            qrId.setText("");
+                            txtHandsetName.setText("");
                             //There was an error
                             AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
                             builder.setMessage("Este aparato no esta dado de alta");
@@ -594,8 +594,8 @@ public class HandsetLocation extends AppCompatActivity {
 
                     try {
                         Thread.sleep(1000);
-                    } catch (InterruptedException e1) {
-                        e1.printStackTrace();
+                    } catch (InterruptedException valPhysicalDamage) {
+                        valPhysicalDamage.printStackTrace();
                     }
                 }
             }

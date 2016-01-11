@@ -62,6 +62,10 @@
     <string name="tvHsp">HOSPITAL:</string>
     <string name="tvVersion">ver: x.x.x</string>
     <string name="tvLogin">INICIAR SESIÓN</string>
+    <string name="scan_button">Scan</string>
+    <string name="handset_id">APARATO</string>
+    <string name="cb_error">Errores</string>
+    <string name="cb_no_error">Funciona</string>
 
 
 </resources>

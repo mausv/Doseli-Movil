@@ -346,12 +346,15 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="cb_error">Errores</string>
+    <string name="cb_no_error">Funciona</string>
     <string name="comment">COMENTARIO</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="error1">Daño Físico</string>
     <string name="error2">Batería Baja</string>
     <string name="error3">Falta Liquido</string>
+    <string name="handset_id">APARATO</string>
     <string name="handsets">Lista de Aparatos</string>
     <string name="hello_world">Hello world!</string>
     <string name="logout_title">Cerrar Sesión</string>
@@ -359,6 +362,7 @@
     <string name="maint2">Limpieza de Aparato</string>
     <string name="pending">Enviar Pendientes</string>
     <string name="resumen">Resumen</string>
+    <string name="scan_button">Scan</string>
     <string name="send">Enviar Reporte</string>
     <string name="send_delete">Enviar Baja</string>
     <string name="solucion1">Reparación</string>

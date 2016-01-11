@@ -337,8 +337,8 @@ public class LoginActivity extends AppCompatActivity {
 
                             try {
                                 Thread.sleep(1000);
-                            } catch (InterruptedException e1) {
-                                e1.printStackTrace();
+                            } catch (InterruptedException valPhysicalDamage) {
+                                valPhysicalDamage.printStackTrace();
                             }
                         }
                     }
