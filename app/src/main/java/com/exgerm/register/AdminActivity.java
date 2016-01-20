@@ -1,8 +1,6 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -16,7 +14,6 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +34,8 @@ public class AdminActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
-        textViewTotalHospitals = (TextView) findViewById(R.id.textViewHospitalsAdmin);
-        textViewTotalHandsets = (TextView) findViewById(R.id.textViewHandsetsAdmin);
+        textViewTotalHospitals = (TextView) findViewById(R.id.tvTotHspValAdmin);
+        textViewTotalHandsets = (TextView) findViewById(R.id.tvTotHandsetsValAdmin);
 
         arrayOfAdmin = new ArrayList<>();
 

@@ -36,6 +36,8 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.LimitLine;
+import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -51,7 +53,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -74,8 +75,6 @@ public class LoginActivity extends AppCompatActivity {
     public static String hspCode;
     public static String userType;
     protected Button mLogin;
-    protected TextView textLat;
-    protected TextView textLong;
     public Boolean geoBoxCorrect = false;
     public TextView versionTV;
 
@@ -124,8 +123,8 @@ public class LoginActivity extends AppCompatActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.142/doseli/";
+    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    //public static String main_url = "http://192.168.1.145/doseli/";
 
     public static int newestDbVersion = 1;
 
@@ -133,7 +132,6 @@ public class LoginActivity extends AppCompatActivity {
 
     LocationManager lm;
     LocationListener ll;
-
 
     //URLs
     private static String url_login = main_url + "login.php";
@@ -158,10 +156,7 @@ public class LoginActivity extends AppCompatActivity {
     JSONParser jsonParser = new JSONParser();
 
     protected String username;
-    protected String password;
     protected String id;
-    public String hspObtained = "";
-    public String codeObtained;
 
     /*protected double fixedLatTop = 25.669733;
     protected double fixedLongTop = -100.323889;
@@ -172,12 +167,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //Initialize protected objects
-        groupSpinner = (Spinner) findViewById(R.id.loginGroupSpinner);
-        hospitalSpinner = (Spinner) findViewById(R.id.loginHospitalSpinner);
-        mLogin = (Button) findViewById(R.id.loginButton);
-        textLat = (TextView) findViewById(R.id.latitudeTextView);
-        textLong = (TextView) findViewById(R.id.longitudeTextView);
-        versionTV = (TextView) findViewById(R.id.versionTV);
+        groupSpinner = (Spinner) findViewById(R.id.spinnerGroupLogin);
+        hospitalSpinner = (Spinner) findViewById(R.id.spinnerHospitalLogin);
+        mLogin = (Button) findViewById(R.id.btnLogin);
+        versionTV = (TextView) findViewById(R.id.tvVersionLogin);
         challengeChart = (BarChart) findViewById(R.id.challengeChart);
         getImei();
         initializeDatabase();
@@ -199,6 +192,9 @@ public class LoginActivity extends AppCompatActivity {
         groupsList = new ArrayList<>();
 
         try {
+            /**
+             * Wait for an appropriate internet connection
+             * */
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -227,33 +223,12 @@ public class LoginActivity extends AppCompatActivity {
         lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
         ll = new LocationListener() {
-            protected double pLat;
-            protected double pLong;
-
 
             public void onLocationChanged(Location location) {
                 System.out.println("Location Changed");
                 lat = location.getLatitude();
                 lon = location.getLongitude();
                 alt = location.getAltitude();
-
-                textLat.setText("" + lat);
-                textLong.setText("" + lon);
-
-                /*if (location != null) {
-                    this.pLat = location.getLatitude();
-                    this.pLong = location.getLongitude();
-
-                    if (((pLat <= fixedLatTop) && (pLat >= fixedLatLow) && (pLong <= fixedLongLow) && (pLong >= fixedLongTop))) {
-                        geoBoxCorrect = true;
-                        System.out.println("geoBoxCorrect=true");
-                    } else {
-                        geoBoxCorrect = false;
-                        System.out.println("geoBoxCorrect=false");
-                    }
-                } else {
-                    geoBoxCorrect = false;
-                }*/
             }
 
 
@@ -287,18 +262,16 @@ public class LoginActivity extends AppCompatActivity {
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*//Hide keyboard
-                InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                mgr.hideSoftInputFromWindow(mPassword.getWindowToken(), 0);*/
-
-                //History
-                //new AddHistory().execute();
-
-                //Login
                 hspName = hospitalSelected;
                 if (groupSelectedId.equals("0")) {
+                    /**
+                     * Missing group
+                     */
                     AdviceUser(1);
                 } else if (hospitalSelectedId.equals("0")) {
+                    /**
+                     * Missing hospital
+                     */
                     AdviceUser(2);
                 } else {
                     new Login().execute();
@@ -306,46 +279,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
             }
-
-            /*private void runQuery() {
-                ParseQuery<ParseObject> query = ParseQuery.getQuery("Hospitales");
-                query.whereEqualTo("Codigo", id);
-                query.getFirstInBackground(new GetCallback<ParseObject>() {
-                    public void done(ParseObject object, ParseException e) {
-                        if (object == null) {
-                            Log.d("score", "The getFirst request failed.");
-                        } else {
-                            Log.d("id", "Retrieved the object.");
-                            String status = object.getString("Hospital");
-                            String status2 = object.getString("Codigo");
-                            System.out.println("Hospital: " + status);
-                            System.out.println("Codigo: " + status2);
-                            hspObtained = status;
-                            codeObtained = status2;
-                            System.out.println(lat + ", " + lon);
-                            fixedLatTop = object.getDouble("latTop");
-                            fixedLatLow = object.getDouble("latLow");
-                            fixedLongTop = object.getDouble("longTop");
-                            fixedLongLow = object.getDouble("longLow");
-                            if (((lat <= fixedLatTop) && (lat >= fixedLatLow) && (lon <= fixedLongLow) && (lon >= fixedLongTop))) {
-                                geoBoxCorrect = true;
-                                System.out.println("geoBoxCorrect=true");
-                            } else {
-                                geoBoxCorrect = false;
-                                System.out.println("geoBoxCorrect=false");
-                            }
-
-                            try {
-                                Thread.sleep(1000);
-                            } catch (InterruptedException valPhysicalDamage) {
-                                valPhysicalDamage.printStackTrace();
-                            }
-                        }
-                    }
-                });
-            }*/
-
-
         });
 
         groupSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -416,9 +349,6 @@ public class LoginActivity extends AppCompatActivity {
         int success;
         int geo;
 
-        Array nameArray[];
-        JSONObject jsonA;
-
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -434,14 +364,12 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... args) {
 
-            TAG_CODE = hospitalSelectedId;
             hspCode = hospitalSelectedId;
-            TAG_IMEI = imei;
 
             //Build the parameters
             List<NameValuePair> params = new ArrayList<>();
-            params.add(new BasicNameValuePair("code", TAG_CODE));
-            params.add(new BasicNameValuePair("imei", TAG_IMEI));
+            params.add(new BasicNameValuePair("code", hospitalSelectedId));
+            params.add(new BasicNameValuePair("imei", imei));
             params.add(new BasicNameValuePair("ver", currentVersionName));
             params.add(new BasicNameValuePair("long", String.valueOf(lon)));
             params.add(new BasicNameValuePair("lat", String.valueOf(lat)));
@@ -717,13 +645,17 @@ public class LoginActivity extends AppCompatActivity {
             challengeChart.setDescription("");
             BarData data = new BarData(xVals, dataSets);
             YAxis yAxis = challengeChart.getAxisLeft();
+            XAxis xAxis = challengeChart.getXAxis();
             challengeChart.getAxisRight().setDrawLabels(false);
 
             yAxis.setAxisMaxValue(100f);
+            xAxis.setAvoidFirstLastClipping(true);
+            xAxis.setLabelsToSkip(2);
 
             Legend legend = challengeChart.getLegend();
 
             legend.setWordWrapEnabled(true);
+            legend.setXEntrySpace(10f);
 
             challengeChart.setData(data);
 
@@ -1127,7 +1059,6 @@ public class LoginActivity extends AppCompatActivity {
                         JSONArray categories = jsonObj
                                 .getJSONArray("models");
                         int size = categories.length();
-
                         modelsOff.add(0, new Category(0, "Escoge"));
 
                         for (int i = 0; i < size; i++) {

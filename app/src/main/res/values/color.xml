@@ -7,6 +7,10 @@
 
     <color name="darkBlueColor">#003399</color>
 
+    <color name="darkCyan">#0097A7</color>
+
+    <color name="lightCyan">#00BAD2</color>
+
     <color name="redColor">#FFA91304</color>
 
     <color name="whiteColor">#FFFFFFFF</color>

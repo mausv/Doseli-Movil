@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tvHospitalGroup"
-            android:id="@+id/groupTV"
+            android:id="@+id/tvGroupLogin"
             android:gravity="center_vertical"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -28,8 +28,8 @@
             <Spinner
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
-                android:id="@+id/loginGroupSpinner"
-                android:layout_below="@+id/groupTV"
+                android:id="@+id/spinnerGroupLogin"
+                android:layout_below="@+id/tvGroupLogin"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
@@ -37,28 +37,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tvHsp"
-                android:id="@+id/hospitalTV"
+                android:id="@+id/tvHospitalLogin"
                 android:gravity="center_vertical"
-                android:layout_below="@+id/loginGroupSpinner"
+                android:layout_below="@+id/spinnerGroupLogin"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <Spinner
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:id="@+id/loginHospitalSpinner"
-                android:layout_below="@+id/hospitalTV"
+                android:id="@+id/spinnerHospitalLogin"
+                android:layout_below="@+id/tvHospitalLogin"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/btnLogin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/tvLogin"
                 android:textColor="@color/whiteColor"
                 android:background="@color/blueColor"
-                android:layout_below="@+id/loginHospitalSpinner"
+                android:layout_below="@+id/spinnerHospitalLogin"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
@@ -66,35 +66,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tvVersion"
-                android:id="@+id/versionTV"
+                android:id="@+id/tvVersionLogin"
                 android:layout_gravity="center_horizontal"
-                android:layout_below="@+id/loginButton"
+                android:layout_below="@+id/btnLogin"
                 android:layout_centerHorizontal="true" />
 
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/challengeChart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/versionTV" />
-
-            <TextView
-                android:id="@+id/latitudeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Text"
-                android:visibility="invisible"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:id="@+id/longitudeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Text"
-                android:visibility="invisible"
-                android:layout_above="@+id/latitudeTextView"
-                android:layout_alignParentLeft="true" />
-
+                android:layout_below="@+id/tvVersionLogin" />
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

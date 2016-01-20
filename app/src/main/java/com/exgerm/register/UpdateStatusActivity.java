@@ -103,7 +103,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
         Log.d("IMEI: ", LoginActivity.imei);
 
-        if(isOnline() == false){
+        if(!isOnline()){
             Log.i("Internet status: ", "Not Available");
             networkConnection = false;
         } else {
