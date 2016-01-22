@@ -40,12 +40,12 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
     protected Button mStatusButton;
     protected Button mQrButton;
-    protected TextView txtHandsetName;
+    protected TextView tvHandsetName;
     protected String aparato = "";
     protected String comment = "";
 
     // Report items
-    protected EditText etComment;
+    protected EditText tvComment;
     protected CheckBox cbPhysicalDamage;
     protected CheckBox cbLowBattery;
     protected CheckBox cbLowLiquid;
@@ -112,10 +112,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
         }
 
         //Initialize objects
-        etComment = (EditText) findViewById(R.id.etComment);
+        tvComment = (EditText) findViewById(R.id.tvComment);
         mStatusButton = (Button) findViewById(R.id.btnSendReport);
         mQrButton = (Button) findViewById(R.id.btnQrScan);
-        txtHandsetName = (TextView) findViewById(R.id.txtHandsetId);
+        tvHandsetName = (TextView) findViewById(R.id.tvHandsetId);
 
         cbPhysicalDamage = (CheckBox) findViewById(R.id.cbErrorPhysicalDamage);
         cbLowBattery = (CheckBox) findViewById(R.id.cbLowBattery);
@@ -180,13 +180,13 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                              public void onClick(View v) {
 
                                                  //Get the status the user entered and convert to string
-                                                 comment = etComment.getText().toString();
+                                                 comment = tvComment.getText().toString();
                                                  if (valHandsetStatus.equals("Funciona")){
                                                      valHandsetStatus2 = "1";
                                                  } else if (valHandsetStatus.equals("Errores")){
                                                      valHandsetStatus2 = "0";
                                                  }
-                                                 String id = txtHandsetName.getText().toString();
+                                                 String id = tvHandsetName.getText().toString();
 
 
 
@@ -337,7 +337,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
 
-                txtHandsetName.setText("Cargando");
+                tvHandsetName.setText("Cargando");
                 String contents = intent.getStringExtra("SCAN_RESULT"); //this is the result
 
                 final URI uri = URI.create(contents);
@@ -377,7 +377,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
                 } else if (networkConnection == false) {
 
-                    txtHandsetName.setText("Fuera de línea");
+                    tvHandsetName.setText("Fuera de línea");
 
                 }
 
@@ -542,9 +542,9 @@ public class UpdateStatusActivity extends AppCompatActivity {
             // The upwards operation is async, you need to wait until it finishes to asign the variable
             if (uuidExists == true) {
                 if (!aparato.equals("")) {
-                    txtHandsetName.setText(aparato);
+                    tvHandsetName.setText(aparato);
                 } else {
-                    txtHandsetName.setText("");
+                    tvHandsetName.setText("");
                     //There was an error
                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
                     builder.setMessage("Este aparato no esta dado de alta");
@@ -574,7 +574,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                         }
                     });
                     builder.show();
-                    txtHandsetName.setText("");
+                    tvHandsetName.setText("");
                 }
             } else if (uuidExists == false) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
@@ -587,7 +587,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                     }
                 });
                 builder.show();
-                txtHandsetName.setText("");
+                tvHandsetName.setText("");
             }
         }
     }

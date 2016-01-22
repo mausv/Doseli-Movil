@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 /**
@@ -30,7 +28,7 @@ public class MissingAdapter extends ArrayAdapter<Missing> {
         TextView model = (TextView) convertView.findViewById(R.id.mModel);
         TextView serial_number = (TextView) convertView.findViewById(R.id.mSerial);
         TextView qr = (TextView) convertView.findViewById(R.id.mQr);
-        TextView location = (TextView) convertView.findViewById(R.id.mLocation);
+        TextView location = (TextView) convertView.findViewById(R.id.spinnerLocationHandsetLocation);
         TextView reference = (TextView) convertView.findViewById(R.id.mRef);
 
         model.setText(missing.model);

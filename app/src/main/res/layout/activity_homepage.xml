@@ -40,7 +40,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/miscHandset"
+                            android:id="@+id/tvHandset"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Aparatos:"
@@ -48,10 +48,10 @@
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/txtTotalHandsets"
+                            android:id="@+id/tvTotalHandsets"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/miscHandset"
+                            android:layout_toRightOf="@+id/tvHandset"
                             android:text="#"
                             android:textSize="20sp" />
 
@@ -59,13 +59,13 @@
                             android:id="@+id/totalChart"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_below="@+id/daySwitch" />
+                            android:layout_below="@+id/switchDays" />
 
                         <Switch
-                            android:id="@+id/daySwitch"
+                            android:id="@+id/switchDays"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/miscHandset"
+                            android:layout_below="@+id/tvHandset"
                             android:checked="false"
                             android:text="Dias: "
                             android:textOff="15"
@@ -89,7 +89,7 @@
                             android:textSize="20sp" />
 
                         <Switch
-                            android:id="@+id/missingSwitch"
+                            android:id="@+id/switchMissing"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/txtHandsets"
@@ -103,7 +103,7 @@
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/missingSwitch"
+                            android:layout_below="@+id/switchMissing"
                             android:text="Incluir reportes pendientes por enviar"
                             android:id="@+id/btnOfflineMissingHandsets"
                             android:layout_gravity="right"

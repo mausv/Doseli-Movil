@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="HANDSET"
-        android:id="@+id/textViewHandset"
+        android:id="@+id/tvHandsetDetailView"
         android:layout_alignParentTop="true"
         android:textColor="#ffffff"
         android:textSize="20sp"
@@ -28,8 +28,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="LOCATION"
-        android:id="@+id/textViewLocation"
-        android:layout_below="@+id/textViewHandset"
+        android:id="@+id/tvLocationDetailView"
+        android:layout_below="@+id/tvHandsetDetailView"
         android:textSize="15sp"
         android:textColor="#ffffff"
         android:layout_alignParentRight="true"
@@ -45,14 +45,14 @@
         android:id="@android:id/list"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewReference" />
+        android:layout_below="@+id/tvReferenceDetailView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REFERENCE"
-        android:id="@+id/textViewReference"
-        android:layout_below="@+id/textViewLocation"
+        android:id="@+id/tvReferenceDetailView"
+        android:layout_below="@+id/tvLocationDetailView"
         android:textSize="15sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

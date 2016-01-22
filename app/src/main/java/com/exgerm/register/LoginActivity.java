@@ -123,8 +123,8 @@ public class LoginActivity extends AppCompatActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.145/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.145/doseli/";
 
     public static int newestDbVersion = 1;
 
@@ -186,7 +186,11 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Prende el GPS", Toast.LENGTH_LONG).show();
 
             Intent settings = new Intent("com.google.android.gms.location.settings.GOOGLE_LOCATION_SETTINGS");
-            startActivity(settings);
+            try {
+                startActivity(settings);
+            } catch (RuntimeException e) {
+                e.printStackTrace();
+            }
         }
 
         groupsList = new ArrayList<>();

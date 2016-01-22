@@ -1,10 +1,8 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,7 +15,6 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,9 +38,9 @@ public class FullReportDetailView extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_report_detail_view);
-        TextView tvHandset = (TextView) findViewById(R.id.textViewHandset);
-        TextView tvLocation = (TextView) findViewById(R.id.textViewLocation);
-        TextView tvReference = (TextView) findViewById(R.id.textViewReference);
+        TextView tvHandset = (TextView) findViewById(R.id.tvHandsetDetailView);
+        TextView tvLocation = (TextView) findViewById(R.id.tvLocationDetailView);
+        TextView tvReference = (TextView) findViewById(R.id.tvReferenceDetailView);
 
         Intent intent = getIntent();
         objectId = intent.getStringExtra("objectID");

@@ -1,9 +1,6 @@
 package com.exgerm.register;
 
-import android.app.ActionBar;
 import android.app.AlertDialog;
-import android.app.Fragment;
-import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -23,7 +20,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ListView;
@@ -31,19 +27,15 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TabHost;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
-import com.github.mikephil.charting.data.ChartData;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
 import com.github.mikephil.charting.utils.ValueFormatter;
 
-import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -61,19 +53,8 @@ public class HomepageActivity extends AppCompatActivity {
 
     String hspOb;
 
-    protected TextView mTitle;
-    protected Spinner filterCat;
-    protected Spinner filterDate;
-    protected Button filterBtn;
-    protected String selCat = "Sin Filtro";
-    protected String selDate = "Sin Filtro";
-    protected Date dateAmpLess;
-    protected Date dateAmpMore;
-    protected int dateAmpSel = 0;
-
     ArrayList<Report> arrayOfReports;
     JSONArray arrayOfReports2;
-    JSONArray categories;
     ReportsAdapter adapter;
 
     ArrayList<Missing> arrayOfMissing;
@@ -88,8 +69,8 @@ public class HomepageActivity extends AppCompatActivity {
     int totalChecked15;
     int totalChecked30;
     int missing;
-    private Switch daySwitch;
-    private Switch missingSwitch;
+    private Switch switchDay;
+    private Switch switchMissing;
     int daysChoice = 15;
     int missingDaysChoice = 15;
     private TextView txtTotalHandsets;
@@ -97,9 +78,6 @@ public class HomepageActivity extends AppCompatActivity {
     public List<PendingReport> pendingArray;
     public List<PendingRegisterHandset> pendingRegisterArray;
     public List<PendingRegisterLocation> pendingLocationArray;
-
-    private String reportsIdentifier = "reports";
-    private String reportsArrayIdentifier = "report";
 
     //Progress Dialog
     private ProgressDialog pDialog;
@@ -133,9 +111,9 @@ public class HomepageActivity extends AppCompatActivity {
         }
 
         pieChart = (PieChart) findViewById(R.id.totalChart);
-        daySwitch = (Switch) findViewById(R.id.daySwitch);
-        missingSwitch = (Switch) findViewById(R.id.missingSwitch);
-        txtTotalHandsets = (TextView) findViewById(R.id.txtTotalHandsets);
+        switchDay = (Switch) findViewById(R.id.switchDays);
+        switchMissing = (Switch) findViewById(R.id.switchMissing);
+        txtTotalHandsets = (TextView) findViewById(R.id.tvTotalHandsets);
         mTitles = getResources().getStringArray(R.array.drawer_main_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
@@ -165,9 +143,9 @@ public class HomepageActivity extends AppCompatActivity {
 
         new GetCheckedDevices().execute();
 
-        daySwitch.setChecked(false);
+        switchDay.setChecked(false);
 
-        daySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        switchDay.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
@@ -181,9 +159,9 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
-        missingSwitch.setChecked(false);
+        switchMissing.setChecked(false);
 
-        missingSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        switchMissing.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
@@ -1196,6 +1174,13 @@ public class HomepageActivity extends AppCompatActivity {
                 cm.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
+    private Snackbar createSnackbar(String message, int duration) {
+        Snackbar newSnackbar = Snackbar.make(
+          findViewById(R.id.coordinator_homepage_layout), message, duration
+        );
+        return newSnackbar;
+    }
+
     private class ListItemClickListener implements ListView.OnItemClickListener {
 
         @Override
@@ -1204,10 +1189,15 @@ public class HomepageActivity extends AppCompatActivity {
             String objectId = statusObject.getId();
             String qr = statusObject.getQrs_id();
 
-            Intent goToDetailView = new Intent(HomepageActivity.this, StatusDetailView.class);
-            goToDetailView.putExtra("objectID", objectId);
-            goToDetailView.putExtra("qrs_id", qr);
-            startActivity(goToDetailView);
+            if(isOnline()) {
+                Intent goToDetailView = new Intent(HomepageActivity.this, StatusDetailView.class);
+                goToDetailView.putExtra("objectID", objectId);
+                goToDetailView.putExtra("qrs_id", qr);
+                startActivity(goToDetailView);
+            } else {
+                Snackbar snackbarGoToDetailViewOffline = createSnackbar("No tienes internet para cargar el reporte.", Snackbar.LENGTH_SHORT);
+                snackbarGoToDetailViewOffline.show();
+            }
         }
     }
 
@@ -1246,13 +1236,25 @@ public class HomepageActivity extends AppCompatActivity {
 
                     break;
                 case "Lista de Aparatos":
-                    Intent takeToHandsetList = new Intent(HomepageActivity.this, Handsets.class);
-                    startActivity(takeToHandsetList);
+                    if(isOnline()) {
+                        Intent takeToHandsetList = new Intent(HomepageActivity.this, Handsets.class);
+                        startActivity(takeToHandsetList);
+                    } else {
+                        Snackbar snackbarHandsetListOffline = createSnackbar(
+                                "No tienes internet para cargar la lista.", Snackbar.LENGTH_SHORT);
+                        snackbarHandsetListOffline.show();
+                    }
 
                     break;
                 case "Mis Hospitales":
-                    Intent takeUserToHospitalList = new Intent(HomepageActivity.this, UserHospitals.class);
-                    startActivity(takeUserToHospitalList);
+                    if(isOnline()) {
+                        Intent takeUserToHospitalList = new Intent(HomepageActivity.this, UserHospitals.class);
+                        startActivity(takeUserToHospitalList);
+                    } else {
+                        Snackbar snackbarHospitalsOffline = createSnackbar(
+                                "No tienes internet para cargar la lista.", Snackbar.LENGTH_SHORT);
+                        snackbarHospitalsOffline.show();
+                    }
 
                     break;
                 case "Enviar Pendientes":
@@ -1283,20 +1285,27 @@ public class HomepageActivity extends AppCompatActivity {
 
                     break;
                 case "Administrador":
-                    if(Integer.parseInt(LoginActivity.userType) == 2) {
-                        Intent takeToAdmin = new Intent(HomepageActivity.this, AdminActivity.class);
-                        startActivity(takeToAdmin);
+                    if(isOnline()) {
+                        if (Integer.parseInt(LoginActivity.userType) == 2) {
+                            Intent takeToAdmin = new Intent(HomepageActivity.this, AdminActivity.class);
+                            startActivity(takeToAdmin);
+                        } else {
+                            AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
+                            builder.setTitle("Faltan permisos");
+                            builder.setMessage("No tienes el permiso para acceder a esta parte del sistema");
+                            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                            builder.show();
+                        }
                     } else {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
-                        builder.setTitle("Faltan permisos");
-                        builder.setMessage("No tienes el permiso para acceder a esta parte del sistema");
-                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-                        builder.show();
+                        Snackbar snackbarAdminOffline = createSnackbar(
+                                "No tienes internet para cargar la lista.", Snackbar.LENGTH_SHORT
+                        );
+                        snackbarAdminOffline.show();
                     }
                     break;
 

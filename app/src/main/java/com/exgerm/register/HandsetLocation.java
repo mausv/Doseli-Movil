@@ -1,6 +1,5 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -142,13 +141,13 @@ public class HandsetLocation extends AppCompatActivity {
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         Intent intent = getIntent();
-        groupSpinner = (Spinner) findViewById(R.id.group);
-        hospitalSpinner = (Spinner) findViewById(R.id.hospital);
-        areaSpinner = (Spinner) findViewById(R.id.area);
-        locationSpinner = (Spinner) findViewById(R.id.mLocation);
-        ref = (EditText) findViewById(R.id.ref);
-        scan = (Button) findViewById(R.id.scan);
-        qrId = (TextView) findViewById(R.id.aparatoTV);
+        groupSpinner = (Spinner) findViewById(R.id.spinnerGroupHandsetLocation);
+        hospitalSpinner = (Spinner) findViewById(R.id.spinnerHospitalHandsetLocation);
+        areaSpinner = (Spinner) findViewById(R.id.spinnerAreaHandsetLocation);
+        locationSpinner = (Spinner) findViewById(R.id.spinnerLocationHandsetLocation);
+        ref = (EditText) findViewById(R.id.etReferenceHandsetLocation);
+        scan = (Button) findViewById(R.id.btnScanHandsetLocation);
+        qrId = (TextView) findViewById(R.id.tvHandsetHandsetLocation);
         qrResult = (TextView) findViewById(R.id.idQr);
         qrToken = (TextView) findViewById(R.id.token);
         update = (Button) findViewById(R.id.updateLocation);
@@ -477,7 +476,7 @@ public class HandsetLocation extends AppCompatActivity {
                 //Token: /08-01-2015/fecha /1/hospital /2/aparato
                 String forId = path.substring(path.lastIndexOf('/') + 1);
 
-                //txtHandsetName.setText(forAid);
+                //tvHandsetName.setText(forAid);
                 qrToken.setText("" + forId);
                 uuid = forId;
 
@@ -505,10 +504,10 @@ public class HandsetLocation extends AppCompatActivity {
                 String status = object.getString("Serie");
                 aparato = mod + status;
                 if (!aparato.equals("nullnull")) {
-                    txtHandsetName.setText(aparato);
+                    tvHandsetName.setText(aparato);
                     sLight = true;
                 } else {
-                    txtHandsetName.setText("");
+                    tvHandsetName.setText("");
                     lightTwo = false;
                 }
 
@@ -525,7 +524,7 @@ public class HandsetLocation extends AppCompatActivity {
                         }
                     });
 
-                    txtHandsetName.setText("");
+                    tvHandsetName.setText("");
                     lightTwo = false;
 
                     AlertDialog dialog = builder.create();
@@ -543,7 +542,7 @@ public class HandsetLocation extends AppCompatActivity {
                         }
                     });
 
-                    txtHandsetName.setText("");
+                    tvHandsetName.setText("");
                     lightTwo = false;
 
                     AlertDialog dialog = builder.create();
@@ -569,10 +568,10 @@ public class HandsetLocation extends AppCompatActivity {
                     } else if (updated == false) {
 
                         if (!aparato.equals("nullnull")) {
-                            txtHandsetName.setText(aparato);
+                            tvHandsetName.setText(aparato);
                             sLight = true;
                         } else {
-                            txtHandsetName.setText("");
+                            tvHandsetName.setText("");
                             //There was an error
                             AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
                             builder.setMessage("Este aparato no esta dado de alta");

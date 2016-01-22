@@ -9,14 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <EditText
-        android:id="@+id/etComment"
+        android:id="@+id/tvComment"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="top"
         android:hint="@string/comment"
         android:layout_below="@+id/cbTrayClean"
-        android:layout_alignRight="@+id/txtHandsetId"
-        android:layout_alignEnd="@+id/txtHandsetId" />
+        android:layout_alignRight="@+id/tvHandsetId"
+        android:layout_alignEnd="@+id/tvHandsetId" />
 
     <Button
         android:id="@+id/btnSendReport"
@@ -43,7 +43,7 @@
         android:layout_alignEnd="@+id/cbLowBattery" />
 
     <TextView
-        android:id="@+id/txtHandsetId"
+        android:id="@+id/tvHandsetId"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center_vertical"
@@ -127,7 +127,7 @@
         android:layout_height="wrap_content"
         android:text="@string/cb_error"
         android:id="@+id/cbError"
-        android:layout_below="@+id/etComment"
+        android:layout_below="@+id/tvComment"
         android:layout_toLeftOf="@+id/cbNoError"
         android:layout_toStartOf="@+id/cbNoError"
         android:checked="false" />

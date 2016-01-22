@@ -12,7 +12,7 @@
         android:text="Scan"
         android:textColor="@color/whiteColor"
         android:background="@color/blueColor"
-        android:id="@+id/scan"
+        android:id="@+id/btnScanHandsetLocation"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -21,109 +21,109 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="APARATO"
-        android:id="@+id/aparatoTV"
-        android:layout_alignBottom="@+id/scan"
+        android:id="@+id/tvHandsetHandsetLocation"
+        android:layout_alignBottom="@+id/btnScanHandsetLocation"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:gravity="center_vertical"
-        android:layout_toEndOf="@+id/scan"
-        android:layout_toRightOf="@+id/scan" />
+        android:layout_toEndOf="@+id/btnScanHandsetLocation"
+        android:layout_toRightOf="@+id/btnScanHandsetLocation" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Grupo:"
-        android:id="@+id/grupoTV"
-        android:layout_below="@+id/scan"
-        android:layout_alignBottom="@+id/group"
+        android:id="@+id/tvGroupHandsetLocation"
+        android:layout_below="@+id/btnScanHandsetLocation"
+        android:layout_alignBottom="@+id/spinnerGroupHandsetLocation"
         android:gravity="center_vertical"
         android:textSize="16sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/aparatoTV"
-        android:layout_toLeftOf="@+id/aparatoTV" />
+        android:layout_toStartOf="@+id/tvHandsetHandsetLocation"
+        android:layout_toLeftOf="@+id/tvHandsetHandsetLocation" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/group"
-        android:layout_below="@+id/aparatoTV"
+        android:id="@+id/spinnerGroupHandsetLocation"
+        android:layout_below="@+id/tvHandsetHandsetLocation"
         android:visibility="visible"
-        android:layout_toEndOf="@+id/grupoTV"
-        android:layout_toRightOf="@+id/grupoTV" />
+        android:layout_toEndOf="@+id/tvGroupHandsetLocation"
+        android:layout_toRightOf="@+id/tvGroupHandsetLocation" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hospital:"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/grupoTV"
+        android:id="@+id/tvHospitalHandsetLocation"
+        android:layout_below="@+id/tvGroupHandsetLocation"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/group"
-        android:layout_alignBottom="@+id/hospital"
+        android:layout_toStartOf="@+id/spinnerGroupHandsetLocation"
+        android:layout_alignBottom="@+id/spinnerHospitalHandsetLocation"
         android:textSize="16sp"
         android:textIsSelectable="false"
         android:gravity="center_vertical"
-        android:layout_toLeftOf="@+id/group" />
+        android:layout_toLeftOf="@+id/spinnerGroupHandsetLocation" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hospital"
-        android:layout_below="@+id/group"
+        android:id="@+id/spinnerHospitalHandsetLocation"
+        android:layout_below="@+id/spinnerGroupHandsetLocation"
         android:visibility="visible"
-        android:layout_toEndOf="@+id/grupoTV"
-        android:layout_toRightOf="@+id/grupoTV" />
+        android:layout_toEndOf="@+id/tvGroupHandsetLocation"
+        android:layout_toRightOf="@+id/tvGroupHandsetLocation" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Area:"
-        android:id="@+id/textView5"
+        android:id="@+id/tvAreaHandsetLocation"
         android:textSize="16sp"
         android:textIsSelectable="false"
         android:gravity="center_vertical"
-        android:layout_below="@+id/textView4"
+        android:layout_below="@+id/tvHospitalHandsetLocation"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/area"
-        android:layout_toStartOf="@+id/hospital"
-        android:layout_toLeftOf="@+id/hospital" />
+        android:layout_alignBottom="@+id/spinnerAreaHandsetLocation"
+        android:layout_toStartOf="@+id/spinnerHospitalHandsetLocation"
+        android:layout_toLeftOf="@+id/spinnerHospitalHandsetLocation" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/area"
-        android:layout_below="@+id/hospital"
+        android:id="@+id/spinnerAreaHandsetLocation"
+        android:layout_below="@+id/spinnerHospitalHandsetLocation"
         android:visibility="visible"
-        android:layout_toEndOf="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4" />
+        android:layout_toEndOf="@+id/tvHospitalHandsetLocation"
+        android:layout_toRightOf="@+id/tvHospitalHandsetLocation" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Piso:"
-        android:id="@+id/textView6"
+        android:id="@+id/tvFloorHandsetLocation"
         android:textSize="16sp"
         android:textIsSelectable="false"
-        android:layout_below="@+id/textView5"
+        android:layout_below="@+id/tvAreaHandsetLocation"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
-        android:layout_alignBottom="@+id/mLocation"
-        android:layout_toStartOf="@+id/area"
-        android:layout_toLeftOf="@+id/area" />
+        android:layout_alignBottom="@+id/spinnerLocationHandsetLocation"
+        android:layout_toStartOf="@+id/spinnerAreaHandsetLocation"
+        android:layout_toLeftOf="@+id/spinnerAreaHandsetLocation" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mLocation"
-        android:layout_below="@+id/area"
-        android:layout_toEndOf="@+id/textView6"
+        android:id="@+id/spinnerLocationHandsetLocation"
+        android:layout_below="@+id/spinnerAreaHandsetLocation"
+        android:layout_toEndOf="@+id/tvFloorHandsetLocation"
         android:visibility="visible"
-        android:layout_toRightOf="@+id/textView6" />
+        android:layout_toRightOf="@+id/tvFloorHandsetLocation" />
 
     <Button
         android:layout_width="match_parent"
@@ -132,7 +132,7 @@
         android:textColor="@color/whiteColor"
         android:background="@color/blueColor"
         android:id="@+id/updateLocation"
-        android:layout_below="@+id/ref"
+        android:layout_below="@+id/etReferenceHandsetLocation"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -159,22 +159,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Referencia"
-        android:id="@+id/textView8"
-        android:layout_below="@+id/textView6"
+        android:id="@+id/tvReferenceHandsetLocation"
+        android:layout_below="@+id/tvFloorHandsetLocation"
         android:gravity="center_vertical"
         android:textSize="16sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/mLocation"
-        android:layout_toLeftOf="@+id/mLocation"
-        android:layout_alignBottom="@+id/ref" />
+        android:layout_toStartOf="@+id/spinnerLocationHandsetLocation"
+        android:layout_toLeftOf="@+id/spinnerLocationHandsetLocation"
+        android:layout_alignBottom="@+id/etReferenceHandsetLocation" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ref"
-        android:layout_below="@+id/mLocation"
-        android:layout_toRightOf="@+id/textView6"
+        android:id="@+id/etReferenceHandsetLocation"
+        android:layout_below="@+id/spinnerLocationHandsetLocation"
+        android:layout_toRightOf="@+id/tvFloorHandsetLocation"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

@@ -1,6 +1,5 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -82,7 +81,7 @@ public class HandsetRegister extends AppCompatActivity {
 
         modelsList = new ArrayList<Category>();
 
-        scan = (Button) findViewById(R.id.scan);
+        scan = (Button) findViewById(R.id.btnScanHandsetLocation);
         link = (Button) findViewById(R.id.link);
         spin = (Spinner) findViewById(R.id.spinner);
         serie = (EditText) findViewById(R.id.serie);
