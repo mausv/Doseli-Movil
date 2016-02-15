@@ -3,8 +3,10 @@ package com.exgerm.register;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +48,8 @@ public class ReportStolenActivity extends AppCompatActivity {
 
     JSONParser jsonParser = new JSONParser();
 
+    protected Boolean networkConnection = false;
+
     protected Button send;
     protected Button scan;
     protected TextView aparato;
@@ -62,6 +66,13 @@ public class ReportStolenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report_stolen);
+        if(!isOnline()){
+            Log.i("Internet status: ", "Not Available");
+            networkConnection = false;
+        } else {
+            Log.i("Internet status: ", "Available");
+            networkConnection = true;
+        }
 
         //Initialize
         send = (Button) findViewById(R.id.btnSendDelete);
@@ -81,8 +92,27 @@ public class ReportStolenActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(targetQr != "") {
-                    new DeleteMachine().execute();
+                if(targetQr != "" || token != "") {
+                    if(networkConnection == true) {
+                        new DeleteMachine().execute();
+                    } else {
+                        // Offline delete machine
+                        LoginActivity.offlineDb.execSQL("INSERT INTO DoseliBajas " +
+                                "(token, deleted_by) " +
+                                "VALUES " +
+                                "('"+ token + "', '" + LoginActivity.userId + "');");
+                        AlertDialog.Builder builder = new AlertDialog.Builder(ReportStolenActivity.this);
+                        builder.setTitle("Fuera de línea");
+                        builder.setMessage("Guardado en pendientes para mandar despues");
+                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                                finish();
+                            }
+                        });
+                        builder.show();
+                    }
                 } else {
                     AlertDialog.Builder build = new AlertDialog.Builder(ReportStolenActivity.this);
                     build.setTitle("Falta aparato");
@@ -120,7 +150,11 @@ public class ReportStolenActivity extends AppCompatActivity {
 
                 token = path.substring(path.lastIndexOf('/') + 1);
 
-                new GetProductDetails().execute();
+                if(networkConnection) {
+                    new GetProductDetails().execute();
+                } else {
+                    aparato.setText("Fuera de línea");
+                }
             }
         }
     }
@@ -222,6 +256,13 @@ public class ReportStolenActivity extends AppCompatActivity {
         }
     }
 
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null &&
+                cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -283,7 +283,6 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                      if(networkConnection == true){
                                                          new CreateNewProduct().execute();
                                                      } else if(networkConnection == false){
-                                                         long size = new File(LoginActivity.offlineDb.getPath()).length();
                                                          LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline " +
                                                                  "(token, state, device_comment, users_id, user_name, " +
                                                                  "lowBattery, changeBattery, lowLiquid, changeLiquid, " +

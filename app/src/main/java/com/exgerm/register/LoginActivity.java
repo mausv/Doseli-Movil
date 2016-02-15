@@ -179,7 +179,7 @@ public class LoginActivity extends AppCompatActivity {
 
         System.out.println("DIR: " + this.getFilesDir());
 
-        Log.d("IMEI: ", imei);
+        //Log.d("IMEI: ", imei);
 
         boolean locationEnabled = isLocationEnabled(this);
         if (locationEnabled == false) {
@@ -1288,6 +1288,9 @@ public class LoginActivity extends AppCompatActivity {
                 "area_id VARCHAR, " +
                 "location_id VARCHAR, " +
                 "reference VARCHAR);");
+        offlineDb.execSQL("CREATE TABLE IF NOT EXISTS DoseliBajas" +
+                "(id INTEGER PRIMARY KEY, token VARCHAR, " +
+                "deleted_by VARCHAR);");
 
         if(offlineDb.getVersion() != newestDbVersion) {
             while (offlineDb.getVersion() != newestDbVersion) {

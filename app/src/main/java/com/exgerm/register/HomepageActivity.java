@@ -78,6 +78,7 @@ public class HomepageActivity extends AppCompatActivity {
     public List<PendingReport> pendingArray;
     public List<PendingRegisterHandset> pendingRegisterArray;
     public List<PendingRegisterLocation> pendingLocationArray;
+    public List<PendingReportStolen> pendingReportStolenArray;
 
     //Progress Dialog
     private ProgressDialog pDialog;
@@ -96,6 +97,7 @@ public class HomepageActivity extends AppCompatActivity {
     private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
     private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine.php";
     private static String url_pending_register_location = LoginActivity.main_url + "pending_register_location.php";
+    private static String url_pending_report_stolen = LoginActivity.main_url + "pending_report_stolen.php";
     private static String url_get_checked_devices = LoginActivity.main_url + "get_checked_devices.php";
     private static String url_get_missing_check_devices = LoginActivity.main_url + "get_missing_check_devices.php";
 
@@ -381,7 +383,57 @@ public class HomepageActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            if(pendingRegisterArray.size() > 0 || pendingLocationArray.size() > 0 || pendingArray.size() > 0) {
+            if(pendingRegisterArray.size() > 0 || pendingLocationArray.size() > 0 || pendingArray.size() > 0 || pendingReportStolenArray.size() > 0) {
+                if (pendingReportStolenArray.size() > 0) {
+                    for (int i = 0; i < pendingReportStolenArray.size(); i++) {
+                        int successGD;
+                        String mid = "";
+
+                        String tokenT = pendingReportStolenArray.get(i).getToken();
+
+                        // Check for success tag
+                        // Building Parameters
+                        List<NameValuePair> paramsGetDetails = new ArrayList<NameValuePair>();
+                        paramsGetDetails.add(new BasicNameValuePair("token", tokenT));
+
+                        // Building Parameters
+                        List<NameValuePair> paramsP = new ArrayList<NameValuePair>();
+                        paramsP.add(new BasicNameValuePair("token", pendingReportStolenArray.get(i).getToken()));
+                        paramsP.add(new BasicNameValuePair("deleted_by", pendingReportStolenArray.get(i).getDeleted_by()));
+
+                        // getting JSON Object
+                        // Note that create product url accepts POST method
+                        JSONObject jsonP = jsonParser.makeHttpRequest(url_pending_report_stolen,
+                                "POST", paramsP);
+
+                        // check log cat fro response
+                        Log.d("Create Response", jsonP.toString());
+
+                        // check for success tag
+                        try {
+                            int success = jsonP.getInt("success");
+
+                            if (success == 1) {
+                                // successfully created product
+                                Log.i("Report status: ", "sent");
+
+                                // closing this screen
+                            } else {
+                                // failed to create product
+                                Log.i("Report status: ", "failed");
+                            }
+
+                            Log.i("SId: ", String.valueOf(pendingReportStolenArray.get(i).getId()));
+
+                            LoginActivity.offlineDb.delete("DoseliBajas", "id = " + String.valueOf(pendingReportStolenArray.get(i).getId()), null);
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }
+
                 if (pendingRegisterArray.size() > 0) {
                     for (int i = 0; i < pendingRegisterArray.size(); i++) {
                         int successGD;
@@ -1166,6 +1218,31 @@ public class HomepageActivity extends AppCompatActivity {
         }
     }
 
+    public List<PendingReportStolen> getReportStolen() {
+        List<PendingReportStolen> pendingReportStolen = new ArrayList<PendingReportStolen>();
+        PendingReportStolen member = null;
+        Cursor c = null;
+        try {
+            c = LoginActivity.offlineDb.rawQuery("Select * from DoseliBajas", null);
+            if (c.moveToFirst()) {
+                do {
+                    member = new PendingReportStolen();
+                    member.setId(c.getInt(c.getColumnIndex("id")));
+                    member.setToken(c.getString(c.getColumnIndex("token")));
+                    member.setDeleted_by(c.getString(c.getColumnIndex("deleted_by")));
+                    pendingReportStolen.add(member);
+                } while (c.moveToNext());
+            }
+            Log.i("PReports: ", pendingReportStolen.toString());
+            return pendingReportStolen;
+        }
+        finally {
+            if (c != null) {
+                c.close();
+            }
+        }
+    }
+
     public boolean isOnline() {
         ConnectivityManager cm =
                 (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -1262,6 +1339,7 @@ public class HomepageActivity extends AppCompatActivity {
                     pendingArray = getAll();
                     pendingRegisterArray = getRegisterHandset();
                     pendingLocationArray = getRegisterLocation();
+                    pendingReportStolenArray = getReportStolen();
                 /*for(int i = 0; i < pendingArray.size(); i++){
                     Log.i("0: ", String.valueOf(pendingArray.get(i).getToken()));
                 }*/
