@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hospitales Totales: "
-        android:id="@+id/textView9"
+        android:id="@+id/tvTotalHospitalsAdmin"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -23,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aparatos Totales: "
-        android:id="@+id/textView10"
-        android:layout_below="@+id/textView9"
+        android:id="@+id/tvTotalHandsetsAdmin"
+        android:layout_below="@+id/tvTotalHospitalsAdmin"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:padding="2dp"
@@ -35,27 +35,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" "
-        android:id="@+id/textViewHospitalsAdmin"
-        android:layout_alignTop="@+id/textView9"
-        android:layout_toRightOf="@+id/textView9"
-        android:layout_toEndOf="@+id/textView9"
+        android:id="@+id/tvTotHspValAdmin"
+        android:layout_alignTop="@+id/tvTotalHospitalsAdmin"
+        android:layout_toRightOf="@+id/tvTotalHospitalsAdmin"
+        android:layout_toEndOf="@+id/tvTotalHospitalsAdmin"
         android:padding="2dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" "
-        android:id="@+id/textViewHandsetsAdmin"
-        android:layout_alignTop="@+id/textView10"
-        android:layout_alignLeft="@+id/textViewHospitalsAdmin"
-        android:layout_alignStart="@+id/textViewHospitalsAdmin"
+        android:id="@+id/tvTotHandsetsValAdmin"
+        android:layout_alignTop="@+id/tvTotalHandsetsAdmin"
+        android:layout_alignLeft="@+id/tvTotHspValAdmin"
+        android:layout_alignStart="@+id/tvTotHspValAdmin"
         android:padding="2dp" />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@android:id/list"
-        android:layout_below="@+id/textView10"
+        android:layout_below="@+id/tvTotalHandsetsAdmin"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -55,6 +55,7 @@
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="darkBlueColor">#003399</color>
+    <color name="darkCyan">#0097A7</color>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
@@ -77,6 +78,11 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="lightCyan">#00BAD2</color>
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -346,12 +352,15 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="cb_error">Errores</string>
+    <string name="cb_no_error">Funciona</string>
     <string name="comment">COMENTARIO</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="error1">Daño Físico</string>
     <string name="error2">Batería Baja</string>
     <string name="error3">Falta Liquido</string>
+    <string name="handset_id">APARATO</string>
     <string name="handsets">Lista de Aparatos</string>
     <string name="hello_world">Hello world!</string>
     <string name="logout_title">Cerrar Sesión</string>
@@ -359,6 +368,7 @@
     <string name="maint2">Limpieza de Aparato</string>
     <string name="pending">Enviar Pendientes</string>
     <string name="resumen">Resumen</string>
+    <string name="scan_button">Scan</string>
     <string name="send">Enviar Reporte</string>
     <string name="send_delete">Enviar Baja</string>
     <string name="solucion1">Reparación</string>
@@ -436,6 +446,8 @@
         <!-- Dark Indigo -->
         <item name="colorAccent">#00B0FF</item>
         <!-- Blue -->
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="buttonStyle">@style/RobotoButtonStyle</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
@@ -1480,6 +1492,14 @@
     </style>
     <style name="ProgressBar.Doseli_theme" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_doseli_theme</item>
+    </style>
+    <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">inconsolata</item>
+    </style>
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">inconsolata</item>
     </style>
     <!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>

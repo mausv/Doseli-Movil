@@ -10,61 +10,204 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2127463d-6e29-4f01-89a8-3bd8c35be6b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/PendingReportStolen.java" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\.idea\dictionaries\mausv.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\.idea\inspectionProfiles\Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$CheckedFormatter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$CheckedFormatter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetMissing.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetMissing.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$ListItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$ListItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterHandset.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterHandset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingRegisterLocation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingReport.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$PendingReport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-android-1.3.0-54b0bd133ab7684625464aee61188ae7690090f5.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-applinks-1.3.0-bfda66b3e9864a16aa0c68559d16e3894fcd4194.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-tasks-1.3.0-5fd4487c6f1e89815ec45d082d4b9538fb0f737d.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\doseli 1.5.0.apk" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdmHospital.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdmHospital.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdmHospitalAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdmHospitalAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdminActivity$GetAdminObjects.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdminActivity$GetAdminObjects.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdminActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/AdminActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/exgerm/register/ApplicationTest.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/exgerm/register/ApplicationTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/exgerm/register/test/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/exgerm/register/test/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/CheckNetwork.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/CheckNetwork.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/FullHandsetReportAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/FullHandsetReportAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/FullReportDetailView$GetHandsetHistory.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/FullReportDetailView$GetHandsetHistory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/FullReportDetailView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/FullReportDetailView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$CheckQR$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$CheckQR$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$CheckQR.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$CheckQR.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetAreas.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetAreas.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetGroups.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetLocations.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$GetLocations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$SetLocation$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$SetLocation$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$SetLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation$SetLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$CheckQR$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$CheckQR$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$CheckQR.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$CheckQR.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$GetCategories.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$GetCategories.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$RegisterQR$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$RegisterQR$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$RegisterQR.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister$RegisterQR.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HandsetRegister.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets$GetHandsets.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets$GetHandsets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets$onListItemClick.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets$onListItemClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Handsets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$CheckedFormatter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$CheckedFormatter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetMissing.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetMissing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetReports.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$ListItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$ListItemClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$PendingRegisterHandset.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$PendingRegisterHandset.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$PendingRegisterLocation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$PendingRegisterLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$PendingReport.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$PendingReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageDrawerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageDrawerAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetChallenge.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetChallenge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGeo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGeo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGroups.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetOffModels.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetOffModels.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$StopGps.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$StopGps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$DeleteMachine$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$DeleteMachine$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$DeleteMachine.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$DeleteMachine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$GetProductDetails$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity$GetProductDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/ReportStolenActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/MissingAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/MissingAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/design/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Register$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Register$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Register.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/Register.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$DeleteMachine$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$DeleteMachine$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$DeleteMachine.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$DeleteMachine.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$GetProductDetails$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity$GetProductDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportStolenActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportsAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ReportsAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ServiceHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/ServiceHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$1$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$1$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$GenerateStolenReport$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$GenerateStolenReport$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$GenerateStolenReport.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$GenerateStolenReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$GetMachineDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView$GetMachineDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/StatusDetailView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitals$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitals$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitals$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitals$GetHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitalsAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UserHospitalsAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/release/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/release/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-release.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-release.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/exgerm/register/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/design/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/exgerm/register/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/exgerm/register/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/google/zxing/client/android/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/google/zxing/client/android/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_admin.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_admin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_full_report_detail_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_full_report_detail_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_handset_location.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_handset_location.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_handset_register.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_handset_register.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_homepage.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_homepage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_status_detail_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_status_detail_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_update_status.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/activity_update_status.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/custom_hospital_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/custom_hospital_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/custom_missing_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/layout/custom_missing_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/release/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/release/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -80,49 +223,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0">
-                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ReportStolenActivity.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.6487965">
-                    <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
-                    <folding>
-                      <element signature="e#2861#4782#0" expanded="true" />
-                      <element signature="e#3776#4086#0" expanded="true" />
-                      <element signature="e#4085#4086#0" expanded="true" />
-                      <element signature="e#4456#4704#0" expanded="true" />
-                      <element signature="e#4703#4704#0" expanded="true" />
-                      <element signature="e#4781#4782#0" expanded="true" />
-                      <element signature="method#onPostExecute#0;class#GetProductDetails#0;class#ReportStolenActivity#0" expanded="false" />
-                      <element signature="method#onPostExecute#0;class#DeleteMachine#0;class#ReportStolenActivity#0" expanded="false" />
-                      <element signature="method#isOnline#0;class#ReportStolenActivity#0" expanded="false" />
-                      <element signature="method#onCreateOptionsMenu#0;class#ReportStolenActivity#0" expanded="false" />
-                      <element signature="method#onOptionsItemSelected#0;class#ReportStolenActivity#0" expanded="false" />
-                      <element signature="e#9696#9754#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -136,15 +236,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3021978">
-              <caret line="1222" column="42" selection-start-line="1222" selection-start-column="42" selection-end-line="1222" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1294" column="36" selection-start-line="1294" selection-start-column="35" selection-end-line="1294" selection-end-column="36" />
               <folding>
                 <element signature="e#44473#44488#0" expanded="true" />
                 <element signature="e#46592#46613#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42673993">
+              <caret line="1206" column="59" selection-start-line="1206" selection-start-column="59" selection-end-line="1206" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,6 +279,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\mausv\Documents\Git\Doseli-Movil\key\Key.jks" />
+    <option name="KEY_ALIAS" value="doseli" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1622,9 +1749,9 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/PendingReportStolen.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -1666,6 +1793,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Doseli-Movil" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1788,6 +1919,10 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="TC6SB6857TORS4Y9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/key/Key.jks" />
+    <property name="ExportApk.ApkPath" value="C:\Users\mausv\Documents\Git\Doseli-Movil\app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1953,6 +2088,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2127463d-6e29-4f01-89a8-3bd8c35be6b4" name="Default" comment="" />
@@ -1960,6 +2098,13 @@
       <option name="number" value="Default" />
       <updated>1455545678607</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implemented offline use for ReportStolenActivity.">
+      <created>1455571261395</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1455571261395</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1997,6 +2142,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -2009,14 +2162,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42673993">
@@ -2068,10 +2213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0904348">
-          <caret line="126" column="4" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2097,13 +2242,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.53234357">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3021978">
-          <caret line="1222" column="42" selection-start-line="1222" selection-start-column="42" selection-end-line="1222" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1294" column="36" selection-start-line="1294" selection-start-column="35" selection-end-line="1294" selection-end-column="36" />
           <folding>
             <element signature="e#44473#44488#0" expanded="true" />
             <element signature="e#46592#46613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42673993">
+          <caret line="1206" column="59" selection-start-line="1206" selection-start-column="59" selection-end-line="1206" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

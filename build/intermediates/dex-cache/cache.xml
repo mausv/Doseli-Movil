@@ -6,21 +6,21 @@
         jumboMode="false"
         revision="22.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0-26785ca2b4c1c9423c5892ef8fc546d3a1104a64.jar" />
+        <dex dex="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-tasks-1.4.0-26785ca2b4c1c9423c5892ef8fc546d3a1104a64.jar" />
     </item>
     <item
         jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.4.0\cc174c559b5177982887bf6e1b76003aebad9516\bolts-android-1.4.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="cc174c559b5177982887bf6e1b76003aebad9516">
-        <dex dex="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\bolts-android-1.4.0-2c3563308e0979e33631de70435d2eb033f46122.jar" />
+        <dex dex="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-android-1.4.0-2c3563308e0979e33631de70435d2eb033f46122.jar" />
     </item>
     <item
         jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0-713741619fdd962be52fefe458c4679018a60fa6.jar" />
+        <dex dex="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-applinks-1.4.0-713741619fdd962be52fefe458c4679018a60fa6.jar" />
     </item>
 
 </items>

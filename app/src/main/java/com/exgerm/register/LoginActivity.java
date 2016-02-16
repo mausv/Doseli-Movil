@@ -1206,6 +1206,7 @@ public class LoginActivity extends AppCompatActivity {
             pDialog.setMax(100);
             pDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
             pDialog.setCancelable(true);
+            pDialog.setProgressNumberFormat(null);
             pDialog.show();
 
         }
