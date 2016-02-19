@@ -398,12 +398,13 @@ public class HandsetLocation extends AppCompatActivity {
 
                     } else if (networkAvailable == false) {
                         LoginActivity.offlineDb.execSQL("INSERT INTO DoseliPosicion " +
-                                "(token, group_id, hospital_id, area_id, location_id, reference) " +
+                                "(token, group_id, hospital_id, area_id, location_id, reference, location_set_by) " +
                                 "VALUES ('" + uuid + "', '" + groupSelectedId + "', " +
                                 "'" + hospitalSelectedId + "', " +
                                 "'" + areaSelectedId + "', " +
                                 "'" + locationSelectedId + "', " +
-                                "'" + roomSelected + "')");
+                                "'" + roomSelected + "', "+
+                                "'" + LoginActivity.userId + "')");
                         AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
                         builder.setTitle("Fuera de linea");
                         builder.setMessage("Guardado en pendientes para mandar despues");
@@ -844,6 +845,7 @@ public class HandsetLocation extends AppCompatActivity {
             params.add(new BasicNameValuePair("area_id", areaSelectedId));
             params.add(new BasicNameValuePair("location", locationSelected));
             params.add(new BasicNameValuePair("location_id", locationSelectedId));
+            params.add(new BasicNameValuePair("location_set_by", LoginActivity.userId));
 
             if(!roomSelected.equals("")) {
                 Log.i("Added", "r");

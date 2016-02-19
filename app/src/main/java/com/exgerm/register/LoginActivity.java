@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
     public static String main_url = "http://192.168.1.145/doseli/";
 
-    public static int newestDbVersion = 1;
+    public static int newestDbVersion = 2;
 
     File fileDir;
 
@@ -195,17 +195,8 @@ public class LoginActivity extends AppCompatActivity {
 
         groupsList = new ArrayList<>();
 
-        try {
-            /**
-             * Wait for an appropriate internet connection
-             * */
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
-
-        if (isOnline() == false) {
+        if (!isOnline()) {
             Log.i("Internet status: ", "Not Available");
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setMessage("Esta aplicacion necesita internet como minimo para el inicio de sesión.");
@@ -221,6 +212,15 @@ public class LoginActivity extends AppCompatActivity {
             Log.i("Internet status: ", "Available");
 
             new CheckInternetConnection().execute();
+        }
+
+        try {
+            /**
+             * Wait for an appropriate internet connection
+             * */
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
         //Initialize LocationManager and LocationListener
@@ -1301,6 +1301,10 @@ public class LoginActivity extends AppCompatActivity {
                         offlineDb.execSQL("ALTER TABLE DoseliOffline ADD trayClean VARCHAR DEFAULT 0");
                         offlineDb.execSQL("ALTER TABLE DoseliOffline ADD machineClean VARCHAR DEFAULT 0");
                         offlineDb.setVersion(1);
+                        break;
+                    case 1:
+                        offlineDb.execSQL("ALTER TABLE DoseliPosicion ADD location_set_by VARCHAR DEFAULT 34");
+                        offlineDb.setVersion(2);
                         break;
                 }
             }
