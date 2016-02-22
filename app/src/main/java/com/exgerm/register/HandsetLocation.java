@@ -23,15 +23,15 @@ import android.widget.TextView;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HandsetLocation extends AppCompatActivity {
@@ -902,6 +902,20 @@ public class HandsetLocation extends AppCompatActivity {
                 dialog.show();
 
                 sLight = false;
+            } else if (success == 3) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
+                builder.setMessage("No tienes permiso para realizar esta acción");
+                builder.setTitle("Falta permiso");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        finish();
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         }
     }
