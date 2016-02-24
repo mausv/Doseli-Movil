@@ -18,6 +18,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.Settings;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -45,6 +46,15 @@ import com.github.mikephil.charting.data.BarEntry;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+import org.joda.time.LocalDate;
+import org.joda.time.LocalDateTime;
+import org.joda.time.LocalTime;
+import org.joda.time.Months;
+import org.joda.time.Years;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -176,6 +186,15 @@ public class LoginActivity extends AppCompatActivity {
         initializeDatabase();
 
         fileDir = getFilesDir();
+        System.out.println("File Dir: " + Environment.getExternalStorageDirectory().getPath());
+
+        File folder = new File (Environment.getExternalStorageDirectory() + "/doselireports");
+        folder.mkdir();
+
+        if(!(Thread.getDefaultUncaughtExceptionHandler() instanceof CustomExceptionHandler)) {
+            Thread.setDefaultUncaughtExceptionHandler(new CustomExceptionHandler(
+                    Environment.getExternalStorageDirectory() + "/doselireports", main_url + "upload_crash_report.php"));
+        }
 
         System.out.println("DIR: " + this.getFilesDir());
 
