@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -59,8 +60,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -134,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.145/doseli/";
+    public static String main_url = "http://192.168.1.148/doseli/";
 
     public static int newestDbVersion = 2;
 
@@ -193,7 +196,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(!(Thread.getDefaultUncaughtExceptionHandler() instanceof CustomExceptionHandler)) {
             Thread.setDefaultUncaughtExceptionHandler(new CustomExceptionHandler(
-                    Environment.getExternalStorageDirectory() + "/doselireports", main_url + "upload_crash_report.php"));
+                    Environment.getExternalStorageDirectory() + "/doselireports", main_url + "upload_crash_report.php", this));
         }
 
         System.out.println("DIR: " + this.getFilesDir());
@@ -1025,6 +1028,35 @@ public class LoginActivity extends AppCompatActivity {
 
             if (result == 1) {
                 Log.i("Internet status: ", "Available");
+
+                SharedPreferences sharedPref = LoginActivity.this.getSharedPreferences("DoseliCrash", MODE_PRIVATE);
+                boolean crashState = sharedPref.getBoolean("crash", false);
+                if(crashState) {
+                    String crashInfo = sharedPref.getString("filename", "defaultText");
+                    StringBuilder text = new StringBuilder();
+                    File file = new File(Environment.getExternalStorageDirectory() + "/doselireports", crashInfo);
+
+                    try {
+                        BufferedReader br = new BufferedReader(new FileReader(file));
+                        String line;
+
+                        while ((line = br.readLine()) != null) {
+                            text.append(line);
+                            text.append('\n');
+                        }
+                        br.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    CustomExceptionHandler crashReport = new CustomExceptionHandler(
+                            Environment.getExternalStorageDirectory() + "/doselireports", main_url + "upload_crash_report.php", LoginActivity.this);
+                    crashReport.sendReport(crashInfo, text.toString());
+
+                    Log.d("CrashState", text.toString());
+                    Log.d("CrashState", crashInfo);
+                }
+                Log.d("CrashState", String.valueOf(crashState));
 
                 getCurrentVer();
 

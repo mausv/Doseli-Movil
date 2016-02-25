@@ -1,5 +1,7 @@
 package com.exgerm.register;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.text.format.Time;
 import android.util.Log;
@@ -40,18 +42,20 @@ public class CustomExceptionHandler implements Thread.UncaughtExceptionHandler {
     private String filename;
     private String stacktrace;
 
+    private Context contextClass;
+
     /*
      * if any of the parameters is null, the respective functionality
      * will not be used
      */
-    public CustomExceptionHandler(String localPath, String url) {
+    public CustomExceptionHandler(String localPath, String url, Context context) {
         this.localPath = localPath;
         this.url = url;
         this.defaultUEH = Thread.getDefaultUncaughtExceptionHandler();
+        this.contextClass = context;
     }
 
     public void uncaughtException(Thread t, Throwable e) {
-        Calendar c = Calendar.getInstance();
         LocalDateTime date = new LocalDateTime();
         DateTimeFormatter dateFormat = DateTimeFormat
                 .forPattern("dd-MM-yyyy HH-mm-ss");
@@ -63,17 +67,28 @@ public class CustomExceptionHandler implements Thread.UncaughtExceptionHandler {
         printWriter.close();
         filename = "report"+ timestamp + ".stacktrace";
 
+
         if (localPath != null) {
             writeToFile(stacktrace, filename);
+            writeToSharedPrefs(filename);
             System.out.println("Name: " + filename);
         }
-        if (url != null) {
+        /*if (url != null) {
             Log.d("SendToServer", url);
             Log.d("SendToServer", stacktrace);
             new SendToServer().execute();
-        }
+        }*/
 
         defaultUEH.uncaughtException(t, e);
+    }
+
+    private void writeToSharedPrefs(String filename) {
+
+        SharedPreferences pref = contextClass.getSharedPreferences("DoseliCrash", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean("crash", true);
+        editor.putString("filename", filename);
+        editor.apply();
     }
 
     private void writeToFile(String stacktrace, String filename) {
@@ -88,9 +103,16 @@ public class CustomExceptionHandler implements Thread.UncaughtExceptionHandler {
         }
     }
 
+    public void sendReport(String filename, String stacktrace) {
+        this.filename = filename;
+        this.stacktrace = stacktrace;
+        new SendToServer().execute();
+    }
+
     class SendToServer extends AsyncTask<Void, Void, Void> {
         @Override
-        protected Void doInBackground(Void... params) {DefaultHttpClient httpClient = new DefaultHttpClient();
+        protected Void doInBackground(Void... params) {
+            DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpPost httpPost = new HttpPost(url);
             List<NameValuePair> nvps = new ArrayList<NameValuePair>();
             nvps.add(new BasicNameValuePair("filename", filename));
@@ -102,6 +124,10 @@ public class CustomExceptionHandler implements Thread.UncaughtExceptionHandler {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            SharedPreferences pref = contextClass.getSharedPreferences("DoseliCrash", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putBoolean("crash", false);
+            editor.apply();
             return null;
         }
     }

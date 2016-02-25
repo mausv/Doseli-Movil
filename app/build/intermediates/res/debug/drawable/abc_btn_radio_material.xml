@@ -15,6 +15,6 @@
 -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/abc_btn_radio_to_on_mtrl_015" />
-    <item android:drawable="@drawable/abc_btn_radio_to_on_mtrl_000" />
-</selector><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/lmp-mr1-supportlib-release/frameworks/support/v7/appcompat/res/drawable/abc_btn_radio_material.xml --><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_radio_material.xml -->
+    <item android:state_checked="true" android:drawable="@drawable/abc_btn_radio_on_mtrl" />
+    <item android:drawable="@drawable/abc_btn_radio_off_mtrl" />
+</selector><!-- From: file:/C:/Users/mausv/Documents/Git/Doseli-Movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_btn_radio_material.xml -->

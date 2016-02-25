@@ -1,16 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
     defaultConfig {
         applicationId "com.exgerm.register"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 16
-        versionName "1.5.2"
+        versionCode 17
+        versionName "1.5.3"
     }
     buildTypes {
         release {
