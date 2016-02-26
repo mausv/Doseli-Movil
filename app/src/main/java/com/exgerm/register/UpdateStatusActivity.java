@@ -67,8 +67,8 @@ public class UpdateStatusActivity extends AppCompatActivity {
     protected String valTrayClean = "0";
     protected String valHandsetClean = "0";
     protected String mid = "0";
-    protected String valHandsetStatus;
-    protected String valHandsetStatus2;
+    protected String valHandsetStatus = "";
+    protected String valHandsetStatus2 = "-1";
 
     protected View.OnClickListener checkBoxListener1;
     protected View.OnClickListener checkBoxListener2;
@@ -179,12 +179,32 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                              @Override
                                              public void onClick(View v) {
 
+                                                 Boolean verifyStatus = false;
+
                                                  //Get the status the user entered and convert to string
                                                  comment = tvComment.getText().toString();
-                                                 if (valHandsetStatus.equals("Funciona")){
-                                                     valHandsetStatus2 = "1";
-                                                 } else if (valHandsetStatus.equals("Errores")){
-                                                     valHandsetStatus2 = "0";
+                                                 if(!valHandsetStatus.equals("")) {
+                                                     if (valHandsetStatus.equals("Funciona")) {
+                                                         valHandsetStatus2 = "1";
+                                                     } else if (valHandsetStatus.equals("Errores")) {
+                                                         valHandsetStatus2 = "0";
+                                                     }
+                                                     verifyStatus = true;
+                                                 } else {
+                                                     //There was an error
+                                                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
+                                                     builder.setMessage("No puedes dejar el estado sin contestar");
+                                                     builder.setTitle("Volver a intentar");
+                                                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                         @Override
+                                                         public void onClick(DialogInterface dialogInterface, int which) {
+                                                             //Close the dialog
+                                                             dialogInterface.dismiss();
+                                                         }
+                                                     });
+
+                                                     AlertDialog dialog = builder.create();
+                                                     dialog.show();
                                                  }
                                                  String id = tvHandsetName.getText().toString();
 
@@ -222,23 +242,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                      AlertDialog dialog = builder.create();
                                                      dialog.show();
 
-                                                 } else if (valHandsetStatus2.isEmpty()) {
-                                                     //There was an error
-                                                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                                                     builder.setMessage("No puedes dejar el valHandsetStatus2 sin contestar");
-                                                     builder.setTitle("Volver a intentar");
-                                                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                         @Override
-                                                         public void onClick(DialogInterface dialogInterface, int which) {
-                                                             //Close the dialog
-                                                             dialogInterface.dismiss();
-                                                         }
-                                                     });
-
-                                                     AlertDialog dialog = builder.create();
-                                                     dialog.show();
-
-                                                 } else {
+                                                 } else if(verifyStatus) {
 
                                                      if (comment.isEmpty()) {
                                                          comment = "";

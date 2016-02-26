@@ -10,448 +10,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2127463d-6e29-4f01-89a8-3bd8c35be6b4" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.3-ffddd7c6cc9cb2f00a9d64273006ffa392d76a1a.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\Parse-1.8.0-0ec14fcf5e8829231b7963df38512f0c28a67d35.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-558a8aeea3baf1fdc8723042dd8f9e5459a354d7.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-8f4efbb31aef1d39de833c82f4e1f641f6521d44.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-a00dd0f365f54e3abab1f645f1fbf688f649c984.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\classes-dedeaf3c9fb5f5ec39799bdf6ddc8fae2a5cc8c9.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\core-3.2.0-4a510bc76e0de627d459f26de21a796e9866118c.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-a9e7c13d7b9fdf81aa1fd3e002c87a39f544766a.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\joda-time-2.7-f2697dfe71efdb767b1a2c85ca77d1e8b2779ef9.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-55524048caacbf7959989d3f0bc20f957a0d5d1b.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\anim\fab_in.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\anim\fab_out.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\anim\snackbar_in.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\anim\snackbar_out.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-hdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-hdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-hdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-hdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-mdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-mdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-mdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-ldrtl-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-mdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xhdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxhdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable-xxxhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable\fab_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\drawable\snackbar_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\layout-sw600dp\layout_snackbar.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\layout\abc_simple_dropdown_hint.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\layout\layout_snackbar.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\layout\layout_snackbar_include.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\layout\layout_tab_icon.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\layout\layout_tab_text.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-h720dp\values-h720dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-hdpi\values-hdpi.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-large\values-large.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-sw600dp\values-sw600dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-w360dp\values-w360dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-w480dp\values-w480dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-w500dp\values-w500dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-w600dp\values-w600dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-w720dp\values-w720dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-xlarge-land\values-xlarge-land.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\res\debug\values-xlarge\values-xlarge.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$CheckInternetConnection$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$CheckInternetConnection$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$CheckInternetConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$CheckInternetConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetChallenge.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetChallenge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitalFrequence.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitalFrequence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetOffModels.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetOffModels.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$StopGps.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$StopGps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\MPAndroidChart-v2.1.3-ffddd7c6cc9cb2f00a9d64273006ffa392d76a1a.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\Parse-1.8.0-0ec14fcf5e8829231b7963df38512f0c28a67d35.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-558a8aeea3baf1fdc8723042dd8f9e5459a354d7.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-8f4efbb31aef1d39de833c82f4e1f641f6521d44.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-a00dd0f365f54e3abab1f645f1fbf688f649c984.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\classes-dedeaf3c9fb5f5ec39799bdf6ddc8fae2a5cc8c9.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\core-3.2.0-4a510bc76e0de627d459f26de21a796e9866118c.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-a9e7c13d7b9fdf81aa1fd3e002c87a39f544766a.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\joda-time-2.7-f2697dfe71efdb767b1a2c85ca77d1e8b2779ef9.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-55524048caacbf7959989d3f0bc20f957a0d5d1b.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$CheckInternetConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetChallenge.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetChallenge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGeo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGeo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetGroups.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetLatestVersion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetOffModels.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$GetOffModels.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$StopGps.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$StopGps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity$UpdateApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$CreateNewProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity$GetProductDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/UpdateStatusActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/UpdateStatusActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/exgerm/register/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_title_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_title_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_up_container.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_up_container.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_view_list_nav_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_view_list_nav_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_bar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_close_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_alert_dialog_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_alert_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color-v11/abc_background_cache_hint_selector_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color-v11/abc_background_cache_hint_selector_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_borderless_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_borderless_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_check_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_check_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_default_mtrl_shape.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_default_mtrl_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_radio_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_radio_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_internal_bg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_internal_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_top_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_top_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_dialog_material_background_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_dialog_material_background_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_dialog_material_background_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_dialog_material_background_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_dialog_title_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_dialog_title_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_edit_text_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_edit_text_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_expanded_menu_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_expanded_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_out.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_grow_fade_in_from_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_grow_fade_in_from_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_checkbox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_radio.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_popup_enter.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_popup_enter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_popup_exit.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_popup_exit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_popup_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_ratingbar_full_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_ratingbar_full_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_content_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple_overlay_action_mode.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple_overlay_action_mode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_toolbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_toolbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_dropdown_item_icons_2line.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_search_url_text.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_search_url_text.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_select_dialog_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_select_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_shrink_fade_out_from_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_shrink_fade_out_from_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_top.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_top.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_spinner_textfield_background_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_spinner_textfield_background_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_switch_thumb_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_switch_thumb_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_tab_indicator_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_tab_indicator_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_textfield_search_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_textfield_search_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item_header.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item_header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item_separator.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item_separator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item_subheader.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_item_subheader.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/design_navigation_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_media_action.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_media_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_media_cancel_action.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_media_cancel_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_big_media.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_big_media.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_big_media_narrow.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_big_media_narrow.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_lines.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_lines.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_media.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_media.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_part_chronometer.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_part_chronometer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_part_time.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/notification_template_part_time.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/select_dialog_item_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/select_dialog_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/select_dialog_multichoice_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/select_dialog_multichoice_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/select_dialog_singlechoice_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/select_dialog_singlechoice_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/support_simple_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/switch_thumb_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/switch_thumb_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/switch_thumb_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/switch_thumb_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-af/values-af.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-am/values-am.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-am/values-am.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ar/values-ar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bg/values-bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bn-rBD/values-bn-rBD.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bn-rBD/values-bn-rBD.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ca/values-ca.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ca/values-ca.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-cs/values-cs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-da/values-da.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-da/values-da.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-de/values-de.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-de/values-de.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-el/values-el.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-el/values-el.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rGB/values-en-rGB.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rGB/values-en-rGB.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rIN/values-en-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rIN/values-en-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es-rUS/values-es-rUS.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es/values-es.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-et-rEE/values-et-rEE.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-et-rEE/values-et-rEE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-eu-rES/values-eu-rES.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-eu-rES/values-eu-rES.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fa/values-fa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fi/values-fi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr-rCA/values-fr-rCA.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr-rCA/values-fr-rCA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr/values-fr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-gl-rES/values-gl-rES.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-gl-rES/values-gl-rES.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hi/values-hi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hr/values-hr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hu/values-hu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hy-rAM/values-hy-rAM.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hy-rAM/values-hy-rAM.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-in/values-in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-in/values-in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-is-rIS/values-is-rIS.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-is-rIS/values-is-rIS.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-it/values-it.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-it/values-it.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-iw/values-iw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ja/values-ja.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ka-rGE/values-ka-rGE.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ka-rGE/values-ka-rGE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kk-rKZ/values-kk-rKZ.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kk-rKZ/values-kk-rKZ.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-km-rKH/values-km-rKH.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-km-rKH/values-km-rKH.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kn-rIN/values-kn-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kn-rIN/values-kn-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ko/values-ko.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ky-rKG/values-ky-rKG.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ky-rKG/values-ky-rKG.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-land/values-land.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-land/values-land.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lo-rLA/values-lo-rLA.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lo-rLA/values-lo-rLA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lt/values-lt.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lt/values-lt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lv/values-lv.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lv/values-lv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mk-rMK/values-mk-rMK.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mk-rMK/values-mk-rMK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ml-rIN/values-ml-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ml-rIN/values-ml-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mn-rMN/values-mn-rMN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mn-rMN/values-mn-rMN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mr-rIN/values-mr-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mr-rIN/values-mr-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ms-rMY/values-ms-rMY.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ms-rMY/values-ms-rMY.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-my-rMM/values-my-rMM.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-my-rMM/values-my-rMM.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nb/values-nb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ne-rNP/values-ne-rNP.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ne-rNP/values-ne-rNP.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nl/values-nl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pl/values-pl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-port/values-port.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-port/values-port.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt-rPT/values-pt-rPT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt/values-pt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ro/values-ro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ru/values-ru.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-si-rLK/values-si-rLK.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-si-rLK/values-si-rLK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sk/values-sk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sl/values-sl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sl/values-sl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sr/values-sr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sr/values-sr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sv/values-sv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sw/values-sw.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sw/values-sw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ta-rIN/values-ta-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ta-rIN/values-ta-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-te-rIN/values-te-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-te-rIN/values-te-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-th/values-th.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-th/values-th.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tl/values-tl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tr/values-tr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uk/values-uk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uk/values-uk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ur-rPK/values-ur-rPK.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ur-rPK/values-ur-rPK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uz-rUZ/values-uz-rUZ.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uz-rUZ/values-uz-rUZ.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v12/values-v12.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v12/values-v12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v17/values-v17.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v17/values-v17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v18/values-v18.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v18/values-v18.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v21/values-v21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-vi/values-vi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rCN/values-zh-rCN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rHK/values-zh-rHK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rTW/values-zh-rTW.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zu/values-zu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -484,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="732" column="20" selection-start-line="732" selection-start-column="20" selection-end-line="732" selection-end-column="20" />
+              <caret line="571" column="58" selection-start-line="571" selection-start-column="58" selection-end-line="571" selection-end-column="58" />
               <folding>
                 <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
@@ -497,9 +131,6 @@
                 <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
                 <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-                <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-                <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-                <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="e#14471#14495#0" expanded="false" />
                 <element signature="e#15122#15144#0" expanded="false" />
                 <element signature="e#16806#16830#0" expanded="false" />
@@ -509,7 +140,6 @@
                 <element signature="e#22522#22571#0" expanded="false" />
                 <element signature="e#25827#25849#0" expanded="false" />
                 <element signature="e#27972#28046#0" expanded="false" />
-                <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -530,22 +160,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PendingRegisterHandset.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/PendingRegisterHandset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PendingReport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/PendingReport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="e#629#630#0" expanded="false" />
+                <element signature="e#661#662#0" expanded="false" />
+                <element signature="e#711#712#0" expanded="false" />
+                <element signature="e#753#754#0" expanded="false" />
+                <element signature="e#792#793#0" expanded="false" />
+                <element signature="e#827#828#0" expanded="false" />
+                <element signature="e#883#884#0" expanded="false" />
+                <element signature="e#931#932#0" expanded="false" />
+                <element signature="e#971#972#0" expanded="false" />
+                <element signature="e#1007#1008#0" expanded="false" />
+                <element signature="e#1065#1066#0" expanded="false" />
+                <element signature="e#1115#1116#0" expanded="false" />
+                <element signature="e#1152#1153#0" expanded="false" />
+                <element signature="e#1185#1186#0" expanded="false" />
+                <element signature="e#1237#1238#0" expanded="false" />
+                <element signature="e#1281#1282#0" expanded="false" />
+                <element signature="e#1321#1322#0" expanded="false" />
+                <element signature="e#1357#1358#0" expanded="false" />
+                <element signature="e#1415#1416#0" expanded="false" />
+                <element signature="e#1465#1466#0" expanded="false" />
+                <element signature="e#1501#1502#0" expanded="false" />
+                <element signature="e#1533#1534#0" expanded="false" />
+                <element signature="e#1583#1584#0" expanded="false" />
+                <element signature="e#1625#1626#0" expanded="false" />
+                <element signature="e#1664#1665#0" expanded="false" />
+                <element signature="e#1699#1700#0" expanded="false" />
+                <element signature="e#1755#1756#0" expanded="false" />
+                <element signature="e#1803#1804#0" expanded="false" />
+                <element signature="e#1844#1845#0" expanded="false" />
+                <element signature="e#1881#1882#0" expanded="false" />
+                <element signature="e#1941#1942#0" expanded="false" />
+                <element signature="e#1993#1994#0" expanded="false" />
+                <element signature="e#2034#2035#0" expanded="false" />
+                <element signature="e#2071#2072#0" expanded="false" />
+                <element signature="e#2131#2132#0" expanded="false" />
+                <element signature="e#2183#2184#0" expanded="false" />
+                <element signature="e#2222#2223#0" expanded="false" />
+                <element signature="e#2257#2258#0" expanded="false" />
+                <element signature="e#2313#2314#0" expanded="false" />
+                <element signature="e#2361#2362#0" expanded="false" />
+                <element signature="e#2397#2398#0" expanded="false" />
+                <element signature="e#2429#2430#0" expanded="false" />
+                <element signature="e#2479#2480#0" expanded="false" />
+                <element signature="e#2521#2522#0" expanded="false" />
+                <element signature="e#2554#2555#0" expanded="false" />
+                <element signature="e#2582#2583#0" expanded="false" />
+                <element signature="e#2625#2626#0" expanded="false" />
+                <element signature="e#2659#2660#0" expanded="false" />
+                <element signature="e#2686#2687#0" expanded="false" />
+                <element signature="e#2716#2717#0" expanded="false" />
+                <element signature="e#2748#2749#0" expanded="false" />
+                <element signature="e#2781#2782#0" expanded="false" />
+                <element signature="e#2813#2814#0" expanded="false" />
+                <element signature="e#2841#2842#0" expanded="false" />
+                <element signature="e#2883#2884#0" expanded="false" />
+                <element signature="e#2917#2918#0" expanded="false" />
+                <element signature="e#2958#2959#0" expanded="false" />
+                <element signature="e#2995#2996#0" expanded="false" />
+                <element signature="e#3055#3056#0" expanded="false" />
+                <element signature="e#3107#3108#0" expanded="false" />
+                <element signature="e#3142#3143#0" expanded="false" />
+                <element signature="e#3173#3174#0" expanded="false" />
+                <element signature="e#3221#3222#0" expanded="false" />
+                <element signature="e#3261#3262#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -553,12 +238,10 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74608696">
-              <caret line="769" column="77" selection-start-line="769" selection-start-column="77" selection-end-line="769" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.3026087">
+              <caret line="133" column="51" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#35528#35529#0" expanded="true" />
-                <element signature="e#35572#35573#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -577,11 +260,16 @@
       <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="410" column="47" selection-start-line="410" selection-start-column="47" selection-end-line="410" selection-end-column="47" />
+            <state vertical-scroll-proportion="-5.1034484">
+              <caret line="185" column="79" selection-start-line="185" selection-start-column="79" selection-end-line="185" selection-end-column="79" />
               <folding>
-                <element signature="e#19336#19351#0" expanded="true" />
-                <element signature="e#22890#22905#0" expanded="true" />
+                <element signature="e#6085#16605#0" expanded="true" />
+                <element signature="e#15730#16238#0" expanded="true" />
+                <element signature="e#16237#16238#0" expanded="true" />
+                <element signature="e#16604#16605#0" expanded="true" />
+                <element signature="e#16656#17051#0" expanded="true" />
+                <element signature="e#17050#17051#0" expanded="true" />
+                <element signature="e#19631#19646#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -593,8 +281,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding>
-                <element signature="e#29660#29675#0" expanded="true" />
-                <element signature="e#32941#32956#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -604,7 +291,7 @@
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -624,11 +311,8 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="129" column="27" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3774#3789#0" expanded="true" />
-              </folding>
+              <caret line="121" column="68" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1845,7 +1529,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\mausv\Documents\Git\Doseli-Movil" value="4360826514111" />
+        <entry key="C:\Users\mausv\Documents\Git\Doseli-Movil" value="4360909951445" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2211,7 +1895,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/PendingReportStolen.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/PendingRegisterLocation.java" />
@@ -2221,8 +1904,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
       </list>
     </option>
@@ -2269,9 +1953,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2346,6 +2027,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -2356,6 +2039,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2593,7 +2277,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456353361647</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented bug report system (2/2)&#10;Now sends the report when the app comes back up">
+      <created>1456443401345</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456443401345</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2620,7 +2310,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2658,24 +2348,14 @@
     <MESSAGE value="Minor update&#10;Implemented new parameters in PendingRegisterLocation&#10;Cleaned bits of code." />
     <MESSAGE value="Version 1.5.2 finished&#10;Implemented restriction in HandsetLocation" />
     <MESSAGE value="Implemented bug report system&#10;Creates a folder (doselireport) and writes a file with a .stacktrace. Then sends it to server.&#10;Pending to change the way the files are sent." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented bug report system&#10;Creates a folder (doselireport) and writes a file with a .stacktrace. Then sends it to server.&#10;Pending to change the way the files are sent." />
+    <MESSAGE value="Implemented bug report system (2/2)&#10;Now sends the report when the app comes back up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented bug report system (2/2)&#10;Now sends the report when the app comes back up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3774#3789#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2692,9 +2372,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -2704,7 +2381,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -2736,7 +2412,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#661#662#0" expanded="false" />
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#971#972#0" expanded="false" />
+            <element signature="e#1007#1008#0" expanded="false" />
+            <element signature="e#1065#1066#0" expanded="false" />
+            <element signature="e#1115#1116#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1281#1282#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1533#1534#0" expanded="false" />
+            <element signature="e#1583#1584#0" expanded="false" />
+            <element signature="e#1625#1626#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1699#1700#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1803#1804#0" expanded="false" />
+            <element signature="e#1844#1845#0" expanded="false" />
+            <element signature="e#1881#1882#0" expanded="false" />
+            <element signature="e#1941#1942#0" expanded="false" />
+            <element signature="e#1993#1994#0" expanded="false" />
+            <element signature="e#2034#2035#0" expanded="false" />
+            <element signature="e#2071#2072#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2183#2184#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="false" />
+            <element signature="e#2313#2314#0" expanded="false" />
+            <element signature="e#2361#2362#0" expanded="false" />
+            <element signature="e#2397#2398#0" expanded="false" />
+            <element signature="e#2429#2430#0" expanded="false" />
+            <element signature="e#2479#2480#0" expanded="false" />
+            <element signature="e#2521#2522#0" expanded="false" />
+            <element signature="e#2554#2555#0" expanded="false" />
+            <element signature="e#2582#2583#0" expanded="false" />
+            <element signature="e#2625#2626#0" expanded="false" />
+            <element signature="e#2659#2660#0" expanded="false" />
+            <element signature="e#2686#2687#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="false" />
+            <element signature="e#2748#2749#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2813#2814#0" expanded="false" />
+            <element signature="e#2841#2842#0" expanded="false" />
+            <element signature="e#2883#2884#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#2958#2959#0" expanded="false" />
+            <element signature="e#2995#2996#0" expanded="false" />
+            <element signature="e#3055#3056#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3142#3143#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3261#3262#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2753,8 +2494,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2764,8 +2503,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="410" column="47" selection-start-line="410" selection-start-column="47" selection-end-line="410" selection-end-column="47" />
           <folding>
-            <element signature="e#19336#19351#0" expanded="true" />
-            <element signature="e#22890#22905#0" expanded="true" />
+            <element signature="e#6085#16605#0" expanded="true" />
+            <element signature="e#15730#16238#0" expanded="true" />
+            <element signature="e#16237#16238#0" expanded="true" />
+            <element signature="e#16604#16605#0" expanded="true" />
+            <element signature="e#16656#17051#0" expanded="true" />
+            <element signature="e#17050#17051#0" expanded="true" />
+            <element signature="e#19631#19646#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2775,8 +2519,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="890" column="68" selection-start-line="890" selection-start-column="68" selection-end-line="890" selection-end-column="68" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2805,9 +2548,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -2817,7 +2557,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -2849,7 +2588,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#661#662#0" expanded="false" />
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#971#972#0" expanded="false" />
+            <element signature="e#1007#1008#0" expanded="false" />
+            <element signature="e#1065#1066#0" expanded="false" />
+            <element signature="e#1115#1116#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1281#1282#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1533#1534#0" expanded="false" />
+            <element signature="e#1583#1584#0" expanded="false" />
+            <element signature="e#1625#1626#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1699#1700#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1803#1804#0" expanded="false" />
+            <element signature="e#1844#1845#0" expanded="false" />
+            <element signature="e#1881#1882#0" expanded="false" />
+            <element signature="e#1941#1942#0" expanded="false" />
+            <element signature="e#1993#1994#0" expanded="false" />
+            <element signature="e#2034#2035#0" expanded="false" />
+            <element signature="e#2071#2072#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2183#2184#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="false" />
+            <element signature="e#2313#2314#0" expanded="false" />
+            <element signature="e#2361#2362#0" expanded="false" />
+            <element signature="e#2397#2398#0" expanded="false" />
+            <element signature="e#2429#2430#0" expanded="false" />
+            <element signature="e#2479#2480#0" expanded="false" />
+            <element signature="e#2521#2522#0" expanded="false" />
+            <element signature="e#2554#2555#0" expanded="false" />
+            <element signature="e#2582#2583#0" expanded="false" />
+            <element signature="e#2625#2626#0" expanded="false" />
+            <element signature="e#2659#2660#0" expanded="false" />
+            <element signature="e#2686#2687#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="false" />
+            <element signature="e#2748#2749#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2813#2814#0" expanded="false" />
+            <element signature="e#2841#2842#0" expanded="false" />
+            <element signature="e#2883#2884#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#2958#2959#0" expanded="false" />
+            <element signature="e#2995#2996#0" expanded="false" />
+            <element signature="e#3055#3056#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3142#3143#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3261#3262#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2866,8 +2670,6 @@
           <caret line="1251" column="22" selection-start-line="1251" selection-start-column="22" selection-end-line="1251" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2877,8 +2679,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="369" column="21" selection-start-line="369" selection-start-column="16" selection-end-line="369" selection-end-column="21" />
           <folding>
-            <element signature="e#19336#19351#0" expanded="true" />
-            <element signature="e#22890#22905#0" expanded="true" />
+            <element signature="e#6085#16605#0" expanded="true" />
+            <element signature="e#15730#16238#0" expanded="true" />
+            <element signature="e#16237#16238#0" expanded="true" />
+            <element signature="e#16604#16605#0" expanded="true" />
+            <element signature="e#16656#17051#0" expanded="true" />
+            <element signature="e#17050#17051#0" expanded="true" />
+            <element signature="e#19631#19646#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2888,8 +2695,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="406" column="67" selection-start-line="406" selection-start-column="67" selection-end-line="406" selection-end-column="67" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2918,9 +2724,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -2930,7 +2733,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -2956,8 +2758,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2967,8 +2767,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="344" column="43" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="43" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2997,9 +2796,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -3009,7 +2805,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -3035,8 +2830,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3046,8 +2839,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="344" column="43" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="43" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3076,9 +2868,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -3088,7 +2877,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -3114,8 +2902,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3125,8 +2911,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="344" column="43" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="43" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3155,9 +2940,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -3167,7 +2949,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -3193,8 +2974,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3204,8 +2983,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="344" column="43" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="43" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3234,9 +3012,6 @@
             <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14471#14495#0" expanded="false" />
             <element signature="e#15122#15144#0" expanded="false" />
             <element signature="e#16806#16830#0" expanded="false" />
@@ -3246,7 +3021,6 @@
             <element signature="e#22522#22571#0" expanded="false" />
             <element signature="e#25827#25849#0" expanded="false" />
             <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
             <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
@@ -3272,8 +3046,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3283,8 +3055,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="344" column="43" selection-start-line="344" selection-start-column="39" selection-end-line="344" selection-end-column="43" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3326,54 +3097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="732" column="20" selection-start-line="732" selection-start-column="20" selection-end-line="732" selection-end-column="20" />
-          <folding>
-            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#8510#8568#0" expanded="false" />
-            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#12282:13004" expanded="false" />
-            <element signature="method#onDrawerOpened#0;class#12282:13004" expanded="false" />
-            <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
-            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#14471#14495#0" expanded="false" />
-            <element signature="e#15122#15144#0" expanded="false" />
-            <element signature="e#16806#16830#0" expanded="false" />
-            <element signature="e#17682#17704#0" expanded="false" />
-            <element signature="e#19401#19425#0" expanded="false" />
-            <element signature="e#20417#20439#0" expanded="false" />
-            <element signature="e#22522#22571#0" expanded="false" />
-            <element signature="e#25827#25849#0" expanded="false" />
-            <element signature="e#27972#28046#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_71/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3321739">
@@ -3393,26 +3116,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="410" column="47" selection-start-line="410" selection-start-column="47" selection-end-line="410" selection-end-column="47" />
           <folding>
-            <element signature="e#19336#19351#0" expanded="true" />
-            <element signature="e#22890#22905#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#661#662#0" expanded="false" />
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#971#972#0" expanded="false" />
+            <element signature="e#1007#1008#0" expanded="false" />
+            <element signature="e#1065#1066#0" expanded="false" />
+            <element signature="e#1115#1116#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1281#1282#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1533#1534#0" expanded="false" />
+            <element signature="e#1583#1584#0" expanded="false" />
+            <element signature="e#1625#1626#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1699#1700#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1803#1804#0" expanded="false" />
+            <element signature="e#1844#1845#0" expanded="false" />
+            <element signature="e#1881#1882#0" expanded="false" />
+            <element signature="e#1941#1942#0" expanded="false" />
+            <element signature="e#1993#1994#0" expanded="false" />
+            <element signature="e#2034#2035#0" expanded="false" />
+            <element signature="e#2071#2072#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2183#2184#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="false" />
+            <element signature="e#2313#2314#0" expanded="false" />
+            <element signature="e#2361#2362#0" expanded="false" />
+            <element signature="e#2397#2398#0" expanded="false" />
+            <element signature="e#2429#2430#0" expanded="false" />
+            <element signature="e#2479#2480#0" expanded="false" />
+            <element signature="e#2521#2522#0" expanded="false" />
+            <element signature="e#2554#2555#0" expanded="false" />
+            <element signature="e#2582#2583#0" expanded="false" />
+            <element signature="e#2625#2626#0" expanded="false" />
+            <element signature="e#2659#2660#0" expanded="false" />
+            <element signature="e#2686#2687#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="false" />
+            <element signature="e#2748#2749#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2813#2814#0" expanded="false" />
+            <element signature="e#2841#2842#0" expanded="false" />
+            <element signature="e#2883#2884#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#2958#2959#0" expanded="false" />
+            <element signature="e#2995#2996#0" expanded="false" />
+            <element signature="e#3055#3056#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3142#3143#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3261#3262#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3421,8 +3190,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
-            <element signature="e#29660#29675#0" expanded="true" />
-            <element signature="e#32941#32956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3430,10 +3198,31 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="27" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
+          <caret line="121" column="68" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321739">
+          <caret line="291" column="12" selection-start-line="291" selection-start-column="12" selection-end-line="291" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1034484">
+          <caret line="185" column="79" selection-start-line="185" selection-start-column="79" selection-end-line="185" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3774#3789#0" expanded="true" />
+            <element signature="e#6085#16605#0" expanded="true" />
+            <element signature="e#15730#16238#0" expanded="true" />
+            <element signature="e#16237#16238#0" expanded="true" />
+            <element signature="e#16604#16605#0" expanded="true" />
+            <element signature="e#16656#17051#0" expanded="true" />
+            <element signature="e#17050#17051#0" expanded="true" />
+            <element signature="e#19631#19646#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3446,14 +3235,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="571" column="58" selection-start-line="571" selection-start-column="58" selection-end-line="571" selection-end-column="58" />
+          <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#8510#8568#0" expanded="false" />
+            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#12282:13004" expanded="false" />
+            <element signature="method#onDrawerOpened#0;class#12282:13004" expanded="false" />
+            <element signature="method#onDrawerClosed#0;class#12282:13004" expanded="false" />
+            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#14471#14495#0" expanded="false" />
+            <element signature="e#15122#15144#0" expanded="false" />
+            <element signature="e#16806#16830#0" expanded="false" />
+            <element signature="e#17682#17704#0" expanded="false" />
+            <element signature="e#19401#19425#0" expanded="false" />
+            <element signature="e#20417#20439#0" expanded="false" />
+            <element signature="e#22522#22571#0" expanded="false" />
+            <element signature="e#25827#25849#0" expanded="false" />
+            <element signature="e#27972#28046#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74608696">
-          <caret line="769" column="77" selection-start-line="769" selection-start-column="77" selection-end-line="769" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.3026087">
+          <caret line="133" column="51" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35528#35529#0" expanded="true" />
-            <element signature="e#35572#35573#0" expanded="true" />
           </folding>
         </state>
       </provider>
