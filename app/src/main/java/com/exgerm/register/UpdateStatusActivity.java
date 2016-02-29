@@ -82,10 +82,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
     JSONParser jsonParser = new JSONParser();
 
-    public String token;
+    public String token = "";
     public Boolean uuidExists = false;
 
-    public Boolean networkConnection = false;
+    //public Boolean networkConnection = false;
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
@@ -103,13 +103,13 @@ public class UpdateStatusActivity extends AppCompatActivity {
 
         Log.d("IMEI: ", LoginActivity.imei);
 
-        if(!isOnline()){
+        /*if(!isOnline()){
             Log.i("Internet status: ", "Not Available");
             networkConnection = false;
         } else {
             Log.i("Internet status: ", "Available");
             networkConnection = true;
-        }
+        }*/
 
         //Initialize objects
         tvComment = (EditText) findViewById(R.id.tvComment);
@@ -190,21 +190,6 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                          valHandsetStatus2 = "0";
                                                      }
                                                      verifyStatus = true;
-                                                 } else {
-                                                     //There was an error
-                                                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
-                                                     builder.setMessage("No puedes dejar el estado sin contestar");
-                                                     builder.setTitle("Volver a intentar");
-                                                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                         @Override
-                                                         public void onClick(DialogInterface dialogInterface, int which) {
-                                                             //Close the dialog
-                                                             dialogInterface.dismiss();
-                                                         }
-                                                     });
-
-                                                     AlertDialog dialog = builder.create();
-                                                     dialog.show();
                                                  }
                                                  String id = tvHandsetName.getText().toString();
 
@@ -242,7 +227,38 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                      AlertDialog dialog = builder.create();
                                                      dialog.show();
 
-                                                 } else if(verifyStatus) {
+                                                 } else if (token.equals("") || token.equals("loading")) {
+                                                     //There was an error
+                                                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
+                                                     builder.setMessage("Debes escanear un aparato");
+                                                     builder.setTitle("Volver a intentar");
+                                                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                         @Override
+                                                         public void onClick(DialogInterface dialogInterface, int which) {
+                                                             //Close the dialog
+                                                             dialogInterface.dismiss();
+                                                         }
+                                                     });
+
+                                                     AlertDialog dialog = builder.create();
+                                                     dialog.show();
+
+                                                 } else if (!verifyStatus){
+                                                     //There was an error
+                                                     AlertDialog.Builder builder = new AlertDialog.Builder(UpdateStatusActivity.this);
+                                                     builder.setMessage("No puedes dejar el estado sin contestar");
+                                                     builder.setTitle("Volver a intentar");
+                                                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                         @Override
+                                                         public void onClick(DialogInterface dialogInterface, int which) {
+                                                             //Close the dialog
+                                                             dialogInterface.dismiss();
+                                                         }
+                                                     });
+
+                                                     AlertDialog dialog = builder.create();
+                                                     dialog.show();
+                                                 } else if (verifyStatus && !token.equals("loading") && !id.equals("Cargando")) {
 
                                                      if (comment.isEmpty()) {
                                                          comment = "";
@@ -284,9 +300,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                      //String hsp = currentUser.get("Hospital").toString();
                                                      System.out.println(hspOb);
                                                      // Building Parameters
-                                                     if(networkConnection == true){
+                                                     boolean networkConnection = isOnline();
+                                                     if(networkConnection){
                                                          new CreateNewProduct().execute();
-                                                     } else if(networkConnection == false){
+                                                     } else if(!networkConnection){
                                                          LoginActivity.offlineDb.execSQL("INSERT INTO DoseliOffline " +
                                                                  "(token, state, device_comment, users_id, user_name, " +
                                                                  "lowBattery, changeBattery, lowLiquid, changeLiquid, " +
@@ -341,6 +358,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
 
                 tvHandsetName.setText("Cargando");
+                token = "loading";
                 String contents = intent.getStringExtra("SCAN_RESULT"); //this is the result
 
                 final URI uri = URI.create(contents);
@@ -374,11 +392,13 @@ public class UpdateStatusActivity extends AppCompatActivity {
                 token = "" + forId;
                 System.out.println(token);
 
-                if(networkConnection == true) {
+                boolean networkConnection = isOnline();
+
+                if(networkConnection) {
 
                     new GetProductDetails().execute();
 
-                } else if (networkConnection == false) {
+                } else if (!networkConnection) {
 
                     tvHandsetName.setText("Fuera de línea");
 

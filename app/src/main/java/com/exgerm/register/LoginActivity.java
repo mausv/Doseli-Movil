@@ -136,8 +136,8 @@ public class LoginActivity extends AppCompatActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    //public static String main_url = "http://192.168.1.148/doseli/";
+    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url = "http://192.168.1.148/doseli/";
 
     public static int newestDbVersion = 2;
 
@@ -165,6 +165,11 @@ public class LoginActivity extends AppCompatActivity {
     private static String TAG_ALTITUDE = "altitude";
     private static final String TAG_SUCCESS = "success";
 
+    List<String> lablesE = new ArrayList<String>();
+
+    // Creating adapter for spinner
+    ArrayAdapter<String> spinnerAdapterE;
+
     //JSON Parser
     JSONParser jsonParser = new JSONParser();
 
@@ -185,6 +190,7 @@ public class LoginActivity extends AppCompatActivity {
         mLogin = (Button) findViewById(R.id.btnLogin);
         versionTV = (TextView) findViewById(R.id.tvVersionLogin);
         challengeChart = (BarChart) findViewById(R.id.challengeChart);
+        spinnerAdapterE = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         getImei();
         initializeDatabase();
 
@@ -310,19 +316,25 @@ public class LoginActivity extends AppCompatActivity {
         groupSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                groupSelected = groupSpinner.getSelectedItem().toString();
-                int groupId = (int) groupSpinner.getSelectedItemId();
-                Category cat = new Category(groupsList.get(groupId));
-                groupSelectedId = String.valueOf(cat.getId());
-                Log.d("Seleccionado: ", groupSelectedId);
+                try {
+                    groupSelected = groupSpinner.getSelectedItem().toString();
+                    int groupId = (int) groupSpinner.getSelectedItemId();
+                    Category cat = new Category(groupsList.get(groupId));
+                    groupSelectedId = String.valueOf(cat.getId());
+                    Log.d("Seleccionado: ", groupSelectedId);
 
-                switch (groupSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        hospitalsList = new ArrayList<>();
-                        break;
-                    default:
-                        new GetHospitals().execute();
+                    switch (groupSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            hospitalsList = new ArrayList<>();
+                            hospitalSpinner.setAdapter(spinnerAdapterE);
+                            break;
+                        default:
+                            hospitalSpinner.setAdapter(spinnerAdapterE);
+                            new GetHospitals().execute();
+                    }
+                } catch (IndexOutOfBoundsException e) {
+                    e.printStackTrace();
                 }
             }
 
@@ -335,19 +347,23 @@ public class LoginActivity extends AppCompatActivity {
         hospitalSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                hospitalSelected = hospitalSpinner.getSelectedItem().toString();
-                int hospitalId = (int) hospitalSpinner.getSelectedItemId();
-                Category cat = new Category(hospitalsList.get(hospitalId));
-                hospitalSelectedId = String.valueOf(cat.getId());
-                Log.d("Seleccionado: ", hospitalSelectedId);
+                try {
+                    hospitalSelected = hospitalSpinner.getSelectedItem().toString();
+                    int hospitalId = (int) hospitalSpinner.getSelectedItemId();
+                    Category cat = new Category(hospitalsList.get(hospitalId));
+                    hospitalSelectedId = String.valueOf(cat.getId());
+                    Log.d("Seleccionado: ", hospitalSelectedId);
 
-                switch (hospitalSelected) {
-                    case "Escoge":
-                        Log.d("Case ", "nothing");
-                        break;
-                    default:
-                        new GetGeo().execute();
+                    switch (hospitalSelected) {
+                        case "Escoge":
+                            Log.d("Case ", "nothing");
+                            break;
+                        default:
+                            new GetGeo().execute();
 
+                    }
+                } catch (IndexOutOfBoundsException e) {
+                    e.printStackTrace();
                 }
             }
 
