@@ -136,8 +136,8 @@ public class LoginActivity extends AppCompatActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.148/doseli/";
+    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    //public static String main_url = "http://192.168.1.148/doseli/";
 
     public static int newestDbVersion = 2;
 
@@ -1215,7 +1215,7 @@ public class LoginActivity extends AppCompatActivity {
                 JSONObject jsonOfflineObject = jsonParser.makeHttpRequest(url_get_offline_missing_handsets, "POST", paramGetOffMissingHandsets);
                 jsonArrayOffline = (JSONArray) jsonOfflineObject.get("devices");
 
-            } catch (JSONException e) {
+            } catch (JSONException | NullPointerException e) {
                 e.printStackTrace();
             }
 
