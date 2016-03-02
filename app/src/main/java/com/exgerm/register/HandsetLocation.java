@@ -898,8 +898,9 @@ public class HandsetLocation extends AppCompatActivity {
                     }
                 });
 
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                if(!isFinishing()) {
+                    builder.show();
+                }
 
                 sLight = false;
             } else if (success == 3) {
@@ -914,8 +915,9 @@ public class HandsetLocation extends AppCompatActivity {
                     }
                 });
 
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                if(!isFinishing()) {
+                    builder.show();
+                }
             }
         }
     }

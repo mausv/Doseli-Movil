@@ -580,8 +580,9 @@ public class UpdateStatusActivity extends AppCompatActivity {
                         }
                     });
 
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
+                    if(!isFinishing()) {
+                        builder.show();
+                    }
                 }
 
                 if (success == 2) {
@@ -596,7 +597,10 @@ public class UpdateStatusActivity extends AppCompatActivity {
                             dialog.dismiss();
                         }
                     });
-                    builder.show();
+                    if(!isFinishing()) {
+                        builder.show();
+                    }
+
                     tvHandsetName.setText("");
                 }
             } else if (uuidExists == false) {
@@ -609,7 +613,9 @@ public class UpdateStatusActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
-                builder.show();
+                if(!isFinishing()) {
+                    builder.show();
+                }
                 tvHandsetName.setText("");
             }
         }
