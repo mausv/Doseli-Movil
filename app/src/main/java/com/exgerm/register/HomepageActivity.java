@@ -717,13 +717,16 @@ public class HomepageActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-
-            if(success == 1) {
-                missingAdapter.clear();
-                ArrayList<Missing> latestMissing = Missing.fromJson(arrayOfMissing2);
-                missingAdapter.addAll(latestMissing);
-            } else {
-                missingAdapter.clear();
+            try {
+                if (success == 1) {
+                    missingAdapter.clear();
+                    ArrayList<Missing> latestMissing = Missing.fromJson(arrayOfMissing2);
+                    missingAdapter.addAll(latestMissing);
+                } else {
+                    missingAdapter.clear();
+                }
+            } catch (NullPointerException e) {
+                e.printStackTrace();
             }
         }
     }
