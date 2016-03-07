@@ -9,8 +9,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2127463d-6e29-4f01-89a8-3bd8c35be6b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+    <list default="true" id="2127463d-6e29-4f01-89a8-3bd8c35be6b4" name="Default" comment="Updated to 1.5.7">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -39,10 +48,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.16">
+            <state vertical-scroll-proportion="0.0">
               <caret line="686" column="21" selection-start-line="686" selection-start-column="21" selection-end-line="686" selection-end-column="21" />
               <folding>
                 <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
@@ -175,11 +184,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="719" column="42" selection-start-line="719" selection-start-column="42" selection-end-line="719" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.47304347">
+              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding>
                 <element signature="class#9286:9850" expanded="false" />
                 <element signature="method#onLocationChanged#0;class#9286:9850" expanded="false" />
@@ -294,7 +303,7 @@
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -1524,7 +1533,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\mausv\Documents\Git\Doseli-Movil" value="4361345675234" />
+        <entry key="C:\Users\mausv\Documents\Git\Doseli-Movil" value="4361776182674" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1900,9 +1909,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CustomExceptionHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -2314,7 +2323,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457383759046</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed a crash of WindowManager.BadTokenException. Surrounded with try-catch">
+      <created>1457390311205</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1457390311205</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2386,7 +2401,8 @@
     <MESSAGE value="Fixed AlertDialog crash" />
     <MESSAGE value="Fixed a crash due to NullPointerException, added try-catch." />
     <MESSAGE value="Fixed another crash due to NullPointerException, added try-catch." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed another crash due to NullPointerException, added try-catch." />
+    <MESSAGE value="Fixed a crash of WindowManager.BadTokenException. Surrounded with try-catch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a crash of WindowManager.BadTokenException. Surrounded with try-catch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3602,14 +3618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3618,10 +3626,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="719" column="42" selection-start-line="719" selection-start-column="42" selection-end-line="719" selection-end-column="42" />
+          <caret line="686" column="21" selection-start-line="686" selection-start-column="21" selection-end-line="686" selection-end-column="21" />
+          <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#8545#8603#0" expanded="false" />
+            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#12317:13039" expanded="false" />
+            <element signature="method#onDrawerOpened#0;class#12317:13039" expanded="false" />
+            <element signature="method#onDrawerClosed#0;class#12317:13039" expanded="false" />
+            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#14506#14530#0" expanded="false" />
+            <element signature="e#15157#15179#0" expanded="false" />
+            <element signature="e#16841#16865#0" expanded="false" />
+            <element signature="e#17717#17739#0" expanded="false" />
+            <element signature="e#19436#19460#0" expanded="false" />
+            <element signature="e#20452#20474#0" expanded="false" />
+            <element signature="e#22557#22606#0" expanded="false" />
+            <element signature="e#25862#25884#0" expanded="false" />
+            <element signature="e#28007#28081#0" expanded="false" />
+            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47304347">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding>
             <element signature="class#9286:9850" expanded="false" />
             <element signature="method#onLocationChanged#0;class#9286:9850" expanded="false" />
@@ -3673,55 +3738,6 @@
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#initializeDatabase#0;class#LoginActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.16">
-          <caret line="686" column="21" selection-start-line="686" selection-start-column="21" selection-end-line="686" selection-end-column="21" />
-          <folding>
-            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#8545#8603#0" expanded="false" />
-            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#12317:13039" expanded="false" />
-            <element signature="method#onDrawerOpened#0;class#12317:13039" expanded="false" />
-            <element signature="method#onDrawerClosed#0;class#12317:13039" expanded="false" />
-            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#14506#14530#0" expanded="false" />
-            <element signature="e#15157#15179#0" expanded="false" />
-            <element signature="e#16841#16865#0" expanded="false" />
-            <element signature="e#17717#17739#0" expanded="false" />
-            <element signature="e#19436#19460#0" expanded="false" />
-            <element signature="e#20452#20474#0" expanded="false" />
-            <element signature="e#22557#22606#0" expanded="false" />
-            <element signature="e#25862#25884#0" expanded="false" />
-            <element signature="e#28007#28081#0" expanded="false" />
-            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
