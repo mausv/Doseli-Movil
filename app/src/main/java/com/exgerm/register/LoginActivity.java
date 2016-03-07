@@ -137,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
 
     //public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url = "http://192.168.1.91/doseli/";
+    public static String main_url = "http://192.168.1.148/doseli/";
 
     public static int newestDbVersion = 2;
 
