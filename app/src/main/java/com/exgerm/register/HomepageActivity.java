@@ -19,6 +19,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -667,7 +668,11 @@ public class HomepageActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
-                builder.show();
+                try {
+                    builder.show();
+                } catch (WindowManager.BadTokenException e) {
+                    e.printStackTrace();
+                }
             } else if (status == 0){
                 pDialog.dismiss();
                 AlertDialog.Builder builder = new AlertDialog.Builder(HomepageActivity.this);
@@ -679,7 +684,11 @@ public class HomepageActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
-                builder.show();
+                try {
+                    builder.show();
+                } catch (WindowManager.BadTokenException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
