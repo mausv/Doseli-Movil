@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -111,6 +112,7 @@ public class StatusDetailView extends Activity {
 
     class GetMachineDetails extends AsyncTask<String, String, String> {
         int success;
+        boolean finished = false;
         String username;
         String userStatus;
         String userDate;
@@ -162,6 +164,7 @@ public class StatusDetailView extends Activity {
                     userStatus = String.valueOf(innerObj.get("comment"));
                     userDate = String.valueOf(innerObj.get("created_at"));
                     userHsp = String.valueOf(innerObj.get("hospital_name"));
+                    finished = true;
 
                 }
 
@@ -179,41 +182,54 @@ public class StatusDetailView extends Activity {
             //Get if checked
             String x = "1";
 
-            if (!(state.equals(x))) {
-                errores.setChecked(true);
+            if(finished) {
+
+                if (!(state.equals(x))) {
+                    errores.setChecked(true);
+                } else {
+                    funciona.setChecked(true);
+                }
+                if (error1Checked.equals(x)) {
+                    error1CB.setChecked(true);
+                }
+                if (error2Checked.equals(x)) {
+                    error2CB.setChecked(true);
+                }
+                if (error3Checked.equals(x)) {
+                    error3CB.setChecked(true);
+                }
+                if (sol1Checked.equals(x)) {
+                    sol1CB.setChecked(true);
+                }
+                if (sol2Checked.equals(x)) {
+                    sol2CB.setChecked(true);
+                }
+                if (sol3Checked.equals(x)) {
+                    sol3CB.setChecked(true);
+                }
+                if (maint1Checked.equals(x)) {
+                    maint1CB.setChecked(true);
+                }
+                if (maint2Checked.equals(x)) {
+                    maint2CB.setChecked(true);
+                }
+
+                mUser.setText(username);
+                mStatus.setText(userStatus);
+                mDate.setText(userDate);
+                mHsp.setText(userHsp);
             } else {
-                funciona.setChecked(true);
-            }
-            if (error1Checked.equals(x)) {
-                error1CB.setChecked(true);
-            }
-            if (error2Checked.equals(x)) {
-                error2CB.setChecked(true);
-            }
-            if (error3Checked.equals(x)) {
-                error3CB.setChecked(true);
-            }
-            if (sol1Checked.equals(x)) {
-                sol1CB.setChecked(true);
-            }
-            if (sol2Checked.equals(x)) {
-                sol2CB.setChecked(true);
-            }
-            if (sol3Checked.equals(x)) {
-                sol3CB.setChecked(true);
-            }
-            if (maint1Checked.equals(x)) {
-                maint1CB.setChecked(true);
-            }
-            if (maint2Checked.equals(x)) {
-                maint2CB.setChecked(true);
+                AdviceUser(1);
             }
 
-            mUser.setText(username);
-            mStatus.setText(userStatus);
-            mDate.setText(userDate);
-            mHsp.setText(userHsp);
+        }
+    }
 
+    public void AdviceUser(int code) {
+        switch(code) {
+            case 1:
+                Toast.makeText(this, "Hubo un problema al contactar la base de datos.", Toast.LENGTH_SHORT);
+                break;
         }
     }
 

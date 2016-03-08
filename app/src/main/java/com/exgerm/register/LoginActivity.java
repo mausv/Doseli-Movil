@@ -29,6 +29,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -38,7 +39,6 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
@@ -47,15 +47,6 @@ import com.github.mikephil.charting.data.BarEntry;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
-import org.joda.time.LocalDate;
-import org.joda.time.LocalDateTime;
-import org.joda.time.LocalTime;
-import org.joda.time.Months;
-import org.joda.time.Years;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -545,45 +536,51 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     void AdviceUser(int code) {
-        if (code == 1) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-            builder.setMessage("Escoge un grupo primero");
-            builder.setTitle("Falta un grupo");
-            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
+        try {
+            if (code == 1) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setMessage("Escoge un grupo primero");
+                builder.setTitle("Falta un grupo");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
 
-            AlertDialog dialog = builder.create();
-            dialog.show();
-        } else if (code == 2) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-            builder.setMessage("Escoge un hospital primero");
-            builder.setTitle("Falta un hospital");
-            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            } else if (code == 2) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setMessage("Escoge un hospital primero");
+                builder.setTitle("Falta un hospital");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
 
-            AlertDialog dialog = builder.create();
-            dialog.show();
-        } else if (code == 3) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-            builder.setMessage("No se puede establecer una conexion con la Base de Datos. Contactar a Sistemas.");
-            builder.setTitle("Error en Base de Datos");
-            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            } else if (code == 3) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setMessage("No se puede establecer una conexion con la Base de Datos. Contactar a Sistemas.");
+                builder.setTitle("Error en Base de Datos");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
 
-            AlertDialog dialog = builder.create();
-            dialog.show();
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            } else if (code == 4) {
+                Toast.makeText(this, "Hubo un error al obtener datos de fuera de línea", Toast.LENGTH_LONG).show();
+            }
+        } catch (WindowManager.BadTokenException e) {
+            e.printStackTrace();
         }
     }
 
@@ -661,47 +658,52 @@ public class LoginActivity extends AppCompatActivity {
             ArrayList<String> ar = new ArrayList<>();
             ArrayList<BarDataSet> dataSets = new ArrayList<>();
 
-            for (int o = 0; o < challengeList.size(); o++) {
-                valsChallenge = new ArrayList<>();
-                valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
+            if(success == 1) {
 
-                ar = new ArrayList<>();
-                ar.add("Cumplimiento del mes actual");
+                for (int o = 0; o < challengeList.size(); o++) {
+                    valsChallenge = new ArrayList<>();
+                    valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
 
-                // generate the random integers for r, g and b value
-                Random rand = new Random();
-                int r = rand.nextInt(255);
-                int g = rand.nextInt(255);
-                int b = rand.nextInt(255);
+                    ar = new ArrayList<>();
+                    ar.add("Cumplimiento del mes actual");
 
-                int randomColor = Color.rgb(r, g, b);
+                    // generate the random integers for r, g and b value
+                    Random rand = new Random();
+                    int r = rand.nextInt(255);
+                    int g = rand.nextInt(255);
+                    int b = rand.nextInt(255);
 
-                BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
-                bdS.setColor(randomColor);
+                    int randomColor = Color.rgb(r, g, b);
 
-                dataSets.add(bdS);
+                    BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
+                    bdS.setColor(randomColor);
+
+                    dataSets.add(bdS);
+                }
+
+                String[] xVals = new String[ar.size()];
+                xVals = ar.toArray(xVals);
+                challengeChart.setDescription("");
+                BarData data = new BarData(xVals, dataSets);
+                YAxis yAxis = challengeChart.getAxisLeft();
+                XAxis xAxis = challengeChart.getXAxis();
+                challengeChart.getAxisRight().setDrawLabels(false);
+
+                yAxis.setAxisMaxValue(100f);
+                xAxis.setAvoidFirstLastClipping(true);
+                xAxis.setLabelsToSkip(2);
+
+                Legend legend = challengeChart.getLegend();
+
+                legend.setWordWrapEnabled(true);
+                legend.setXEntrySpace(10f);
+
+                challengeChart.setData(data);
+
+                challengeChart.invalidate();
+            } else {
+                AdviceUser(3);
             }
-
-            String[] xVals = new String[ar.size()];
-            xVals = ar.toArray(xVals);
-            challengeChart.setDescription("");
-            BarData data = new BarData(xVals, dataSets);
-            YAxis yAxis = challengeChart.getAxisLeft();
-            XAxis xAxis = challengeChart.getXAxis();
-            challengeChart.getAxisRight().setDrawLabels(false);
-
-            yAxis.setAxisMaxValue(100f);
-            xAxis.setAvoidFirstLastClipping(true);
-            xAxis.setLabelsToSkip(2);
-
-            Legend legend = challengeChart.getLegend();
-
-            legend.setWordWrapEnabled(true);
-            legend.setXEntrySpace(10f);
-
-            challengeChart.setData(data);
-
-            challengeChart.invalidate();
         }
     }
 
@@ -1080,17 +1082,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 new GetGroups().execute();
             } else if (result == 2) {
-                Log.i("Internet status: ", "Not Available");
-                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                builder.setMessage("No se pudo establecer una conexión con la base de datos, intentar de nuevo o contactar administrador.");
-                builder.setTitle("Fuera de linea");
-                builder.setPositiveButton("Cerrar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                });
-                builder.show();
+                AdviceUser(3);
             }
         }
     }
@@ -1225,16 +1217,23 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            offlineMissingHandsets.addMissingHandset(OfflineHandset.fromJson(jsonArrayOffline));
 
-            ArrayList<OfflineHandset> arrayToRemove;
-            arrayToRemove = getDevicesAlreadyAddedToPending();
-            offlineMissingHandsets.removeArrayOfHandsetsIfExists(arrayToRemove);
+            try {
+                offlineMissingHandsets.addMissingHandset(OfflineHandset.fromJson(jsonArrayOffline));
 
-            pDialog.dismiss();
+                ArrayList<OfflineHandset> arrayToRemove;
+                arrayToRemove = getDevicesAlreadyAddedToPending();
+                offlineMissingHandsets.removeArrayOfHandsetsIfExists(arrayToRemove);
 
-            Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
-            startActivity(goHome);
+                pDialog.dismiss();
+
+                Intent goHome = new Intent(LoginActivity.this, HomepageActivity.class);
+                startActivity(goHome);
+            } catch (NullPointerException e) {
+                e.printStackTrace();
+                AdviceUser(4);
+                finishAffinity();
+            }
         }
     }
 
