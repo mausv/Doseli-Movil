@@ -578,6 +578,8 @@ public class LoginActivity extends AppCompatActivity {
                 dialog.show();
             } else if (code == 4) {
                 Toast.makeText(this, "Hubo un error al obtener datos de fuera de línea", Toast.LENGTH_LONG).show();
+            } else if (code == 5) {
+                Toast.makeText(this, "Hubo un error al contactar la base de datos. Contactar a Sistemas.", Toast.LENGTH_LONG).show();
             }
         } catch (WindowManager.BadTokenException e) {
             e.printStackTrace();
@@ -707,6 +709,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             } catch (NullPointerException e){
                 e.printStackTrace();
+                AdviceUser(5);
             }
         }
     }
