@@ -658,51 +658,55 @@ public class LoginActivity extends AppCompatActivity {
             ArrayList<String> ar = new ArrayList<>();
             ArrayList<BarDataSet> dataSets = new ArrayList<>();
 
-            if(success == 1) {
+            try {
+                if (success == 1) {
 
-                for (int o = 0; o < challengeList.size(); o++) {
-                    valsChallenge = new ArrayList<>();
-                    valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
+                    for (int o = 0; o < challengeList.size(); o++) {
+                        valsChallenge = new ArrayList<>();
+                        valsChallenge.add(new BarEntry(Float.parseFloat(String.valueOf(challengeList.get(o).getPercent())), 0));
 
-                    ar = new ArrayList<>();
-                    ar.add("Cumplimiento del mes actual");
+                        ar = new ArrayList<>();
+                        ar.add("Cumplimiento del mes actual");
 
-                    // generate the random integers for r, g and b value
-                    Random rand = new Random();
-                    int r = rand.nextInt(255);
-                    int g = rand.nextInt(255);
-                    int b = rand.nextInt(255);
+                        // generate the random integers for r, g and b value
+                        Random rand = new Random();
+                        int r = rand.nextInt(255);
+                        int g = rand.nextInt(255);
+                        int b = rand.nextInt(255);
 
-                    int randomColor = Color.rgb(r, g, b);
+                        int randomColor = Color.rgb(r, g, b);
 
-                    BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
-                    bdS.setColor(randomColor);
+                        BarDataSet bdS = new BarDataSet(valsChallenge, challengeList.get(o).getName());
+                        bdS.setColor(randomColor);
 
-                    dataSets.add(bdS);
+                        dataSets.add(bdS);
+                    }
+
+                    String[] xVals = new String[ar.size()];
+                    xVals = ar.toArray(xVals);
+                    challengeChart.setDescription("");
+                    BarData data = new BarData(xVals, dataSets);
+                    YAxis yAxis = challengeChart.getAxisLeft();
+                    XAxis xAxis = challengeChart.getXAxis();
+                    challengeChart.getAxisRight().setDrawLabels(false);
+
+                    yAxis.setAxisMaxValue(100f);
+                    xAxis.setAvoidFirstLastClipping(true);
+                    xAxis.setLabelsToSkip(2);
+
+                    Legend legend = challengeChart.getLegend();
+
+                    legend.setWordWrapEnabled(true);
+                    legend.setXEntrySpace(10f);
+
+                    challengeChart.setData(data);
+
+                    challengeChart.invalidate();
+                } else {
+                    AdviceUser(3);
                 }
-
-                String[] xVals = new String[ar.size()];
-                xVals = ar.toArray(xVals);
-                challengeChart.setDescription("");
-                BarData data = new BarData(xVals, dataSets);
-                YAxis yAxis = challengeChart.getAxisLeft();
-                XAxis xAxis = challengeChart.getXAxis();
-                challengeChart.getAxisRight().setDrawLabels(false);
-
-                yAxis.setAxisMaxValue(100f);
-                xAxis.setAvoidFirstLastClipping(true);
-                xAxis.setLabelsToSkip(2);
-
-                Legend legend = challengeChart.getLegend();
-
-                legend.setWordWrapEnabled(true);
-                legend.setXEntrySpace(10f);
-
-                challengeChart.setData(data);
-
-                challengeChart.invalidate();
-            } else {
-                AdviceUser(3);
+            } catch (NullPointerException e){
+                e.printStackTrace();
             }
         }
     }

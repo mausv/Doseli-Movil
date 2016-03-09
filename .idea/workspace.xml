@@ -10,58 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2127463d-6e29-4f01-89a8-3bd8c35be6b4" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\mausv\Documents\Git\Doseli-Movil\app\build\intermediates\classes\debug\com\exgerm\register\LoginActivity$CheckInternetConnection$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$CheckedFormatter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$CheckedFormatter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$CheckedFormatter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$CheckedFormatter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$DrawerItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetCheckedDevices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetMissing.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetMissing.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetMissing.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetMissing.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$GetReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetReports.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$GetReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$ListItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$ListItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$ListItemClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$ListItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity$SendPending.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity$SendPending.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/HomepageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/exgerm/register/HomepageActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$CheckInternetConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$CheckInternetConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetChallenge.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetChallenge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGeo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetGroups.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitalFrequence.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitalFrequence.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetHospitals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetLatestVersion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetOffModels.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$GetOffModels.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$StopGps.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$StopGps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity$UpdateApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$1$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$1$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$GenerateStolenReport$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$GenerateStolenReport$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$GenerateStolenReport.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$GenerateStolenReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$GetMachineDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView$GetMachineDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/exgerm/register/StatusDetailView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-release-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/exgerm/register/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/outputs/lint-results-release-fatal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -170,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0740743">
-              <caret line="1232" column="36" selection-start-line="1232" selection-start-column="36" selection-end-line="1232" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.6024735">
+              <caret line="702" column="0" selection-start-line="702" selection-start-column="0" selection-end-line="702" selection-end-column="0" />
               <folding>
                 <element signature="e#5577#5585#0" expanded="true" />
                 <element signature="e#8202#8402#0" expanded="true" />
@@ -214,38 +203,38 @@
                 <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-                <element signature="e#27351#27558#0" expanded="true" />
-                <element signature="e#27557#27558#0" expanded="true" />
+                <element signature="e#27603#27810#0" expanded="true" />
+                <element signature="e#27809#27810#0" expanded="true" />
                 <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
                 <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-                <element signature="e#33558#33566#0" expanded="true" />
-                <element signature="e#34099#34107#0" expanded="true" />
+                <element signature="e#33810#33818#0" expanded="true" />
+                <element signature="e#34351#34359#0" expanded="true" />
                 <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-                <element signature="e#34976#35034#0" expanded="false" />
+                <element signature="e#35228#35286#0" expanded="false" />
                 <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
                 <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-                <element signature="e#46222#48040#0" expanded="true" />
-                <element signature="e#48039#48040#0" expanded="true" />
+                <element signature="e#46474#48292#0" expanded="true" />
+                <element signature="e#48291#48292#0" expanded="true" />
                 <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusDetailView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StatusDetailView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5106007">
-              <caret line="230" column="50" selection-start-line="230" selection-start-column="50" selection-end-line="230" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
               <folding>
                 <element signature="e#4592#4593#0" expanded="true" />
                 <element signature="e#4636#4637#0" expanded="true" />
@@ -1919,9 +1908,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -2070,7 +2059,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ZY2228CLB5" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="TC6SB6857TORS4Y9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/key/Key.jks" />
     <property name="ExportApk.ApkPath" value="C:\Users\mausv\Documents\Git\Doseli-Movil\app" />
     <property name="ExportApk.Flavors" value="" />
@@ -2344,7 +2333,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457390386388</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed little bugs.">
+      <created>1457479640144</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1457479640144</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2418,7 +2413,8 @@
     <MESSAGE value="Fixed another crash due to NullPointerException, added try-catch." />
     <MESSAGE value="Fixed a crash of WindowManager.BadTokenException. Surrounded with try-catch" />
     <MESSAGE value="Updated to version 1.5.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated to version 1.5.7" />
+    <MESSAGE value="Fixed little bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed little bugs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2477,27 +2473,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2727,27 +2723,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2890,27 +2886,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -3039,27 +3035,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -3188,27 +3184,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -3337,27 +3333,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -3486,27 +3482,27 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
           </folding>
         </state>
@@ -3793,10 +3789,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+          <folding>
+            <element signature="e#4592#4593#0" expanded="true" />
+            <element signature="e#4636#4637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0740743">
-          <caret line="1232" column="36" selection-start-line="1232" selection-start-column="36" selection-end-line="1232" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.6024735">
+          <caret line="702" column="0" selection-start-line="702" selection-start-column="0" selection-end-line="702" selection-end-column="0" />
           <folding>
             <element signature="e#5577#5585#0" expanded="true" />
             <element signature="e#8202#8402#0" expanded="true" />
@@ -3836,39 +3843,28 @@
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#27351#27558#0" expanded="true" />
-            <element signature="e#27557#27558#0" expanded="true" />
+            <element signature="e#27603#27810#0" expanded="true" />
+            <element signature="e#27809#27810#0" expanded="true" />
             <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#33558#33566#0" expanded="true" />
-            <element signature="e#34099#34107#0" expanded="true" />
+            <element signature="e#33810#33818#0" expanded="true" />
+            <element signature="e#34351#34359#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#34976#35034#0" expanded="false" />
+            <element signature="e#35228#35286#0" expanded="false" />
             <element signature="method#isOnline#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#isLocationEnabled#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckInternetConnection#0;class#LoginActivity#0" expanded="false" />
             <element signature="class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-            <element signature="e#46222#48040#0" expanded="true" />
-            <element signature="e#48039#48040#0" expanded="true" />
+            <element signature="e#46474#48292#0" expanded="true" />
+            <element signature="e#48291#48292#0" expanded="true" />
             <element signature="method#onProgressUpdate#0;class#UpdateApplication#0;class#LoginActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5106007">
-          <caret line="230" column="50" selection-start-line="230" selection-start-column="50" selection-end-line="230" selection-end-column="50" />
-          <folding>
-            <element signature="e#4592#4593#0" expanded="true" />
-            <element signature="e#4636#4637#0" expanded="true" />
           </folding>
         </state>
       </provider>
