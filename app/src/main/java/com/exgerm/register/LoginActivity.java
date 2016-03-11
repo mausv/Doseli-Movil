@@ -1089,7 +1089,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 new GetGroups().execute();
             } else if (result == 2) {
-                AdviceUser(3);
+                AdviceUser(5);
             }
         }
     }
