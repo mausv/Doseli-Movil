@@ -561,8 +561,12 @@ public class UpdateStatusActivity extends AppCompatActivity {
          * **/
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once got all details
-            pDialog.dismiss();
-            // The upwards operation is async, you need to wait until it finishes to asign the variable
+            try {
+                pDialog.dismiss();
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
+            }
+            // The upwards operation is async, you need to wait until it finishes to assign the variable
             if (uuidExists == true) {
                 if (!aparato.equals("")) {
                     tvHandsetName.setText(aparato);
