@@ -128,6 +128,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
 
     public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+    public static String main_url2 = "http://exgerm.marpanet.com:3010/doselis/";
     //public static String main_url = "http://192.168.1.148/doseli/";
 
     public static int newestDbVersion = 2;
@@ -142,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
     private static String url_get_groups = main_url + "get_groups.php";
     private static String url_get_hospitals = main_url + "get_hospitals.php";
     private static String url_get_hospital_geo = main_url + "get_hospital_geo.php";
-    private static String url_get_latest_version = main_url + "get_latest_version.php";
+    private static String url_get_latest_version = main_url2 + "get_latest_version";
     private static String url_get_off = main_url + "get_hospital_offline.php";
     private static String url_get_challenge = main_url + "challenge_summary.php";
     private static String url_get_offline_missing_handsets = main_url + "get_missing_check_devices.php";

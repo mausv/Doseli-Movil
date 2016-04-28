@@ -41,7 +41,7 @@ public class ReportStolenActivity extends AppCompatActivity {
 
     String hspOb;
 
-    private static String url_report_stolen = LoginActivity.main_url + "create_stolen_report.php";
+    private static String url_report_stolen = LoginActivity.main_url + "create_stolen_report";
 
     // Progress Dialog
     private ProgressDialog pDialog;
@@ -60,7 +60,7 @@ public class ReportStolenActivity extends AppCompatActivity {
     protected String token;
 
     public String url_get_details = LoginActivity.main_url + "get_machine_details.php";
-    public String url_delete_machine = LoginActivity.main_url + "delete_machine.php";
+    public String url_delete_machine = LoginActivity.main_url2 + "delete_machine";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

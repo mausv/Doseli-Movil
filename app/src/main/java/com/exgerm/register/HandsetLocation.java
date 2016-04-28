@@ -125,7 +125,7 @@ public class HandsetLocation extends AppCompatActivity {
     private static String url_get_locations = LoginActivity.main_url + "get_locations.php";
     private static String url_get_rooms = LoginActivity.main_url + "get_rooms.php";
     private static String url_get_qr_location = LoginActivity.main_url + "get_qr_location.php";
-    private static String url_register_location = LoginActivity.main_url + "register_location.php";
+    private static String url_register_location = LoginActivity.main_url2 + "register_location";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

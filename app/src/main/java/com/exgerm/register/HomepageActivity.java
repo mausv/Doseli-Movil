@@ -95,10 +95,10 @@ public class HomepageActivity extends AppCompatActivity {
 
     private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
     private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
-    private static String url_pending_report = LoginActivity.main_url + "pending_report.php";
-    private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine.php";
-    private static String url_pending_register_location = LoginActivity.main_url + "pending_register_location.php";
-    private static String url_pending_report_stolen = LoginActivity.main_url + "pending_report_stolen.php";
+    private static String url_pending_report = LoginActivity.main_url2 + "pending_report";
+    private static String url_pending_register_handset = LoginActivity.main_url2 + "pending_register_machine";
+    private static String url_pending_register_location = LoginActivity.main_url2 + "pending_register_location";
+    private static String url_pending_report_stolen = LoginActivity.main_url2 + "pending_report_stolen";
     private static String url_get_checked_devices = LoginActivity.main_url + "get_checked_devices.php";
     private static String url_get_missing_check_devices = LoginActivity.main_url + "get_missing_check_devices.php";
 

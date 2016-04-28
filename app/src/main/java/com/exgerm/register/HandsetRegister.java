@@ -43,7 +43,7 @@ public class HandsetRegister extends AppCompatActivity {
 
     private TextView id;
 
-    private static String url_register_machine = LoginActivity.main_url + "register_machine.php";
+    private static String url_register_machine = LoginActivity.main_url2 + "register_machine";
 
     private static String url_get_qr_details = LoginActivity.main_url + "get_qr_details.php";
 
