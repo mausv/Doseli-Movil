@@ -168,6 +168,8 @@ public class LoginActivity extends AppCompatActivity {
     protected String username;
     protected String id;
 
+    private SharedPreferences sharedPreferences;
+
     /*protected double fixedLatTop = 25.669733;
     protected double fixedLongTop = -100.323889;
     protected double fixedLatLow = 25.665826;
@@ -185,6 +187,8 @@ public class LoginActivity extends AppCompatActivity {
         spinnerAdapterE = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         getImei();
         initializeDatabase();
+
+        sharedPreferences = getSharedPreferences("DoseliPreferences", Context.MODE_PRIVATE);
 
         fileDir = getFilesDir();
         System.out.println("File Dir: " + Environment.getExternalStorageDirectory().getPath());
@@ -437,6 +441,9 @@ public class LoginActivity extends AppCompatActivity {
                 if (success == 1) {
                     // finish closes the current Activity
                     // finish();
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("user_id", userId);
+                    editor.apply();
 
                 }
             } catch (JSONException e) {
@@ -727,18 +734,20 @@ public class LoginActivity extends AppCompatActivity {
 
                 JSONObject json = jsonParser.makeHttpRequest(url_get_latest_version, "POST", paramsGetVersion);
 
-                Log.i("Check version: ", json.toString());
+                if(json != null) {
+                    Log.i("Check version: ", json.toString());
 
-                update = json.getInt("update");
+                    update = json.getInt("update");
 
-                if (update == 1) {
-                    JSONArray array = (JSONArray) json.get("version");
+                    if (update == 1) {
+                        JSONArray array = (JSONArray) json.get("version");
 
-                    JSONObject innerObj = (JSONObject) array.get(0);
-                    Log.i("Update status:", "Available");
-                    urlDwn = String.valueOf(innerObj.get("download"));
-                } else if (update == 0) {
-                    Log.i("Update status:", "Latest");
+                        JSONObject innerObj = (JSONObject) array.get(0);
+                        Log.i("Update status:", "Available");
+                        urlDwn = String.valueOf(innerObj.get("download"));
+                    } else if (update == 0) {
+                        Log.i("Update status:", "Latest");
+                    }
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

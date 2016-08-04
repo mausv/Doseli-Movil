@@ -1,10 +1,7 @@
 package com.exgerm.register;
 
-import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -20,7 +17,6 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,11 +89,13 @@ public class Handsets extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            if (success == 1) {
-                ArrayList<Handset> handsetsList = Handset.fromJson(arrayOfHandsets2);
-                adapter.addAll(handsetsList);
-            } else {
-                adapter.clear();
+            if(arrayOfHandsets2 != null) {
+                if (success == 1) {
+                    ArrayList<Handset> handsetsList = Handset.fromJson(arrayOfHandsets2);
+                    adapter.addAll(handsetsList);
+                } else {
+                    adapter.clear();
+                }
             }
 
         }

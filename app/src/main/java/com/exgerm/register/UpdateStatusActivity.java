@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -95,10 +96,14 @@ public class UpdateStatusActivity extends AppCompatActivity {
     private static final String TAG_SERIAL_NUMBER = "serial_number";
     private static final String TAG_DESCRIPTION = "description";
 
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_status);
+
+        sharedPreferences = getSharedPreferences("DoseliPreferences", Context.MODE_PRIVATE);
 
         Log.d("IMEI: ", LoginActivity.imei);
 
@@ -309,7 +314,7 @@ public class UpdateStatusActivity extends AppCompatActivity {
                                                                  "physicalDamage, physicalRepair, trayClean, machineClean, " +
                                                                  "hospitals_id, hospital_name) " +
                                                                  "VALUES('" + token + "', '" + valHandsetStatus2 + "', " +
-                                                                 "'" + comment + "', '" + LoginActivity.userId + "', " +
+                                                                 "'" + comment + "', '" + sharedPreferences.getString("user_id", "34") + "', " +
                                                                  "'" + LoginActivity.userName + "', '" + valLowBattery + "', '" + valChangeBattery + "', '" + valLowLiquid + "', " +
                                                                  "'" + valChangeLiquid + "', '" + valPhysicalDamage + "', '" + valPhysicalRepair + "', '" + valTrayClean + "', '" + valHandsetClean + "', " +
                                                                  "'" + LoginActivity.hospitalSelectedId + "', " +

@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -73,11 +74,14 @@ public class HandsetRegister extends AppCompatActivity {
     private static String TAG_MODEL = "model";
     private static String TAG_SERIAL_NUMBER = "serial_number";
 
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handset_register);
+
+        sharedPreferences = getSharedPreferences("DoseliPreferences", Context.MODE_PRIVATE);
 
         modelsList = new ArrayList<Category>();
 
@@ -137,6 +141,8 @@ public class HandsetRegister extends AppCompatActivity {
                         dialog.show();
                     } else if (!modelo.equals("Escoge")) {
                         if (networkConnection == true) {
+                            TAG_MODEL = spin.getSelectedItem().toString();
+                            TAG_SERIAL_NUMBER = serie.getText().toString();
                             new RegisterQR().execute();
                         } else if (networkConnection == false) {
                             String modText = spin.getSelectedItem().toString();
@@ -144,7 +150,7 @@ public class HandsetRegister extends AppCompatActivity {
                             LoginActivity.offlineDb.execSQL("INSERT INTO DoseliAltas " +
                                     "(model, serial_number, associated_by, token) " +
                                     "VALUES ('" + modText + "', '" + serieText + "', " +
-                                    "'" + LoginActivity.userId + "', '" + uuid + "');");
+                                    "'" + sharedPreferences.getString("user_id", "34") + "', '" + uuid + "');");
                             AlertDialog.Builder builder = new AlertDialog.Builder(HandsetRegister.this);
                             builder.setTitle("Fuera de linea");
                             builder.setMessage("Guardado en pendientes para mandar despues");
@@ -412,9 +418,6 @@ public class HandsetRegister extends AppCompatActivity {
          * Creating product
          * */
         protected String doInBackground(String... args) {
-
-            TAG_MODEL = spin.getSelectedItem().toString();
-            TAG_SERIAL_NUMBER = serie.getText().toString();
 
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();

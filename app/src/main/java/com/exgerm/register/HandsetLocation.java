@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -127,10 +128,14 @@ public class HandsetLocation extends AppCompatActivity {
     private static String url_get_qr_location = LoginActivity.main_url + "get_qr_location.php";
     private static String url_register_location = LoginActivity.main_url2 + "register_location";
 
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handset_location);
+
+        sharedPreferences = getSharedPreferences("DoseliPreferences", Context.MODE_PRIVATE);
 
         groupsList = new ArrayList<>();
 
@@ -350,8 +355,9 @@ public class HandsetLocation extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String gVal = groupSpinner.getSelectedItem().toString();
-                roomSelected = ref.getText().toString();
+                if (groupSpinner.getSelectedItem().toString() != null) {
+                    String gVal = groupSpinner.getSelectedItem().toString();
+                    roomSelected = ref.getText().toString();
                 /*if(areaSpinner.getSelectedItem() == null){
                     areaVaul = "";
                     area = false;
@@ -376,79 +382,80 @@ public class HandsetLocation extends AppCompatActivity {
                     String rVal = roomSpinner.getSelectedItem().toString();
                     room = true;
                 }*/
-                if((!(groupSpinner.getSelectedItem() == null)) && (!(gVal.equals("Escoge")))){
-                    System.out.println("Group correct");
-                    groupVaul = groupSpinner.getSelectedItem().toString();
-                } else {
-                    System.out.println("Red light");
-                    light = false;
-                }
-                if((!(hospitalSpinner.getSelectedItem() == null)) && (!(hospitalSpinner.getSelectedItem().toString().equals("Escoge"))) ){
-                    System.out.println("Hospital correct");
-                    hospitalVaul = hospitalSpinner.getSelectedItem().toString();
-                } else {
-                    System.out.println("Red light");
-                    light = false;
-                }
-                if (light && sLight == true) {
+                    if ((!(groupSpinner.getSelectedItem() == null)) && (!(gVal.equals("Escoge")))) {
+                        System.out.println("Group correct");
+                        groupVaul = groupSpinner.getSelectedItem().toString();
+                    } else {
+                        System.out.println("Red light");
+                        light = false;
+                    }
+                    if ((!(hospitalSpinner.getSelectedItem() == null)) && (!(hospitalSpinner.getSelectedItem().toString().equals("Escoge")))) {
+                        System.out.println("Hospital correct");
+                        hospitalVaul = hospitalSpinner.getSelectedItem().toString();
+                    } else {
+                        System.out.println("Red light");
+                        light = false;
+                    }
+                    if (light && sLight == true) {
 
-                    if (networkAvailable == true) {
+                        if (networkAvailable == true) {
 
-                        new SetLocation().execute();
+                            new SetLocation().execute();
 
-                    } else if (networkAvailable == false) {
-                        LoginActivity.offlineDb.execSQL("INSERT INTO DoseliPosicion " +
-                                "(token, group_id, hospital_id, area_id, location_id, reference, location_set_by) " +
-                                "VALUES ('" + uuid + "', '" + groupSelectedId + "', " +
-                                "'" + hospitalSelectedId + "', " +
-                                "'" + areaSelectedId + "', " +
-                                "'" + locationSelectedId + "', " +
-                                "'" + roomSelected + "', "+
-                                "'" + LoginActivity.userId + "')");
+                        } else if (networkAvailable == false) {
+                            LoginActivity.offlineDb.execSQL("INSERT INTO DoseliPosicion " +
+                                    "(token, group_id, hospital_id, area_id, location_id, reference, location_set_by) " +
+                                    "VALUES ('" + uuid + "', '" + groupSelectedId + "', " +
+                                    "'" + hospitalSelectedId + "', " +
+                                    "'" + areaSelectedId + "', " +
+                                    "'" + locationSelectedId + "', " +
+                                    "'" + roomSelected + "', " +
+                                    "'" + sharedPreferences.getString("user_id", "34") + "')");
+                            AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
+                            builder.setTitle("Fuera de linea");
+                            builder.setMessage("Guardado en pendientes para mandar despues");
+                            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    finish();
+                                }
+                            });
+                            builder.show();
+
+                        }
+
+                    } else if (sLight == false) {
+                        Log.d("error", "Falta aparato.");
                         AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
-                        builder.setTitle("Fuera de linea");
-                        builder.setMessage("Guardado en pendientes para mandar despues");
+                        builder.setMessage("Debes escanear un aparato para poder posicionarlo");
+                        builder.setTitle("Escanea un aparato");
                         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                                finish();
+                            public void onClick(DialogInterface dialogInterface, int which) {
+                                //Close the dialog
+                                dialogInterface.dismiss();
                             }
                         });
-                        builder.show();
 
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
+                    } else {
+                        Log.d("error", "Falta campos.");
+                        AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
+                        builder.setMessage("Debes llenar todos los campos para poder actualizar los datos");
+                        builder.setTitle("Revisa tus datos");
+                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int which) {
+                                //Close the dialog
+                                dialogInterface.dismiss();
+                            }
+                        });
+
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
                     }
-
-                } else if (sLight == false){
-                    Log.d("error", "Falta aparato.");
-                    AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
-                    builder.setMessage("Debes escanear un aparato para poder posicionarlo");
-                    builder.setTitle("Escanea un aparato");
-                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int which) {
-                            //Close the dialog
-                            dialogInterface.dismiss();
-                        }
-                    });
-
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
-                } else {
-                    Log.d("error", "Falta campos.");
-                    AlertDialog.Builder builder = new AlertDialog.Builder(HandsetLocation.this);
-                    builder.setMessage("Debes llenar todos los campos para poder actualizar los datos");
-                    builder.setTitle("Revisa tus datos");
-                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int which) {
-                            //Close the dialog
-                            dialogInterface.dismiss();
-                        }
-                    });
-
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
                 }
             }
         });
