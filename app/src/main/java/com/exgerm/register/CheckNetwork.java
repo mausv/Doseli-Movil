@@ -7,9 +7,7 @@ import android.util.Log;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.InetAddress;
 import java.net.URL;
-import java.net.URLConnection;
 
 /**
  * Created by Mauricio on 06/07/2015.
@@ -24,7 +22,7 @@ public class CheckNetwork {
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         if (activeNetwork != null && activeNetwork.isConnected()) {
             try {
-                URL url = new URL("http://exgerm.marpanet.com/");
+                URL url = new URL(LoginActivity.main_url);
                 HttpURLConnection urlc = (HttpURLConnection)url.openConnection();
                 urlc.setRequestProperty("User-Agent", "test");
                 urlc.setRequestProperty("Connection", "close");
