@@ -83,6 +83,15 @@
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.journeyapps-zxing-android-embedded-3.0.1_7c773907d7cc9823e1a36dd5cd646f8acd64b475\classes.dex" />
     </item>
     <item
+        is-multidex="true"
+        jar="D:\VCS\Doseli-Movil\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="51deccac14b3991301b9a22efdcc912180872985">
+        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_40f59253bfa96247bd71ce489ffbf4103925693e\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
         jumboMode="false"
@@ -90,15 +99,6 @@
         revision="22.0.1"
         sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\core-3.2.0_4a510bc76e0de627d459f26de21a796e9866118c.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\VCS\Doseli-Movil\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="871eb6481432a8f9309eca756c748b73fdebacb7">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_40f59253bfa96247bd71ce489ffbf4103925693e\classes.dex" />
     </item>
     <item
         is-multidex="false"

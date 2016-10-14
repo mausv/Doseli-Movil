@@ -10,26 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eb1144d-aa2c-484c-bbc7-e42b2dc44674" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doseli-Movil.iml" afterPath="$PROJECT_DIR$/Doseli-Movil.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="Doseli-Movil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,8 +52,8 @@
       <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="1165" column="28" selection-start-line="1165" selection-start-column="28" selection-end-line="1165" selection-end-column="28" />
+            <state relative-caret-position="191">
+              <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
               <folding>
                 <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#onCheckedChanged#0;class#5593:5974" expanded="false" />
@@ -97,6 +82,7 @@
                 <element signature="method#onClick#0;class#29888:30112" expanded="false" />
                 <element signature="method#onClick#0;class#30620:30844" expanded="false" />
                 <element signature="method#onClick#0;class#31362:31586" expanded="false" />
+                <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
                 <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
@@ -122,6 +108,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="JSONParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/JSONParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-748">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
@@ -132,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -142,14 +138,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="1050" column="32" selection-start-line="1050" selection-start-column="32" selection-end-line="1050" selection-end-column="85" />
+            <state relative-caret-position="191">
+              <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
               <folding>
                 <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
                 <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+                <element signature="class#CheckInternetConnection#0;class#LoginActivity#0" expanded="true" />
                 <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="true" />
               </folding>
             </state>
@@ -171,9 +168,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1818,9 +1813,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -1855,7 +1850,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1873,12 +1868,48 @@
               <option name="myItemId" value="Doseli-Movil" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Doseli-Movil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Doseli-Movil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2028,7 +2059,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Auto" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -2089,6 +2120,14 @@
       <option name="presentableId" value="Default" />
       <updated>1476192364645</updated>
     </task>
+    <task id="LOCAL-00001" summary="Actualizado a version 1.5.14">
+      <created>1476390440456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476390440456</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2139,6 +2178,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Actualizado a version 1.5.14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizado a version 1.5.14" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -2146,115 +2189,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onCheckedChanged#0;class#5593:5974" expanded="false" />
-            <element signature="method#onCheckedChanged#0;class#6073:6461" expanded="false" />
-            <element signature="method#onClick#0;class#7844:7987" expanded="false" />
-            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#8477#8535#0" expanded="false" />
-            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onDrawerOpened#0;class#12249:12971" expanded="false" />
-            <element signature="method#onDrawerClosed#0;class#12249:12971" expanded="false" />
-            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
-            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="e#14501#14525#0" expanded="false" />
-            <element signature="e#15184#15206#0" expanded="false" />
-            <element signature="e#16984#17008#0" expanded="false" />
-            <element signature="e#17900#17922#0" expanded="false" />
-            <element signature="e#19731#19755#0" expanded="false" />
-            <element signature="e#20787#20809#0" expanded="false" />
-            <element signature="e#23028#23077#0" expanded="false" />
-            <element signature="e#26477#26499#0" expanded="false" />
-            <element signature="e#28822#28896#0" expanded="false" />
-            <element signature="method#onClick#0;class#29888:30112" expanded="false" />
-            <element signature="method#onClick#0;class#30620:30844" expanded="false" />
-            <element signature="method#onClick#0;class#31362:31586" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="true" />
-            <element signature="method#onClick#0;class#48501:48765" expanded="false" />
-            <element signature="method#onClick#0;class#49549:49833" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
-            <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="1050" column="32" selection-start-line="1050" selection-start-column="32" selection-end-line="1050" selection-end-column="85" />
-          <folding>
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
-            <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
+        <state relative-caret-position="8636">
           <caret line="1165" column="28" selection-start-line="1165" selection-start-column="28" selection-end-line="1165" selection-end-column="28" />
           <folding>
             <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
@@ -2284,6 +2219,7 @@
             <element signature="method#onClick#0;class#29888:30112" expanded="false" />
             <element signature="method#onClick#0;class#30620:30844" expanded="false" />
             <element signature="method#onClick#0;class#31362:31586" expanded="false" />
+            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
@@ -2318,9 +2254,226 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10217">
+          <caret line="1050" column="32" selection-start-line="1050" selection-start-column="32" selection-end-line="1050" selection-end-column="85" />
+          <folding>
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#CheckInternetConnection#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCheckedChanged#0;class#5593:5974" expanded="false" />
+            <element signature="method#onCheckedChanged#0;class#6073:6461" expanded="false" />
+            <element signature="method#onClick#0;class#7844:7987" expanded="false" />
+            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#8477#8535#0" expanded="false" />
+            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onDrawerOpened#0;class#12249:12971" expanded="false" />
+            <element signature="method#onDrawerClosed#0;class#12249:12971" expanded="false" />
+            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
+            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#14501#14525#0" expanded="false" />
+            <element signature="e#15184#15206#0" expanded="false" />
+            <element signature="e#16984#17008#0" expanded="false" />
+            <element signature="e#17900#17922#0" expanded="false" />
+            <element signature="e#19731#19755#0" expanded="false" />
+            <element signature="e#20787#20809#0" expanded="false" />
+            <element signature="e#23028#23077#0" expanded="false" />
+            <element signature="e#26477#26499#0" expanded="false" />
+            <element signature="e#28822#28896#0" expanded="false" />
+            <element signature="method#onClick#0;class#29888:30112" expanded="false" />
+            <element signature="method#onClick#0;class#30620:30844" expanded="false" />
+            <element signature="method#onClick#0;class#31362:31586" expanded="false" />
+            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
+            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="true" />
+            <element signature="method#onClick#0;class#48501:48765" expanded="false" />
+            <element signature="method#onClick#0;class#49549:49833" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#CheckInternetConnection#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/OfflineHandset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/CheckNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/JSONParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+          <folding>
+            <element signature="method#onCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCheckedChanged#0;class#5593:5974" expanded="false" />
+            <element signature="method#onCheckedChanged#0;class#6073:6461" expanded="false" />
+            <element signature="method#onClick#0;class#7844:7987" expanded="false" />
+            <element signature="method#goToOffline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#8477#8535#0" expanded="false" />
+            <element signature="method#setupDrawer#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onDrawerOpened#0;class#12249:12971" expanded="false" />
+            <element signature="method#onDrawerClosed#0;class#12249:12971" expanded="false" />
+            <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
+            <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="e#14501#14525#0" expanded="false" />
+            <element signature="e#15184#15206#0" expanded="false" />
+            <element signature="e#16984#17008#0" expanded="false" />
+            <element signature="e#17900#17922#0" expanded="false" />
+            <element signature="e#19731#19755#0" expanded="false" />
+            <element signature="e#20787#20809#0" expanded="false" />
+            <element signature="e#23028#23077#0" expanded="false" />
+            <element signature="e#26477#26499#0" expanded="false" />
+            <element signature="e#28822#28896#0" expanded="false" />
+            <element signature="method#onClick#0;class#29888:30112" expanded="false" />
+            <element signature="method#onClick#0;class#30620:30844" expanded="false" />
+            <element signature="method#onClick#0;class#31362:31586" expanded="false" />
+            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
+            <element signature="method#doInBackground#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetMissing#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#getReportStolen#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#isOnline#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#createSnackbar#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="true" />
+            <element signature="method#onClick#0;class#48501:48765" expanded="false" />
+            <element signature="method#onClick#0;class#49549:49833" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+          <folding>
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#CheckInternetConnection#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetOffModels#0;class#LoginActivity#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
