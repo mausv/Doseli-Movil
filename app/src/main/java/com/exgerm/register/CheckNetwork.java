@@ -22,7 +22,7 @@ public class CheckNetwork {
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         if (activeNetwork != null && activeNetwork.isConnected()) {
             try {
-                URL url = new URL(LoginActivity.main_url);
+                URL url = new URL("http://exgerm.marpanet.com");
                 HttpURLConnection urlc = (HttpURLConnection)url.openConnection();
                 urlc.setRequestProperty("User-Agent", "test");
                 urlc.setRequestProperty("Connection", "close");
