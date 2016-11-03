@@ -127,10 +127,10 @@ public class LoginActivity extends AppCompatActivity {
     //Progress Dialog
     private ProgressDialog pDialog;
 
-    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-    public static String main_url2 = "http://exgerm.marpanet.com:3010/doselis/";
-//    public static String main_url = "http://192.168.1.144/doselimovil/";
-//    public static String main_url2 = "http://192.168.1.144:3010/doselis/";
+//    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
+//    public static String main_url2 = "http://exgerm.marpanet.com:3010/doselis/";
+    public static String main_url = "http://192.168.1.137/doselimovil/";
+    public static String main_url2 = "http://192.168.1.137:3010/doselis/";
 
     public static int newestDbVersion = 2;
 

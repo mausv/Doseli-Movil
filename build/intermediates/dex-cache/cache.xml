@@ -11,33 +11,6 @@
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.2.1_90354bc436c435c469ad1215477ae7b9671ee053\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-22.2.1_90354bc436c435c469ad1215477ae7b9671ee053.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\libs\Parse-1.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\Parse-1.8.0_03a26a5fdb1806f998ec178d3f3a35bdad816345.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.3\a3bd5f9dd0a98914faee607d51e22ae172cad4a\MPAndroidChart-v2.1.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="0a3bd5f9dd0a98914faee607d51e22ae172cad4a">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\MPAndroidChart-v2.1.3_ffddd7c6cc9cb2f00a9d64273006ffa392d76a1a.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
         jumboMode="true"
@@ -54,15 +27,6 @@
         revision="22.0.1"
         sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\2\Parse-1.8.0_03a26a5fdb1806f998ec178d3f3a35bdad816345\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="64cb6719337d5cf41c896c9a975d8d5dc9c0a49b">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\com.journeyapps-zxing-android-embedded-3.0.1_7c773907d7cc9823e1a36dd5cd646f8acd64b475.jar" />
     </item>
     <item
         is-multidex="true"
@@ -88,26 +52,8 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="51deccac14b3991301b9a22efdcc912180872985">
+        sha1="eb8c7a564ad796196beabc65ebcf0be97fccf9d7">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_40f59253bfa96247bd71ce489ffbf4103925693e\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\core-3.2.0_4a510bc76e0de627d459f26de21a796e9866118c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-tasks-1.4.0_26785ca2b4c1c9423c5892ef8fc546d3a1104a64.jar" />
     </item>
     <item
         is-multidex="true"
@@ -119,24 +65,6 @@
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_26785ca2b4c1c9423c5892ef8fc546d3a1104a64\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\mausv\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1_55524048caacbf7959989d3f0bc20f957a0d5d1b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\libs\joda-time-2.7.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\joda-time-2.7_f854cd5c286a1237d9f40d47dd8e33a2513223bc.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="D:\VCS\Doseli-Movil\app\libs\joda-time-2.7.jar"
         jumboMode="true"
@@ -146,15 +74,6 @@
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\2\joda-time-2.7_f854cd5c286a1237d9f40d47dd8e33a2513223bc\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="1821601ddbec5ff125653097812823388700af74">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\com.android.support-design-22.2.1_9b0f84c49a7ff306e35c6de13d35159ff32e7f1c.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="D:\VCS\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
         jumboMode="true"
@@ -162,15 +81,6 @@
         revision="22.0.1"
         sha1="1821601ddbec5ff125653097812823388700af74">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-22.2.1_9b0f84c49a7ff306e35c6de13d35159ff32e7f1c\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-22.2.1_303dfec1c14eb90b0a9a08fcbdabcd8aa996eee2.jar" />
     </item>
     <item
         is-multidex="true"
@@ -189,24 +99,6 @@
         revision="22.0.1"
         sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.2.1_303dfec1c14eb90b0a9a08fcbdabcd8aa996eee2\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\VCS\Doseli-Movil\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1_86a2d5ce2e833345f417d76c6545ce92960b8c20.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mausv\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\pre-dexed\release\bolts-applinks-1.4.0_713741619fdd962be52fefe458c4679018a60fa6.jar" />
     </item>
     <item
         is-multidex="true"
@@ -232,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="7129e71aaa79a00e364cf60f3da7ddb46a061aa0">
+        sha1="b2e9b1bc2486f0e39d989b143338696c7015fb4d">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_29b8622b9ff087586a766aefffdca6072686dff1\classes.dex" />
     </item>
 
