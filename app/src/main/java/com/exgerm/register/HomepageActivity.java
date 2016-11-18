@@ -93,14 +93,14 @@ public class HomepageActivity extends AppCompatActivity {
     ArrayList<HomepageDrawerItem> arrayOfDrawerItems;
     private Button btnOfflineMissingHandsets;
 
-    private static String url_get_reports = LoginActivity.main_url + "get_all_series.php";
-    private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending.php";
-    private static String url_pending_report = LoginActivity.main_url2 + "pending_report";
-    private static String url_pending_register_handset = LoginActivity.main_url2 + "pending_register_machine";
-    private static String url_pending_register_location = LoginActivity.main_url2 + "pending_register_location";
-    private static String url_pending_report_stolen = LoginActivity.main_url2 + "pending_report_stolen";
-    private static String url_get_checked_devices = LoginActivity.main_url + "get_checked_devices.php";
-    private static String url_get_missing_check_devices = LoginActivity.main_url + "get_missing_check_devices.php";
+    private static String url_get_reports = LoginActivity.main_url + "get_all_series";
+    private static String url_get_details = LoginActivity.main_url + "get_machine_details_pending";
+    private static String url_pending_report = LoginActivity.main_url + "pending_report";
+    private static String url_pending_register_handset = LoginActivity.main_url + "pending_register_machine";
+    private static String url_pending_register_location = LoginActivity.main_url + "pending_register_location";
+    private static String url_pending_report_stolen = LoginActivity.main_url + "pending_report_stolen";
+    private static String url_get_checked_devices = LoginActivity.main_url + "get_checked_devices";
+    private static String url_get_missing_check_devices = LoginActivity.main_url + "get_missing_check_devices";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -636,6 +636,8 @@ public class HomepageActivity extends AppCompatActivity {
 
                                     } else if (successGD == 0) {
                                         Log.i("Token status: ", "invalid");
+
+                                        lostReport.add(new LostPending(json.getString("qr")));
 
                                         LoginActivity.offlineDb.delete("DoseliOffline", "id = " + pendingArray.get(i).getId(), null);
                                     }

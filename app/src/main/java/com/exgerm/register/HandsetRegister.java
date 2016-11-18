@@ -44,13 +44,13 @@ public class HandsetRegister extends AppCompatActivity {
 
     private TextView id;
 
-    private static String url_register_machine = LoginActivity.main_url2 + "register_machine";
+    private static String url_register_machine = LoginActivity.main_url + "register_machine";
 
-    private static String url_get_qr_details = LoginActivity.main_url + "get_qr_details.php";
+    private static String url_get_qr_details = LoginActivity.main_url + "get_qr_details";
 
-    private static String url_get_qr_availability = LoginActivity.main_url + "get_qr_availability.php";
+    private static String url_get_qr_availability = LoginActivity.main_url + "get_qr_availability";
 
-    private static String url_get_models = LoginActivity.main_url + "get_models.php";
+    private static String url_get_models = LoginActivity.main_url + "get_models";
 
     // Progress Dialog
     private ProgressDialog pDialog;

@@ -29,7 +29,7 @@ public class AdminActivity extends AppCompatActivity {
 
     AdmHospitalAdapter admHospitalAdapter;
 
-    private static String url_get_all_admin_objects = LoginActivity.main_url + "get_all_admin_objects.php";
+    private static String url_get_all_admin_objects = LoginActivity.main_url + "get_all_admin_objects";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

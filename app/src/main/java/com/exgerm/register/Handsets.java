@@ -29,7 +29,7 @@ public class Handsets extends AppCompatActivity {
 
     HandsetAdapter adapter;
 
-    private static String url_get_handsets_list = LoginActivity.main_url + "get_all_handsets.php";
+    private static String url_get_handsets_list = LoginActivity.main_url + "get_all_handsets";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

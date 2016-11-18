@@ -73,9 +73,9 @@ public class UpdateStatusActivity extends AppCompatActivity {
     protected View.OnClickListener checkBoxListener1;
     protected View.OnClickListener checkBoxListener2;
 
-    private static String url_report = LoginActivity.main_url2 + "create_report";
+    private static String url_report = LoginActivity.main_url + "create_report";
 
-    private static String url_get_details = LoginActivity.main_url + "get_machine_details.php";
+    private static String url_get_details = LoginActivity.main_url + "get_machine_details";
 
     // Progress Dialog
     private ProgressDialog pDialog;

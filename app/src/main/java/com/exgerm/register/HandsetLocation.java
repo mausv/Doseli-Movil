@@ -120,13 +120,13 @@ public class HandsetLocation extends AppCompatActivity {
     private static final String TAG_MODEL = "model";
     private static final String TAG_SERIAL_NUMBER = "serial_number";
 
-    private static String url_get_groups = LoginActivity.main_url + "get_groups.php";
-    private static String url_get_hospitals = LoginActivity.main_url + "get_hospitals.php";
-    private static String url_get_areas = LoginActivity.main_url + "get_areas.php";
-    private static String url_get_locations = LoginActivity.main_url + "get_locations.php";
-    private static String url_get_rooms = LoginActivity.main_url + "get_rooms.php";
-    private static String url_get_qr_location = LoginActivity.main_url + "get_qr_location.php";
-    private static String url_register_location = LoginActivity.main_url2 + "register_location";
+    private static String url_get_groups = LoginActivity.main_url + "get_groups";
+    private static String url_get_hospitals = LoginActivity.main_url + "get_hospitals";
+    private static String url_get_areas = LoginActivity.main_url + "get_areas";
+    private static String url_get_locations = LoginActivity.main_url + "get_locations";
+    private static String url_get_rooms = LoginActivity.main_url + "get_rooms";
+    private static String url_get_qr_location = LoginActivity.main_url + "get_qr_location";
+    private static String url_register_location = LoginActivity.main_url + "register_location";
 
     private SharedPreferences sharedPreferences;
 

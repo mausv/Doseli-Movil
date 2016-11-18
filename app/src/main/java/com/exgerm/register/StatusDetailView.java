@@ -51,8 +51,8 @@ public class StatusDetailView extends Activity {
 
     JSONParser jsonParser = new JSONParser();
 
-    protected static final String get_specs_url = LoginActivity.main_url + "get_machine_details_specs.php";
-    protected static final String url_report_stolen = LoginActivity.main_url + "report_stolen.php";
+    protected static final String get_specs_url = LoginActivity.main_url + "get_machine_details_specs";
+    protected static final String url_report_stolen = LoginActivity.main_url + "report_stolen";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -262,6 +262,18 @@ public class StatusDetailView extends Activity {
                 AlertDialog.Builder build = new AlertDialog.Builder(StatusDetailView.this);
                 build.setTitle("Aparato Robado");
                 build.setMessage("El aparato ha sido reportado robado");
+                build.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        finish();
+                    }
+                });
+                build.show();
+            } else {
+                AlertDialog.Builder build = new AlertDialog.Builder(StatusDetailView.this);
+                build.setTitle("Error al reportar robado");
+                build.setMessage("El aparato no ha sido reportado robado");
                 build.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

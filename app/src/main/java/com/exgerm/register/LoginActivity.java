@@ -128,9 +128,9 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
 
 //    public static String main_url = "http://exgerm.marpanet.com/doselimovil/";
-//    public static String main_url2 = "http://exgerm.marpanet.com:3010/doselis/";
-    public static String main_url = "http://192.168.1.137/doselimovil/";
-    public static String main_url2 = "http://192.168.1.137:3010/doselis/";
+    public static String main_url = "http://exgerm.marpanet.com:3010/doselis/";
+//    public static String main_url = "http://192.168.1.137/doselimovil/";
+//    public static String main_url = "http://192.168.1.137:3010/doselis/";
 
     public static int newestDbVersion = 2;
 
@@ -140,15 +140,18 @@ public class LoginActivity extends AppCompatActivity {
     LocationListener ll;
 
     //URLs
-    private static String url_login = main_url + "login.php";
-    private static String url_get_groups = main_url + "get_groups.php";
-    private static String url_get_hospitals = main_url + "get_hospitals.php";
-    private static String url_get_hospital_geo = main_url + "get_hospital_geo.php";
-    private static String url_get_latest_version = main_url2 + "get_latest_version";
-    private static String url_get_off = main_url + "get_hospital_offline.php";
-    private static String url_get_challenge = main_url + "challenge_summary.php";
-    private static String url_get_offline_missing_handsets = main_url + "get_missing_check_devices.php";
-    private static String url_get_hospital_frequence = main_url + "get_hospital_frequence.php";
+    private static String url_login = main_url + "login";
+    private static String url_get_groups = main_url + "get_groups";
+    private static String url_get_hospitals = main_url + "get_hospitals";
+    private static String url_get_hospital_geo = main_url + "get_hospital_geo";
+    private static String url_get_latest_version = main_url + "get_latest_version";
+    private static String url_get_off = main_url + "get_hospital_offline";
+    private static String url_get_challenge = main_url + "challenge_summary";
+    private static String url_get_offline_missing_handsets = main_url + "get_missing_check_devices";
+    private static String url_get_hospital_frequence = main_url + "get_hospital_frequence";
+    private static String url_upload_crash_report = main_url + "upload_crash_report";
+    private static String url_get_models = main_url + "get_models";
+
 
     //Column variables
     private static String TAG_CODE = "code";
@@ -199,7 +202,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(!(Thread.getDefaultUncaughtExceptionHandler() instanceof CustomExceptionHandler)) {
             Thread.setDefaultUncaughtExceptionHandler(new CustomExceptionHandler(
-                    Environment.getExternalStorageDirectory() + "/doselireports", main_url + "upload_crash_report.php", this));
+                    Environment.getExternalStorageDirectory() + "/doselireports", url_upload_crash_report, this));
         }
 
         System.out.println("DIR: " + this.getFilesDir());
@@ -1086,7 +1089,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                     CustomExceptionHandler crashReport = new CustomExceptionHandler(
-                            Environment.getExternalStorageDirectory() + "/doselireports", main_url + "upload_crash_report.php", LoginActivity.this);
+                            Environment.getExternalStorageDirectory() + "/doselireports", url_upload_crash_report, LoginActivity.this);
                     crashReport.sendReport(crashInfo, text.toString());
 
                     Log.d("CrashState", text.toString());
@@ -1129,7 +1132,7 @@ public class LoginActivity extends AppCompatActivity {
             locationsOff = new ArrayList<Category>();
 
             ServiceHandler jsonParsers = new ServiceHandler();
-            String json = jsonParsers.makeServiceCall(main_url + "get_models.php", ServiceHandler.POST);
+            String json = jsonParsers.makeServiceCall(url_get_models, ServiceHandler.POST);
 
             Log.e("Response: ", "> " + json);
 

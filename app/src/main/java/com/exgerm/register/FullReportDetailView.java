@@ -32,7 +32,7 @@ public class FullReportDetailView extends ListActivity {
 
     FullHandsetReportAdapter adapter;
 
-    private static String url_get_machine_history = LoginActivity.main_url + "get_machine_history.php";
+    private static String url_get_machine_history = LoginActivity.main_url + "get_machine_history";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

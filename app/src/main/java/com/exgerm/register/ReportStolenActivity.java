@@ -1,8 +1,6 @@
 package com.exgerm.register;
 
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,12 +12,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -31,20 +25,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URI;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
 public class ReportStolenActivity extends AppCompatActivity {
-
-    String hspOb;
-
-    private static String url_report_stolen = LoginActivity.main_url + "create_stolen_report";
-
-    // Progress Dialog
-    private ProgressDialog pDialog;
 
     JSONParser jsonParser = new JSONParser();
 
@@ -59,8 +44,8 @@ public class ReportStolenActivity extends AppCompatActivity {
 
     protected String token;
 
-    public String url_get_details = LoginActivity.main_url + "get_machine_details.php";
-    public String url_delete_machine = LoginActivity.main_url2 + "delete_machine";
+    public String url_get_details = LoginActivity.main_url + "get_machine_details";
+    public String url_delete_machine = LoginActivity.main_url + "delete_machine";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

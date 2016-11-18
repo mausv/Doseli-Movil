@@ -2,10 +2,8 @@ package com.exgerm.register;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import org.apache.http.NameValuePair;
@@ -27,7 +25,7 @@ public class UserHospitals extends AppCompatActivity {
     UserHospitalsAdapter userHospitalsAdapter;
     ArrayList<UserHospital> arrayOfHospitals;
 
-    private static String url_get_user_hospitals = LoginActivity.main_url + "get_user_hospitals.php";
+    private static String url_get_user_hospitals = LoginActivity.main_url + "get_user_hospitals";
 
 
     protected void onCreate(Bundle savedInstanceState) {
