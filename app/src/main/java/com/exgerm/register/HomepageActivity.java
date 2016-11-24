@@ -782,7 +782,9 @@ public class HomepageActivity extends AppCompatActivity {
 
             JSONObject jsonMissing = jsonParser.makeHttpRequest(url_get_missing_check_devices, "POST", param);
 
+
             if(jsonMissing != null) {
+                System.out.println(jsonMissing.toString());
                 try {
                     success = jsonMissing.getInt("success");
 

@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="0bbec1b439bc70f7dc1b6b839594c83b7f7736e6">
+        sha1="e382def1f038028ef245903c378df95969d0ee41">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_40f59253bfa96247bd71ce489ffbf4103925693e\classes.dex" />
     </item>
     <item
@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="5c5c43399331c80679ab5aaef6232203a4bdd5f6">
+        sha1="3dd13e1f3a0532488f5a0b3fa816bbf316604b43">
         <dex dex="D:\VCS\Doseli-Movil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_29b8622b9ff087586a766aefffdca6072686dff1\classes.dex" />
     </item>
 

@@ -9,26 +9,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb1144d-aa2c-484c-bbc7-e42b2dc44674" name="Default" comment="">
+    <list default="true" id="8eb1144d-aa2c-484c-bbc7-e42b2dc44674" name="Default" comment="Finalizado cambio a Ruby, faltan pruebas.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/exgerm/register/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/exgerm/register/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdminActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdminActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/FullReportDetailView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/FullReportDetailView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handsets.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handsets.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateApk.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateApk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospitals.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospitals.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="Doseli-Movil.iws" />
@@ -64,12 +49,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomepageActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="477" column="44" selection-start-line="477" selection-start-column="44" selection-end-line="477" selection-end-column="44" />
+            <state relative-caret-position="257">
+              <caret line="792" column="49" selection-start-line="792" selection-start-column="49" selection-end-line="792" selection-end-column="49" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#onCheckedChanged#0;class#5779:6160" expanded="false" />
                 <element signature="method#onCheckedChanged#0;class#6259:6647" expanded="false" />
                 <element signature="method#onClick#0;class#8030:8173" expanded="false" />
@@ -82,6 +68,7 @@
                 <element signature="method#onDrawerClosed#0;class#12435:13157" expanded="false" />
                 <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+                <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
                 <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="e#14817#14841#0" expanded="false" />
                 <element signature="e#15532#15554#0" expanded="false" />
@@ -99,14 +86,12 @@
                 <element signature="method#onClick#0;class#34100:34378" expanded="false" />
                 <element signature="method#onClick#0;class#34520:34945" expanded="false" />
                 <element signature="method#onClick#0;class#35463:35687" expanded="false" />
-                <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
-                <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+                <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="true" />
                 <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+                <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="true" />
                 <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-                <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-                <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
@@ -116,33 +101,59 @@
                 <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
                 <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-                <element signature="method#onClick#0;class#52602:52866" expanded="false" />
-                <element signature="method#onClick#0;class#53650:53934" expanded="false" />
+                <element signature="method#onClick#0;class#52663:52927" expanded="false" />
+                <element signature="method#onClick#0;class#53711:53995" expanded="false" />
                 <element signature="method#hasConnection#0;class#HomepageActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_homepage.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+            <state relative-caret-position="221">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <folding>
+                <element signature="e#125#281#0" expanded="true" />
+                <element signature="e#315#453#0" expanded="true" />
+                <element signature="e#476#533#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateStatusActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="457" column="57" selection-start-line="457" selection-start-column="57" selection-end-line="457" selection-end-column="57" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_homepage.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml">
           <provider editor-type-id="android-designer2">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UserHospitals.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospitals.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="1020">
               <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,7 +161,7 @@
       <file leaf-file-name="StatusDetailView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="3366">
               <caret line="240" column="65" selection-start-line="240" selection-start-column="65" selection-end-line="240" selection-end-column="65" />
               <folding>
                 <element signature="class#GetMachineDetails#0;class#StatusDetailView#0" expanded="true" />
@@ -162,9 +173,11 @@
       <file leaf-file-name="UserHospital.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospital.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="595">
               <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,9 +185,22 @@
       <file leaf-file-name="HandsetRegister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="2907">
               <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="class#3182:3784" expanded="false" />
+                <element signature="class#3834:9052" expanded="false" />
+                <element signature="class#4580:4913" expanded="false" />
+                <element signature="class#6266:6596" expanded="false" />
+                <element signature="class#7039:7372" expanded="false" />
+                <element signature="class#7855:8164" expanded="false" />
+                <element signature="class#8604:8913" expanded="false" />
+                <element signature="class#15681:15923" expanded="false" />
+                <element signature="class#RegisterQR#0;class#HandsetRegister#0" expanded="false" />
+                <element signature="class#18477:18735" expanded="false" />
+                <element signature="class#GetCategories#0;class#HandsetRegister#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +208,7 @@
       <file leaf-file-name="JSONObject.class" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-22/android.jar!/org/json/JSONObject.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="3213">
               <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
               <folding />
             </state>
@@ -192,22 +218,33 @@
       <file leaf-file-name="HandsetLocation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
+            <state relative-caret-position="2193">
               <caret line="841" column="56" selection-start-line="841" selection-start-column="56" selection-end-line="841" selection-end-column="56" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3206#3214#0" expanded="false" />
                 <element signature="method#onCreate#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#6382:8341" expanded="false" />
                 <element signature="method#onItemSelected#0;class#6382:8341" expanded="false" />
                 <element signature="method#onNothingSelected#0;class#6382:8341" expanded="false" />
+                <element signature="class#8399:10287" expanded="false" />
                 <element signature="method#onItemSelected#0;class#8399:10287" expanded="false" />
                 <element signature="method#onNothingSelected#0;class#8399:10287" expanded="false" />
+                <element signature="class#10341:12376" expanded="false" />
                 <element signature="method#onItemSelected#0;class#10341:12376" expanded="false" />
                 <element signature="method#onNothingSelected#0;class#10341:12376" expanded="false" />
+                <element signature="class#12434:13440" expanded="false" />
                 <element signature="method#onItemSelected#0;class#12434:13440" expanded="false" />
                 <element signature="method#onNothingSelected#0;class#12434:13440" expanded="false" />
+                <element signature="class#13480:13857" expanded="false" />
                 <element signature="method#onClick#0;class#13480:13857" expanded="false" />
+                <element signature="class#13899:19318" expanded="false" />
                 <element signature="method#onClick#0;class#13899:19318" expanded="false" />
+                <element signature="class#17124:17454" expanded="false" />
                 <element signature="method#onClick#0;class#17124:17454" expanded="false" />
+                <element signature="class#17959:18292" expanded="false" />
                 <element signature="method#onClick#0;class#17959:18292" expanded="false" />
+                <element signature="class#18816:19149" expanded="false" />
                 <element signature="method#onClick#0;class#18816:19149" expanded="false" />
                 <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="e#20061#20116#0" expanded="false" />
@@ -216,53 +253,45 @@
                 <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="e#26125#26183#0" expanded="false" />
                 <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="e#26633#26641#0" expanded="false" />
+                <element signature="e#27747#27755#0" expanded="false" />
                 <element signature="method#firstBoot#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="docComment;method#onPreExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPreExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="docComment;method#doInBackground#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="e#30214#30229#0" expanded="false" />
                 <element signature="e#30329#30378#0" expanded="false" />
                 <element signature="docComment;method#onPostExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#32456:32698" expanded="false" />
                 <element signature="method#onClick#0;class#32456:32698" expanded="false" />
                 <element signature="docComment;method#onPreExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPreExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="docComment;method#doInBackground#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="e#33495#33510#0" expanded="false" />
                 <element signature="e#34464#34486#0" expanded="false" />
                 <element signature="docComment;method#onPostExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#35882:36140" expanded="false" />
                 <element signature="method#onClick#0;class#35882:36140" expanded="false" />
+                <element signature="class#36586:36844" expanded="false" />
                 <element signature="method#onClick#0;class#36586:36844" expanded="false" />
+                <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
+                <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#doInBackground#0;class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#onPostExecute#0;class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
                 <element signature="method#isOnline#0;class#HandsetLocation#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handsets.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handsets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handset.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1920,7 +1949,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handsets.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/ReportStolenActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospitals.java" />
@@ -1929,6 +1957,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospitalAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdmHospital.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java" />
       </list>
     </option>
   </component>
@@ -1964,7 +1993,6 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1986,28 +2014,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2021,40 +2027,13 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="register" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doseli-Movil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2403,7 +2382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478207638123</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finalizado cambio a Ruby, faltan pruebas.">
+      <created>1479504710363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1479504710364</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2413,7 +2399,7 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37639198" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37639198" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2425,23 +2411,23 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22654584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2498,7 +2484,7 @@
             <element signature="method#onItemSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#onNothingSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#doInBackground#0;class#StopGps#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="e#15828#15865#0" expanded="false" />
@@ -2513,14 +2499,14 @@
             <element signature="method#onClick#0;class#21350:21574" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#28487:28690" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
@@ -2557,9 +2543,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2568,6 +2552,7 @@
         <state relative-caret-position="850">
           <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCheckedChanged#0;class#5779:6160" expanded="false" />
             <element signature="method#onCheckedChanged#0;class#6259:6647" expanded="false" />
             <element signature="method#onClick#0;class#8030:8173" expanded="false" />
@@ -2580,6 +2565,7 @@
             <element signature="method#onDrawerClosed#0;class#12435:13157" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14817#14841#0" expanded="false" />
             <element signature="e#15532#15554#0" expanded="false" />
@@ -2597,14 +2583,12 @@
             <element signature="method#onClick#0;class#34100:34378" expanded="false" />
             <element signature="method#onClick#0;class#34520:34945" expanded="false" />
             <element signature="method#onClick#0;class#35463:35687" expanded="false" />
-            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
-            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
@@ -2614,8 +2598,8 @@
             <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onClick#0;class#52602:52866" expanded="false" />
-            <element signature="method#onClick#0;class#53650:53934" expanded="false" />
+            <element signature="method#onClick#0;class#52663:52927" expanded="false" />
+            <element signature="method#onClick#0;class#53711:53995" expanded="false" />
             <element signature="method#hasConnection#0;class#HomepageActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2661,7 +2645,7 @@
             <element signature="method#onItemSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#onNothingSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#doInBackground#0;class#StopGps#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="e#15828#15865#0" expanded="false" />
@@ -2676,14 +2660,14 @@
             <element signature="method#onClick#0;class#21350:21574" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#28487:28690" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
@@ -2720,9 +2704,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2731,6 +2713,7 @@
         <state relative-caret-position="8636">
           <caret line="1165" column="28" selection-start-line="1165" selection-start-column="28" selection-end-line="1165" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCheckedChanged#0;class#5779:6160" expanded="false" />
             <element signature="method#onCheckedChanged#0;class#6259:6647" expanded="false" />
             <element signature="method#onClick#0;class#8030:8173" expanded="false" />
@@ -2743,6 +2726,7 @@
             <element signature="method#onDrawerClosed#0;class#12435:13157" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14817#14841#0" expanded="false" />
             <element signature="e#15532#15554#0" expanded="false" />
@@ -2760,14 +2744,12 @@
             <element signature="method#onClick#0;class#34100:34378" expanded="false" />
             <element signature="method#onClick#0;class#34520:34945" expanded="false" />
             <element signature="method#onClick#0;class#35463:35687" expanded="false" />
-            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
-            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
@@ -2777,8 +2759,8 @@
             <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onClick#0;class#52602:52866" expanded="false" />
-            <element signature="method#onClick#0;class#53650:53934" expanded="false" />
+            <element signature="method#onClick#0;class#52663:52927" expanded="false" />
+            <element signature="method#onClick#0;class#53711:53995" expanded="false" />
             <element signature="method#hasConnection#0;class#HomepageActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2814,7 +2796,7 @@
             <element signature="method#onItemSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#onNothingSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#doInBackground#0;class#StopGps#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="e#15828#15865#0" expanded="false" />
@@ -2829,14 +2811,14 @@
             <element signature="method#onClick#0;class#21350:21574" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#28487:28690" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
@@ -2873,9 +2855,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2884,6 +2864,7 @@
         <state relative-caret-position="85">
           <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCheckedChanged#0;class#5779:6160" expanded="false" />
             <element signature="method#onCheckedChanged#0;class#6259:6647" expanded="false" />
             <element signature="method#onClick#0;class#8030:8173" expanded="false" />
@@ -2896,6 +2877,7 @@
             <element signature="method#onDrawerClosed#0;class#12435:13157" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14817#14841#0" expanded="false" />
             <element signature="e#15532#15554#0" expanded="false" />
@@ -2913,14 +2895,12 @@
             <element signature="method#onClick#0;class#34100:34378" expanded="false" />
             <element signature="method#onClick#0;class#34520:34945" expanded="false" />
             <element signature="method#onClick#0;class#35463:35687" expanded="false" />
-            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
-            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
@@ -2930,8 +2910,8 @@
             <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onClick#0;class#52602:52866" expanded="false" />
-            <element signature="method#onClick#0;class#53650:53934" expanded="false" />
+            <element signature="method#onClick#0;class#52663:52927" expanded="false" />
+            <element signature="method#onClick#0;class#53711:53995" expanded="false" />
             <element signature="method#hasConnection#0;class#HomepageActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2953,7 +2933,7 @@
             <element signature="method#onItemSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#onNothingSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#doInBackground#0;class#StopGps#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="e#15828#15865#0" expanded="false" />
@@ -2968,14 +2948,14 @@
             <element signature="method#onClick#0;class#21350:21574" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#28487:28690" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
@@ -3002,9 +2982,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3046,7 +3024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3073,30 +3050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="77" column="89" selection-start-line="77" selection-start-column="89" selection-end-line="77" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding>
-            <element signature="e#49#461#0" expanded="false" />
-            <element signature="e#125#281#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/AsyncTask.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
           <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3116,7 +3073,7 @@
             <element signature="method#onItemSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#onNothingSelected#0;class#12447:13537" expanded="false" />
             <element signature="method#doInBackground#0;class#StopGps#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#Login#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#Login#0;class#LoginActivity#0" expanded="false" />
             <element signature="e#15828#15865#0" expanded="false" />
@@ -3131,14 +3088,14 @@
             <element signature="method#onClick#0;class#21350:21574" expanded="false" />
             <element signature="method#getImei#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#getCurrentVer#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetChallenge#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLatestVersion#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#28487:28690" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGroups#0;class#LoginActivity#0" expanded="false" />
-            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="true" />
+            <element signature="class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGeo#0;class#LoginActivity#0" expanded="false" />
@@ -3186,25 +3143,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_hospital_item_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/AdminActivity.java">
@@ -3219,7 +3174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3227,64 +3181,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="476">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#959#968#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/Handsets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="748">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="class#onListItemClick#0;class#Handsets#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospitals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="1020">
           <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UserHospital.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="595">
           <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="2907">
           <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="class#3182:3784" expanded="false" />
+            <element signature="class#3834:9052" expanded="false" />
+            <element signature="class#4580:4913" expanded="false" />
+            <element signature="class#6266:6596" expanded="false" />
+            <element signature="class#7039:7372" expanded="false" />
+            <element signature="class#7855:8164" expanded="false" />
+            <element signature="class#8604:8913" expanded="false" />
+            <element signature="class#15681:15923" expanded="false" />
+            <element signature="class#RegisterQR#0;class#HandsetRegister#0" expanded="false" />
+            <element signature="class#18477:18735" expanded="false" />
+            <element signature="class#GetCategories#0;class#HandsetRegister#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-22/android.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="3213">
           <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
           <folding />
         </state>
@@ -3292,22 +3257,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HandsetLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
+        <state relative-caret-position="2193">
           <caret line="841" column="56" selection-start-line="841" selection-start-column="56" selection-end-line="841" selection-end-column="56" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3206#3214#0" expanded="false" />
             <element signature="method#onCreate#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#6382:8341" expanded="false" />
             <element signature="method#onItemSelected#0;class#6382:8341" expanded="false" />
             <element signature="method#onNothingSelected#0;class#6382:8341" expanded="false" />
+            <element signature="class#8399:10287" expanded="false" />
             <element signature="method#onItemSelected#0;class#8399:10287" expanded="false" />
             <element signature="method#onNothingSelected#0;class#8399:10287" expanded="false" />
+            <element signature="class#10341:12376" expanded="false" />
             <element signature="method#onItemSelected#0;class#10341:12376" expanded="false" />
             <element signature="method#onNothingSelected#0;class#10341:12376" expanded="false" />
+            <element signature="class#12434:13440" expanded="false" />
             <element signature="method#onItemSelected#0;class#12434:13440" expanded="false" />
             <element signature="method#onNothingSelected#0;class#12434:13440" expanded="false" />
+            <element signature="class#13480:13857" expanded="false" />
             <element signature="method#onClick#0;class#13480:13857" expanded="false" />
+            <element signature="class#13899:19318" expanded="false" />
             <element signature="method#onClick#0;class#13899:19318" expanded="false" />
+            <element signature="class#17124:17454" expanded="false" />
             <element signature="method#onClick#0;class#17124:17454" expanded="false" />
+            <element signature="class#17959:18292" expanded="false" />
             <element signature="method#onClick#0;class#17959:18292" expanded="false" />
+            <element signature="class#18816:19149" expanded="false" />
             <element signature="method#onClick#0;class#18816:19149" expanded="false" />
             <element signature="method#onActivityResult#0;class#HandsetLocation#0" expanded="false" />
             <element signature="e#20061#20116#0" expanded="false" />
@@ -3316,29 +3292,41 @@
             <element signature="method#onOptionsItemSelected#0;class#HandsetLocation#0" expanded="false" />
             <element signature="e#26125#26183#0" expanded="false" />
             <element signature="method#populateSpinner#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#26633#26641#0" expanded="false" />
+            <element signature="e#27747#27755#0" expanded="false" />
             <element signature="method#firstBoot#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
             <element signature="docComment;method#onPreExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
             <element signature="docComment;method#doInBackground#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#doInBackground#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#30214#30229#0" expanded="false" />
             <element signature="e#30329#30378#0" expanded="false" />
             <element signature="docComment;method#onPostExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#CheckQR#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#32456:32698" expanded="false" />
             <element signature="method#onClick#0;class#32456:32698" expanded="false" />
             <element signature="docComment;method#onPreExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
             <element signature="docComment;method#doInBackground#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="e#33495#33510#0" expanded="false" />
             <element signature="e#34464#34486#0" expanded="false" />
             <element signature="docComment;method#onPostExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#SetLocation#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#35882:36140" expanded="false" />
             <element signature="method#onClick#0;class#35882:36140" expanded="false" />
+            <element signature="class#36586:36844" expanded="false" />
             <element signature="method#onClick#0;class#36586:36844" expanded="false" />
+            <element signature="class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetGroups#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetHospitals#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetAreas#0;class#HandsetLocation#0" expanded="false" />
+            <element signature="class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#doInBackground#0;class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#onPostExecute#0;class#GetLocations#0;class#HandsetLocation#0" expanded="false" />
             <element signature="method#isOnline#0;class#HandsetLocation#0" expanded="false" />
@@ -3346,9 +3334,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/UpdateStatusActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="457" column="57" selection-start-line="457" selection-start-column="57" selection-end-line="457" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/StatusDetailView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="3366">
           <caret line="240" column="65" selection-start-line="240" selection-start-column="65" selection-end-line="240" selection-end-column="65" />
           <folding>
             <element signature="class#GetMachineDetails#0;class#StatusDetailView#0" expanded="true" />
@@ -3358,9 +3365,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/exgerm/register/HomepageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="477" column="44" selection-start-line="477" selection-start-column="44" selection-end-line="477" selection-end-column="44" />
+        <state relative-caret-position="257">
+          <caret line="792" column="49" selection-start-line="792" selection-start-column="49" selection-end-line="792" selection-end-column="49" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCheckedChanged#0;class#5779:6160" expanded="false" />
             <element signature="method#onCheckedChanged#0;class#6259:6647" expanded="false" />
             <element signature="method#onClick#0;class#8030:8173" expanded="false" />
@@ -3373,6 +3381,7 @@
             <element signature="method#onDrawerClosed#0;class#12435:13157" expanded="false" />
             <element signature="method#onPostCreate#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onConfigurationChanged#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#SendPending#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#SendPending#0;class#HomepageActivity#0" expanded="false" />
             <element signature="e#14817#14841#0" expanded="false" />
             <element signature="e#15532#15554#0" expanded="false" />
@@ -3390,14 +3399,12 @@
             <element signature="method#onClick#0;class#34100:34378" expanded="false" />
             <element signature="method#onClick#0;class#34520:34945" expanded="false" />
             <element signature="method#onClick#0;class#35463:35687" expanded="false" />
-            <element signature="class#GetMissing#0;class#HomepageActivity#0" expanded="true" />
-            <element signature="method#doInBackground#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetReports#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#GetReports#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterHandset#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getRegisterLocation#0;class#HomepageActivity#0" expanded="false" />
+            <element signature="class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="true" />
             <element signature="method#onPreExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#GetCheckedDevices#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#CheckedFormatter#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getFormattedValue#0;class#CheckedFormatter#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#getAll#0;class#HomepageActivity#0" expanded="false" />
@@ -3407,9 +3414,21 @@
             <element signature="method#onItemClick#0;class#ListItemClickListener#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onKeyDown#0;class#HomepageActivity#0" expanded="false" />
             <element signature="method#onItemClick#0;class#DrawerItemClickListener#0;class#HomepageActivity#0" expanded="false" />
-            <element signature="method#onClick#0;class#52602:52866" expanded="false" />
-            <element signature="method#onClick#0;class#53650:53934" expanded="false" />
+            <element signature="method#onClick#0;class#52663:52927" expanded="false" />
+            <element signature="method#onClick#0;class#53711:53995" expanded="false" />
             <element signature="method#hasConnection#0;class#HomepageActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="e#125#281#0" expanded="true" />
+            <element signature="e#315#453#0" expanded="true" />
+            <element signature="e#476#533#0" expanded="true" />
           </folding>
         </state>
       </provider>
