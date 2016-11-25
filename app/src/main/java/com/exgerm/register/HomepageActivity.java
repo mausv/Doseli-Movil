@@ -622,7 +622,7 @@ public class HomepageActivity extends AppCompatActivity {
                                             } else {
                                                 // failed to create product
                                                 Log.i("Report status: ", "failed");
-                                                lostReport.add(new LostPending(jsonP.getString("qr")));
+                                                lostReport.add(new LostPending(json.getString("qr")));
                                             }
 
                                             Log.i("SId: ", String.valueOf(pendingArray.get(i).getId()));
@@ -782,6 +782,7 @@ public class HomepageActivity extends AppCompatActivity {
 
             JSONObject jsonMissing = jsonParser.makeHttpRequest(url_get_missing_check_devices, "POST", param);
 
+            Log.d("Missing: ", jsonMissing.toString());
 
             if(jsonMissing != null) {
                 System.out.println(jsonMissing.toString());
@@ -831,7 +832,7 @@ public class HomepageActivity extends AppCompatActivity {
 
             JSONObject json = jsonParser.makeHttpRequest(url_get_reports, "POST", param);
 
-            Log.e("Response: ", "> " + json);
+            Log.d("Reports: ", json.toString());
 
             if (json != null) {
                 try {

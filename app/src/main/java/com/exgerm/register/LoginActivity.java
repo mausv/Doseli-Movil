@@ -788,7 +788,7 @@ public class LoginActivity extends AppCompatActivity {
             ServiceHandler jsonParsers = new ServiceHandler();
             String json = jsonParsers.makeServiceCall(url_get_groups, ServiceHandler.POST);
 
-            Log.e("Response: ", "> " + json);
+            Log.d("Groups: ", json);
 
             if (json != null) {
                 try {
@@ -847,7 +847,7 @@ public class LoginActivity extends AppCompatActivity {
                 JSONObject json = jsonParser.makeHttpRequest
                         (url_get_hospitals, "POST", paramsGetTargets);
 
-                Log.d("Check target: ", json.toString());
+                Log.d("Hospitals: ", json.toString());
 
                 success = json.getInt(TAG_SUCCESS);
 
