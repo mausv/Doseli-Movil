@@ -577,8 +577,8 @@ public class LoginActivity extends AppCompatActivity {
                 dialog.show();
             } else if (code == 3) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                builder.setMessage("No se puede establecer una conexion con la Base de Datos. Contactar a Sistemas.");
-                builder.setTitle("Error en Base de Datos");
+                builder.setMessage("No se puede establecer una conexion con la Base de Datos. Revisar que haya conexión a internet.");
+                builder.setTitle("Error en Conexión");
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -660,8 +660,8 @@ public class LoginActivity extends AppCompatActivity {
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
+                success = 3;
             }
-
             return null;
         }
 

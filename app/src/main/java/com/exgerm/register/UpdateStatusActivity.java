@@ -471,7 +471,11 @@ public class UpdateStatusActivity extends AppCompatActivity {
          * **/
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once done
-            pDialog.dismiss();
+            try {
+                pDialog.dismiss();
+            } catch(IllegalArgumentException e) {
+                e.printStackTrace();
+            }
             LoginActivity.offlineMissingHandsets.removeHandsetIfExists(token);
             Toast.makeText(UpdateStatusActivity.this, "Reporte enviado", Toast.LENGTH_SHORT).show();
             Intent a = new Intent(UpdateStatusActivity.this, HomepageActivity.class);
