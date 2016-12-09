@@ -788,10 +788,9 @@ public class LoginActivity extends AppCompatActivity {
             ServiceHandler jsonParsers = new ServiceHandler();
             String json = jsonParsers.makeServiceCall(url_get_groups, ServiceHandler.POST);
 
-            Log.d("Groups: ", json);
-
             if (json != null) {
                 try {
+                    Log.d("Groups: ", json);
                     JSONObject jsonObj = new JSONObject(json);
                     if (jsonObj != null) {
                         JSONArray categories = jsonObj
